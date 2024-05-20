@@ -1,0 +1,62 @@
+// Star definitions
+%base-star {
+    display: inline-block; 
+    
+    &:after {
+      font-family: "FontAwesome";
+      font-size: 1.1em;
+      color: #e4cc14;
+    }
+  };
+  
+  %full-star { 
+    &:after {
+      content: "\f005";    
+    }
+  };
+  
+  %half-star {
+    &:after {    
+      content: "\f123";
+    }
+  };
+  
+  %empty-star {
+    &:after {
+      content: "\f006";
+    }
+  };
+  
+  // 5 Star Rating Score
+  .rating-score {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+  
+    > .rating-score-item {
+      @extend %base-star;
+      @extend %empty-star;
+    }
+  
+    @for $i from 1 through 5 {
+      &[data-rating='#{$i}'] {
+        > .rating-score-item:nth-child(-n + #{$i}) {
+          @extend %full-star;
+        }
+      }
+    }
+    
+    @for $i from 0 through 4 {
+      &[data-rating='#{$i + 0.5}'] {
+        > .rating-score-item:nth-child(-n + #{$i}) {
+          @extend %full-star;
+        }
+  
+        > .rating-score-item:nth-child(#{$i + 1}) {
+          @extend %half-star;
+        }
+      }
+    }
+  }

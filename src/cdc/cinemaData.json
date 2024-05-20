@@ -1,0 +1,584 @@
+{   
+    "Lock, Stock and Two Smoking Barrels" : {
+        "year" : 1998,
+        "link" : "https://letterboxd.com/film/lock-stock-and-two-smoking-barrels/",
+        "date" : "12/05/2024",
+        "chosen by" : "Frazens",
+        "genres" : ["Comedy","Crime"],
+        "minutes" : 105,
+        "reviews" : {
+            "Cludos" : 4.5,
+            "Geremias" : 2.5,
+            "Squnha" : 3.5
+        } 
+    },
+    "Before Sunrise" : {
+        "year" : 1995,
+        "link" : "https://letterboxd.com/film/before-sunrise/",
+        "date" : "05/05/2024",
+        "chosen by" : "Mestre Gui",
+        "genres" : ["Romance","Drama"],
+        "minutes" : 101,
+        "reviews" : {
+            "Mestre Gui" : 4.5,
+            "Geremias" : 3.5,
+            "Esquilo" : 4,
+            "Cludos" : 4,
+            "Hfer" : 3.5,
+            "Squnha" : 3,
+            "Wisdow" : 3,
+            "Tone" : 4
+        } 
+    },
+    "Dune" : {
+        "year" : 2021,
+        "link" : "https://letterboxd.com/film/dune-2021/",
+        "date" : "28/04/2024",
+        "chosen by" : "NeNelson",
+        "genres" : ["Science Fiction","Adventure"],
+        "minutes" : 155,
+        "reviews" : {
+            "NeNelson" : 4,
+            "Atlas" : 4.5,
+            "Cludos" : 3.5,
+            "Squnha" : 3,
+            "Hfer" : 3.5,
+            "Wisdow" : 4,
+            "Mestre Gui" : 4,
+            "Geremias" : 3.5
+        } 
+    },
+    "Deja Vu" : {
+        "year" : 2006,
+        "link" : "https://letterboxd.com/film/deja-vu/",
+        "date" : "21/04/2024",
+        "chosen by" : "Frazens",
+        "genres" : ["Science Fiction","Action","Thriller"],
+        "minutes" : 126,
+        "reviews" : {
+            "Frazens" : 4,
+            "Atlas" : 3,
+            "Mestre Gui" : 3,
+            "Squnha" : 4.5,
+            "Wisdow" : 4,
+            "Geremias" : 3
+        } 
+    },
+    "Monty Python and the Holy Grail" : {
+        "year" : 1975,
+        "link" : "https://letterboxd.com/film/monty-python-and-the-holy-grail/",
+        "date" : "14/04/2024",
+        "chosen by" : "Cludos",
+        "genres" : ["Fantasy","Comedy","Adventure"],
+        "minutes" : 91,
+        "reviews" : {
+            "Cludos" : 4.5,
+            "Atlas" : 4.5,
+            "NeNelson" : 5,
+            "Frazens" : 3.5,
+            "Squnha" : 3.5,
+            "Mestre Gui" : 4.5,
+            "Geremias" : 4,
+            "Wisdow" : 3
+        } 
+    },
+    "Clue" : {
+        "year" : 1985,
+        "link" : "https://letterboxd.com/film/clue/",
+        "date" : "07/04/2024",
+        "chosen by" : "Mestre Gui",
+        "genres" : ["Mistery","Crime","Thriller","Comedy"],
+        "minutes" : 94,
+        "reviews" : {
+            "Mestre Gui" : 5,
+            "Geremias" : 5,
+            "Wisdow" : 5,
+            "Squnha" : 5,
+            "Cludos" : 3.5
+        } 
+    },
+    "Jack Reacher" : {
+        "year" : 2012,
+        "link" : "https://letterboxd.com/film/jack-reacher",
+        "date" : "31/03/2024",
+        "chosen by" : "Squnha",
+        "genres" : ["Drama","Crime","Thriller","Action"],
+        "minutes" : 103,
+        "reviews" : {
+            "Squnha" : 3,
+            "Cludos" : 2.5,
+            "Frazens" : 4,
+            "Mestre Gui" : 3,
+            "Wisdow" : 3,
+            "Geremias" : 1.5
+        } 
+    },
+    "Anyone But You" : {
+        "year" : 2023,
+        "link" : "https://letterboxd.com/film/anyone-but-you",
+        "date" : "24/03/2024",
+        "chosen by" : "Squnha",
+        "genres" : ["Romance","Comedy"],
+        "minutes" : 103,
+        "reviews" : {
+            "Squnha" : 4.5,
+            "Storm" : 4.5,
+            "Xadas" : 4,
+            "Cludos" : 1.5,
+            "Wisdow" : 4.5,
+            "Geremias" : 2.5,
+            "Mestre Gui" : 3.5
+        } 
+    },
+    "Saltburn" : {
+        "year" : 2023,
+        "link" : "https://letterboxd.com/film/saltburn/",
+        "date" : "17/03/2024",
+        "chosen by" : "Mestre Gui",
+        "genres" : ["Drama","Comedy","Thriller"],
+        "minutes" : 131,
+        "reviews" : {
+            "Mestre Gui" : 4,
+            "Squnha" : 3.5,
+            "Cludos" : 4,
+            "Wisdow" : 4,
+            "Geremias" : 3
+        } 
+    },
+    "I Want to Eat Your Pancreas" : {
+        "year" : 2018,
+        "link" : "https://letterboxd.com/film/i-want-to-eat-your-pancreas/",
+        "date" : "10/03/2024",
+        "chosen by" : "NeNelson",
+        "genres" : ["Drama","Animation","Romance"],
+        "minutes" : 108,
+        "reviews" : {
+            "NeNelson" : 5,
+            "Geremias" : 5,
+            "Wisdow" : 5,
+            "Xadas" : 4.5,
+            "Mestre Gui" : 4,
+            "Esquilo" : 4.5
+        } 
+    },
+    "The Equalizer" : {
+        "year" : 2014,
+        "link" : "https://letterboxd.com/film/the-equalizer/",
+        "date" : "03/03/2024",
+        "chosen by" : "Xadas",
+        "genres" : ["Crime","Action","Thriller"],
+        "minutes" : 132,
+        "reviews" : {
+            "Geremias" : 3,
+            "Wisdow" : 4,
+            "Mestre Gui" : 3,
+            "Squnha" : 4
+        } 
+    },
+    "Pan's Labyrinth" : {
+        "year" : 2006,
+        "link" : "https://letterboxd.com/film/pans-labyrinth",
+        "date" : "25/02/2024",
+        "chosen by" : "Atlas",
+        "genres" : ["War","Fantasy","Drama"],
+        "minutes" : 118,
+        "reviews" : {
+            "Atlas" : 4.5,
+            "Mestre Gui" : 5,
+            "Geremias" : 4,
+            "Wisdow" : 3.5
+        } 
+    },
+    "Perfect Blue" : {
+        "year" : 1997,
+        "link" : "https://letterboxd.com/film/perfect-blue/",
+        "date" : "18/02/2024",
+        "chosen by" : "Esquilo",
+        "genres" : ["Thriller","Animation"],
+        "minutes" : 81,
+        "reviews" : {
+            "Geremias" : 4,
+            "NeNelson" : 5,
+            "Wisdow" : 4.5,
+            "Cludos" : 4,
+            "Mestre Gui" : 4
+        } 
+    },
+    "Eternal Sunshine of the Spotless Mind" : {
+        "year" : 2004,
+        "link" : "https://letterboxd.com/film/eternal-sunshine-of-the-spotless-mind/",
+        "date" : "11/02/2024",
+        "chosen by" : "Geremias",
+        "genres" : ["Science Fiction","Romance","Drama"],
+        "minutes" : 108,
+        "reviews" : {
+            "Geremias" : 5,
+            "Mestre Gui" : 4,
+            "Hfer" : 5,
+            "Wisdow" : 4,
+            "Cludos" : 4,
+            "Squnha" : 4
+        } 
+    },
+    "Blue Giant" : {
+        "year" : 2023,
+        "link" : "https://letterboxd.com/film/blue-giant/",
+        "date" : "04/02/2024",
+        "chosen by" : "NeNelson",
+        "genres" : ["Music","Animation","Drama"],
+        "minutes" : 120,
+        "reviews" : {
+            "NeNelson" : 4,
+            "Geremias" : 4,
+            "Wisdow" : 4.5,
+            "Mestre Gui" : 4.5
+        } 
+    },
+    "Snatch" : {
+        "year" : 2000,
+        "link" : "https://letterboxd.com/film/snatch/",
+        "date" : "28/01/2024",
+        "chosen by" : "Cludos",
+        "genres" : ["Comedy","Crime"],
+        "minutes" : 103,
+        "reviews" : {
+            "Cludos" : 5,
+            "Geremias" : 3,
+            "Wisdow" : 3.5,
+            "Mestre Gui" : 4,
+            "Hfer" : 3.5,
+            "Squnha" : 4
+        } 
+    },
+    "The Triplets of Belleville" : {
+        "year" : 2003,
+        "link" : "https://letterboxd.com/film/the-triplets-of-belleville/",
+        "date" : "21/01/2024",
+        "chosen by" : "Atlas",
+        "genres" : ["Comedy","Animation","Drama"],
+        "minutes" : 80,
+        "reviews" : {
+            "Atlas" : 4,
+            "Mestre Gui" : 4,
+            "Cludos" : 4.5,
+            "Wisdow" : 3,
+            "Geremias" : 3.5
+        } 
+    },
+    "T-34" : {
+        "year" : 2018,
+        "link" : "https://letterboxd.com/film/34-2018/",
+        "date" : "14/01/2024",
+        "chosen by" : "NeNelson",
+        "genres" : ["Action","War","Drama","History"],
+        "minutes" : 139,
+        "reviews" : {
+            "NeNelson" : 3,
+            "Atlas" : 3,
+            "Wisdow" : 3,
+            "Geremias" : 2.5
+        } 
+    },
+    "Prisoners" : {
+        "year" : 2013,
+        "link" : "https://letterboxd.com/film/prisoners/",
+        "date" : "07/01/2024",
+        "chosen by" : "Wisdow",
+        "genres" : ["Thriller","Drama","Crime"],
+        "minutes" : 153,
+        "reviews" : {
+            "Wisdow" : 5,
+            "Geremias" : 5,
+            "Storm" : 4.5,
+            "Xadas" : 4.5,
+            "Cludos" : 4.5,
+            "Squnha" : 4
+        } 
+    },
+    "Wrath of Man" : {
+        "year" : 2021,
+        "link" : "https://letterboxd.com/film/wrath-of-man/",
+        "date" : "31/12/2023",
+        "chosen by" : "Squnha",
+        "genres" : ["Thriller","Action","Crime"],
+        "minutes" : 119,
+        "reviews" : {
+            "Squnha" : 4,
+            "Cludos" : 4,
+            "Wisdow" : 3,
+            "Geremias" : 1.5
+        } 
+    },
+    "Blade Runner 2049" : {
+        "year" : 2017,
+        "link" : "https://letterboxd.com/film/blade-runner-2049/",
+        "date" : "24/12/2023",
+        "chosen by" : "NeNelson",
+        "genres" : ["Drama","Science Fiction"],
+        "minutes" : 164,
+        "reviews" : {
+            "NeNelson" : 5,
+            "Atlas" : 5,
+            "Wisdow" : 2,
+            "Geremias" : 4,
+            "Cludos" : 3.5
+        } 
+    },
+    "The Tree of Life" : {
+        "year" : 2011,
+        "link" : "https://letterboxd.com/film/the-tree-of-life-2011/",
+        "date" : "17/12/2023",
+        "chosen by" : "Geremias",
+        "genres" : ["Drama","Fantasy"],
+        "minutes" : 139,
+        "reviews" : {
+            "Geremias" : 4,
+            "Cludos" : 2.5
+        } 
+    },
+    "Morbius" : {
+        "year" : 2004,
+        "link" : "https://letterboxd.com/film/morbius/",
+        "date" : "10/12/2023",
+        "chosen by" : "Xadas",
+        "genres" : ["Action","Science Fiction","Fantasy"],
+        "minutes" : 105,
+        "reviews" : {
+            "Xadas" : 3.5,
+            "Cludos" : 0.5,
+            "Geremias" : 1.5
+        } 
+    },
+    "Howl's Moving Castle" : {
+        "year" : 2004,
+        "link" : "https://letterboxd.com/film/howls-moving-castle/",
+        "date" : "03/12/2023",
+        "chosen by" : "Wisdow",
+        "genres" : ["Animation","History","Fantasy"],
+        "minutes" : 119,
+        "reviews" : {
+            "Wisdow" : 4,
+            "Cludos" : 4,
+            "Atlas" : 4.5,
+            "Geremias" : 4,
+            "Esquilo" : 3.5
+        } 
+    },
+    "Kung Pow: Enter the Fist" : {
+        "year" : 2002,
+        "link" : "https://letterboxd.com/film/kung-pow-enter-the-fist/",
+        "date" : "26/11/2023",
+        "chosen by" : "Cludos",
+        "genres" : ["Action","Comedy"],
+        "minutes" : 81,
+        "reviews" : {
+            "Cludos" : 5,
+            "Geremias" : 2
+        } 
+    },
+    "WALL-E" : {
+        "year" : 2008,
+        "link" : "https://letterboxd.com/film/walle/",
+        "date" : "19/11/2023",
+        "chosen by" : "Areias",
+        "genres" : ["Family","Animation","Science Fiction"],
+        "minutes" : 98,
+        "reviews" : {
+            "Areias" : 4,
+            "Atlas" : 4.5,
+            "Geremias" : 4.5,
+            "Hfer" : 5,
+            "Wisdow" : 3,
+            "Alcunha" : 4.5,
+            "Cludos" : 3.5
+        } 
+    },
+    "The Death of Stalin" : {
+        "year" : 2017,
+        "link" : "https://letterboxd.com/film/the-death-of-stalin/",
+        "date" : "12/11/2023",
+        "chosen by" : "Atlas",
+        "genres" : ["Drama","Comedy","History"],
+        "minutes" : 107,
+        "reviews" : {
+            "Atlas" : 4.5,
+            "Wisdow" : 4,
+            "Cludos" : 3.5,
+            "Geremias" : 3
+        } 
+    },
+    "Birdman" : {
+        "year" : 2014,
+        "link" : "https://letterboxd.com/film/birdman-or-the-unexpected-virtue-of-ignorance/",
+        "date" : "05/11/2023",
+        "chosen by" : "Alcunha",
+        "genres" : ["Drama","Comedy"],
+        "minutes" : 120,
+        "reviews" : {
+            "Alcunha" : 4.5,
+            "Wisdow" : 3,
+            "Geremias" : 4,
+            "Cludos" : 5
+        } 
+    },
+    "The Phantom of The Opera" : {
+        "year" : 2004,
+        "link" : "https://letterboxd.com/film/the-phantom-of-the-opera-2004/",
+        "date" : "29/10/2023",
+        "chosen by" : "NeNelson",
+        "genres" : ["Drama","Romance","Thriller"],
+        "minutes" : 143,
+        "reviews" : {
+            "NeNelson" : 4.5,
+            "Geremias" : 3,
+            "Atlas" : 3.5,
+            "Wisdow" : 4
+        } 
+    },
+    "The Count of Monte Cristo" : {
+        "year" : 2002,
+        "link" : "https://letterboxd.com/film/the-count-of-monte-cristo-2002/",
+        "date" : "22/10/2023",
+        "chosen by" : "Wisdow",
+        "genres" : ["Drama","Adventure","History"],
+        "minutes" : 131,
+        "reviews" : {
+            "Wisdow" : 4.5,
+            "Geremias" : 3,
+            "Atlas" : 4,
+            "Braz" : 2.5
+        }  
+    },
+    "The Covenant" : {
+        "year" : 2023,
+        "link" : "https://letterboxd.com/film/the-covenant-2023/",
+        "date" : "15/10/2023",
+        "chosen by" : "Xadas",
+        "genres" : ["Thriller","War","Action"],
+        "minutes" : 123,
+        "reviews" : {
+            "Geremias" : 3,
+            "Cludos" : 3,
+            "Wisdow" : 3.5,
+            "Atlas" : 4
+        } 
+    },
+    "Punch-Drunk Love" : {
+        "year" : 2002,
+        "link" : "https://letterboxd.com/film/punch-drunk-love/",
+        "date" : "08/10/2023",
+        "chosen by" : "Geremias",
+        "genres" : ["Drama","Comedy","Romance"],
+        "minutes" : 96,
+        "reviews" : {
+            "Geremias" : 4.5,
+            "Hfer" : 3.5,
+            "Cludos" : 3
+        } 
+    },
+    "mid90s" : {
+        "year" : 2018,
+        "link" : "https://letterboxd.com/film/mid90s/",
+        "date" : "01/10/2023",
+        "chosen by" : "Gelly",
+        "genres" : ["Drama","Comedy"],
+        "minutes" : 86,
+        "reviews" : {
+            "Gelly" : 4.5,
+            "Xadas" : 3,
+            "Wisdow" : 3.5,
+            "Geremias" : 2,
+            "Mestre Gui" : 4
+        } 
+    },
+    "1917" : {
+        "year" : 2019,
+        "link" : "https://letterboxd.com/film/1917/",
+        "date" : "24/09/2023",
+        "chosen by" : "Alcunha",
+        "genres" : ["Drama","Action","War"],
+        "minutes" : 119,
+        "reviews" : {
+            "Alcunha" : 4.5,
+            "Wisdow" : 4.5,
+            "Hfer" : 4,
+            "Geremias" : 4,
+            "Cludos" : 5,
+            "Atlas" : 4
+        } 
+    },
+    "Inglorious Basterds" : {
+        "year" : 2009,
+        "link" : "https://letterboxd.com/film/inglourious-basterds/",
+        "date" : "17/09/2023",
+        "chosen by" : "Atlas",
+        "genres" : ["Drama","Thriller","War"],
+        "minutes" : 153,
+        "reviews" : {
+            "Atlas" : 5,
+            "Hfer" : 5,
+            "Alcunha" : 4.5,
+            "Cludos" : 5,
+            "Wisdow" : 5,
+            "Geremias" : 4.5,
+            "Mestre Gui" : 5
+        } 
+    },
+    "Drive" : {
+        "year" : 2011,
+        "link" : "https://letterboxd.com/film/drive-2011/",
+        "date" : "10/09/2023",
+        "chosen by" : "NeNelson",
+        "genres" : ["Drama","Thriller","Crime"],
+        "minutes" : 100,
+        "reviews" : {
+            "Geremias" : 3.5,
+            "Wisdow" : 4,
+            "Hfer" : 3.5,
+            "Cludos" : 3.5
+        } 
+    },
+    "Death Proof" : {
+        "year" : 2007,
+        "link" : "https://letterboxd.com/film/death-proof/",
+        "date" : "03/09/2023",
+        "chosen by" : "Cludos",
+        "genres" : ["Action","Thriller"],
+        "minutes" : 113,
+        "reviews" : {
+            "Cludos" : 3.5,
+            "Geremias" : 3.5,
+            "Storm" : 2.5,
+            "Xadas" : 2.5,
+            "Wisdow" : 4,
+            "Atlas" : 3.5
+        } 
+    },
+    "No Country for Old Men" : {
+        "year" : 2007,
+        "link" : "https://letterboxd.com/film/no-country-for-old-men/",
+        "date" : "27/08/2023",
+        "chosen by" : "Atlas",
+        "genres" : ["Drama", "Thriller", "Crime"],
+        "minutes" : 122,
+        "reviews" : {
+            "Atlas" : 5,
+            "Cludos" : 4,
+            "Geremias" : 4,
+            "Wisdow" : 4
+        }
+    },
+    "Lost in Translation" : {
+        "year" : 2003,
+        "link" : "https://letterboxd.com/film/lost-in-translation/",
+        "date" : "20/08/2023",
+        "chosen by" : "Cludos",
+        "genres" : ["Drama", "Romance"],
+        "minutes" : 102,
+        "reviews" : {
+            "Cludos" : 3.5,
+            "Geremias" : 3,
+            "Hfer" : 3.5
+        }
+    }
+}

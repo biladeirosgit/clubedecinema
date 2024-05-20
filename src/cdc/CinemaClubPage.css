@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Bebas-Regular';
+    src: url('../../public/Bebas-Regular.ttf') format('truetype'); /* Caminho para o arquivo de fonte */
+}
+
+body {
+    background-color: #99AABB;
+    font-family: 'Bebas-Regular', sans-serif; /* Define a fonte Bebas-Regular */
+}
+
+.catalog {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.button {
+    display: flex; /* Usa o modelo de layout flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    overflow: hidden; /* Impede que o texto saia da div */
+}
+
+.button button{
+    padding: 5px 20px 5px 20px;
+    color: #99AABB;
+    background-color: #14181C;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Bebas-Regular', sans-serif; /* Define a fonte Bebas-Regular */
+    margin-top: 10px;
+    border: solid #14181C 2px;
+}
+
+.button button:hover{
+    background-color: #99AABB;
+    color: #14181C;
+    border: solid #14181C 2px;
+}
+
+.title-site{
+    display: flex; /* Usa o modelo de layout flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    overflow: hidden; /* Impede que o texto saia da div */
+}
+
+.title-site h1{
+    font-size: 6vh;
+}

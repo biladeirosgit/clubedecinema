@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Bebas-Regular';
+    src: url('../../public/Bebas-Regular.ttf') format('truetype'); /* Caminho para o arquivo de fonte */
+}
+
+* {
+    padding: 0;
+    margin : 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #14181C;
+    color: #000;
+    min-height: 100vh;
+    font-family: 'Bebas-Regular', sans-serif; /* Define a fonte Bebas-Regular */
+    line-height: 1.6;
+    display: grid;
+    place-content: center;
+}
+
+h1 {
+    line-height: 1.2;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+.container-background {
+    width: 828px;
+    height: 455px;
+    margin: 1px;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 45px;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+    
+}
+
+.simple-poster {
+    z-index: -1;
+    cursor: pointer;
+}
+
+.simple-poster img {
+    border: solid black 1px;
+}
+
+.movie {
+    width: 200px;
+    height: 365px;
+    margin-right: 20px;
+}
+
+.poster {
+    width: 100%;
+    height: 295px;
+    margin-bottom: 10px;
+}
+
+.ratings {
+    width: 478px;
+    height: 295px;
+    display: flex;
+}
+
+.rating-col{
+    width: 159px;
+    height: 100%;
+    margin-right: 20px;
+}
+
+.rating {
+    width: 100%;
+    height: 70px;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.rating-user {
+    height: 100%;
+    width: 50px;
+}
+
+.rating-star {
+    height: 100%;
+    width: 109px;
+}
+
+.rating-top {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+}
+
+.rating-top img {
+    cursor: pointer;
+}
+
+.rating-bottom {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    font-size: 10px;
+}
+
+.title {
+    width: 100%;
+    height: 40px;
+    display: flex; /* Usa o modelo de layout flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    overflow: hidden; /* Impede que o texto saia da div */
+}
+
+.title p {
+    text-align: center; /* Centraliza o texto dentro da div */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    overflow: hidden; /* Impede que o texto saia da div */
+    text-overflow: ellipsis; /* Adiciona reticências (...) se o texto for muito longo */
+    font-size: 10px; /* Tamanho inicial da fonte */
+}
+
+.year {
+    height: 20px;
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+}
+
+.modal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    margin: auto;
+    width: 828px;
+    height: 455px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }

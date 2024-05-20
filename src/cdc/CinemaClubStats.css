@@ -1,0 +1,15 @@
+.stats {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stats p {
+    font-size: 3.5vh;
+}
+
+.top-bottom-movies{
+    
+}
