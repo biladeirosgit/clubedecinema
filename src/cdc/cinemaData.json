@@ -1,4 +1,16 @@
 {   
+    "The Metamorphosis of Birds" : {
+        "year" : 2020,
+        "link" : "https://letterboxd.com/film/the-metamorphosis-of-birds/",
+        "date" : "19/05/2024",
+        "chosen by" : "Esquilo",
+        "genres" : ["Documentary","Drama"],
+        "minutes" : 101,
+        "reviews" : {
+            "Geremias" : 4,
+            "Squnha" : 2.5
+        } 
+    },
     "Lock, Stock and Two Smoking Barrels" : {
         "year" : 1998,
         "link" : "https://letterboxd.com/film/lock-stock-and-two-smoking-barrels/",
