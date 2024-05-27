@@ -30,7 +30,7 @@ const CinemaClubPage = () => {
                 <h1>Clube de BilaCinema</h1>
             </div>
             <div className="button">
-                <Link to="/clubedecinema/stats"><button>Stats</button></Link>
+                <Link to="/stats"><button>Stats</button></Link>
             </div>
             
             <div className='catalog'>

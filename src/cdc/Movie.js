@@ -70,7 +70,7 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
                                                         <>
                                                             <div className='rating-user'>
                                                             <div className='rating-top'>
-                                                                <Link to={`/clubedecinema/users/${Object.keys(reviews)[index]}`}>
+                                                                <Link to={`/users/${Object.keys(reviews)[index]}`}>
                                                                     <img src={`/clubedecinema/pfp/${Object.keys(reviews)[index]}.png`} alt={`${Object.keys(reviews)[index]}`} style={{ width: '50px', height: '50px', borderRadius: '25px'}} />
                                                                 </Link>
                                                             </div>
@@ -102,7 +102,7 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
                                                         <>
                                                             <div className='rating-user'>
                                                             <div className='rating-top'>
-                                                                <Link to={`/clubedecinema/users/${Object.keys(reviews)[index+4]}`}>
+                                                                <Link to={`/users/${Object.keys(reviews)[index+4]}`}>
                                                                 <img src={`/clubedecinema/pfp/${Object.keys(reviews)[index+4]}.png`} alt={`${Object.keys(reviews)[index+4]}`} style={{ width: '50px', height: '50px', borderRadius: '25px'}} />
                                                                 </Link>
                                                                 </div>
@@ -133,7 +133,7 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
                                                         <>
                                                             <div className='rating-user'>
                                                             <div className='rating-top'>
-                                                                <Link to={`/clubedecinema/users/${Object.keys(reviews)[index+8]}`}>
+                                                                <Link to={`/users/${Object.keys(reviews)[index+8]}`}>
                                                                 <img src={`/clubedecinema/pfp/${Object.keys(reviews)[index+8]}.png`} alt={`${Object.keys(reviews)[index+8]}`} style={{ width: '50px', height: '50px', borderRadius: '25px'}} />
                                                                 </Link>
                                                                 </div>
