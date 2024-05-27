@@ -13,9 +13,9 @@ const App = () => {
         
         <HashRouter>
             <Routes>
-                <Route path="/clubedecinema" element={<CinemaClubPage />} />
-                <Route path="/clubedecinema/stats" element={<CinemaClubStats />} />
-                <Route path="/clubedecinema/users/:username" element={<UserStats />} />
+                <Route path="/" element={<CinemaClubPage />} />
+                <Route path="/stats" element={<CinemaClubStats />} />
+                <Route path="/users/:username" element={<UserStats />} />
                 {/* Adicione outras rotas aqui */}
             </Routes>
         </HashRouter>
