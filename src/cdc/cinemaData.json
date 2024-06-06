@@ -1,4 +1,19 @@
 {   
+    "Shoplifters" : {
+        "year" : 2018,
+        "link" : "https://letterboxd.com/film/shoplifters/",
+        "date" : "02/06/2024",
+        "chosen by" : "Cludos",
+        "genres" : ["Drama","Thriller","Crime"],
+        "minutes" : 120,
+        "reviews" : {
+            "Cludos" : 4,
+            "Squnha" : 3.5,
+            "Geremias" : 4,
+            "Mestre Gui" : 4,
+            "Wisdow" : 2.5
+        } 
+    },
     "Boyhood" : {
         "year" : 2014,
         "link" : "https://letterboxd.com/film/boyhood/",
