@@ -30,11 +30,6 @@ img {
     display: block;
 }
 
-a {
-    display: flex;
-    align-items: center;
-    color: #fff;
-}
 
 .container-background {
     width: 828px;

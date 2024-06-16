@@ -6,6 +6,7 @@ import GenreChart from './GenreChart';
 import React from 'react';
 import './CinemaClubStats.css';
 import Movie from './Movie';
+import { Link } from 'react-router-dom';
 
 const CinemaClubStats = () => {
 
@@ -105,6 +106,65 @@ const CinemaClubStats = () => {
         }
         return averages;
     }
+    
+    const calculateTopWatchers = () => {
+        var watchers = {}
+
+        for (const [title, movie] of Object.entries(cinemaData)) {
+            for (const [user, rating] of Object.entries(movie.reviews)) {
+                if (user in watchers){
+                    watchers[user]["total_movies"] += 1
+                    watchers[user]["total_ratings"] += rating
+                }
+                else {
+                    watchers[user] = {
+                        "total_movies" : 1,
+                        "total_ratings" : rating,
+                        "choices" : 0
+                    }
+                }
+            }
+            if (movie['chosen by'] in watchers){
+                watchers[movie['chosen by']]["choices"]+=1
+            }
+            else{
+                watchers[movie['chosen by']] = {
+                    "total_movies" : 0,
+                    "total_ratings" : 0,
+                    "choices" : 1
+                }
+            }
+        }
+        return watchers
+    }
+
+    function getTop10Viewers(data) {
+        // Converte o objeto em um array de entradas [chave, valor]
+        let entries = Object.entries(data);
+    
+        // Adiciona a média de avaliações para cada entrada
+        entries = entries.map(([name, info]) => {
+            return {
+                name,
+                total_movies: info.total_movies,
+                total_ratings: info.total_ratings,
+                choices: info.choices,
+                average_ratings: (info.total_ratings / info.total_movies).toFixed(2)
+            };
+        });
+    
+        // Ordena o array pelo total de filmes, do maior para o menor
+        entries.sort((a, b) => b.total_movies - a.total_movies);
+    
+        // Seleciona os top 10
+        const top10 = entries.slice(0, 10);
+    
+        return top10;
+    }
+
+    const watchers = calculateTopWatchers()
+    const top10 = getTop10Viewers(watchers)
+    console.log(top10)
 
     const averages = calculateAvaregeMovies()
     // Create items array
@@ -188,6 +248,43 @@ const CinemaClubStats = () => {
                         </>
                     ))}
                 </div>
+
+                <div className='stats'>
+                <p>Top Watchers</p>
+                <table className='pretty-table'>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>User</th>
+                            <th>Movies Watched</th>
+                            <th>Average Rating</th>
+                            <th>Recommendations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {top10.map((viewer, index) => (
+                            <tr key={viewer.name}>
+                                    <td>{index + 1}</td>
+                                    <td>
+                                        <Link to={`/users/${viewer.name}`}>
+                                            <div className='user'>
+                                                <div className='top'>
+                                                        <img src={`/clubedecinema/pfp/${viewer.name}.png`} alt={`${viewer.name}`} />
+                                                </div>
+                                                <div className='bottom'>
+                                                    {viewer.name}
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </td>
+                                    <td>{viewer.total_movies}</td>
+                                    <td>{viewer.average_ratings}</td>
+                                    <td>{viewer.choices}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
             </div>
         </div>
 

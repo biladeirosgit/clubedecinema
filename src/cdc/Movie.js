@@ -69,11 +69,11 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
                                                     {Object.keys(reviews)[index] && (
                                                         <>
                                                             <div className='rating-user'>
-                                                            <div className='rating-top'>
-                                                                <Link to={`/users/${Object.keys(reviews)[index]}`}>
-                                                                    <img src={`/clubedecinema/pfp/${Object.keys(reviews)[index]}.png`} alt={`${Object.keys(reviews)[index]}`} style={{ width: '50px', height: '50px', borderRadius: '25px'}} />
-                                                                </Link>
-                                                            </div>
+                                                                <div className='rating-top'>
+                                                                    <Link to={`/users/${Object.keys(reviews)[index]}`}>
+                                                                        <img src={`/clubedecinema/pfp/${Object.keys(reviews)[index]}.png`} alt={`${Object.keys(reviews)[index]}`} style={{ width: '50px', height: '50px', borderRadius: '25px'}} />
+                                                                    </Link>
+                                                                </div>
                                                                 <div className='rating-bottom'>
                                                                     {Object.keys(reviews)[index]}
                                                                 </div>

@@ -8,6 +8,10 @@ body {
     font-family: 'Bebas-Regular', sans-serif; /* Define a fonte Bebas-Regular */
 }
 
+a {
+    text-decoration: none;
+}
+
 .catalog {
     display: flex;
     height: 100%;
