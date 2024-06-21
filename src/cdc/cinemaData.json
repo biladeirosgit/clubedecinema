@@ -1,4 +1,18 @@
 {   
+    "Fear of Rain" : {
+        "year" : 2021,
+        "link" : "https://letterboxd.com/film/fear-of-rain/",
+        "date" : "16/06/2024",
+        "chosen by" : "Squnha",
+        "genres" : ["Horror","Drama","Thriller"],
+        "minutes" : 109,
+        "reviews" : {
+            "Squnha" : 4,
+            "Geremias" : 2.5,
+            "Cludos" : 4,
+            "Mestre Gui" : 2
+        } 
+    },
     "The Wind Rises" : {
         "year" : 2013,
         "link" : "https://letterboxd.com/film/the-wind-rises/",
