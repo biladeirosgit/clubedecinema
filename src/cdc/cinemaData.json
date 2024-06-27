@@ -7,7 +7,10 @@
         "genres" : ["Horror","Thriller"],
         "minutes" : 99,
         "reviews" : {
-            "Geremias" : 0.5
+            "Wisdow" : 4.5,
+            "Geremias" : 0.5,
+            "Squnha" : 0.5,
+            "Cludos" : 2
         } 
     },
     "Fear of Rain" : {
