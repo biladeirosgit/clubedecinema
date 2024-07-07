@@ -31,15 +31,57 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
         return Math.min(fontSize, 1.9);
     };
 
+    Date.prototype.addDays = function(days) {
+        var date = new Date(this.valueOf());
+        date.setDate(date.getDate() + days);
+        return date;
+    }
+
+    const addZero = (number) => {
+        if(number < 10){
+            number = "0" + number;
+        }
+        return number;
+    }
+
+    const calculateAverage = () => {
+        var totalRating = 0;
+        var nReviews = 0;
+        for (const [_, rating] of Object.entries(reviews)){
+            totalRating += rating;
+            nReviews += 1;
+        }
+        return (totalRating / nReviews).toFixed(2);
+    }
+
+    date = date.split("/");
+    let dateYear = date[2];
+    let dateMonth = date[1];
+    let dateDay = date[0];
+
+    let dateStart = new Date(dateYear,dateMonth,dateDay);
+    let dateFinish = new Date(dateYear,dateMonth,dateDay);
+    dateFinish = dateFinish.addDays(6);
+
+
+    let dateStartDay = addZero(dateStart.getDate())
+    let dateStartMonth = addZero(dateStart.getMonth())
+    let dateFinishDay = addZero(dateFinish.getDate())
+    let dateFinishMonth = addZero(dateFinish.getMonth())
+
+
+    let dateStartString = dateStartDay + "/" + dateStartMonth + "/" + dateStart.getFullYear()
+    let dateFinishString = dateFinishDay + "/" + dateFinishMonth + "/" + dateFinish.getFullYear()
     
 
     const backgroundImage = `'/clubedecinema/backgrounds/${cleanTitle(title)}.png'`; // Caminho da imagem de fundo
+    let titleYear = title + " (" + year + ")"
 
     return (
         <div className='MovieCard' onClick={() => setShowReviews(!showReviews)}> 
             <div className='simple-poster'>
                 <div className='title'>
-                    <p style={{ fontSize: `${calculateFontSize2(title)}vw` }}>{title}</p>
+                    <p style={{ fontSize: `${calculateFontSize2(titleYear)}vw` }}>{titleYear}</p>
                 </div>
                 <div className='poster'>
                   <img src={`/clubedecinema/posters/${cleanTitle(title)}.png`} alt={`${title} poster`} style={{ width: '200px', height: '295px' }} />
@@ -56,12 +98,13 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
                                             <img src={`/clubedecinema/posters/${cleanTitle(title)}.png`} alt={`${title} poster`} style={{ width: '200px', height: '295px' }} />
                                         </div>
                                         <div className='title'>
-                                            <p style={{ fontSize: `${calculateFontSize(title)}vw` }}>{title}</p>
+                                            <p style={{ fontSize: `${calculateFontSize(titleYear)}vw` }}>{titleYear}</p>
                                         </div>
                                         <div className='year'>
-                                            {year}
+                                            {dateStartString} - {dateFinishString}
                                         </div>
                                     </div>
+                                    <div className="ratings-info">
                                     <div className='ratings'>
                                         <div className='rating-col'>
                                             {[...Array(4)].map((_, index) => (
@@ -157,6 +200,42 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
                                                 </div>
                                             ))}
                                         </div>
+                                    </div>
+                                    <div className="other-info">
+                                        <div className="chosen" key={chosenBy}>
+                                            <div className='center'>
+                                                <p>Recommendation</p>
+                                            </div>
+                                            <div className='rating-top'>
+                                                <Link to={`/users/${chosenBy}`}>
+                                                    <img src={`/clubedecinema/pfp/${chosenBy}.png`} alt={`${chosenBy}`} style={{ width: '50px', height: '50px', borderRadius: '25px'}} />
+                                                </Link>
+                                            </div>
+                                            <div className='rating-bottom'>
+                                                {chosenBy}
+                                            </div>
+                                        </div>
+                                        <div className="average">
+                                            <div className='center'>
+                                                <p>Average</p>
+                                            </div>
+                                            <div className='center'>
+                                                <h2>{calculateAverage()}</h2>
+                                            </div>
+                                        </div>
+                                        <div className="genres">
+                                            <div className='center'>
+                                                <p>Genres</p>
+                                            </div>
+                                            {[...Array(4)].map((_, index) => (
+                                                <div className='center'>
+                                                {genres[index] && (
+                                                    <div className="genre" key={genres[index]}> {genres[index]} </div>
+                                                )}
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>

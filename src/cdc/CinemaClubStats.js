@@ -184,6 +184,9 @@ const CinemaClubStats = () => {
             <div className='title-site'>
                 <h1>Stats of Clube de BilaCinema</h1>
             </div>
+            <div className="button">
+                <Link to="/"><button>Back</button></Link>
+            </div>
             <div className="stats">
                 <p>Total movies: <b>{calculateTotalMovies()}</b></p>
                 <p>Total minutes of films: <b>{calculateTotalMinutes()}</b></p>

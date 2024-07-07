@@ -5,6 +5,7 @@ import RatingChart from './RatingChart';
 import GenreChart from './GenreChart';
 import './CinemaClubStats.css';
 import Movie from './Movie';
+import { Link } from 'react-router-dom';
 
 const UserStats = () => {
     const { username } = useParams();
@@ -82,6 +83,24 @@ const UserStats = () => {
         return genres;
     };
 
+    const calculateRecommendations = () => {
+        const recommendations = {}
+
+        for (const [title, movie] of Object.entries(cinemaData)) {
+            if (username == movie['chosen by']){
+                let totalRating = 0;
+                let nReviews = 0;
+                for (const [_, rating] of Object.entries(movie.reviews)){
+                    totalRating += rating;
+                    nReviews += 1;
+                }
+                recommendations[title] = (totalRating/nReviews).toFixed(2);
+            }
+        }
+
+        return recommendations;
+    }
+
 
     const calculateMoviesRatedByUser = () => {
         var movies = {}
@@ -112,13 +131,18 @@ const UserStats = () => {
     // Últimos cinco elementos (ou menos)
     const worst5 = items.reverse().slice(0, 5);
 
-    console.log(top5)
-    console.log(worst5)
+    var recommendations = calculateRecommendations()
+    recommendations = Object.keys(recommendations).map(function(key) {
+        return [key, recommendations[key]];
+    });
 
     return (
         <div>
             <div className='title-site'>
                 <h1>Stats of {username}</h1>
+            </div>
+            <div className="button">
+                <Link to="/"><button>Back</button></Link>
             </div>
             <div className="stats">
                 <p>Total films watched: <b>{totalMoviesWatched}</b></p>
@@ -183,6 +207,36 @@ const UserStats = () => {
                         </>
                     ))}
                 </div>
+                {Object.keys(recommendations).length !== 0 && (
+                <>
+                    <div className='stats'>
+                        <p>Recommendations</p>
+                    </div>
+                    <div className='catalog'>
+                        {recommendations.map(([title, rating]) => (
+                            <>
+                                <div className='movie' key={title}>
+                                    <Movie
+                                        key={title}
+                                        title={title}
+                                        year={cinemaData[title].year}
+                                        link={cinemaData[title].link}
+                                        date={cinemaData[title].date}
+                                        chosenBy={cinemaData[title]["chosen by"]}
+                                        genres={cinemaData[title].genres}
+                                        minutes={cinemaData[title].minutes}
+                                        reviews={cinemaData[title].reviews}
+                                    />
+                                    <div className='stats'>
+                                        <p>{rating}/5</p>
+                                    </div>
+
+                                </div>
+                            </>
+                        ))}
+                    </div>
+                </>
+            )}
             </div>
         </div>
     );

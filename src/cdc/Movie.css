@@ -189,3 +189,41 @@ img {
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
   }
+
+  .ratings-info{
+    width: 478px;
+    height: 365px;
+  }
+
+  .other-info{
+    width: 478px;
+    height: 70px;
+    display: flex;
+  }
+
+  .genres{
+    width: 159px;
+    height: 100%;
+    margin-right: 20px;
+  }
+
+  .genre{
+    font-size: 12px;
+  }
+
+  .chosen{
+    width: 159px;
+    height: 100%;
+    margin-right: 20px;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+}
+
+  .average{
+    width: 159px;
+    height: 100%;
+    margin-right: 20px;
+  }
