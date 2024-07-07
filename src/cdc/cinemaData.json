@@ -42,7 +42,7 @@
             "Geremias" : 2.5,
             "Cludos" : 3.5,
             "Mestre Gui" : 2,
-            "Wisdow" : 0.5
+            "Wisdow" : 3
         } 
     },
     "The Wind Rises" : {
@@ -150,7 +150,8 @@
             "Hfer" : 3.5,
             "Wisdow" : 4,
             "Mestre Gui" : 4,
-            "Geremias" : 3.5
+            "Geremias" : 3.5,
+            "Xiro" : 2
         } 
     },
     "Deja Vu" : {
@@ -411,7 +412,8 @@
             "Squnha" : 4,
             "Cludos" : 4,
             "Wisdow" : 3,
-            "Geremias" : 1.5
+            "Geremias" : 1.5,
+            "Xiro" : 4
         } 
     },
     "Blade Runner 2049" : {
@@ -495,7 +497,8 @@
             "Hfer" : 5,
             "Wisdow" : 3,
             "Alcunha" : 4.5,
-            "Cludos" : 3.5
+            "Cludos" : 3.5,
+            "Xiro" : 5
         } 
     },
     "The Death of Stalin" : {
@@ -609,7 +612,8 @@
             "Hfer" : 4,
             "Geremias" : 4,
             "Cludos" : 5,
-            "Atlas" : 4
+            "Atlas" : 4,
+            "Xiro" : 4
         } 
     },
     "Inglorious Basterds" : {
