@@ -41,6 +41,9 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
         if(number < 10){
             number = "0" + number;
         }
+        if(number == "00"){
+            number = "12";
+        }
         return number;
     }
 
