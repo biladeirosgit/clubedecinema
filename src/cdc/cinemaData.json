@@ -1,5 +1,18 @@
 {   
     
+    "The Ballad of Buster Scruggs" : {
+        "year" : 2018,
+        "link" : "https://letterboxd.com/film/the-ballad-of-buster-scruggs/",
+        "date" : "07/07/2024",
+        "chosen by" : "Cludos",
+        "genres" : ["Comedy","Western","Drama"],
+        "minutes" : 132,
+        "reviews" : {
+            "Cludos" : 5,
+            "Wisdow" : 0.5,
+            "Geremias" : 2.5
+        } 
+    },
     "The Handmaiden" : {
         "year" : 2016,
         "link" : "https://letterboxd.com/film/the-handmaiden/",
