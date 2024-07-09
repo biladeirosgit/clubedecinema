@@ -6,6 +6,7 @@ import GenreChart from './GenreChart';
 import React from 'react';
 import './CinemaClubStats.css';
 import Movie from './Movie';
+import Movietr from './Movietr';
 import { Link } from 'react-router-dom';
 
 const CinemaClubStats = () => {
@@ -138,6 +139,28 @@ const CinemaClubStats = () => {
         return watchers
     }
 
+    const calculateTopMovies = () => {
+        let movies = Object.entries(cinemaData).map(([title,movie]) => {
+            var reviews = 0;
+            var total_rating = 0;
+            
+            for (const [_, rating] of Object.entries(movie.reviews)) {
+                reviews += 1;
+                total_rating += rating;
+            }
+            
+            return {
+                title,
+                reviews : reviews,
+                average : (total_rating/reviews).toFixed(2)
+            }
+        })
+
+        movies.sort((a, b) => b.average - a.average);
+
+        return movies;
+    }
+
     function getTop10Viewers(data) {
         // Converte o objeto em um array de entradas [chave, valor]
         let entries = Object.entries(data);
@@ -155,29 +178,17 @@ const CinemaClubStats = () => {
     
         // Ordena o array pelo total de filmes, do maior para o menor
         entries.sort((a, b) => b.total_movies - a.total_movies);
-    
-        // Seleciona os top 10
-        const top10 = entries.slice(0, 10);
-    
-        return top10;
+        return entries;
     }
 
     const watchers = calculateTopWatchers()
-    const top10 = getTop10Viewers(watchers)
-    console.log(top10)
+    const top = getTop10Viewers(watchers)
+    const topMovies = calculateTopMovies()
 
-    const averages = calculateAvaregeMovies()
-    // Create items array
-    var items = Object.keys(averages).map(function(key) {
-        return [key, averages[key]];
-    });
+    const top5 = topMovies.slice(0, 5)
+    const worst5 = topMovies.reverse().slice(0,5)
 
-    // Sort the array based on the second element
-    items.sort(function(first, second) {
-      return second[1] - first[1];
-    });
-    const top5 = items.slice(0, 5)
-    const worst5 = items.reverse().slice(0,5)
+    topMovies.reverse()
 
     return (
         <div>
@@ -202,22 +213,22 @@ const CinemaClubStats = () => {
                     <p>Best Rated Movies</p>
                 </div>
                 <div className='catalog'>
-                    {top5.map(([title, rating]) => (
+                    {top5.map((movie) => (
                         <>
-                            <div className='movie' key={title}>
+                            <div className='movie' key={movie.title}>
                                 <Movie
-                                    key={title}
-                                    title={title}
-                                    year={cinemaData[title].year}
-                                    link={cinemaData[title].link}
-                                    date={cinemaData[title].date}
-                                    chosenBy={cinemaData[title]["chosen by"]}
-                                    genres={cinemaData[title].genres}
-                                    minutes={cinemaData[title].minutes}
-                                    reviews={cinemaData[title].reviews}
+                                    key={movie.title}
+                                    title={movie.title}
+                                    year={cinemaData[movie.title].year}
+                                    link={cinemaData[movie.title].link}
+                                    date={cinemaData[movie.title].date}
+                                    chosenBy={cinemaData[movie.title]["chosen by"]}
+                                    genres={cinemaData[movie.title].genres}
+                                    minutes={cinemaData[movie.title].minutes}
+                                    reviews={cinemaData[movie.title].reviews}
                                 />
                                 <div className='stats'>
-                                    <p>{rating}/5</p>
+                                    <p>{movie.average}/5</p>
                                 </div>
                                 
                             </div>
@@ -229,22 +240,22 @@ const CinemaClubStats = () => {
                     <p>Worst Rated Movies</p>
                 </div>
                 <div className='catalog'>
-                    {worst5.map(([title, rating]) => (
+                    {worst5.map((movie) => (
                         <>
-                            <div className='movie' key={title}>
+                            <div className='movie' key={movie.title}>
                                 <Movie
-                                    key={title}
-                                    title={title}
-                                    year={cinemaData[title].year}
-                                    link={cinemaData[title].link}
-                                    date={cinemaData[title].date}
-                                    chosenBy={cinemaData[title]["chosen by"]}
-                                    genres={cinemaData[title].genres}
-                                    minutes={cinemaData[title].minutes}
-                                    reviews={cinemaData[title].reviews}
+                                    key={movie.title}
+                                    title={movie.title}
+                                    year={cinemaData[movie.title].year}
+                                    link={cinemaData[movie.title].link}
+                                    date={cinemaData[movie.title].date}
+                                    chosenBy={cinemaData[movie.title]["chosen by"]}
+                                    genres={cinemaData[movie.title].genres}
+                                    minutes={cinemaData[movie.title].minutes}
+                                    reviews={cinemaData[movie.title].reviews}
                                 />
                                 <div className='stats'>
-                                    <p>{rating}/5</p>
+                                    <p>{movie.average}/5</p>
                                 </div>
                                 
                             </div>
@@ -265,7 +276,7 @@ const CinemaClubStats = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {top10.map((viewer, index) => (
+                        {top.map((viewer, index) => (
                             <tr key={viewer.name}>
                                     <td>{index + 1}</td>
                                     <td>
@@ -284,6 +295,37 @@ const CinemaClubStats = () => {
                                     <td>{viewer.average_ratings}</td>
                                     <td>{viewer.choices}</td>
                             </tr>
+                        ))}
+                    </tbody>
+                </table>
+                <table className='pretty-table'>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Poster</th>
+                            <th>Title</th>
+                            <th>Year</th>
+                            <th>Recommendation</th>
+                            <th>Watchers</th>
+                            <th>Average Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {topMovies.map((movie,index) => (
+                            <Movietr
+                            key={movie.title}
+                            index={index}
+                            title={movie.title}
+                            year={cinemaData[movie.title].year}
+                            link={cinemaData[movie.title].link}
+                            date={cinemaData[movie.title].date}
+                            chosenBy={cinemaData[movie.title]["chosen by"]}
+                            genres={cinemaData[movie.title].genres}
+                            minutes={cinemaData[movie.title].minutes}
+                            reviews={cinemaData[movie.title].reviews}
+                            nreviews={movie.reviews}
+                            average={movie.average}
+                        />
                         ))}
                     </tbody>
                 </table>

@@ -48,6 +48,13 @@
     cursor: pointer;
 }
 
+.td-movie img{
+    width: 100px!important;
+    height: 147.5px!important;
+    max-width:unset!important;
+    margin-right: 10px!important;
+}
+
 .user .top {
     margin-right: 10px;
 }
@@ -60,5 +67,10 @@
 
 .bottom {
     font-weight: bold;
-    color: #333;
+    color: black;
+}
+
+.bottom2 {
+    font-weight: bold;
+    color: white;
 }

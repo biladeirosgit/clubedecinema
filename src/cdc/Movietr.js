@@ -4,14 +4,13 @@ import './Movie.css';
 import './ratings.scss';
 import 'https://kit.fontawesome.com/f0b16c50bd.js'
 
-const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) => {
+const Movietr = ({ title, index, year, link, date, chosenBy, genres, minutes, reviews, nreviews, average }) => {
     const [showReviews, setShowReviews] = useState(false);
 
     const cleanTitle = (str) => {
         return str.replace(/[^\w\s]/gi, ''); 
     };
-
-
+    
     const calculateFontSize = (text) => {
         const containerWidth = 200; // Largura fixa em pixels
         let fontSize = 16; // Tamanho inicial da fonte em pixels
@@ -50,16 +49,6 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
         return number;
     }
 
-    const calculateAverage = () => {
-        var totalRating = 0;
-        var nReviews = 0;
-        for (const [_, rating] of Object.entries(reviews)){
-            totalRating += rating;
-            nReviews += 1;
-        }
-        return (totalRating / nReviews).toFixed(2);
-    }
-
     date = date.split("/");
     let dateYear = date[2];
     let dateMonth = date[1];
@@ -84,15 +73,25 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
     let titleYear = title + " (" + year + ")"
 
     return (
-        <div className='MovieCard' onClick={() => setShowReviews(!showReviews)}> 
-            <div className='simple-poster'>
-                <div className='title'>
-                    <p style={{ fontSize: `${calculateFontSize(titleYear)}px` }}>{titleYear}</p>
+        <tr key={title} className="movie-tr" onClick={() => setShowReviews(!showReviews)} style={{ backgroundImage: `url(${backgroundImage})` }}>
+            <td>{index+1}</td>
+            <td className="td-movie">
+                <img src={`/clubedecinema/posters/${cleanTitle(title)}.png`} alt={`${title} poster`} />
+            </td>
+            <td>{title}</td>
+            <td>{year}</td>
+            <td>
+                <div className='user'>
+                    <div className='top'>
+                        <img src={`/clubedecinema/pfp/${chosenBy}.png`} alt={`${chosenBy}`} />
+                    </div>
+                    <div className='bottom2'>
+                        {chosenBy}
+                    </div>
                 </div>
-                <div className='poster'>
-                  <img src={`/clubedecinema/posters/${cleanTitle(title)}.png`} alt={`${title} poster`} style={{ width: '200px', height: '295px' }} />
-                </div>
-            </div>
+            </td>
+            <td>{nreviews}</td>
+            <td>{average}</td>
             {showReviews && (
                 <> 
                     <div className="modal">
@@ -226,7 +225,7 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
                                                 <p>Average</p>
                                             </div>
                                             <div className='center'>
-                                                <h2>{calculateAverage()}</h2>
+                                                <h2>{average}</h2>
                                             </div>
                                         </div>
                                         <div className="genres">
@@ -249,9 +248,8 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
                     </div>
                 </>
             )}
-        </div>
-       
+        </tr>
     );
 }
 
-export default Movie;
+export default Movietr;
