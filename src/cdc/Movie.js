@@ -14,24 +14,24 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
 
     const calculateFontSize = (text) => {
         const containerWidth = 200; // Largura fixa em pixels
-        let fontSize = 16; // Tamanho inicial da fonte em pixels
-
+        let fontSize = 22; // Tamanho inicial da fonte em pixels
+    
         // Cria um canvas para medir a largura do texto
         const canvas = document.createElement('canvas');
         const context = canvas.getContext('2d');
-
+    
         // Função para medir a largura do texto com o tamanho da fonte atual
         const measureTextWidth = (fontSize) => {
             context.font = `${fontSize}px Arial`; // Define a fonte usada
             return context.measureText(text).width;
         };
-
+    
         // Ajusta o tamanho da fonte até que o texto caiba na largura do container
         while (measureTextWidth(fontSize) > containerWidth && fontSize > 5) {
             fontSize -= 0.5; // Decremento mais fino para maior precisão
         }
-
-        return Math.max(fontSize, 5); // Retorna o tamanho da fonte, com um mínimo de 5 pixels
+    
+        return Math.max(fontSize+2, 5); // Retorna o tamanho da fonte, com um mínimo de 5 pixels
     };
 
     Date.prototype.addDays = function(days) {
@@ -81,6 +81,7 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
     
 
     const backgroundImage = `'/clubedecinema/backgrounds/${cleanTitle(title)}.png'`; // Caminho da imagem de fundo
+    
     let titleYear = title + " (" + year + ")"
 
     return (
