@@ -19,20 +19,23 @@ const GuessGame = () => {
     const cleanTitle = (str) => {
         return str.replace(/[^\w\s]/gi, ''); 
     };
-
+    
     useEffect(() => {
-        // Calcula o dia do ano
         const now = new Date();
-        const start = new Date(now.getFullYear(), 0, 0);
+        // Cria um objeto Date para o início do ano
+        const start = new Date(now.getFullYear(), 0, 1);
+        // Calcula a diferença em milissegundos entre a data fornecida e o início do ano
         const diff = now - start;
+        // Converte a diferença de milissegundos para dias
         const oneDay = 1000 * 60 * 60 * 24;
-        const dayOfYear = Math.floor(diff / oneDay);
+        const dayOfYear = Math.floor(diff / oneDay) + 1;
 
         // Seleciona o valor aleatório baseado no dia do ano
         const randomValue = randomValues[dayOfYear % randomValues.length];
         const movieKeys = Object.keys(cinemaData);
         const movieIndex = Math.floor(randomValue * movieKeys.length);
         const selectedMovieKey = movieKeys[movieIndex];
+        
         setSelectedMovie({ title: selectedMovieKey, ...cinemaData[selectedMovieKey] });
 
         // Atualiza o cronômetro a cada segundo
