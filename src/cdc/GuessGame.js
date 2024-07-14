@@ -212,7 +212,6 @@ const GuessGame = () => {
             </div>
 
             <div>
-                <h2>Palpites:</h2>
                 <table className='pretty-table guess-game'>
                     <thead>
                         <tr>
