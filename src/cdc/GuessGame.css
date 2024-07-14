@@ -1,0 +1,127 @@
+.container-guessgame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #99AABB;
+    color: black;
+}
+
+.button {
+    display: flex; /* Usa o modelo de layout flexbox */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    overflow: hidden; /* Impede que o texto saia da div */
+}
+
+.button button{
+    padding: 5px 20px 5px 20px;
+    color: #99AABB;
+    background-color: #14181C;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Bebas-Regular', sans-serif; /* Define a fonte Bebas-Regular */
+    margin-top: 10px;
+    border: solid #14181C 2px;
+}
+
+.button button:hover{
+    background-color: #99AABB;
+    color: #14181C;
+    border: solid #14181C 2px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.container-guessgame {
+    padding: 20px;
+    text-align: center;
+}
+
+.feedback.green {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.feedback.yellow {
+    background-color: #FFEB3B;
+    color: black;
+}
+
+.feedback.red {
+    background-color: #F44336;
+    color: white;
+}
+
+.guess-game td,th {
+    border: solid black 2px;
+}
+
+.input-container {
+    position: relative;
+    width: 300px;
+}
+
+.suggestions {
+    position: absolute;
+    border: 1px solid #ccc;
+    background-color: white;
+    z-index: 1000;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.suggestion-item img {
+    margin-right: 10px;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+.firstCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.movie-card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}

@@ -31,6 +31,7 @@ const CinemaClubPage = () => {
             </div>
             <div className="button">
                 <Link to="/stats"><button>Stats</button></Link>
+                <Link to="/guess"><button>Guess Daily Game</button></Link>
             </div>
             
             <div className='catalog'>
