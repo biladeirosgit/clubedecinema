@@ -14,6 +14,7 @@ const GuessGame = () => {
     const [showSuggestions, setShowSuggestions] = useState(false);
     const [gameOver, setGameOver] = useState(false);
     const [timeLeft, setTimeLeft] = useState('');
+    const [dayOfYear, setDayOfYear] = useState(null);
     const maxGuesses = 20;
 
     const cleanTitle = (str) => {
@@ -21,22 +22,18 @@ const GuessGame = () => {
     };
     
     useEffect(() => {
-        const now = new Date();
+        //const now = new Date();
+        var now = new Date();
+        now.setHours(now.getHours() + 1);
+        console.log(now);
+        
         // Cria um objeto Date para o início do ano
         const start = new Date(now.getFullYear(), 0, 1);
         // Calcula a diferença em milissegundos entre a data fornecida e o início do ano
         const diff = now - start;
         // Converte a diferença de milissegundos para dias
         const oneDay = 1000 * 60 * 60 * 24;
-        const dayOfYear = Math.floor(diff / oneDay) + 1;
-
-        // Seleciona o valor aleatório baseado no dia do ano
-        const randomValue = randomValues[dayOfYear % randomValues.length];
-        const movieKeys = Object.keys(cinemaData);
-        const movieIndex = Math.floor(randomValue * movieKeys.length);
-        const selectedMovieKey = movieKeys[movieIndex];
-        
-        setSelectedMovie({ title: selectedMovieKey, ...cinemaData[selectedMovieKey] });
+        setDayOfYear(Math.floor(diff / oneDay) + 1);
 
         // Atualiza o cronômetro a cada segundo
         const timer = setInterval(() => {
@@ -45,6 +42,15 @@ const GuessGame = () => {
 
         return () => clearInterval(timer);
     }, []);
+
+    useEffect(() => {
+        // Seleciona o valor aleatório baseado no dia do ano
+        const randomValue = randomValues[dayOfYear % randomValues.length];
+        const movieKeys = Object.keys(cinemaData);
+        const movieIndex = Math.floor(randomValue * movieKeys.length);
+        const selectedMovieKey = movieKeys[movieIndex];
+        setSelectedMovie({ title: selectedMovieKey, ...cinemaData[selectedMovieKey] });
+    }, [dayOfYear])
 
     const getTimeUntilMidnight = () => {
         const now = new Date();
@@ -189,7 +195,7 @@ const GuessGame = () => {
 
     return (
         <div className="container-guessgame">
-            <h1>Guess the Movie of the Day</h1>
+            <h1>Guess the Movie of the Day ({dayOfYear})</h1>
             <div className="input-container">
                 <input 
                     type="text" 

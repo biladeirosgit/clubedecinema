@@ -1,5 +1,18 @@
 {   
-    
+    "Memento" : {
+        "year" : 2000,
+        "link" : "https://letterboxd.com/film/memento/",
+        "date" : "14/07/2024",
+        "chosen by" : "Xiro",
+        "genres" : ["Mistery","Thriller"],
+        "minutes" : 113,
+        "reviews" : {
+            "Xiro" : 4.5,
+            "Wisdow" : 5,
+            "Geremias" : 5,
+            "Cludos" : 4
+        } 
+    },
     "The Ballad of Buster Scruggs" : {
         "year" : 2018,
         "link" : "https://letterboxd.com/film/the-ballad-of-buster-scruggs/",
