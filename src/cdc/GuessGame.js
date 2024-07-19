@@ -158,7 +158,10 @@ const GuessGame = () => {
 
     const getArrayFeedback = (guessArray, actualArray) => {
         const matchingElements = guessArray.filter(element => actualArray.includes(element));
-        const ratio = matchingElements.length / actualArray.length;
+        var ratio = 0;
+        if(matchingElements.length != 0){
+            ratio = matchingElements.length / actualArray.length;
+        }
         if (ratio === 1) return 'green';
         if (ratio >= 0) return 'yellow';
         return 'red';
