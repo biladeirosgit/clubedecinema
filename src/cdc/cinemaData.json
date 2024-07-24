@@ -1,4 +1,18 @@
 {   
+    "The Machinist" : {
+        "year" : 2004,
+        "link" : "https://letterboxd.com/film/the-machinist/",
+        "date" : "21/07/2024",
+        "chosen by" : "Wisdow",
+        "genres" : ["Drama","Thriller"],
+        "minutes" : 101,
+        "reviews" : {
+            "Wisdow" : 5,
+            "Xiro" : 4,
+            "Geremias" : 4,
+            "Frazens" : 4
+        } 
+    },
     "Memento" : {
         "year" : 2000,
         "link" : "https://letterboxd.com/film/memento/",
