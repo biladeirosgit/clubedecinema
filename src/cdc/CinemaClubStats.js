@@ -132,6 +132,9 @@ const CinemaClubStats = () => {
                     if(number_movies === watchers[user]["total_movies"]){
                         watchers[user]["streak"]+=1;
                     }
+                    if(number_movies <= 12){
+                        watchers[user]["active"]+=1;
+                    }
                 }
                 else {
                     watchers[user] = {
@@ -145,6 +148,12 @@ const CinemaClubStats = () => {
                     else{
                         watchers[user]["streak"] = 0;
                     }
+                    if(number_movies <= 12){
+                        watchers[user]["active"]=1;
+                    }
+                    else{
+                        watchers[user]["active"]=0;
+                    }
                 }
             }
             if (movie['chosen by'] in watchers){
@@ -155,7 +164,8 @@ const CinemaClubStats = () => {
                     "total_movies" : 0,
                     "total_ratings" : 0,
                     "choices" : 1,
-                    "streak" : 0
+                    "streak" : 0,
+                    "active" : 0
                 }
             }
         }
@@ -190,12 +200,18 @@ const CinemaClubStats = () => {
 
         // Adiciona a média de avaliações para cada entrada
         entries = entries.map(([name, info]) => {
+            var member_active = "No";
+            if (info.active >= 4) {
+                member_active = "Yes";
+            }
             return {
                 name,
                 total_movies: info.total_movies,
                 total_ratings: info.total_ratings,
                 choices: info.choices,
                 streak: info.streak,
+                active: member_active,
+                active_count: info.active,
                 average_ratings: (info.total_ratings / info.total_movies).toFixed(2)
             };
         });
@@ -298,6 +314,7 @@ const CinemaClubStats = () => {
                             <th>Average Rating</th>
                             <th>Recommendations</th>
                             <th>Streak</th>
+                            <th>Active Member*</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -320,10 +337,15 @@ const CinemaClubStats = () => {
                                     <td>{viewer.average_ratings}</td>
                                     <td>{viewer.choices}</td>
                                     <td>{viewer.streak}</td>
+                                    <td>{viewer.active} ({viewer.active_count}/12)</td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
+                    <div className='table-info'>
+                        <p><b>*Active Member</b> - Member who has seen at least 4 films out of the last 12 films.</p>
+                    </div>
+
                 <table className='pretty-table'>
                     <thead>
                         <tr>
