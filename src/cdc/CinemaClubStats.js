@@ -343,7 +343,7 @@ const CinemaClubStats = () => {
                     </tbody>
                 </table>
                     <div className='table-info'>
-                        <p><b>*Active Member</b> - Member who has seen at least 4 films out of the last 12 films.</p>
+                        <p><b>*Active Member</b> - Member who has seen at least 4 movies out of the last 12 movies.</p>
                     </div>
 
                 <table className='pretty-table'>
