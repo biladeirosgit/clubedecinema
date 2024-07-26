@@ -110,18 +110,40 @@ const CinemaClubStats = () => {
     
     const calculateTopWatchers = () => {
         var watchers = {}
+        var number_movies = 0;
 
-        for (const [title, movie] of Object.entries(cinemaData)) {
+        var movies = Object.entries(cinemaData).sort((a, b) => {
+
+            var date1Parts = a[1].date.split("/");
+            var date1Object = new Date(+date1Parts[2], date1Parts[1] - 1, +date1Parts[0]);
+
+            var date2Parts = b[1].date.split("/");
+            var date2Object = new Date(+date2Parts[2], date2Parts[1] - 1, +date2Parts[0]); 
+
+            return date2Object - date1Object;
+        });
+
+        for (const [title, movie] of movies) {
+            number_movies+=1;
             for (const [user, rating] of Object.entries(movie.reviews)) {
                 if (user in watchers){
                     watchers[user]["total_movies"] += 1
                     watchers[user]["total_ratings"] += rating
+                    if(number_movies === watchers[user]["total_movies"]){
+                        watchers[user]["streak"]+=1;
+                    }
                 }
                 else {
                     watchers[user] = {
                         "total_movies" : 1,
                         "total_ratings" : rating,
-                        "choices" : 0
+                        "choices" : 0,
+                    }
+                    if(number_movies === 1){
+                        watchers[user]["streak"] = 1;
+                    }
+                    else{
+                        watchers[user]["streak"] = 0;
                     }
                 }
             }
@@ -132,7 +154,8 @@ const CinemaClubStats = () => {
                 watchers[movie['chosen by']] = {
                     "total_movies" : 0,
                     "total_ratings" : 0,
-                    "choices" : 1
+                    "choices" : 1,
+                    "streak" : 0
                 }
             }
         }
@@ -164,7 +187,7 @@ const CinemaClubStats = () => {
     function getTop10Viewers(data) {
         // Converte o objeto em um array de entradas [chave, valor]
         let entries = Object.entries(data);
-    
+
         // Adiciona a média de avaliações para cada entrada
         entries = entries.map(([name, info]) => {
             return {
@@ -172,6 +195,7 @@ const CinemaClubStats = () => {
                 total_movies: info.total_movies,
                 total_ratings: info.total_ratings,
                 choices: info.choices,
+                streak: info.streak,
                 average_ratings: (info.total_ratings / info.total_movies).toFixed(2)
             };
         });
@@ -273,6 +297,7 @@ const CinemaClubStats = () => {
                             <th>Movies Watched</th>
                             <th>Average Rating</th>
                             <th>Recommendations</th>
+                            <th>Streak</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -294,6 +319,7 @@ const CinemaClubStats = () => {
                                     <td>{viewer.total_movies}</td>
                                     <td>{viewer.average_ratings}</td>
                                     <td>{viewer.choices}</td>
+                                    <td>{viewer.streak}</td>
                             </tr>
                         ))}
                     </tbody>
