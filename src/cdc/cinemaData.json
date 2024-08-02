@@ -1,4 +1,18 @@
 {   
+    "The Others" : {
+        "year" : 2001,
+        "link" : "https://letterboxd.com/film/the-others/",
+        "date" : "28/07/2024",
+        "chosen by" : "Squnha",
+        "genres" : ["Horror","Thriller","Mystery"],
+        "minutes" : 104,
+        "reviews" : {
+            "Squnha" : 4.5,
+            "Xiro" : 4,
+            "Mestre Gui" : 4,
+            "Cludos" : 4.5
+        }
+    },
     "The Machinist" : {
         "year" : 2004,
         "link" : "https://letterboxd.com/film/the-machinist/",
@@ -12,7 +26,8 @@
             "Geremias" : 4,
             "Frazens" : 4,
             "Squnha" : 4,
-            "Mestre Gui" : 4.5
+            "Mestre Gui" : 4.5,
+            "Cludos" : 3
         } 
     },
     "Memento" : {
