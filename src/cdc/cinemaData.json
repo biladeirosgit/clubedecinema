@@ -49,7 +49,7 @@
         "link" : "https://letterboxd.com/film/memento/",
         "date" : "14/07/2024",
         "chosen by" : "Xiro",
-        "genres" : ["Mistery","Thriller"],
+        "genres" : ["Mystery","Thriller"],
         "minutes" : 113,
         "reviews" : {
             "Xiro" : 4.5,
@@ -270,7 +270,7 @@
         "link" : "https://letterboxd.com/film/clue/",
         "date" : "07/04/2024",
         "chosen by" : "Mestre Gui",
-        "genres" : ["Mistery","Crime","Thriller","Comedy"],
+        "genres" : ["Mystery","Crime","Thriller","Comedy"],
         "minutes" : 94,
         "reviews" : {
             "Mestre Gui" : 5,
