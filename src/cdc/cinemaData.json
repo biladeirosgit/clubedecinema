@@ -1,4 +1,18 @@
 {   
+    "The Usual Suspects" : {
+        "year" : 1995,
+        "link" : "https://letterboxd.com/film/the-usual-suspects/",
+        "date" : "04/08/2024",
+        "chosen by" : "Mestre Gui",
+        "genres" : ["Drama","Crime","Thriller"],
+        "minutes" : 106,
+        "reviews" : {
+            "Mestre Gui" : 4.5,
+            "Cludos" : 5,
+            "Geremias" : 4,
+            "Wisdow" : 4.5
+        }
+    },
     "The Others" : {
         "year" : 2001,
         "link" : "https://letterboxd.com/film/the-others/",
