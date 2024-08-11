@@ -70,6 +70,8 @@ const GuessGame = () => {
             setGuesses([...guesses, { guess: input, feedback }]);
             setGameOver(true);
         } else {
+            if (input === "") {return;}
+            if (cinemaData[input] == null){return;}
             const feedback = getFeedback(input);
             setGuesses([...guesses, { guess: input, feedback }]);
             setInput('');
@@ -159,11 +161,13 @@ const GuessGame = () => {
     const getArrayFeedback = (guessArray, actualArray) => {
         const matchingElements = guessArray.filter(element => actualArray.includes(element));
         var ratio = 0;
-        if(matchingElements.length != 0){
+        console.log(matchingElements.length);
+        if(matchingElements.length !== 0){
+            console.log(matchingElements.length);
             ratio = matchingElements.length / actualArray.length;
         }
-        if (ratio === 1) return 'green';
-        if (ratio >= 0) return 'yellow';
+        if (ratio === 1 && actualArray.length === guessArray.length) return 'green';
+        if (ratio > 0) return 'yellow';
         return 'red';
     };
 

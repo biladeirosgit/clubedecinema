@@ -223,6 +223,14 @@ const CinemaClubStats = () => {
 
     const watchers = calculateTopWatchers()
     const top = getTop10Viewers(watchers)
+    let active_members = 0;
+
+    top.forEach(viewer => {
+        if (viewer.active === 'Yes') {
+            active_members+= 1;
+        }
+    })
+
     const topMovies = calculateTopMovies()
 
     const top5 = topMovies.slice(0, 5)
@@ -243,6 +251,7 @@ const CinemaClubStats = () => {
                 <p>Total minutes of films: <b>{calculateTotalMinutes()}</b></p>
                 <p>Average minutes per film: <b>{calculateAverageMinutes().toFixed(2)}</b></p>
                 <p>Members: <b>{findUniqueViewers()}</b></p>
+                <p>Active Members: <b>{active_members}</b></p>
                 <p>Total times the films were watched: <b>{calculateTotalViewers()}</b></p>
             </div>
 

@@ -230,7 +230,9 @@
             "Wisdow" : 4,
             "Mestre Gui" : 4,
             "Geremias" : 3.5,
-            "Xiro" : 2
+            "Xiro" : 2,
+            "Braz" : 4.5,
+            "Xadas" : 3
         } 
     },
     "Deja Vu" : {
@@ -264,7 +266,8 @@
             "Squnha" : 3.5,
             "Mestre Gui" : 4.5,
             "Geremias" : 4,
-            "Wisdow" : 3
+            "Wisdow" : 3,
+            "Braz" : 3
         } 
     },
     "Clue" : {
@@ -343,7 +346,8 @@
             "Wisdow" : 5,
             "Xadas" : 4.5,
             "Mestre Gui" : 4,
-            "Esquilo" : 4.5
+            "Esquilo" : 4.5,
+            "Braz" : 4
         } 
     },
     "The Equalizer" : {
@@ -523,7 +527,7 @@
         } 
     },
     "Morbius" : {
-        "year" : 2004,
+        "year" : 2022,
         "link" : "https://letterboxd.com/film/morbius/",
         "date" : "10/12/2023",
         "chosen by" : "Xadas",
@@ -577,7 +581,8 @@
             "Wisdow" : 3,
             "Alcunha" : 4.5,
             "Cludos" : 3.5,
-            "Xiro" : 5
+            "Xiro" : 5,
+            "Braz" : 4.5
         } 
     },
     "The Death of Stalin" : {
