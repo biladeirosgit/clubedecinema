@@ -7,11 +7,15 @@
         "genres" : ["Drama","Science Fiction","Horror"],
         "minutes" : 91,
         "reviews" : {
+            "Cludos" : 4    ,
             "Mestre Gui" : 4.5,
             "Wisdow" : 4.5,
             "Hfer" : 2.5,
             "Xadas" : 3,
-            "Storm" : 3
+            "Storm" : 3,
+            "Geremias" : 3,
+            "Xiro" : 4,
+            "Squnha" : 4
         }
     },
     "The Usual Suspects" : {
