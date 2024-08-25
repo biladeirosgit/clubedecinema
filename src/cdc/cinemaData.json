@@ -1,4 +1,19 @@
 {   
+    "Ghost in the Shell" : {
+        "year" : 1995,
+        "link" : "https://letterboxd.com/film/ghost-in-the-shell/",
+        "date" : "18/08/2024",
+        "chosen by" : "Xiro",
+        "genres" : ["Animation","Science Fiction","Action"],
+        "minutes" : 83,
+        "reviews" : {
+            "Cludos" : 3,
+            "Mestre Gui" : 3.5,
+            "Xadas" : 3,
+            "Geremias" : 3.5,
+            "Squnha" : 2.5
+        }
+    },
     "A Quiet Place" : {
         "year" : 2018,
         "link" : "https://letterboxd.com/film/a-quiet-place-2018/",
