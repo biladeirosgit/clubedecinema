@@ -7,6 +7,7 @@
         "genres" : ["Animation","Science Fiction","Action"],
         "minutes" : 83,
         "reviews" : {
+            "Xiro" : 5,
             "Cludos" : 3,
             "Mestre Gui" : 3.5,
             "Xadas" : 3,
