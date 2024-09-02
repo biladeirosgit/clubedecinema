@@ -135,6 +135,9 @@ const CinemaClubStats = () => {
                     if(number_movies <= 12){
                         watchers[user]["active"]+=1;
                     }
+                    if(watchers[user]["total_movies"] === 1){
+                        watchers[user]["streak"] = -(number_movies-1);
+                    }
                 }
                 else {
                     watchers[user] = {
@@ -146,7 +149,7 @@ const CinemaClubStats = () => {
                         watchers[user]["streak"] = 1;
                     }
                     else{
-                        watchers[user]["streak"] = 0;
+                        watchers[user]["streak"] = -(number_movies-1);
                     }
                     if(number_movies <= 12){
                         watchers[user]["active"]=1;
@@ -345,7 +348,8 @@ const CinemaClubStats = () => {
                                     <td>{viewer.total_movies}</td>
                                     <td>{viewer.average_ratings}</td>
                                     <td>{viewer.choices}</td>
-                                    <td>{viewer.streak}</td>
+                                    {viewer.streak > 0 && <td>{viewer.streak} 🔥</td>}
+                                    {viewer.streak < 0 && <td>{-viewer.streak} ❄️</td>}
                                     <td>{viewer.active} ({viewer.active_count}/12)</td>
                             </tr>
                         ))}
