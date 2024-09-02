@@ -7,6 +7,7 @@
         "genres" : ["Thriller","Science Fiction","Mystery"],
         "minutes" : 104,
         "reviews" : {
+            "Squnha" : 3.5,
             "Geremias" : 2,
             "Mestre Gui" : 2.5,
             "Cludos" : 2
