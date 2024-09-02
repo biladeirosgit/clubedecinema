@@ -350,7 +350,8 @@ const CinemaClubStats = () => {
                                     <td>{viewer.choices}</td>
                                     {viewer.streak > 0 && <td>{viewer.streak} 🔥</td>}
                                     {viewer.streak < 0 && <td>{-viewer.streak} ❄️</td>}
-                                    <td>{viewer.active} ({viewer.active_count}/12)</td>
+                                    {viewer.active === "Yes" && <td>✔️ ({viewer.active_count}/12)</td>}
+                                    {viewer.active === "No" && <td>❌ ({viewer.active_count}/12)</td>}
                             </tr>
                         ))}
                     </tbody>
