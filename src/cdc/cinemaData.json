@@ -1,5 +1,17 @@
 {   
      
+    "Her" : {
+        "year" : 2013,
+        "link" : "https://letterboxd.com/film/her/",
+        "date" : "15/09/2024",
+        "chosen by" : "Mestre Gui",
+        "genres" : ["Drama","Romance","Science Fiction"],
+        "minutes" : 126,
+        "reviews" : {
+            "Geremias" : 4.5,
+            "Wisdow" : 5
+        }
+    },
     "John Wick" : {
         "year" : 2004,
         "link" : "https://letterboxd.com/film/john-wick/",
