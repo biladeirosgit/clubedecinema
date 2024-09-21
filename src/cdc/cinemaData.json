@@ -8,6 +8,7 @@
         "genres" : ["Drama","Romance","Science Fiction"],
         "minutes" : 126,
         "reviews" : {
+            "Mestre Gui" : 5,
             "Geremias" : 4.5,
             "Wisdow" : 5
         }
