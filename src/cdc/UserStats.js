@@ -87,15 +87,18 @@ const UserStats = () => {
         const recommendations = {}
 
         for (const [title, movie] of Object.entries(cinemaData)) {
-            if (username == movie['chosen by']){
-                let totalRating = 0;
-                let nReviews = 0;
-                for (const [_, rating] of Object.entries(movie.reviews)){
-                    totalRating += rating;
-                    nReviews += 1;
+            for(let i in movie['chosen by']){
+                if (username == movie['chosen by'][i]){
+                    let totalRating = 0;
+                    let nReviews = 0;
+                    for (const [_, rating] of Object.entries(movie.reviews)){
+                        totalRating += rating;
+                        nReviews += 1;
+                    }
+                    recommendations[title] = (totalRating/nReviews).toFixed(2);
                 }
-                recommendations[title] = (totalRating/nReviews).toFixed(2);
             }
+            
         }
 
         return recommendations;

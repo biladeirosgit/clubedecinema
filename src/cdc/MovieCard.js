@@ -182,17 +182,22 @@ const MovieCard = ({ title, index, year, link, date, chosenBy, genres, minutes, 
                         </div>
                     </div>
                     <div className="other-info">
-                        <div className="chosen" key={chosenBy}>
+                        <div className="chosen" key={chosenBy[0]}>
                             <div className='center'>
                                 <p>Recommendation</p>
                             </div>
                             <div className='rating-top'>
-                                <Link to={`/users/${chosenBy}`}>
-                                    <img src={`/clubedecinema/pfp/${chosenBy}.png`} alt={`${chosenBy}`} style={{ width: '50px', height: '50px', borderRadius: '25px'}} />
+                            {[...Array(chosenBy.length)].map((_, index) => (
+                                <Link to={`/users/${chosenBy[index]}`}>
+                                    <img src={`/clubedecinema/pfp/${chosenBy[index]}.png`} alt={`${chosenBy[index]}`} style={{ width: '50px', height: '50px', borderRadius: '25px'}} />
                                 </Link>
+                            ))}
                             </div>
                             <div className='rating-bottom'>
-                                {chosenBy}
+                                {chosenBy[0]}
+                                {[...Array(chosenBy.length-1)].map((_, index) => (
+                                    " & " + chosenBy[index+1]
+                                ))}
                             </div>
                         </div>
                         <div className="average">

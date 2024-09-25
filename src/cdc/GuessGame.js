@@ -129,13 +129,39 @@ const GuessGame = () => {
             direction: guessedAverage < actualAverage ? ' (cima)' : ' (baixo)'
         };
         feedback.chosenBy = {
-            color: guessedMovie['chosen by'] === selectedMovie['chosen by'] ? 'green' : 'red',
-            value: guessedMovie['chosen by'],
+            color: getChoosenByFeedback(guessedMovie['chosen by'],selectedMovie['chosen by']),
+            value: getValueChoosenBy(guessedMovie['chosen by']),
             actualValue: selectedMovie['chosen by']
         };
 
         return feedback;
     };
+
+    const getChoosenByFeedback = (guessValue, actualValue) => {
+        //actual Value can be a list and guessValue can be a list
+        const matchingElements = guessValue.filter(element => actualValue.includes(element));
+        var ratio = 0;
+        if(matchingElements.length !== 0){
+            ratio = matchingElements.length / actualValue.length;
+        }
+        if (ratio === 1 && actualValue.length === guessValue.length) return 'green';
+        if (ratio > 0) return 'yellow';
+        return 'red';
+    }
+
+    const getValueChoosenBy = (guessValue) => {
+        //actual Value can be a list and guessValue can be a list
+        let value = guessValue[0]
+        for (let i in guessValue){
+            if (i==0){
+                continue
+            }
+            else{
+                value += " & " + guessValue[i];
+            }
+        }
+        return value
+    }
 
     const getAverageFeedback = (guessValue, actualValue) => {
         const diff = Math.abs(guessValue - actualValue);
@@ -161,9 +187,7 @@ const GuessGame = () => {
     const getArrayFeedback = (guessArray, actualArray) => {
         const matchingElements = guessArray.filter(element => actualArray.includes(element));
         var ratio = 0;
-        console.log(matchingElements.length);
         if(matchingElements.length !== 0){
-            console.log(matchingElements.length);
             ratio = matchingElements.length / actualArray.length;
         }
         if (ratio === 1 && actualArray.length === guessArray.length) return 'green';

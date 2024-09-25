@@ -1,10 +1,21 @@
 {   
-     
+    
+    "Lemonade Mouth" : {
+        "year" : 2011,
+        "link" : "https://letterboxd.com/film/lemonade-mouth/",
+        "date" : "22/09/2024",
+        "chosen by" : ["Squnha"],
+        "genres" : ["TV Movie", "Drama", "Comedy"],
+        "minutes" : 113,
+        "reviews" : {
+            "Squnha" : 4
+        }
+    },
     "Her" : {
         "year" : 2013,
         "link" : "https://letterboxd.com/film/her/",
         "date" : "15/09/2024",
-        "chosen by" : "Mestre Gui",
+        "chosen by" : ["Mestre Gui"],
         "genres" : ["Drama","Romance","Science Fiction"],
         "minutes" : 126,
         "reviews" : {
@@ -19,7 +30,7 @@
         "year" : 2004,
         "link" : "https://letterboxd.com/film/john-wick/",
         "date" : "08/09/2024",
-        "chosen by" : "Geremias",
+        "chosen by" : ["Geremias"],
         "genres" : ["Action","Thriller"],
         "minutes" : 101,
         "reviews" : {
@@ -35,7 +46,7 @@
         "year" : 2004,
         "link" : "https://letterboxd.com/film/ghost-in-the-shell-2-innocence/",
         "date" : "01/09/2024",
-        "chosen by" : "Xiro",
+        "chosen by" : ["Xiro","Cludos"],
         "genres" : ["Drama","Animation","Science Fiction"],
         "minutes" : 100,
         "reviews" : {
@@ -46,7 +57,7 @@
         "year" : 2014,
         "link" : "https://letterboxd.com/film/time-lapse-2014/",
         "date" : "25/08/2024",
-        "chosen by" : "Squnha",
+        "chosen by" : ["Squnha"],
         "genres" : ["Thriller","Science Fiction","Mystery"],
         "minutes" : 104,
         "reviews" : {
@@ -60,7 +71,7 @@
         "year" : 1995,
         "link" : "https://letterboxd.com/film/ghost-in-the-shell/",
         "date" : "18/08/2024",
-        "chosen by" : "Xiro",
+        "chosen by" : ["Xiro"],
         "genres" : ["Animation","Science Fiction","Action"],
         "minutes" : 83,
         "reviews" : {
@@ -76,7 +87,7 @@
         "year" : 2018,
         "link" : "https://letterboxd.com/film/a-quiet-place-2018/",
         "date" : "11/08/2024",
-        "chosen by" : "Cludos",
+        "chosen by" : ["Cludos"],
         "genres" : ["Drama","Science Fiction","Horror"],
         "minutes" : 91,
         "reviews" : {
@@ -95,7 +106,7 @@
         "year" : 1995,
         "link" : "https://letterboxd.com/film/the-usual-suspects/",
         "date" : "04/08/2024",
-        "chosen by" : "Mestre Gui",
+        "chosen by" : ["Mestre Gui"],
         "genres" : ["Drama","Crime","Thriller"],
         "minutes" : 106,
         "reviews" : {
@@ -110,7 +121,7 @@
         "year" : 2001,
         "link" : "https://letterboxd.com/film/the-others/",
         "date" : "28/07/2024",
-        "chosen by" : "Squnha",
+        "chosen by" : ["Squnha"],
         "genres" : ["Horror","Thriller","Mystery"],
         "minutes" : 104,
         "reviews" : {
@@ -125,7 +136,7 @@
         "year" : 2004,
         "link" : "https://letterboxd.com/film/the-machinist/",
         "date" : "21/07/2024",
-        "chosen by" : "Wisdow",
+        "chosen by" : ["Wisdow"],
         "genres" : ["Drama","Thriller"],
         "minutes" : 101,
         "reviews" : {
@@ -142,7 +153,7 @@
         "year" : 2000,
         "link" : "https://letterboxd.com/film/memento/",
         "date" : "14/07/2024",
-        "chosen by" : "Xiro",
+        "chosen by" : ["Xiro"],
         "genres" : ["Mystery","Thriller"],
         "minutes" : 113,
         "reviews" : {
@@ -159,7 +170,7 @@
         "year" : 2018,
         "link" : "https://letterboxd.com/film/the-ballad-of-buster-scruggs/",
         "date" : "07/07/2024",
-        "chosen by" : "Cludos",
+        "chosen by" : ["Cludos"],
         "genres" : ["Comedy","Western","Drama"],
         "minutes" : 132,
         "reviews" : {
@@ -175,7 +186,7 @@
         "year" : 2016,
         "link" : "https://letterboxd.com/film/the-handmaiden/",
         "date" : "30/06/2024",
-        "chosen by" : "Geremias",
+        "chosen by" : ["Geremias"],
         "genres" : ["Romance","Thriller","Drama"],
         "minutes" : 145,
         "reviews" : {
@@ -190,7 +201,7 @@
         "year" : 2015,
         "link" : "https://letterboxd.com/film/knock-knock-2015/",
         "date" : "23/06/2024",
-        "chosen by" : "Wisdow",
+        "chosen by" : ["Wisdow"],
         "genres" : ["Horror","Thriller"],
         "minutes" : 99,
         "reviews" : {
@@ -205,7 +216,7 @@
         "year" : 2021,
         "link" : "https://letterboxd.com/film/fear-of-rain/",
         "date" : "16/06/2024",
-        "chosen by" : "Squnha",
+        "chosen by" : ["Squnha"],
         "genres" : ["Horror","Drama","Thriller"],
         "minutes" : 109,
         "reviews" : {
@@ -220,7 +231,7 @@
         "year" : 2013,
         "link" : "https://letterboxd.com/film/the-wind-rises/",
         "date" : "09/06/2024",
-        "chosen by" : "Geremias",
+        "chosen by" : ["Geremias"],
         "genres" : ["War","Drama","Romance","Animation"],
         "minutes" : 126,
         "reviews" : {
@@ -236,7 +247,7 @@
         "year" : 2018,
         "link" : "https://letterboxd.com/film/shoplifters/",
         "date" : "02/06/2024",
-        "chosen by" : "Cludos",
+        "chosen by" : ["Cludos"],
         "genres" : ["Drama","Thriller","Crime"],
         "minutes" : 120,
         "reviews" : {
@@ -251,7 +262,7 @@
         "year" : 2014,
         "link" : "https://letterboxd.com/film/boyhood/",
         "date" : "26/05/2024",
-        "chosen by" : "Wisdow",
+        "chosen by" : ["Wisdow"],
         "genres" : ["Drama"],
         "minutes" : 166,
         "reviews" : {
@@ -265,7 +276,7 @@
         "year" : 2020,
         "link" : "https://letterboxd.com/film/the-metamorphosis-of-birds/",
         "date" : "19/05/2024",
-        "chosen by" : "Esquilo",
+        "chosen by" : ["Esquilo"],
         "genres" : ["Documentary","Drama"],
         "minutes" : 101,
         "reviews" : {
@@ -278,7 +289,7 @@
         "year" : 1998,
         "link" : "https://letterboxd.com/film/lock-stock-and-two-smoking-barrels/",
         "date" : "12/05/2024",
-        "chosen by" : "Frazens",
+        "chosen by" : ["Frazens"],
         "genres" : ["Comedy","Crime"],
         "minutes" : 105,
         "reviews" : {
@@ -292,7 +303,7 @@
         "year" : 1995,
         "link" : "https://letterboxd.com/film/before-sunrise/",
         "date" : "05/05/2024",
-        "chosen by" : "Mestre Gui",
+        "chosen by" : ["Mestre Gui"],
         "genres" : ["Romance","Drama"],
         "minutes" : 101,
         "reviews" : {
@@ -310,7 +321,7 @@
         "year" : 2021,
         "link" : "https://letterboxd.com/film/dune-2021/",
         "date" : "28/04/2024",
-        "chosen by" : "NeNelson",
+        "chosen by" : ["NeNelson"],
         "genres" : ["Science Fiction","Adventure"],
         "minutes" : 155,
         "reviews" : {
@@ -331,7 +342,7 @@
         "year" : 2006,
         "link" : "https://letterboxd.com/film/deja-vu/",
         "date" : "21/04/2024",
-        "chosen by" : "Frazens",
+        "chosen by" : ["Frazens"],
         "genres" : ["Science Fiction","Action","Thriller"],
         "minutes" : 126,
         "reviews" : {
@@ -347,7 +358,7 @@
         "year" : 1975,
         "link" : "https://letterboxd.com/film/monty-python-and-the-holy-grail/",
         "date" : "14/04/2024",
-        "chosen by" : "Cludos",
+        "chosen by" : ["Cludos"],
         "genres" : ["Fantasy","Comedy","Adventure"],
         "minutes" : 91,
         "reviews" : {
@@ -366,7 +377,7 @@
         "year" : 1985,
         "link" : "https://letterboxd.com/film/clue/",
         "date" : "07/04/2024",
-        "chosen by" : "Mestre Gui",
+        "chosen by" : ["Mestre Gui"],
         "genres" : ["Mystery","Crime","Thriller","Comedy"],
         "minutes" : 94,
         "reviews" : {
@@ -381,7 +392,7 @@
         "year" : 2012,
         "link" : "https://letterboxd.com/film/jack-reacher",
         "date" : "31/03/2024",
-        "chosen by" : "Squnha",
+        "chosen by" : ["Squnha"],
         "genres" : ["Drama","Crime","Thriller","Action"],
         "minutes" : 103,
         "reviews" : {
@@ -397,7 +408,7 @@
         "year" : 2023,
         "link" : "https://letterboxd.com/film/anyone-but-you",
         "date" : "24/03/2024",
-        "chosen by" : "Squnha",
+        "chosen by" : ["Squnha"],
         "genres" : ["Romance","Comedy"],
         "minutes" : 103,
         "reviews" : {
@@ -414,7 +425,7 @@
         "year" : 2023,
         "link" : "https://letterboxd.com/film/saltburn/",
         "date" : "17/03/2024",
-        "chosen by" : "Mestre Gui",
+        "chosen by" : ["Mestre Gui"],
         "genres" : ["Drama","Comedy","Thriller"],
         "minutes" : 131,
         "reviews" : {
@@ -429,7 +440,7 @@
         "year" : 2018,
         "link" : "https://letterboxd.com/film/i-want-to-eat-your-pancreas/",
         "date" : "10/03/2024",
-        "chosen by" : "NeNelson",
+        "chosen by" : ["NeNelson"],
         "genres" : ["Drama","Animation","Romance"],
         "minutes" : 108,
         "reviews" : {
@@ -446,7 +457,7 @@
         "year" : 2014,
         "link" : "https://letterboxd.com/film/the-equalizer/",
         "date" : "03/03/2024",
-        "chosen by" : "Xadas",
+        "chosen by" : ["Xadas"],
         "genres" : ["Crime","Action","Thriller"],
         "minutes" : 132,
         "reviews" : {
@@ -460,7 +471,7 @@
         "year" : 2006,
         "link" : "https://letterboxd.com/film/pans-labyrinth",
         "date" : "25/02/2024",
-        "chosen by" : "Atlas",
+        "chosen by" : ["Atlas"],
         "genres" : ["War","Fantasy","Drama"],
         "minutes" : 118,
         "reviews" : {
@@ -474,7 +485,7 @@
         "year" : 1997,
         "link" : "https://letterboxd.com/film/perfect-blue/",
         "date" : "18/02/2024",
-        "chosen by" : "Esquilo",
+        "chosen by" : ["Esquilo"],
         "genres" : ["Thriller","Animation"],
         "minutes" : 81,
         "reviews" : {
@@ -490,7 +501,7 @@
         "year" : 2004,
         "link" : "https://letterboxd.com/film/eternal-sunshine-of-the-spotless-mind/",
         "date" : "11/02/2024",
-        "chosen by" : "Geremias",
+        "chosen by" : ["Geremias"],
         "genres" : ["Science Fiction","Romance","Drama"],
         "minutes" : 108,
         "reviews" : {
@@ -507,7 +518,7 @@
         "year" : 2023,
         "link" : "https://letterboxd.com/film/blue-giant/",
         "date" : "04/02/2024",
-        "chosen by" : "NeNelson",
+        "chosen by" : ["NeNelson"],
         "genres" : ["Music","Animation","Drama"],
         "minutes" : 120,
         "reviews" : {
@@ -521,7 +532,7 @@
         "year" : 2000,
         "link" : "https://letterboxd.com/film/snatch/",
         "date" : "28/01/2024",
-        "chosen by" : "Cludos",
+        "chosen by" : ["Cludos"],
         "genres" : ["Comedy","Crime"],
         "minutes" : 103,
         "reviews" : {
@@ -537,7 +548,7 @@
         "year" : 2003,
         "link" : "https://letterboxd.com/film/the-triplets-of-belleville/",
         "date" : "21/01/2024",
-        "chosen by" : "Atlas",
+        "chosen by" : ["Atlas"],
         "genres" : ["Comedy","Animation","Drama"],
         "minutes" : 80,
         "reviews" : {
@@ -552,7 +563,7 @@
         "year" : 2018,
         "link" : "https://letterboxd.com/film/34-2018/",
         "date" : "14/01/2024",
-        "chosen by" : "NeNelson",
+        "chosen by" : ["NeNelson"],
         "genres" : ["Action","War","Drama","History"],
         "minutes" : 139,
         "reviews" : {
@@ -566,7 +577,7 @@
         "year" : 2013,
         "link" : "https://letterboxd.com/film/prisoners/",
         "date" : "07/01/2024",
-        "chosen by" : "Wisdow",
+        "chosen by" : ["Wisdow"],
         "genres" : ["Thriller","Drama","Crime"],
         "minutes" : 153,
         "reviews" : {
@@ -582,7 +593,7 @@
         "year" : 2021,
         "link" : "https://letterboxd.com/film/wrath-of-man/",
         "date" : "31/12/2023",
-        "chosen by" : "Squnha",
+        "chosen by" : ["Squnha"],
         "genres" : ["Thriller","Action","Crime"],
         "minutes" : 119,
         "reviews" : {
@@ -597,7 +608,7 @@
         "year" : 2017,
         "link" : "https://letterboxd.com/film/blade-runner-2049/",
         "date" : "24/12/2023",
-        "chosen by" : "NeNelson",
+        "chosen by" : ["NeNelson"],
         "genres" : ["Drama","Science Fiction"],
         "minutes" : 164,
         "reviews" : {
@@ -612,7 +623,7 @@
         "year" : 2011,
         "link" : "https://letterboxd.com/film/the-tree-of-life-2011/",
         "date" : "17/12/2023",
-        "chosen by" : "Geremias",
+        "chosen by" : ["Geremias"],
         "genres" : ["Drama","Fantasy"],
         "minutes" : 139,
         "reviews" : {
@@ -624,7 +635,7 @@
         "year" : 2022,
         "link" : "https://letterboxd.com/film/morbius/",
         "date" : "10/12/2023",
-        "chosen by" : "Xadas",
+        "chosen by" : ["Xadas"],
         "genres" : ["Action","Science Fiction","Fantasy"],
         "minutes" : 105,
         "reviews" : {
@@ -637,7 +648,7 @@
         "year" : 2004,
         "link" : "https://letterboxd.com/film/howls-moving-castle/",
         "date" : "03/12/2023",
-        "chosen by" : "Wisdow",
+        "chosen by" : ["Wisdow"],
         "genres" : ["Animation","History","Fantasy"],
         "minutes" : 119,
         "reviews" : {
@@ -652,7 +663,7 @@
         "year" : 2002,
         "link" : "https://letterboxd.com/film/kung-pow-enter-the-fist/",
         "date" : "26/11/2023",
-        "chosen by" : "Cludos",
+        "chosen by" : ["Cludos"],
         "genres" : ["Action","Comedy"],
         "minutes" : 81,
         "reviews" : {
@@ -664,7 +675,7 @@
         "year" : 2008,
         "link" : "https://letterboxd.com/film/walle/",
         "date" : "19/11/2023",
-        "chosen by" : "Areias",
+        "chosen by" : ["Areias"],
         "genres" : ["Family","Animation","Science Fiction"],
         "minutes" : 98,
         "reviews" : {
@@ -683,7 +694,7 @@
         "year" : 2017,
         "link" : "https://letterboxd.com/film/the-death-of-stalin/",
         "date" : "12/11/2023",
-        "chosen by" : "Atlas",
+        "chosen by" : ["Atlas"],
         "genres" : ["Drama","Comedy","History"],
         "minutes" : 107,
         "reviews" : {
@@ -697,7 +708,7 @@
         "year" : 2014,
         "link" : "https://letterboxd.com/film/birdman-or-the-unexpected-virtue-of-ignorance/",
         "date" : "05/11/2023",
-        "chosen by" : "Alcunha",
+        "chosen by" : ["Alcunha"],
         "genres" : ["Drama","Comedy"],
         "minutes" : 120,
         "reviews" : {
@@ -711,7 +722,7 @@
         "year" : 2004,
         "link" : "https://letterboxd.com/film/the-phantom-of-the-opera-2004/",
         "date" : "29/10/2023",
-        "chosen by" : "NeNelson",
+        "chosen by" : ["NeNelson"],
         "genres" : ["Drama","Romance","Thriller"],
         "minutes" : 143,
         "reviews" : {
@@ -725,7 +736,7 @@
         "year" : 2002,
         "link" : "https://letterboxd.com/film/the-count-of-monte-cristo-2002/",
         "date" : "22/10/2023",
-        "chosen by" : "Wisdow",
+        "chosen by" : ["Wisdow"],
         "genres" : ["Drama","Adventure","History"],
         "minutes" : 131,
         "reviews" : {
@@ -739,7 +750,7 @@
         "year" : 2023,
         "link" : "https://letterboxd.com/film/the-covenant-2023/",
         "date" : "15/10/2023",
-        "chosen by" : "Xadas",
+        "chosen by" : ["Xadas"],
         "genres" : ["Thriller","War","Action"],
         "minutes" : 123,
         "reviews" : {
@@ -753,7 +764,7 @@
         "year" : 2002,
         "link" : "https://letterboxd.com/film/punch-drunk-love/",
         "date" : "08/10/2023",
-        "chosen by" : "Geremias",
+        "chosen by" : ["Geremias"],
         "genres" : ["Drama","Comedy","Romance"],
         "minutes" : 96,
         "reviews" : {
@@ -766,7 +777,7 @@
         "year" : 2018,
         "link" : "https://letterboxd.com/film/mid90s/",
         "date" : "01/10/2023",
-        "chosen by" : "Gelly",
+        "chosen by" : ["Gelly"],
         "genres" : ["Drama","Comedy"],
         "minutes" : 86,
         "reviews" : {
@@ -781,7 +792,7 @@
         "year" : 2019,
         "link" : "https://letterboxd.com/film/1917/",
         "date" : "24/09/2023",
-        "chosen by" : "Alcunha",
+        "chosen by" : ["Alcunha"],
         "genres" : ["Drama","Action","War"],
         "minutes" : 119,
         "reviews" : {
@@ -798,7 +809,7 @@
         "year" : 2009,
         "link" : "https://letterboxd.com/film/inglourious-basterds/",
         "date" : "17/09/2023",
-        "chosen by" : "Atlas",
+        "chosen by" : ["Atlas"],
         "genres" : ["Drama","Thriller","War"],
         "minutes" : 153,
         "reviews" : {
@@ -815,7 +826,7 @@
         "year" : 2011,
         "link" : "https://letterboxd.com/film/drive-2011/",
         "date" : "10/09/2023",
-        "chosen by" : "NeNelson",
+        "chosen by" : ["NeNelson"],
         "genres" : ["Drama","Thriller","Crime"],
         "minutes" : 100,
         "reviews" : {
@@ -829,7 +840,7 @@
         "year" : 2007,
         "link" : "https://letterboxd.com/film/death-proof/",
         "date" : "03/09/2023",
-        "chosen by" : "Cludos",
+        "chosen by" : ["Cludos"],
         "genres" : ["Action","Thriller"],
         "minutes" : 113,
         "reviews" : {
@@ -845,7 +856,7 @@
         "year" : 2007,
         "link" : "https://letterboxd.com/film/no-country-for-old-men/",
         "date" : "27/08/2023",
-        "chosen by" : "Atlas",
+        "chosen by" : ["Atlas"],
         "genres" : ["Drama", "Thriller", "Crime"],
         "minutes" : 122,
         "reviews" : {
@@ -859,7 +870,7 @@
         "year" : 2003,
         "link" : "https://letterboxd.com/film/lost-in-translation/",
         "date" : "20/08/2023",
-        "chosen by" : "Cludos",
+        "chosen by" : ["Cludos"],
         "genres" : ["Drama", "Romance"],
         "minutes" : 102,
         "reviews" : {

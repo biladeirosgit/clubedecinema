@@ -25,10 +25,15 @@ const Movietr = ({ title, index, year, link, date, chosenBy, genres, minutes, re
             <td>
                 <div className='user'>
                     <div className='top'>
-                        <img src={`/clubedecinema/pfp/${chosenBy}.png`} alt={`${chosenBy}`} />
+                        {[...Array(chosenBy.length)].map((_, index) => (
+                            <img src={`/clubedecinema/pfp/${chosenBy[index]}.png`} alt={`${chosenBy[index]}`} />
+                        ))}
                     </div>
                     <div className='bottom2'>
-                        {chosenBy}
+                        {chosenBy[0]}
+                        {[...Array(chosenBy.length-1)].map((_, index) => (
+                            " & " + chosenBy[index+1]
+                        ))}
                     </div>
                 </div>
             </td>

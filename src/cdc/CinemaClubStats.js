@@ -126,6 +126,9 @@ const CinemaClubStats = () => {
         for (const [title, movie] of movies) {
             number_movies+=1;
             for (const [user, rating] of Object.entries(movie.reviews)) {
+                 
+
+
                 if (user in watchers){
                     watchers[user]["total_movies"] += 1
                     watchers[user]["total_ratings"] += rating
@@ -159,18 +162,22 @@ const CinemaClubStats = () => {
                     }
                 }
             }
-            if (movie['chosen by'] in watchers){
-                watchers[movie['chosen by']]["choices"]+=1
-            }
-            else{
-                watchers[movie['chosen by']] = {
-                    "total_movies" : 0,
-                    "total_ratings" : 0,
-                    "choices" : 1,
-                    "streak" : 0,
-                    "active" : 0
+            for(let i in movie['chosen by']){
+                if (movie['chosen by'][i] in watchers){
+                    watchers[movie['chosen by'][i]]["choices"]+=1
+                }
+                else{
+                    watchers[movie['chosen by'][i]] = {
+                        "total_movies" : 0,
+                        "total_ratings" : 0,
+                        "choices" : 1,
+                        "streak" : 0,
+                        "active" : 0
+                    }
                 }
             }
+            
+            
         }
         return watchers
     }
