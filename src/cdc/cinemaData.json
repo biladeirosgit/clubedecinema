@@ -8,7 +8,11 @@
         "genres" : ["TV Movie", "Drama", "Comedy"],
         "minutes" : 113,
         "reviews" : {
-            "Squnha" : 4
+            "Squnha" : 4,
+            "Mestre Gui" : 3,
+            "Geremias" : 2.5,
+            "Wisdow" : 2,
+            "Storm" : 2.5
         }
     },
     "Her" : {
