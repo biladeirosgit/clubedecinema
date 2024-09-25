@@ -75,13 +75,18 @@ const MovieCard = ({ title, index, year, link, date, chosenBy, genres, minutes, 
                 <div className='container'>
                     <div className='movie'>
                         <div className='poster'>
-                            <img src={`/clubedecinema/posters/${cleanTitle(title)}.png`} alt={`${title} poster`} style={{ width: '200px', height: '295px' }} />
+                            <Link to={link}>
+                                <img src={`/clubedecinema/posters/${cleanTitle(title)}.png`} alt={`${title} poster`} style={{ width: '200px', height: '295px' }} />
+                            </Link>
                         </div>
                         <div className='title'>
                             <p style={{ fontSize: `${calculateFontSize(titleYear)}px` }}>{titleYear}</p>
                         </div>
                         <div className='year'>
                             <p>{dateStartString} - {dateFinishString}</p>
+                        </div>
+                        <div className='minutes'>
+                            <p>{minutes} minutes</p>
                         </div>
                     </div>
                     <div className="ratings-info">
@@ -126,7 +131,7 @@ const MovieCard = ({ title, index, year, link, date, chosenBy, genres, minutes, 
                                             <div className='rating-user'>
                                             <div className='rating-top'>
                                                 <Link to={`/users/${Object.keys(reviews)[index+4]}`}>
-                                                <img src={`/clubedecinema/pfp/${Object.keys(reviews)[index+4]}.png`} alt={`${Object.keys(reviews)[index+4]}`} style={{ width: '50px', height: '50px', borderRadius: '25px'}} />
+                                                    <img src={`/clubedecinema/pfp/${Object.keys(reviews)[index+4]}.png`} alt={`${Object.keys(reviews)[index+4]}`} style={{ width: '50px', height: '50px', borderRadius: '25px'}} />
                                                 </Link>
                                                 </div>
                                                 <div className='rating-bottom'>

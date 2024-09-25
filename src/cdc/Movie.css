@@ -177,6 +177,14 @@ img {
     justify-content: center; /* Alinha horizontalmente */
 }
 
+.minutes {
+    height: 30px;
+    font-size: 13px;
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+}
+
 .modal {
     display: block; /* Hidden by default */
     position: fixed; /* Stay in place */
