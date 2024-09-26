@@ -1,986 +1,1587 @@
-{   
-    
-    "Lemonade Mouth" : {
-        "year" : 2011,
-        "link" : "https://letterboxd.com/film/lemonade-mouth/",
-        "date" : "22/09/2024",
-        "chosen by" : ["Squnha"],
-        "genres" : ["TV Movie", "Drama", "Comedy"],
-        "minutes" : 113,
-        "reviews" : {
-            "Squnha" : 4,
-            "Mestre Gui" : 3,
-            "Geremias" : 2.5,
-            "Wisdow" : 2,
-            "Storm" : 2.5
+{
+    "Lemonade Mouth": {
+        "year": 2011,
+        "link": "https://letterboxd.com/film/lemonade-mouth/",
+        "date": "22/09/2024",
+        "chosen by": [
+            "Squnha"
+        ],
+        "genres": [
+            "TV Movie",
+            "Drama",
+            "Comedy"
+        ],
+        "minutes": 113,
+        "reviews": {
+            "Squnha": 4,
+            "Mestre Gui": 3,
+            "Geremias": 2.5,
+            "Wisdow": 2,
+            "Storm": 2.5
         },
-        "comments" : {
-            "Geremias" : ["4Taste >>> Lemonade Mouth"],
-            "Wisdow" : ["quando musica fixe","quando nao musica nao fixe","","tou a brincar só vi 30 minutos mas é um filme da disney"],
-            "Squnha" : ["cena mais normal de um musical da disney (só nao dou 3,5 pq gosto bue da musica)"],
-            "Mestre Gui" : ["Quando eu era puto achava que quem rappava era o Eminem em playback"]
-        }
-    },
-    "Her" : {
-        "year" : 2013,
-        "link" : "https://letterboxd.com/film/her/",
-        "date" : "15/09/2024",
-        "chosen by" : ["Mestre Gui"],
-        "genres" : ["Drama","Romance","Science Fiction"],
-        "minutes" : 126,
-        "reviews" : {
-            "Mestre Gui" : 5,
-            "Geremias" : 4.5,
-            "Wisdow" : 5,
-            "Hfer" : 4.5,
-            "Squnha" : 4
-        },
-        "comments" : {
-            "Geremias" : ["eu e o chat gpt"],
-            "Squnha" : ["tudo muito bonito e tal mas o gajo foi traído por um sistema operativo"],
-            "Mestre Gui" : ["Bizarríssimo"],
-            "Wisdow" : ["Obrigado Gui por carregares o clube do cinema mais uma vez.","Epá os pequenos frames da relação que ele tinha com a Catherine, e a maneira como ele claramente não ultrapassou a relação quando dá os papeís é tão triste crl. Uns frames falam tanto mais que dialógos extensivos, dropparem assim do nada uma sequência de frames em que eles os dois eram felizes na cabeça dele enquanto ela dita o fim oficial da sua ligação.", "E depois toda o seu apaixonar por uma AI porque ele está completamente perdido no mundo e sente que ninguém o entende, para acabar inevitavelmente também por ser abandonado por ela com uma quota tão linda como “It's like I'm reading a book, and it's a book I deeply love, but I'm reading it slowly now so the words are really far apart and the spaces between the words are almost infinite. I can still feel you and the words of our story, but it's in this endless space between the words that I'm finding myself now. It’s a place that’s not of the physical world - it's where everything else is that I didn't even know existed. I love you so much, but this is where I am now. This is who I am now. And I need you to let me go. As much as I want to I can't live in your book anymore.”"]
-        }
-    },
-    "John Wick" : {
-        "year" : 2004,
-        "link" : "https://letterboxd.com/film/john-wick/",
-        "date" : "08/09/2024",
-        "chosen by" : ["Geremias"],
-        "genres" : ["Action","Thriller"],
-        "minutes" : 101,
-        "reviews" : {
-            "Geremias" : 4,
-            "Cludos" : 4,
-            "Hfer" : 3.5,
-            "Wisdow" : 4,
-            "Mestre Gui" : 4,
-            "Squnha" : 4
-        },
-        "comments" : {
-            "Mestre Gui" : ["John Wick matou foi pouco"]
-        }
-        
-    },
-    "Ghost in the Shell 2: Innocence" : {
-        "year" : 2004,
-        "link" : "https://letterboxd.com/film/ghost-in-the-shell-2-innocence/",
-        "date" : "01/09/2024",
-        "chosen by" : ["Xiro","Cludos"],
-        "genres" : ["Drama","Animation","Science Fiction"],
-        "minutes" : 100,
-        "reviews" : {
-            "Geremias" : 4
-        },
-        "comments" : {
-            "Geremias" : ["melhor que o primeiro"]
-        }
-    },
-    "Time Lapse" : {
-        "year" : 2014,
-        "link" : "https://letterboxd.com/film/time-lapse-2014/",
-        "date" : "25/08/2024",
-        "chosen by" : ["Squnha"],
-        "genres" : ["Thriller","Science Fiction","Mystery"],
-        "minutes" : 104,
-        "reviews" : {
-            "Squnha" : 3.5,
-            "Geremias" : 2,
-            "Mestre Gui" : 2.5,
-            "Cludos" : 2
-        },
-        "comments" : {
-            "Geremias" : ["dica de amigo nº 1: quando tiverem uma ideia, não precisam de ir a correr fazer um filme, ajuda pensar um pouco melhor sobre ela (é que nem todas as ideias são boas ideias).","dica de amigo nº 2: sejam mais criativos no nome dos filmes para chamar à atenção, por exemplo, este podia-se chamar \"o corno manso que vê o futuro\" :)"],
-            "Mestre Gui" : ["Pá ya"],
-            "Squnha" : ["gui geremias claudio, nao percebi o odio.","Gostei."]
-        }
-    },
-    "Ghost in the Shell" : {
-        "year" : 1995,
-        "link" : "https://letterboxd.com/film/ghost-in-the-shell/",
-        "date" : "18/08/2024",
-        "chosen by" : ["Xiro"],
-        "genres" : ["Animation","Science Fiction","Action"],
-        "minutes" : 83,
-        "reviews" : {
-            "Xiro" : 5,
-            "Cludos" : 3,
-            "Mestre Gui" : 3.5,
-            "Xadas" : 3,
-            "Geremias" : 3.5,
-            "Squnha" : 2.5
-        },
-        "comments" : {
-            "Geremias" : ["A Scarlett Johansson está bué diferente neste filme."],
-            "Mestre Gui" : ["juro mano nada confuso juro mano"],
-            "Cludos" : ["Singular"],
-            "Squnha" : ["questa merda"]
-        }
-    },
-    "A Quiet Place" : {
-        "year" : 2018,
-        "link" : "https://letterboxd.com/film/a-quiet-place-2018/",
-        "date" : "11/08/2024",
-        "chosen by" : ["Cludos"],
-        "genres" : ["Drama","Science Fiction","Horror"],
-        "minutes" : 91,
-        "reviews" : {
-            "Cludos" : 4    ,
-            "Mestre Gui" : 4.5,
-            "Wisdow" : 4.5,
-            "Hfer" : 2.5,
-            "Xadas" : 3,
-            "Storm" : 3,
-            "Geremias" : 3,
-            "Xiro" : 4,
-            "Squnha" : 4
-        },
-        "comments" : {
-            "Geremias" : ["a:","John Krasinski: 🤫"],
-            "Mestre Gui" : ["Hasbulla burro da merda"]
-        }
-    },
-    "The Usual Suspects" : {
-        "year" : 1995,
-        "link" : "https://letterboxd.com/film/the-usual-suspects/",
-        "date" : "04/08/2024",
-        "chosen by" : ["Mestre Gui"],
-        "genres" : ["Drama","Crime","Thriller"],
-        "minutes" : 106,
-        "reviews" : {
-            "Mestre Gui" : 4.5,
-            "Cludos" : 5,
-            "Geremias" : 4,
-            "Wisdow" : 4.5,
-            "Squnha" : 4.5
-        },
-        "comments" : {
-            "Geremias" : ["Não sabia que o Garry Kasparov fazia filmes."],
-            "Mestre Gui" : ["After that"],
-            "Wisdow" : ["The greatest trick the Devil ever pulled was to convince the world he didn't exist"]
-        }
-    },
-    "The Others" : {
-        "year" : 2001,
-        "link" : "https://letterboxd.com/film/the-others/",
-        "date" : "28/07/2024",
-        "chosen by" : ["Squnha"],
-        "genres" : ["Horror","Thriller","Mystery"],
-        "minutes" : 104,
-        "reviews" : {
-            "Squnha" : 4.5,
-            "Xiro" : 4,
-            "Mestre Gui" : 4,
-            "Cludos" : 4.5,
-            "Geremias" : 3.5
-        },
-        "comments" : {
-            "Geremias" : ["https://www.youtube.com/watch?v=-72P24RlIY4"],
-            "Mestre Gui" : ["E se eu for assim"],
-            "Xiro" : ["biktor :3"],
-            "Squnha" : ["não estava a espera de ser tão bom"]
-        }
-    },
-    "The Machinist" : {
-        "year" : 2004,
-        "link" : "https://letterboxd.com/film/the-machinist/",
-        "date" : "21/07/2024",
-        "chosen by" : ["Wisdow"],
-        "genres" : ["Drama","Thriller"],
-        "minutes" : 101,
-        "reviews" : {
-            "Wisdow" : 4,
-            "Xiro" : 4,
-            "Geremias" : 4,
-            "Frazens" : 4,
-            "Squnha" : 4,
-            "Mestre Gui" : 4.5,
-            "Cludos" : 3
-        },
-        "comments" : {
-            "Geremias" : ["Apenas o Batman com insónias."],
-            "Squnha" : ["mais um maluquinho da cabeça"],
-            "Mestre Gui" : ["Dá me 6 meses e tou igual"],
-            "Xiro" : ["So.. where did the bald dude come from?"],
-            "Wisdow" : ["Puta de filme genial.","Obrigado Wisdow pela sugestão"]
-        }
-    },
-    "Memento" : {
-        "year" : 2000,
-        "link" : "https://letterboxd.com/film/memento/",
-        "date" : "14/07/2024",
-        "chosen by" : ["Xiro"],
-        "genres" : ["Mystery","Thriller"],
-        "minutes" : 113,
-        "reviews" : {
-            "Xiro" : 4.5,
-            "Wisdow" : 5,
-            "Geremias" : 5,
-            "Cludos" : 4,
-            "Hfer" : 5,
-            "Mestre Gui" : 5,
-            "Squnha" : 5
-        },
-        "comments" : {
-            "Squnha" : ["\"Memories can be distorted, they`re an interpretation not a record\" -> Esta frase é daquelas que me muda a percepção de tudo o resto"],
-            "Mestre Gui" : ["O que é que é real mesmo"],
-            "Geremias" : ["fds.. esqueci-me do que ia escrever. acho que tinha apontado em algum lado."],
-            "Xiro" : ["My brain just locked in"],
-            "Wisdow" : ["o xiro percebe de filmes","obrigado pela pérola"]
-        }
-    },
-    "The Ballad of Buster Scruggs" : {
-        "year" : 2018,
-        "link" : "https://letterboxd.com/film/the-ballad-of-buster-scruggs/",
-        "date" : "07/07/2024",
-        "chosen by" : ["Cludos"],
-        "genres" : ["Comedy","Western","Drama"],
-        "minutes" : 132,
-        "reviews" : {
-            "Cludos" : 5,
-            "Wisdow" : 0.5,
-            "Geremias" : 2.5,
-            "Mestre Gui" : 3,
-            "Squnha" : 3,
-            "Atlas" : 3.5
-        },
-        "comments" : {
-            "Geremias" : ["★★★★ para o criminoso com mais pinta do velho oeste.","★★½ para o ladrão que foi counterado por um tacho.","★ para o manny sem mãozinhas que foi trocado por uma galinha.","★★ para o mineiro das slots da natureza.","★★½ para o cão que sobreviveu às custas da morte da burrinha.","★★½ aos caçadores de recompensas saídos de clue."],
-            "Squnha" : ["fiquei com pena do permaneta"],
-            "Mestre Gui" : ["A primeira foi fixe o resto foi muita confuso, yee haw?"],
-            "Cludos" : ["É como dar pérolas a porcos"],
-            "Wisdow" : [
-                "\"The Ballad of Buster Scruggs\" é um filme dos irmãos Coen que apresenta uma antologia de seis histórias distintas ambientadas no Velho Oeste. Embora o conceito de uma coletânea de contos possa ser interessante, a execução deixa muito a desejar em alguns segmentos.",
-                "A primeira história, que dá nome ao filme, parece uma caricatura exagerada de um western. A narrativa é praticamente inexistente, consistindo apenas em trocas de tiros entre criminosos, humor pouco eficaz e uma cena de \"suicídio\" absurda causada pelo Buster Scruggs dar pontapés nas tábuas da mesa, seguida de uma canção cantada a uníssono por todos presentes no estabelecimento.",
-                "Na segunda história, temos um assalto a um banco no meio do deserto que corre mal.",
-                "O banqueiro, com habilidades de furtividade e uma espécie de armadura improvisada com tachos, escapa da morte. A captura do protagonista e a sua condenação à forca ocorrem duas vezes, a segunda por um crime que não cometeu. É uma narrativa cheia de absurdos.",
-                "A terceira história apresenta um homem sem braços e pernas que é forçado a participar numa estranha parceria com um cuidador. A interação é grotesca e perturbadora. Entramos num ciclo de repetições desnecessárias da história a ser contada e contada vezes sem conta.... No fim tudo culmina na compra de uma galinha e no homicídio do deficiente, um desfecho que parece mais cruel do que necessário.",
-                "A quarta história muda completamente de tom e torna-se um filme de agricultura. Acompanhamos um alcoólico a trabalhar a terra, pescar e encontrar ouro. No entanto, um estranho dispara-lhe pelas costas, mas acaba por perder num confronto direto com o idoso que acabou de levar com um tiro e esteve 4 minutos a perder sangue, enquanto o jovem enrolava o seu cigarro e o fumava. ",
-                "Na quinta história, acompanhamos uma jovem, \"a burra\", que após a morte súbita do irmão, esquece-se de verificar os seus pertences antes de enterrá-lo. O cão do irmão torna-se um problema, ladrando incessantemente, e há tentativas falhadas de o abater. A história segue com um romance forçado entre a jovem e um cowboy, e culmina com um confronto com índios a uma distância consideravel de onde estava o grupo de caravanas porque a \"burra\" ouviu o seu cão. Nisto temos um confronto com um grupo de indígenas que resulta no suicídio precipitado da protagonista pois ela pensa que o velho que foi a sua procura (enquanto a pessoa que queria casar com ela estava completamente desaparecida), perdeu a batalha. Batalha essa que consiste em investidas dos índios, até 3/4 deles levarem tiros, e em vez de darem o final push, recuavam. E tentavam outra vez, e recuavam. Certamente não sabem que ao avançarem e recuarem só estavam a prejudicar o seu grupo, não entendem o conceito de reload.. De qualquer maneira, isto acaba com a pobre coitada da burra a matar-se.",
-                "Por fim, a última história é uma reflexão aparentemente sobre o caminho entre a vida e a morte. É uma conversa monótona e pouco interessante, encerrando o filme de forma anticlimática.",
-                "\"The Ballad of Buster Scruggs\" é uma mistura de contos que falha em criar uma coesão ou interesse contínuo. Embora alguns segmentos tenham momentos divertidos ou reflexivos, a maioria parece desprovida de propósito ou emoção genuína, resultando numa experiência irregular e muitas vezes frustrante."
+        "comments": {
+            "Wisdow": [
+                "quando musica fixequando nao musica nao fixe",
+                "tou a brincar só vi 30 minutos mas é um filme da disney"
+            ],
+            "Geremias": [
+                "4Taste >>> Lemonade Mouth"
+            ],
+            "Mestre Gui": [
+                "Quando eu era puto achava que quem rappava era o Eminem em playback"
+            ],
+            "Squnha": [
+                "cena mais normal de um musical da disney (só nao dou 3,5 pq gosto bue da musica)"
             ]
         }
     },
-    "The Handmaiden" : {
-        "year" : 2016,
-        "link" : "https://letterboxd.com/film/the-handmaiden/",
-        "date" : "30/06/2024",
-        "chosen by" : ["Geremias"],
-        "genres" : ["Romance","Thriller","Drama"],
-        "minutes" : 145,
-        "reviews" : {
-            "Geremias" : 4.5,
-            "Wisdow" : 4.5,
-            "Mestre Gui" : 4.5,
-            "Squnha" : 3,
-            "Cludos" : 2
+    "Her": {
+        "year": 2013,
+        "link": "https://letterboxd.com/film/her/",
+        "date": "15/09/2024",
+        "chosen by": [
+            "Mestre Gui"
+        ],
+        "genres": [
+            "Drama",
+            "Romance",
+            "Science Fiction"
+        ],
+        "minutes": 126,
+        "reviews": {
+            "Mestre Gui": 5,
+            "Geremias": 4.5,
+            "Wisdow": 5,
+            "Hfer": 4.5,
+            "Squnha": 4
         },
-        "comments" : {
-            "Geremias" : ["\"Pelo menos vou morrer com a minha pila intacta\""],
-            "Wisdow" : ["banger movie, vi até ao fim e curti muito.","Cinematograficamente falando isto é genial, adorei a direção de todo o filme.","Tem frases lindas, tem uma história engraçada e nada previsivel","Obrigado pela sugestão Geremias"],
-            "Mestre Gui" : ["Bué fixe e tal mas algumas cenas de sexo eram muita desconfortáveis n vou mentir, mas ganda final porrazzzzzzz","P.S. \"Quem me dera que as minhas mamas tivessem leite para te poder alimentar\" é capaz de ser das frases mais loucas que já ouvi na vida"],
-            "Cludos" : ["Tentei ver isto com mais 4 gajos, não foi agradável"],
-            "Squnha" : ["sempre no pornhub agora..."]
+        "comments": {
+            "Wisdow": [
+                "Obrigado Gui por carregares o clube do cinema mais uma vez.",
+                "Epá os pequenos frames da relação que ele tinha com a Catherine, e a maneira como ele claramente não ultrapassou a relação quando dá os papeís é tão triste crl.Uns frames falam tanto mais que dialógos extensivos, dropparem assim do nada uma sequência de frames em que eles os dois eram felizes na cabeça dele enquanto ela dita o fim oficial da sua ligação.",
+                "E depois toda o seu apaixonar por uma AI porque ele está completamente perdido no mundo e sente que ninguém o entende, para acabar inevitavelmente também por ser abandonado por ela com uma quota tão linda como “It's like I'm reading a book, andit's a book I deeply love, but I'mreading it slowly now so the wordsare really far apart and the spacesbetween the words are almostinfinite. I can still feel you andthe words of our story, but it's inthis endless space between thewords that I'm finding myself now.It’s a place that’s not of thephysical world - it's whereeverything else is that I didn'teven know existed. I love you somuch, but this is where I am now.This is who I am now.And I need you to let me go. Asmuch as I want to I can't live inyour book anymore.”",
+                "Que obra-prima.Começou de forma engraçada, passou para creepy, depois por triste, deprimente, e poética."
+            ],
+            "Geremias": [
+                "eu e o chat gpt"
+            ],
+            "Mestre Gui": [
+                "Bizarríssimo"
+            ],
+            "Squnha": [
+                "tudo muito bonito e tal mas o gajo foi traído por um sistema operativo"
+            ]
         }
     },
-    "Knock Knock" : {
-        "year" : 2015,
-        "link" : "https://letterboxd.com/film/knock-knock-2015/",
-        "date" : "23/06/2024",
-        "chosen by" : ["Wisdow"],
-        "genres" : ["Horror","Thriller"],
-        "minutes" : 99,
-        "reviews" : {
-            "Wisdow" : 4.5,
-            "Geremias" : 0.5,
-            "Squnha" : 0.5,
-            "Cludos" : 2,
-            "Mestre Gui" : 0.5
+    "John Wick": {
+        "year": 2004,
+        "link": "https://letterboxd.com/film/john-wick/",
+        "date": "08/09/2024",
+        "chosen by": [
+            "Geremias"
+        ],
+        "genres": [
+            "Action",
+            "Thriller"
+        ],
+        "minutes": 101,
+        "reviews": {
+            "Geremias": 4,
+            "Cludos": 4,
+            "Hfer": 3.5,
+            "Wisdow": 4,
+            "Mestre Gui": 4,
+            "Squnha": 4
         },
-        "comments" : {
-            "Geremias" : ["Death?☠Death? ⚰You're gonna kill🔫 me? You're gonna fucking kill🔫 me? Why? ❓WHY? ⁉Because I fucked 👉🏻👌🏻you? You fucked me! You fucked ME🙇🏻! You came to MY house🏡! You came 😪to ME! I got you a car🚙, I brought you your clothes👙👗👠, you took a fuckin' BUBBLE 💦BATH🛀🏻! You wanted it! You wanted it! You came 😍😩on to me! What was I supposed to do🤔🙄? You sucked my cock🍆👅, you both fucking sucked my cock👅🍆👅! It was FREE🆓 PIZZA🍕! Free 🆓fuckin' pizza🍕! It just shows up at my fuckin' door✨✨! What am I supposed to do? \"We're flight attendants✈️🛩🙎🏻. Come on, fuck us👅💦! No one will know. Come on, fuck us😖😁😍💦😘😁😩!\" Oh, twosomes💏, threesomes 👨‍👩‍👧. It doesn't matter! Starfish🌟🐠! Husbands 👨‍❤️‍👨! You don't give a fuck, you'll just fuck anything💦👅🍆🙏🏻, you'll just fuck anything!👉🏻👌🏻👍🏻 Well, you lied to me😨, I tried to help you😔😔! I let you in, I 👏🏻was 👏🏻a 👏🏻good 👏🏻guy👏🏻, I'm 👏🏻a 👏🏻good 👏🏻father! And you just fucking fucked🖖🏻👅👉🏻👌🏻 me! What? Now, you're gonna kill💀 me😰😵? You're gonna kill me💀😓? Why🤔? Why😣? 'Cause you fucked me😳? What the fuck-FUCK-FUCK, this is fucking insane👹🔇!"],
-            "Wisdow" : ["Death?☠Death? ⚰You're gonna kill🔫 me? You're gonna fucking kill🔫 me? Why? ❓WHY? ⁉Because I fucked 👉🏻👌🏻you? You fucked me! You fucked ME🙇🏻! You came to MY house🏡! You came 😪to ME! I got you a car🚙, I brought you your clothes👙👗👠, you took a fuckin' BUBBLE 💦BATH🛀🏻! You wanted it! You wanted it! You came 😍😩on to me! What was I supposed to do🤔🙄? You sucked my cock🍆👅, you both fucking sucked my cock👅🍆👅! It was FREE🆓 PIZZA🍕! Free 🆓fuckin' pizza🍕! It just shows up at my fuckin' door✨✨! What am I supposed to do? \"We're flight attendants✈️🛩🙎🏻. Come on, fuck us👅💦! No one will know. Come on, fuck us😖😁😍💦😘😁😩!\" Oh, twosomes💏, threesomes 👨‍👩‍👧. It doesn't matter! Starfish🌟🐠! Husbands 👨‍❤️‍👨! You don't give a fuck, you'll just fuck anything💦👅🍆🙏🏻, you'll just fuck anything!👉🏻👌🏻👍🏻 Well, you lied to me😨, I tried to help you😔😔! I let you in, I 👏🏻was 👏🏻a 👏🏻good 👏🏻guy👏🏻, I'm 👏🏻a 👏🏻good 👏🏻father! And you just fucking fucked🖖🏻👅👉🏻👌🏻 me! What? Now, you're gonna kill💀 me😰😵? You're gonna kill me💀😓? Why🤔? Why😣? 'Cause you fucked me😳? What the fuck-FUCK-FUCK, this is fucking insane👹🔇!"],
-            "Mestre Gui" : ["Pedro Ribeiro estás na minha lista negra"],
-            "Squnha" : ["a musica final salvou"]
+        "comments": {
+            "Mestre Gui": [
+                "John Wick matou foi pouco"
+            ]
         }
     },
-    "Fear of Rain" : {
-        "year" : 2021,
-        "link" : "https://letterboxd.com/film/fear-of-rain/",
-        "date" : "16/06/2024",
-        "chosen by" : ["Squnha"],
-        "genres" : ["Horror","Drama","Thriller"],
-        "minutes" : 109,
-        "reviews" : {
-            "Squnha" : 4,
-            "Geremias" : 2.5,
-            "Cludos" : 3.5,
-            "Mestre Gui" : 2,
-            "Wisdow" : 3
+    "Ghost in the Shell 2: Innocence": {
+        "year": 2004,
+        "link": "https://letterboxd.com/film/ghost-in-the-shell-2-innocence/",
+        "date": "01/09/2024",
+        "chosen by": [
+            "Xiro",
+            "Cludos"
+        ],
+        "genres": [
+            "Drama",
+            "Animation",
+            "Science Fiction"
+        ],
+        "minutes": 100,
+        "reviews": {
+            "Geremias": 4
         },
-        "comments" : {
-            "Geremias" : ["expectativa: pior que lixo, absurdamente mau","realidade: mau, decente"],
-            "Wisdow" : ["Filme de merda."],
-            "Mestre Gui" : ["Não vou comentar"]
+        "comments": {
+            "Geremias": [
+                "melhor que o primeiro"
+            ]
         }
     },
-    "The Wind Rises" : {
-        "year" : 2013,
-        "link" : "https://letterboxd.com/film/the-wind-rises/",
-        "date" : "09/06/2024",
-        "chosen by" : ["Geremias"],
-        "genres" : ["War","Drama","Romance","Animation"],
-        "minutes" : 126,
-        "reviews" : {
-            "Geremias" : 5,
-            "Squnha" : 3.5,
-            "Cludos" : 4.5,
-            "Mestre Gui" : 4.5,
-            "Wisdow" : 3.5,
-            "Atlas" : 4
+    "Time Lapse": {
+        "year": 2014,
+        "link": "https://letterboxd.com/film/time-lapse-2014/",
+        "date": "25/08/2024",
+        "chosen by": [
+            "Squnha"
+        ],
+        "genres": [
+            "Thriller",
+            "Science Fiction",
+            "Mystery"
+        ],
+        "minutes": 104,
+        "reviews": {
+            "Squnha": 3.5,
+            "Geremias": 2,
+            "Mestre Gui": 2.5,
+            "Cludos": 2
         },
-        "comments" : {
-            "Geremias" : ["Perfeição"],
-            "Mestre Gui" : ["Que filme bonito"],
-            "Cludos" : ["Seria um 5 se a neve estivesse melhor desenhada"],
-            "Wisdow" : ["ainda vou no inicio mas ja sei que é 3.5"]
+        "comments": {
+            "Geremias": [
+                "dica de amigo nº 1: quando tiverem uma ideia, não precisam de ir a correr fazer um filme, ajuda pensar um pouco melhor sobre ela (é que nem todas as ideias são boas ideias).",
+                "dica de amigo nº 2: sejam mais criativos no nome dos filmes para chamar à atenção, por exemplo, este podia-se chamar \"o corno manso que vê o futuro\" :)"
+            ],
+            "Mestre Gui": [
+                "Pá ya"
+            ],
+            "Squnha": [
+                "gui geremias claudio, nao percebi o odio.Gostei."
+            ]
         }
     },
-    "Shoplifters" : {
-        "year" : 2018,
-        "link" : "https://letterboxd.com/film/shoplifters/",
-        "date" : "02/06/2024",
-        "chosen by" : ["Cludos"],
-        "genres" : ["Drama","Thriller","Crime"],
-        "minutes" : 120,
-        "reviews" : {
-            "Cludos" : 4,
-            "Squnha" : 3.5,
-            "Geremias" : 4,
-            "Mestre Gui" : 4,
-            "Wisdow" : 2.5
-        } 
-    },
-    "Boyhood" : {
-        "year" : 2014,
-        "link" : "https://letterboxd.com/film/boyhood/",
-        "date" : "26/05/2024",
-        "chosen by" : ["Wisdow"],
-        "genres" : ["Drama"],
-        "minutes" : 166,
-        "reviews" : {
-            "Wisdow" : 5,
-            "Squnha" : 3.5,
-            "Geremias" : 4,
-            "Mestre Gui" : 4.5
-        } 
-    },
-    "The Metamorphosis of Birds" : {
-        "year" : 2020,
-        "link" : "https://letterboxd.com/film/the-metamorphosis-of-birds/",
-        "date" : "19/05/2024",
-        "chosen by" : ["Esquilo"],
-        "genres" : ["Documentary","Drama"],
-        "minutes" : 101,
-        "reviews" : {
-            "Geremias" : 4,
-            "Squnha" : 2.5,
-            "Cludos" : 2
-        } 
-    },
-    "Lock, Stock and Two Smoking Barrels" : {
-        "year" : 1998,
-        "link" : "https://letterboxd.com/film/lock-stock-and-two-smoking-barrels/",
-        "date" : "12/05/2024",
-        "chosen by" : ["Frazens"],
-        "genres" : ["Comedy","Crime"],
-        "minutes" : 105,
-        "reviews" : {
-            "Cludos" : 4.5,
-            "Geremias" : 2.5,
-            "Squnha" : 3.5,
-            "Wisdow" : 4.5
-        } 
-    },
-    "Before Sunrise" : {
-        "year" : 1995,
-        "link" : "https://letterboxd.com/film/before-sunrise/",
-        "date" : "05/05/2024",
-        "chosen by" : ["Mestre Gui"],
-        "genres" : ["Romance","Drama"],
-        "minutes" : 101,
-        "reviews" : {
-            "Mestre Gui" : 4.5,
-            "Geremias" : 3.5,
-            "Esquilo" : 4,
-            "Cludos" : 4,
-            "Hfer" : 3.5,
-            "Squnha" : 3,
-            "Wisdow" : 4,
-            "Tone" : 4
-        } 
-    },
-    "Dune" : {
-        "year" : 2021,
-        "link" : "https://letterboxd.com/film/dune-2021/",
-        "date" : "28/04/2024",
-        "chosen by" : ["NeNelson"],
-        "genres" : ["Science Fiction","Adventure"],
-        "minutes" : 155,
-        "reviews" : {
-            "NeNelson" : 4,
-            "Atlas" : 4.5,
-            "Cludos" : 3.5,
-            "Squnha" : 3,
-            "Hfer" : 3.5,
-            "Wisdow" : 4,
-            "Mestre Gui" : 4,
-            "Geremias" : 3.5,
-            "Xiro" : 2,
-            "Braz" : 4.5,
-            "Xadas" : 3
-        } 
-    },
-    "Deja Vu" : {
-        "year" : 2006,
-        "link" : "https://letterboxd.com/film/deja-vu/",
-        "date" : "21/04/2024",
-        "chosen by" : ["Frazens"],
-        "genres" : ["Science Fiction","Action","Thriller"],
-        "minutes" : 126,
-        "reviews" : {
-            "Frazens" : 4,
-            "Atlas" : 3,
-            "Mestre Gui" : 3,
-            "Squnha" : 4.5,
-            "Wisdow" : 4,
-            "Geremias" : 3
-        } 
-    },
-    "Monty Python and the Holy Grail" : {
-        "year" : 1975,
-        "link" : "https://letterboxd.com/film/monty-python-and-the-holy-grail/",
-        "date" : "14/04/2024",
-        "chosen by" : ["Cludos"],
-        "genres" : ["Fantasy","Comedy","Adventure"],
-        "minutes" : 91,
-        "reviews" : {
-            "Cludos" : 4.5,
-            "Atlas" : 4.5,
-            "NeNelson" : 5,
-            "Frazens" : 3.5,
-            "Squnha" : 3.5,
-            "Mestre Gui" : 4.5,
-            "Geremias" : 4,
-            "Wisdow" : 3,
-            "Braz" : 3
-        } 
-    },
-    "Clue" : {
-        "year" : 1985,
-        "link" : "https://letterboxd.com/film/clue/",
-        "date" : "07/04/2024",
-        "chosen by" : ["Mestre Gui"],
-        "genres" : ["Mystery","Crime","Thriller","Comedy"],
-        "minutes" : 94,
-        "reviews" : {
-            "Mestre Gui" : 5,
-            "Geremias" : 5,
-            "Wisdow" : 5,
-            "Squnha" : 5,
-            "Cludos" : 3.5
-        } 
-    },
-    "Jack Reacher" : {
-        "year" : 2012,
-        "link" : "https://letterboxd.com/film/jack-reacher",
-        "date" : "31/03/2024",
-        "chosen by" : ["Squnha"],
-        "genres" : ["Drama","Crime","Thriller","Action"],
-        "minutes" : 103,
-        "reviews" : {
-            "Squnha" : 3,
-            "Cludos" : 2.5,
-            "Frazens" : 4,
-            "Mestre Gui" : 3,
-            "Wisdow" : 3,
-            "Geremias" : 1.5
-        } 
-    },
-    "Anyone But You" : {
-        "year" : 2023,
-        "link" : "https://letterboxd.com/film/anyone-but-you",
-        "date" : "24/03/2024",
-        "chosen by" : ["Squnha"],
-        "genres" : ["Romance","Comedy"],
-        "minutes" : 103,
-        "reviews" : {
-            "Squnha" : 4.5,
-            "Storm" : 4.5,
-            "Xadas" : 4,
-            "Cludos" : 1.5,
-            "Wisdow" : 4.5,
-            "Geremias" : 2.5,
-            "Mestre Gui" : 3.5
-        } 
-    },
-    "Saltburn" : {
-        "year" : 2023,
-        "link" : "https://letterboxd.com/film/saltburn/",
-        "date" : "17/03/2024",
-        "chosen by" : ["Mestre Gui"],
-        "genres" : ["Drama","Comedy","Thriller"],
-        "minutes" : 131,
-        "reviews" : {
-            "Mestre Gui" : 4,
-            "Squnha" : 3.5,
-            "Cludos" : 4,
-            "Wisdow" : 4,
-            "Geremias" : 3
-        } 
-    },
-    "I Want to Eat Your Pancreas" : {
-        "year" : 2018,
-        "link" : "https://letterboxd.com/film/i-want-to-eat-your-pancreas/",
-        "date" : "10/03/2024",
-        "chosen by" : ["NeNelson"],
-        "genres" : ["Drama","Animation","Romance"],
-        "minutes" : 108,
-        "reviews" : {
-            "NeNelson" : 5,
-            "Geremias" : 5,
-            "Wisdow" : 5,
-            "Xadas" : 4.5,
-            "Mestre Gui" : 4,
-            "Esquilo" : 4.5,
-            "Braz" : 4
-        } 
-    },
-    "The Equalizer" : {
-        "year" : 2014,
-        "link" : "https://letterboxd.com/film/the-equalizer/",
-        "date" : "03/03/2024",
-        "chosen by" : ["Xadas"],
-        "genres" : ["Crime","Action","Thriller"],
-        "minutes" : 132,
-        "reviews" : {
-            "Geremias" : 3,
-            "Wisdow" : 4,
-            "Mestre Gui" : 3,
-            "Squnha" : 4
-        } 
-    },
-    "Pan's Labyrinth" : {
-        "year" : 2006,
-        "link" : "https://letterboxd.com/film/pans-labyrinth",
-        "date" : "25/02/2024",
-        "chosen by" : ["Atlas"],
-        "genres" : ["War","Fantasy","Drama"],
-        "minutes" : 118,
-        "reviews" : {
-            "Atlas" : 4.5,
-            "Mestre Gui" : 5,
-            "Geremias" : 4,
-            "Wisdow" : 3.5
-        } 
-    },
-    "Perfect Blue" : {
-        "year" : 1997,
-        "link" : "https://letterboxd.com/film/perfect-blue/",
-        "date" : "18/02/2024",
-        "chosen by" : ["Esquilo"],
-        "genres" : ["Thriller","Animation"],
-        "minutes" : 81,
-        "reviews" : {
-            "Geremias" : 4,
-            "NeNelson" : 5,
-            "Wisdow" : 4.5,
-            "Cludos" : 4,
-            "Mestre Gui" : 4,
-            "Esquilo" : 4.5
-        } 
-    },
-    "Eternal Sunshine of the Spotless Mind" : {
-        "year" : 2004,
-        "link" : "https://letterboxd.com/film/eternal-sunshine-of-the-spotless-mind/",
-        "date" : "11/02/2024",
-        "chosen by" : ["Geremias"],
-        "genres" : ["Science Fiction","Romance","Drama"],
-        "minutes" : 108,
-        "reviews" : {
-            "Geremias" : 5,
-            "Mestre Gui" : 4,
-            "Hfer" : 5,
-            "Wisdow" : 4,
-            "Cludos" : 4,
-            "Squnha" : 4,
-            "Esquilo" : 4
-        } 
-    },
-    "Blue Giant" : {
-        "year" : 2023,
-        "link" : "https://letterboxd.com/film/blue-giant/",
-        "date" : "04/02/2024",
-        "chosen by" : ["NeNelson"],
-        "genres" : ["Music","Animation","Drama"],
-        "minutes" : 120,
-        "reviews" : {
-            "NeNelson" : 4,
-            "Geremias" : 4,
-            "Wisdow" : 4.5,
-            "Mestre Gui" : 4.5
-        } 
-    },
-    "Snatch" : {
-        "year" : 2000,
-        "link" : "https://letterboxd.com/film/snatch/",
-        "date" : "28/01/2024",
-        "chosen by" : ["Cludos"],
-        "genres" : ["Comedy","Crime"],
-        "minutes" : 103,
-        "reviews" : {
-            "Cludos" : 5,
-            "Geremias" : 3,
-            "Wisdow" : 3.5,
-            "Mestre Gui" : 4,
-            "Hfer" : 3.5,
-            "Squnha" : 4
-        } 
-    },
-    "The Triplets of Belleville" : {
-        "year" : 2003,
-        "link" : "https://letterboxd.com/film/the-triplets-of-belleville/",
-        "date" : "21/01/2024",
-        "chosen by" : ["Atlas"],
-        "genres" : ["Comedy","Animation","Drama"],
-        "minutes" : 80,
-        "reviews" : {
-            "Atlas" : 4,
-            "Mestre Gui" : 4,
-            "Cludos" : 4.5,
-            "Wisdow" : 3,
-            "Geremias" : 3.5
-        } 
-    },
-    "T-34" : {
-        "year" : 2018,
-        "link" : "https://letterboxd.com/film/34-2018/",
-        "date" : "14/01/2024",
-        "chosen by" : ["NeNelson"],
-        "genres" : ["Action","War","Drama","History"],
-        "minutes" : 139,
-        "reviews" : {
-            "NeNelson" : 3,
-            "Atlas" : 3,
-            "Wisdow" : 3,
-            "Geremias" : 2.5
-        } 
-    },
-    "Prisoners" : {
-        "year" : 2013,
-        "link" : "https://letterboxd.com/film/prisoners/",
-        "date" : "07/01/2024",
-        "chosen by" : ["Wisdow"],
-        "genres" : ["Thriller","Drama","Crime"],
-        "minutes" : 153,
-        "reviews" : {
-            "Wisdow" : 5,
-            "Geremias" : 5,
-            "Storm" : 4.5,
-            "Xadas" : 4.5,
-            "Cludos" : 4.5,
-            "Squnha" : 4
-        } 
-    },
-    "Wrath of Man" : {
-        "year" : 2021,
-        "link" : "https://letterboxd.com/film/wrath-of-man/",
-        "date" : "31/12/2023",
-        "chosen by" : ["Squnha"],
-        "genres" : ["Thriller","Action","Crime"],
-        "minutes" : 119,
-        "reviews" : {
-            "Squnha" : 4,
-            "Cludos" : 4,
-            "Wisdow" : 3,
-            "Geremias" : 1.5,
-            "Xiro" : 4
-        } 
-    },
-    "Blade Runner 2049" : {
-        "year" : 2017,
-        "link" : "https://letterboxd.com/film/blade-runner-2049/",
-        "date" : "24/12/2023",
-        "chosen by" : ["NeNelson"],
-        "genres" : ["Drama","Science Fiction"],
-        "minutes" : 164,
-        "reviews" : {
-            "NeNelson" : 5,
-            "Atlas" : 5,
-            "Wisdow" : 2,
-            "Geremias" : 4,
-            "Cludos" : 3.5
-        } 
-    },
-    "The Tree of Life" : {
-        "year" : 2011,
-        "link" : "https://letterboxd.com/film/the-tree-of-life-2011/",
-        "date" : "17/12/2023",
-        "chosen by" : ["Geremias"],
-        "genres" : ["Drama","Fantasy"],
-        "minutes" : 139,
-        "reviews" : {
-            "Geremias" : 4,
-            "Cludos" : 2.5
-        } 
-    },
-    "Morbius" : {
-        "year" : 2022,
-        "link" : "https://letterboxd.com/film/morbius/",
-        "date" : "10/12/2023",
-        "chosen by" : ["Xadas"],
-        "genres" : ["Action","Science Fiction","Fantasy"],
-        "minutes" : 105,
-        "reviews" : {
-            "Xadas" : 3.5,
-            "Cludos" : 0.5,
-            "Geremias" : 1.5
-        } 
-    },
-    "Howl's Moving Castle" : {
-        "year" : 2004,
-        "link" : "https://letterboxd.com/film/howls-moving-castle/",
-        "date" : "03/12/2023",
-        "chosen by" : ["Wisdow"],
-        "genres" : ["Animation","History","Fantasy"],
-        "minutes" : 119,
-        "reviews" : {
-            "Wisdow" : 4,
-            "Cludos" : 4,
-            "Atlas" : 4.5,
-            "Geremias" : 4,
-            "Esquilo" : 3.5
-        } 
-    },
-    "Kung Pow: Enter the Fist" : {
-        "year" : 2002,
-        "link" : "https://letterboxd.com/film/kung-pow-enter-the-fist/",
-        "date" : "26/11/2023",
-        "chosen by" : ["Cludos"],
-        "genres" : ["Action","Comedy"],
-        "minutes" : 81,
-        "reviews" : {
-            "Cludos" : 5,
-            "Geremias" : 2
-        } 
-    },
-    "WALL-E" : {
-        "year" : 2008,
-        "link" : "https://letterboxd.com/film/walle/",
-        "date" : "19/11/2023",
-        "chosen by" : ["Areias"],
-        "genres" : ["Family","Animation","Science Fiction"],
-        "minutes" : 98,
-        "reviews" : {
-            "Areias" : 4,
-            "Atlas" : 4.5,
-            "Geremias" : 4.5,
-            "Hfer" : 5,
-            "Wisdow" : 3,
-            "Alcunha" : 4.5,
-            "Cludos" : 3.5,
-            "Xiro" : 5,
-            "Braz" : 4.5
-        } 
-    },
-    "The Death of Stalin" : {
-        "year" : 2017,
-        "link" : "https://letterboxd.com/film/the-death-of-stalin/",
-        "date" : "12/11/2023",
-        "chosen by" : ["Atlas"],
-        "genres" : ["Drama","Comedy","History"],
-        "minutes" : 107,
-        "reviews" : {
-            "Atlas" : 4.5,
-            "Wisdow" : 4,
-            "Cludos" : 3.5,
-            "Geremias" : 3
-        } 
-    },
-    "Birdman" : {
-        "year" : 2014,
-        "link" : "https://letterboxd.com/film/birdman-or-the-unexpected-virtue-of-ignorance/",
-        "date" : "05/11/2023",
-        "chosen by" : ["Alcunha"],
-        "genres" : ["Drama","Comedy"],
-        "minutes" : 120,
-        "reviews" : {
-            "Alcunha" : 4.5,
-            "Wisdow" : 3,
-            "Geremias" : 4,
-            "Cludos" : 5
-        } 
-    },
-    "The Phantom of The Opera" : {
-        "year" : 2004,
-        "link" : "https://letterboxd.com/film/the-phantom-of-the-opera-2004/",
-        "date" : "29/10/2023",
-        "chosen by" : ["NeNelson"],
-        "genres" : ["Drama","Romance","Thriller"],
-        "minutes" : 143,
-        "reviews" : {
-            "NeNelson" : 4.5,
-            "Geremias" : 3,
-            "Atlas" : 3.5,
-            "Wisdow" : 4
-        } 
-    },
-    "The Count of Monte Cristo" : {
-        "year" : 2002,
-        "link" : "https://letterboxd.com/film/the-count-of-monte-cristo-2002/",
-        "date" : "22/10/2023",
-        "chosen by" : ["Wisdow"],
-        "genres" : ["Drama","Adventure","History"],
-        "minutes" : 131,
-        "reviews" : {
-            "Wisdow" : 4.5,
-            "Geremias" : 3,
-            "Atlas" : 4,
-            "Braz" : 2.5
-        }  
-    },
-    "The Covenant" : {
-        "year" : 2023,
-        "link" : "https://letterboxd.com/film/the-covenant-2023/",
-        "date" : "15/10/2023",
-        "chosen by" : ["Xadas"],
-        "genres" : ["Thriller","War","Action"],
-        "minutes" : 123,
-        "reviews" : {
-            "Geremias" : 3,
-            "Cludos" : 3,
-            "Wisdow" : 3.5,
-            "Atlas" : 4
-        } 
-    },
-    "Punch-Drunk Love" : {
-        "year" : 2002,
-        "link" : "https://letterboxd.com/film/punch-drunk-love/",
-        "date" : "08/10/2023",
-        "chosen by" : ["Geremias"],
-        "genres" : ["Drama","Comedy","Romance"],
-        "minutes" : 96,
-        "reviews" : {
-            "Geremias" : 4.5,
-            "Hfer" : 3.5,
-            "Cludos" : 3
-        } 
-    },
-    "mid90s" : {
-        "year" : 2018,
-        "link" : "https://letterboxd.com/film/mid90s/",
-        "date" : "01/10/2023",
-        "chosen by" : ["Gelly"],
-        "genres" : ["Drama","Comedy"],
-        "minutes" : 86,
-        "reviews" : {
-            "Gelly" : 4.5,
-            "Xadas" : 3,
-            "Wisdow" : 3.5,
-            "Geremias" : 2,
-            "Mestre Gui" : 4
-        } 
-    },
-    "1917" : {
-        "year" : 2019,
-        "link" : "https://letterboxd.com/film/1917/",
-        "date" : "24/09/2023",
-        "chosen by" : ["Alcunha"],
-        "genres" : ["Drama","Action","War"],
-        "minutes" : 119,
-        "reviews" : {
-            "Alcunha" : 4.5,
-            "Wisdow" : 4.5,
-            "Hfer" : 4,
-            "Geremias" : 4,
-            "Cludos" : 5,
-            "Atlas" : 4,
-            "Xiro" : 4
-        } 
-    },
-    "Inglorious Basterds" : {
-        "year" : 2009,
-        "link" : "https://letterboxd.com/film/inglourious-basterds/",
-        "date" : "17/09/2023",
-        "chosen by" : ["Atlas"],
-        "genres" : ["Drama","Thriller","War"],
-        "minutes" : 153,
-        "reviews" : {
-            "Atlas" : 5,
-            "Hfer" : 5,
-            "Alcunha" : 4.5,
-            "Cludos" : 5,
-            "Wisdow" : 5,
-            "Geremias" : 4.5,
-            "Mestre Gui" : 5
-        } 
-    },
-    "Drive" : {
-        "year" : 2011,
-        "link" : "https://letterboxd.com/film/drive-2011/",
-        "date" : "10/09/2023",
-        "chosen by" : ["NeNelson"],
-        "genres" : ["Drama","Thriller","Crime"],
-        "minutes" : 100,
-        "reviews" : {
-            "Geremias" : 3.5,
-            "Wisdow" : 4,
-            "Hfer" : 3.5,
-            "Cludos" : 3.5
-        } 
-    },
-    "Death Proof" : {
-        "year" : 2007,
-        "link" : "https://letterboxd.com/film/death-proof/",
-        "date" : "03/09/2023",
-        "chosen by" : ["Cludos"],
-        "genres" : ["Action","Thriller"],
-        "minutes" : 113,
-        "reviews" : {
-            "Cludos" : 3.5,
-            "Geremias" : 3.5,
-            "Storm" : 2.5,
-            "Xadas" : 2.5,
-            "Wisdow" : 4,
-            "Atlas" : 3.5
-        } 
-    },
-    "No Country for Old Men" : {
-        "year" : 2007,
-        "link" : "https://letterboxd.com/film/no-country-for-old-men/",
-        "date" : "27/08/2023",
-        "chosen by" : ["Atlas"],
-        "genres" : ["Drama", "Thriller", "Crime"],
-        "minutes" : 122,
-        "reviews" : {
-            "Atlas" : 5,
-            "Cludos" : 4,
-            "Geremias" : 4,
-            "Wisdow" : 4
+    "Ghost in the Shell": {
+        "year": 1995,
+        "link": "https://letterboxd.com/film/ghost-in-the-shell/",
+        "date": "18/08/2024",
+        "chosen by": [
+            "Xiro"
+        ],
+        "genres": [
+            "Animation",
+            "Science Fiction",
+            "Action"
+        ],
+        "minutes": 83,
+        "reviews": {
+            "Xiro": 5,
+            "Cludos": 3,
+            "Mestre Gui": 3.5,
+            "Xadas": 3,
+            "Geremias": 3.5,
+            "Squnha": 2.5
+        },
+        "comments": {
+            "Geremias": [
+                "A Scarlett Johansson está bué diferente neste filme."
+            ],
+            "Cludos": [
+                "Singular"
+            ],
+            "Mestre Gui": [
+                "juro mano nada confuso juro mano"
+            ],
+            "Squnha": [
+                "questa merda"
+            ]
         }
     },
-    "Lost in Translation" : {
-        "year" : 2003,
-        "link" : "https://letterboxd.com/film/lost-in-translation/",
-        "date" : "20/08/2023",
-        "chosen by" : ["Cludos"],
-        "genres" : ["Drama", "Romance"],
-        "minutes" : 102,
-        "reviews" : {
-            "Cludos" : 3.5,
-            "Geremias" : 3,
-            "Hfer" : 3.5
+    "A Quiet Place": {
+        "year": 2018,
+        "link": "https://letterboxd.com/film/a-quiet-place-2018/",
+        "date": "11/08/2024",
+        "chosen by": [
+            "Cludos"
+        ],
+        "genres": [
+            "Drama",
+            "Science Fiction",
+            "Horror"
+        ],
+        "minutes": 91,
+        "reviews": {
+            "Cludos": 4,
+            "Mestre Gui": 4.5,
+            "Wisdow": 4.5,
+            "Hfer": 2.5,
+            "Xadas": 3,
+            "Storm": 3,
+            "Geremias": 3,
+            "Xiro": 4,
+            "Squnha": 4
+        },
+        "comments": {
+            "Geremias": [
+                "a:John Krasinski: 🤫"
+            ],
+            "Mestre Gui": [
+                "Hasbulla burro da merda"
+            ]
         }
+    },
+    "The Usual Suspects": {
+        "year": 1995,
+        "link": "https://letterboxd.com/film/the-usual-suspects/",
+        "date": "04/08/2024",
+        "chosen by": [
+            "Mestre Gui"
+        ],
+        "genres": [
+            "Drama",
+            "Crime",
+            "Thriller"
+        ],
+        "minutes": 106,
+        "reviews": {
+            "Mestre Gui": 4.5,
+            "Cludos": 5,
+            "Geremias": 4,
+            "Wisdow": 4.5,
+            "Squnha": 4.5
+        },
+        "comments": {
+            "Wisdow": [
+                "The greatest trick the Devil ever pulled was to convince the world he didn't exist"
+            ],
+            "Geremias": [
+                "Não sabia que o Garry Kasparov fazia filmes."
+            ],
+            "Mestre Gui": [
+                "After that"
+            ]
+        }
+    },
+    "The Others": {
+        "year": 2001,
+        "link": "https://letterboxd.com/film/the-others/",
+        "date": "28/07/2024",
+        "chosen by": [
+            "Squnha"
+        ],
+        "genres": [
+            "Horror",
+            "Thriller",
+            "Mystery"
+        ],
+        "minutes": 104,
+        "reviews": {
+            "Squnha": 4.5,
+            "Xiro": 4,
+            "Mestre Gui": 4,
+            "Cludos": 4.5,
+            "Geremias": 3.5
+        },
+        "comments": {
+            "Geremias": [
+                "www.youtube.com/watch?v=-72P24RlIY4"
+            ],
+            "Xiro": [
+                "biktor :3"
+            ],
+            "Mestre Gui": [
+                "E se eu for assim"
+            ],
+            "Squnha": [
+                "não estava a espera de ser tão bom"
+            ]
+        }
+    },
+    "The Machinist": {
+        "year": 2004,
+        "link": "https://letterboxd.com/film/the-machinist/",
+        "date": "21/07/2024",
+        "chosen by": [
+            "Wisdow"
+        ],
+        "genres": [
+            "Drama",
+            "Thriller"
+        ],
+        "minutes": 101,
+        "reviews": {
+            "Wisdow": 4,
+            "Xiro": 4,
+            "Geremias": 4,
+            "Frazens": 4,
+            "Squnha": 4,
+            "Mestre Gui": 4.5,
+            "Cludos": 3
+        },
+        "comments": {
+            "Wisdow": [
+                "Puta de filme genial.Obrigado Wisdow pela sugestão"
+            ],
+            "Geremias": [
+                "Apenas o Batman com insónias."
+            ],
+            "Xiro": [
+                "So.. where did the bald dude come from?"
+            ],
+            "Mestre Gui": [
+                "Dá me 6 meses e tou igual"
+            ],
+            "Squnha": [
+                "mais um maluquinho da cabeça"
+            ]
+        }
+    },
+    "Memento": {
+        "year": 2000,
+        "link": "https://letterboxd.com/film/memento/",
+        "date": "14/07/2024",
+        "chosen by": [
+            "Xiro"
+        ],
+        "genres": [
+            "Mystery",
+            "Thriller"
+        ],
+        "minutes": 113,
+        "reviews": {
+            "Xiro": 4.5,
+            "Wisdow": 5,
+            "Geremias": 5,
+            "Cludos": 4,
+            "Hfer": 5,
+            "Mestre Gui": 5,
+            "Squnha": 5
+        },
+        "comments": {
+            "Wisdow": [
+                "o xiro percebe de filmesobrigado pela pérola"
+            ],
+            "Geremias": [
+                "fds.. esqueci-me do que ia escrever. acho que tinha apontado em algum lado."
+            ],
+            "Xiro": [
+                "My brain just locked in"
+            ],
+            "Mestre Gui": [
+                "O que é que é real mesmo"
+            ],
+            "Squnha": [
+                "\"Memories can be distorted, they`re an interpretation not a record\" -> Esta frase é daquelas que me muda a percepção de tudo o resto"
+            ]
+        }
+    },
+    "The Ballad of Buster Scruggs": {
+        "year": 2018,
+        "link": "https://letterboxd.com/film/the-ballad-of-buster-scruggs/",
+        "date": "07/07/2024",
+        "chosen by": [
+            "Cludos"
+        ],
+        "genres": [
+            "Comedy",
+            "Western",
+            "Drama"
+        ],
+        "minutes": 132,
+        "reviews": {
+            "Cludos": 5,
+            "Wisdow": 0.5,
+            "Geremias": 2.5,
+            "Mestre Gui": 3,
+            "Squnha": 3,
+            "Atlas": 3.5
+        },
+        "comments": {
+            "Geremias": [
+                "★★★★ para o criminoso com mais pinta do velho oeste.★★½ para o ladrão que foi counterado por um tacho.★ para o manny sem mãozinhas que foi trocado por uma galinha.★★ para o mineiro das slots da natureza.★★½ para o cão que sobreviveu às custas da morte da burrinha.★★½ aos caçadores de recompensas saídos de clue."
+            ],
+            "Cludos": [
+                "É como dar pérolas a porcos"
+            ],
+            "Mestre Gui": [
+                "A primeira foi fixe o resto foi muita confuso, yee haw?"
+            ],
+            "Squnha": [
+                "fiquei com pena do permaneta"
+            ]
+        }
+    },
+    "The Handmaiden": {
+        "year": 2016,
+        "link": "https://letterboxd.com/film/the-handmaiden/",
+        "date": "30/06/2024",
+        "chosen by": [
+            "Geremias"
+        ],
+        "genres": [
+            "Romance",
+            "Thriller",
+            "Drama"
+        ],
+        "minutes": 145,
+        "reviews": {
+            "Geremias": 4.5,
+            "Wisdow": 4.5,
+            "Mestre Gui": 4.5,
+            "Squnha": 3,
+            "Cludos": 2
+        },
+        "comments": {
+            "Wisdow": [
+                "banger movie, vi até ao fim e curti muito.Cinematograficamente falando isto é genial, adorei a direção de todo o filme.Tem frases lindas, tem uma história engraçada e nada previsivelObrigado pela sugestão Geremias"
+            ],
+            "Geremias": [
+                "\"Pelo menos vou morrer com a minha pila intacta\""
+            ],
+            "Cludos": [
+                "Tentei ver isto com mais 4 gajos, não foi agradável"
+            ],
+            "Mestre Gui": [
+                "Bué fixe e tal mas algumas cenas de sexo eram muita desconfortáveis n vou mentir, mas ganda final porrazzzzzzz",
+                "P.S. \"Quem me dera que as minhas mamas tivessem leite para te poder alimentar\" é capaz de ser das frases mais loucas que já ouvi na vida"
+            ],
+            "Squnha": [
+                "sempre no pornhub agora..."
+            ]
+        }
+    },
+    "Knock Knock": {
+        "year": 2015,
+        "link": "https://letterboxd.com/film/knock-knock-2015/",
+        "date": "23/06/2024",
+        "chosen by": [
+            "Wisdow"
+        ],
+        "genres": [
+            "Horror",
+            "Thriller"
+        ],
+        "minutes": 99,
+        "reviews": {
+            "Wisdow": 4.5,
+            "Geremias": 0.5,
+            "Squnha": 0.5,
+            "Cludos": 2,
+            "Mestre Gui": 0.5
+        },
+        "comments": {
+            "Wisdow": [
+                "Death?☠Death? ⚰You're gonna kill🔫 me? You're gonna fucking kill🔫 me? Why? ❓WHY? ⁉️Because I fucked 👉🏻👌🏻you? You fucked me! You fucked ME🙇🏻! You came to MY house🏡! You came 😪to ME! I got you a car🚙, I brought you your clothes👙👗👠, you took a fuckin' BUBBLE 💦BATH🛀🏻! You wanted it! You wanted it! You came 😍😩on to me! What was I supposed to do🤔🙄? You sucked my cock🍆👅, you both fucking sucked my cock👅🍆👅! It was FREE🆓 PIZZA🍕! Free 🆓fuckin' pizza🍕! It just shows up at my fuckin' door✨✨! What am I supposed to do? \"We're flight attendants✈️🛩🙎🏻. Come on, fuck us👅💦! No one will know. Come on, fuck us😖😁😍💦😘😁😩!\" Oh, twosomes💏, threesomes👨‍👩‍👧. It doesn't matter! Starfish🌟🐠! Husbands👨‍❤️‍👨! You don't give a fuck, you'll just fuck anything💦👅🍆🙏🏻, you'll just fuck anything!👉🏻👌🏻👍🏻 Well, you lied to me😨, I tried to help you😔😔! I let you in, I 👏🏻was 👏🏻a 👏🏻good 👏🏻guy👏🏻, I'm 👏🏻a 👏🏻good 👏🏻father! And you just fucking fucked🖖🏻👅👉🏻👌🏻 me! What? Now, you're gonna kill💀 me😰😵? You're gonna kill me💀😓? Why🤔? Why😣? 'Cause you fucked me😳? What the fuck-FUCK-FUCK, this is fucking insane👹🔇!"
+            ],
+            "Geremias": [
+                "Death?☠Death? ⚰You're gonna kill🔫 me? You're gonna fucking kill🔫 me? Why? ❓WHY? ⁉️Because I fucked 👉🏻👌🏻you? You fucked me! You fucked ME🙇🏻! You came to MY house🏡! You came 😪to ME! I got you a car🚙, I brought you your clothes👙👗👠, you took a fuckin' BUBBLE 💦BATH🛀🏻! You wanted it! You wanted it! You came 😍😩on to me! What was I supposed to do🤔🙄? You sucked my cock🍆👅, you both fucking sucked my cock👅🍆👅! It was FREE🆓 PIZZA🍕! Free 🆓fuckin' pizza🍕! It just shows up at my fuckin' door✨✨! What am I supposed to do? \"We're flight attendants✈️🛩🙎🏻. Come on, fuck us👅💦! No one will know. Come on, fuck us😖😁😍💦😘😁😩!\" Oh, twosomes💏, threesomes👨‍👩‍👧. It doesn't matter! Starfish🌟🐠! Husbands👨‍❤️‍👨! You don't give a fuck, you'll just fuck anything💦👅🍆🙏🏻, you'll just fuck anything!👉🏻👌🏻👍🏻 Well, you lied to me😨, I tried to help you😔😔! I let you in, I 👏🏻was 👏🏻a 👏🏻good 👏🏻guy👏🏻, I'm 👏🏻a 👏🏻good 👏🏻father! And you just fucking fucked🖖🏻👅👉🏻👌🏻 me! What? Now, you're gonna kill💀 me😰😵? You're gonna kill me💀😓? Why🤔? Why😣? 'Cause you fucked me😳? What the fuck-FUCK-FUCK, this is fucking insane👹🔇!"
+            ],
+            "Mestre Gui": [
+                "Pedro Ribeiro estás na minha lista negra"
+            ],
+            "Squnha": [
+                "a musica final salvou"
+            ]
+        }
+    },
+    "Fear of Rain": {
+        "year": 2021,
+        "link": "https://letterboxd.com/film/fear-of-rain/",
+        "date": "16/06/2024",
+        "chosen by": [
+            "Squnha"
+        ],
+        "genres": [
+            "Horror",
+            "Drama",
+            "Thriller"
+        ],
+        "minutes": 109,
+        "reviews": {
+            "Squnha": 4,
+            "Geremias": 2.5,
+            "Cludos": 3.5,
+            "Mestre Gui": 2,
+            "Wisdow": 3
+        },
+        "comments": {
+            "Wisdow": [
+                "Filme de merda."
+            ],
+            "Geremias": [
+                "expectativa: pior que lixo, absurdamente maurealidade: mau, decente"
+            ],
+            "Mestre Gui": [
+                "Não vou comentar"
+            ]
+        }
+    },
+    "The Wind Rises": {
+        "year": 2013,
+        "link": "https://letterboxd.com/film/the-wind-rises/",
+        "date": "09/06/2024",
+        "chosen by": [
+            "Geremias"
+        ],
+        "genres": [
+            "War",
+            "Drama",
+            "Romance",
+            "Animation"
+        ],
+        "minutes": 126,
+        "reviews": {
+            "Geremias": 5,
+            "Squnha": 3.5,
+            "Cludos": 4.5,
+            "Mestre Gui": 4.5,
+            "Wisdow": 3.5,
+            "Atlas": 4
+        },
+        "comments": {
+            "Wisdow": [
+                "ainda vou no inicio mas ja sei que é 3.5"
+            ],
+            "Cludos": [
+                "Seria um 5 se a neve estivesse melhor desenhada"
+            ],
+            "Mestre Gui": [
+                "Que filme bonito"
+            ],
+            "Geremias" : [
+                "Perfeição!"
+            ]
+        }
+    },
+    "Shoplifters": {
+        "year": 2018,
+        "link": "https://letterboxd.com/film/shoplifters/",
+        "date": "02/06/2024",
+        "chosen by": [
+            "Cludos"
+        ],
+        "genres": [
+            "Drama",
+            "Thriller",
+            "Crime"
+        ],
+        "minutes": 120,
+        "reviews": {
+            "Cludos": 4,
+            "Squnha": 3.5,
+            "Geremias": 4,
+            "Mestre Gui": 4,
+            "Wisdow": 2.5
+        },
+        "comments": {
+            "Wisdow": [
+                "brutal"
+            ],
+            "Geremias": [
+                "*piada pedófila do Gui a cada 15 minutos de filme*"
+            ],
+            "Mestre Gui": [
+                "O Rui Pedro está num lugar melhor"
+            ]
+        }
+    },
+    "Boyhood": {
+        "year": 2014,
+        "link": "https://letterboxd.com/film/boyhood/",
+        "date": "26/05/2024",
+        "chosen by": [
+            "Wisdow"
+        ],
+        "genres": [
+            "Drama"
+        ],
+        "minutes": 166,
+        "reviews": {
+            "Wisdow": 5,
+            "Squnha": 3.5,
+            "Geremias": 4,
+            "Mestre Gui": 4.5
+        },
+        "comments": {
+            "Wisdow": [
+                "2 musicas incriveisreferencia a dragonballreferencia a harry potterreferencia a star warsacertei a predict do marido bebado e agressor ( duas vezes)joguei tanto, adorei este filme seguir o percurso do miudo"
+            ],
+            "Geremias": [
+                "quando eu digo que a minha vida dava um filme não se acreditam..."
+            ],
+            "Mestre Gui": [
+                "Eu rapo o cabelo esporadicamente para no dia em que me forçarem a rapar não doer tanto",
+                "P.s. Este filme era tudo o que eu não precisava neste serão de domingo"
+            ]
+        }
+    },
+    "The Metamorphosis of Birds": {
+        "year": 2020,
+        "link": "https://letterboxd.com/film/the-metamorphosis-of-birds/",
+        "date": "19/05/2024",
+        "chosen by": [
+            "Esquilo"
+        ],
+        "genres": [
+            "Documentary",
+            "Drama"
+        ],
+        "minutes": 101,
+        "reviews": {
+            "Geremias": 4,
+            "Squnha": 2.5,
+            "Cludos": 2
+        },
+        "comments": {
+            "Geremias": [
+                "Tree of Life português"
+            ]
+        }
+    },
+    "Lock, Stock and Two Smoking Barrels": {
+        "year": 1998,
+        "link": "https://letterboxd.com/film/lock-stock-and-two-smoking-barrels/",
+        "date": "12/05/2024",
+        "chosen by": [
+            "Frazens"
+        ],
+        "genres": [
+            "Comedy",
+            "Crime"
+        ],
+        "minutes": 105,
+        "reviews": {
+            "Cludos": 4.5,
+            "Geremias": 2.5,
+            "Squnha": 3.5,
+            "Wisdow": 4.5
+        },
+        "comments": {
+            "Geremias": [
+                "É tipo um Snatch só que sem Brad Pitt"
+            ]
+        }
+    },
+    "Before Sunrise": {
+        "year": 1995,
+        "link": "https://letterboxd.com/film/before-sunrise/",
+        "date": "05/05/2024",
+        "chosen by": [
+            "Mestre Gui"
+        ],
+        "genres": [
+            "Romance",
+            "Drama"
+        ],
+        "minutes": 101,
+        "reviews": {
+            "Mestre Gui": 4.5,
+            "Geremias": 3.5,
+            "Esquilo": 4,
+            "Cludos": 4,
+            "Hfer": 3.5,
+            "Squnha": 3,
+            "Wisdow": 4,
+            "Tone": 4
+        },
+        "comments": {
+            "Geremias": [
+                "Eu só queria ver a peça da vaca :("
+            ],
+            "Mestre Gui": [
+                "No mesmo dia comecei a fazer yoga e vi este filme, vou dormir a chorar mas vou dormir leve"
+            ]
+        }
+    },
+    "Dune": {
+        "year": 2021,
+        "link": "https://letterboxd.com/film/dune-2021/",
+        "date": "28/04/2024",
+        "chosen by": [
+            "NeNelson"
+        ],
+        "genres": [
+            "Science Fiction",
+            "Adventure"
+        ],
+        "minutes": 155,
+        "reviews": {
+            "NeNelson": 4,
+            "Atlas": 4.5,
+            "Cludos": 3.5,
+            "Squnha": 3,
+            "Hfer": 3.5,
+            "Wisdow": 4,
+            "Mestre Gui": 4,
+            "Geremias": 3.5,
+            "Xiro": 2,
+            "Braz": 4.5,
+            "Xadas": 3
+        },
+        "comments": {
+            "Geremias": [
+                "A Zendaya é muita areia para o teu camião gui."
+            ],
+            "Mestre Gui": [
+                "Timóteo ola"
+            ]
+        }
+    },
+    "Deja Vu": {
+        "year": 2006,
+        "link": "https://letterboxd.com/film/deja-vu/",
+        "date": "21/04/2024",
+        "chosen by": [
+            "Frazens"
+        ],
+        "genres": [
+            "Science Fiction",
+            "Action",
+            "Thriller"
+        ],
+        "minutes": 126,
+        "reviews": {
+            "Frazens": 4,
+            "Atlas": 3,
+            "Mestre Gui": 3,
+            "Squnha": 4.5,
+            "Wisdow": 4,
+            "Geremias": 3
+        },
+        "comments": {
+            "Wisdow": [
+                "Banger movie o Gui n sabe do que fala"
+            ],
+            "Geremias": [
+                "imagino o wisdow a cada 2 minutos a dizer que acertou na predict mais previsível de todas."
+            ],
+            "Mestre Gui": [
+                "Que palhaçada"
+            ]
+        }
+    },
+    "Monty Python and the Holy Grail": {
+        "year": 1975,
+        "link": "https://letterboxd.com/film/monty-python-and-the-holy-grail/",
+        "date": "14/04/2024",
+        "chosen by": [
+            "Cludos"
+        ],
+        "genres": [
+            "Fantasy",
+            "Comedy",
+            "Adventure"
+        ],
+        "minutes": 91,
+        "reviews": {
+            "Cludos": 4.5,
+            "Atlas": 4.5,
+            "NeNelson": 5,
+            "Frazens": 3.5,
+            "Squnha": 3.5,
+            "Mestre Gui": 4.5,
+            "Geremias": 4,
+            "Wisdow": 3,
+            "Braz": 3
+        },
+        "comments": {
+            "Geremias": [
+                "Ni"
+            ],
+            "Mestre Gui": [
+                "Hilariante"
+            ]
+        }
+    },
+    "Clue": {
+        "year": 1985,
+        "link": "https://letterboxd.com/film/clue/",
+        "date": "07/04/2024",
+        "chosen by": [
+            "Mestre Gui"
+        ],
+        "genres": [
+            "Mystery",
+            "Crime",
+            "Thriller",
+            "Comedy"
+        ],
+        "minutes": 94,
+        "reviews": {
+            "Mestre Gui": 5,
+            "Geremias": 5,
+            "Wisdow": 5,
+            "Squnha": 5,
+            "Cludos": 3.5
+        },
+        "comments": {
+            "Wisdow": [
+                "Que puta de filmaço.Obrigado Gui."
+            ],
+            "Geremias": [
+                "Completamente à nora até ao fim. Devia se chamar No Clue."
+            ],
+            "Mestre Gui": [
+                "Que filme incrível, verdadeira Chicanery, não me divertia assim tanto a ver um filme há muito tempo"
+            ]
+        }
+    },
+    "Jack Reacher": {
+        "year": 2012,
+        "link": "https://letterboxd.com/film/jack-reacher",
+        "date": "31/03/2024",
+        "chosen by": [
+            "Squnha"
+        ],
+        "genres": [
+            "Drama",
+            "Crime",
+            "Thriller",
+            "Action"
+        ],
+        "minutes": 103,
+        "reviews": {
+            "Squnha": 3,
+            "Cludos": 2.5,
+            "Frazens": 4,
+            "Mestre Gui": 3,
+            "Wisdow": 3,
+            "Geremias": 1.5
+        },
+        "comments": {}
+    },
+    "Anyone But You": {
+        "year": 2023,
+        "link": "https://letterboxd.com/film/anyone-but-you",
+        "date": "24/03/2024",
+        "chosen by": [
+            "Squnha"
+        ],
+        "genres": [
+            "Romance",
+            "Comedy"
+        ],
+        "minutes": 103,
+        "reviews": {
+            "Squnha": 4.5,
+            "Storm": 4.5,
+            "Xadas": 4,
+            "Cludos": 1.5,
+            "Wisdow": 4.5,
+            "Geremias": 2.5,
+            "Mestre Gui": 3.5
+        },
+        "comments": {}
+    },
+    "Saltburn": {
+        "year": 2023,
+        "link": "https://letterboxd.com/film/saltburn/",
+        "date": "17/03/2024",
+        "chosen by": [
+            "Mestre Gui"
+        ],
+        "genres": [
+            "Drama",
+            "Comedy",
+            "Thriller"
+        ],
+        "minutes": 131,
+        "reviews": {
+            "Mestre Gui": 4,
+            "Squnha": 3.5,
+            "Cludos": 4,
+            "Wisdow": 4,
+            "Geremias": 3
+        },
+        "comments": {
+            "Wisdow": [
+                "Faz me lembrar Munou na Nana, toda a gente a ser afastada da casa e ninguém se questiona se a pessoa que lá esta a menos tempo é de alguma maneira culpada de tudo isso.A parte em que o gajo forja o e-mail então é só surreal como eles acreditam naquilo mas pronto, overall bom filme apesar de desde muito cedo no filme dar para perceber que o Oliver tinha alguns parafusos a menos"
+            ],
+            "Mestre Gui": [
+                "Só não dou 5 estrelas porque ele podia ter comido a mãe e n comeu"
+            ]
+        }
+    },
+    "I Want to Eat Your Pancreas": {
+        "year": 2018,
+        "link": "https://letterboxd.com/film/i-want-to-eat-your-pancreas/",
+        "date": "10/03/2024",
+        "chosen by": [
+            "NeNelson"
+        ],
+        "genres": [
+            "Drama",
+            "Animation",
+            "Romance"
+        ],
+        "minutes": 108,
+        "reviews": {
+            "NeNelson": 5,
+            "Geremias": 5,
+            "Wisdow": 5,
+            "Xadas": 4.5,
+            "Mestre Gui": 4,
+            "Esquilo": 4.5,
+            "Braz": 4
+        },
+        "comments": {
+            "Wisdow": [
+                "Chorei mais que o Gui."
+            ],
+            "Mestre Gui": [
+                "Não é por terem um mini plot twist que não deixa de ser clichê. Gostei muito chorei"
+            ]
+        }
+    },
+    "The Equalizer": {
+        "year": 2014,
+        "link": "https://letterboxd.com/film/the-equalizer/",
+        "date": "03/03/2024",
+        "chosen by": [
+            "Xadas"
+        ],
+        "genres": [
+            "Crime",
+            "Action",
+            "Thriller"
+        ],
+        "minutes": 132,
+        "reviews": {
+            "Geremias": 3,
+            "Wisdow": 4,
+            "Mestre Gui": 3,
+            "Squnha": 4
+        },
+        "comments": {
+            "Wisdow": [
+                "Tem Zack Hemsey que banger"
+            ],
+            "Geremias": [
+                "Relaxa Robert, não é como se eles tivessem matado o teu cão."
+            ],
+            "Mestre Gui": [
+                "Sozinho em casa só que não tá sozinho nem em casa"
+            ]
+        }
+    },
+    "Pan's Labyrinth": {
+        "year": 2006,
+        "link": "https://letterboxd.com/film/pans-labyrinth",
+        "date": "25/02/2024",
+        "chosen by": [
+            "Atlas"
+        ],
+        "genres": [
+            "War",
+            "Fantasy",
+            "Drama"
+        ],
+        "minutes": 118,
+        "reviews": {
+            "Atlas": 4.5,
+            "Mestre Gui": 5,
+            "Geremias": 4,
+            "Wisdow": 3.5
+        },
+        "comments": {}
+    },
+    "Perfect Blue": {
+        "year": 1997,
+        "link": "https://letterboxd.com/film/perfect-blue/",
+        "date": "18/02/2024",
+        "chosen by": [
+            "Esquilo"
+        ],
+        "genres": [
+            "Thriller",
+            "Animation"
+        ],
+        "minutes": 81,
+        "reviews": {
+            "Geremias": 4,
+            "NeNelson": 5,
+            "Wisdow": 4.5,
+            "Cludos": 4,
+            "Mestre Gui": 4,
+            "Esquilo": 4.5
+        },
+        "comments": {
+            "Mestre Gui": [
+                "fidja da puta odeio rape scenes"
+            ]
+        }
+    },
+    "Eternal Sunshine of the Spotless Mind": {
+        "year": 2004,
+        "link": "https://letterboxd.com/film/eternal-sunshine-of-the-spotless-mind/",
+        "date": "11/02/2024",
+        "chosen by": [
+            "Geremias"
+        ],
+        "genres": [
+            "Science Fiction",
+            "Romance",
+            "Drama"
+        ],
+        "minutes": 108,
+        "reviews": {
+            "Geremias": 5,
+            "Mestre Gui": 4,
+            "Hfer": 5,
+            "Wisdow": 4,
+            "Cludos": 4,
+            "Squnha": 4,
+            "Esquilo": 4
+        },
+        "comments": {
+            "Mestre Gui": [
+                "Nunca será a Clementina do Ruca"
+            ]
+        }
+    },
+    "Blue Giant": {
+        "year": 2023,
+        "link": "https://letterboxd.com/film/blue-giant/",
+        "date": "04/02/2024",
+        "chosen by": [
+            "NeNelson"
+        ],
+        "genres": [
+            "Music",
+            "Animation",
+            "Drama"
+        ],
+        "minutes": 120,
+        "reviews": {
+            "NeNelson": 4,
+            "Geremias": 4,
+            "Wisdow": 4.5,
+            "Mestre Gui": 4.5
+        },
+        "comments": {
+            "Mestre Gui": [
+                "Quem me dera saber soprar assim"
+            ]
+        }
+    },
+    "Snatch": {
+        "year": 2000,
+        "link": "https://letterboxd.com/film/snatch/",
+        "date": "28/01/2024",
+        "chosen by": [
+            "Cludos"
+        ],
+        "genres": [
+            "Comedy",
+            "Crime"
+        ],
+        "minutes": 103,
+        "reviews": {
+            "Cludos": 5,
+            "Geremias": 3,
+            "Wisdow": 3.5,
+            "Mestre Gui": 4,
+            "Hfer": 3.5,
+            "Squnha": 4
+        },
+        "comments": {
+            "Mestre Gui": [
+                "Brad Pitt meu pookie"
+            ]
+        }
+    },
+    "The Triplets of Belleville": {
+        "year": 2003,
+        "link": "https://letterboxd.com/film/the-triplets-of-belleville/",
+        "date": "21/01/2024",
+        "chosen by": [
+            "Atlas"
+        ],
+        "genres": [
+            "Comedy",
+            "Animation",
+            "Drama"
+        ],
+        "minutes": 80,
+        "reviews": {
+            "Atlas": 4,
+            "Mestre Gui": 4,
+            "Cludos": 4.5,
+            "Wisdow": 3,
+            "Geremias": 3.5
+        },
+        "comments": {
+            "Wisdow": [
+                "tipo a animação é boa mas um filme sem dialogos não funciona para mim"
+            ],
+            "Mestre Gui": [
+                "crazy"
+            ]
+        }
+    },
+    "T-34": {
+        "year": 2018,
+        "link": "https://letterboxd.com/film/34-2018/",
+        "date": "14/01/2024",
+        "chosen by": [
+            "NeNelson"
+        ],
+        "genres": [
+            "Action",
+            "War",
+            "Drama",
+            "History"
+        ],
+        "minutes": 139,
+        "reviews": {
+            "NeNelson": 3,
+            "Atlas": 3,
+            "Wisdow": 3,
+            "Geremias": 2.5
+        },
+        "comments": {}
+    },
+    "Prisoners": {
+        "year": 2013,
+        "link": "https://letterboxd.com/film/prisoners/",
+        "date": "07/01/2024",
+        "chosen by": [
+            "Wisdow"
+        ],
+        "genres": [
+            "Thriller",
+            "Drama",
+            "Crime"
+        ],
+        "minutes": 153,
+        "reviews": {
+            "Wisdow": 5,
+            "Geremias": 5,
+            "Storm": 4.5,
+            "Xadas": 4.5,
+            "Cludos": 4.5,
+            "Squnha": 4
+        },
+        "comments": {}
+    },
+    "Wrath of Man": {
+        "year": 2021,
+        "link": "https://letterboxd.com/film/wrath-of-man/",
+        "date": "31/12/2023",
+        "chosen by": [
+            "Squnha"
+        ],
+        "genres": [
+            "Thriller",
+            "Action",
+            "Crime"
+        ],
+        "minutes": 119,
+        "reviews": {
+            "Squnha": 4,
+            "Cludos": 4,
+            "Wisdow": 3,
+            "Geremias": 1.5,
+            "Xiro": 4
+        },
+        "comments": {}
+    },
+    "Blade Runner 2049": {
+        "year": 2017,
+        "link": "https://letterboxd.com/film/blade-runner-2049/",
+        "date": "24/12/2023",
+        "chosen by": [
+            "NeNelson"
+        ],
+        "genres": [
+            "Drama",
+            "Science Fiction"
+        ],
+        "minutes": 164,
+        "reviews": {
+            "NeNelson": 5,
+            "Atlas": 5,
+            "Wisdow": 2,
+            "Geremias": 4,
+            "Cludos": 3.5
+        },
+        "comments": {}
+    },
+    "The Tree of Life": {
+        "year": 2011,
+        "link": "https://letterboxd.com/film/the-tree-of-life-2011/",
+        "date": "17/12/2023",
+        "chosen by": [
+            "Geremias"
+        ],
+        "genres": [
+            "Drama",
+            "Fantasy"
+        ],
+        "minutes": 139,
+        "reviews": {
+            "Geremias": 4,
+            "Cludos": 2.5
+        },
+        "comments": {}
+    },
+    "Morbius": {
+        "year": 2022,
+        "link": "https://letterboxd.com/film/morbius/",
+        "date": "10/12/2023",
+        "chosen by": [
+            "Xadas"
+        ],
+        "genres": [
+            "Action",
+            "Science Fiction",
+            "Fantasy"
+        ],
+        "minutes": 105,
+        "reviews": {
+            "Xadas": 3.5,
+            "Cludos": 0.5,
+            "Geremias": 1.5
+        },
+        "comments": {}
+    },
+    "Howl's Moving Castle": {
+        "year": 2004,
+        "link": "https://letterboxd.com/film/howls-moving-castle/",
+        "date": "03/12/2023",
+        "chosen by": [
+            "Wisdow"
+        ],
+        "genres": [
+            "Animation",
+            "History",
+            "Fantasy"
+        ],
+        "minutes": 119,
+        "reviews": {
+            "Wisdow": 4,
+            "Cludos": 4,
+            "Atlas": 4.5,
+            "Geremias": 4,
+            "Esquilo": 3.5
+        },
+        "comments": {}
+    },
+    "Kung Pow: Enter the Fist": {
+        "year": 2002,
+        "link": "https://letterboxd.com/film/kung-pow-enter-the-fist/",
+        "date": "26/11/2023",
+        "chosen by": [
+            "Cludos"
+        ],
+        "genres": [
+            "Action",
+            "Comedy"
+        ],
+        "minutes": 81,
+        "reviews": {
+            "Cludos": 5,
+            "Geremias": 2
+        },
+        "comments": {}
+    },
+    "WALL-E": {
+        "year": 2008,
+        "link": "https://letterboxd.com/film/walle/",
+        "date": "19/11/2023",
+        "chosen by": [
+            "Areias"
+        ],
+        "genres": [
+            "Family",
+            "Animation",
+            "Science Fiction"
+        ],
+        "minutes": 98,
+        "reviews": {
+            "Areias": 4,
+            "Atlas": 4.5,
+            "Geremias": 4.5,
+            "Hfer": 5,
+            "Wisdow": 3,
+            "Alcunha": 4.5,
+            "Cludos": 3.5,
+            "Xiro": 5,
+            "Braz": 4.5
+        },
+        "comments": {}
+    },
+    "The Death of Stalin": {
+        "year": 2017,
+        "link": "https://letterboxd.com/film/the-death-of-stalin/",
+        "date": "12/11/2023",
+        "chosen by": [
+            "Atlas"
+        ],
+        "genres": [
+            "Drama",
+            "Comedy",
+            "History"
+        ],
+        "minutes": 107,
+        "reviews": {
+            "Atlas": 4.5,
+            "Wisdow": 4,
+            "Cludos": 3.5,
+            "Geremias": 3
+        },
+        "comments": {}
+    },
+    "Birdman": {
+        "year": 2014,
+        "link": "https://letterboxd.com/film/birdman-or-the-unexpected-virtue-of-ignorance/",
+        "date": "05/11/2023",
+        "chosen by": [
+            "Alcunha"
+        ],
+        "genres": [
+            "Drama",
+            "Comedy"
+        ],
+        "minutes": 120,
+        "reviews": {
+            "Alcunha": 4.5,
+            "Wisdow": 3,
+            "Geremias": 4,
+            "Cludos": 5
+        },
+        "comments": {}
+    },
+    "The Phantom of The Opera": {
+        "year": 2004,
+        "link": "https://letterboxd.com/film/the-phantom-of-the-opera-2004/",
+        "date": "29/10/2023",
+        "chosen by": [
+            "NeNelson"
+        ],
+        "genres": [
+            "Drama",
+            "Romance",
+            "Thriller"
+        ],
+        "minutes": 143,
+        "reviews": {
+            "NeNelson": 4.5,
+            "Geremias": 3,
+            "Atlas": 3.5,
+            "Wisdow": 4
+        },
+        "comments": {}
+    },
+    "The Count of Monte Cristo": {
+        "year": 2002,
+        "link": "https://letterboxd.com/film/the-count-of-monte-cristo-2002/",
+        "date": "22/10/2023",
+        "chosen by": [
+            "Wisdow"
+        ],
+        "genres": [
+            "Drama",
+            "Adventure",
+            "History"
+        ],
+        "minutes": 131,
+        "reviews": {
+            "Wisdow": 4.5,
+            "Geremias": 3,
+            "Atlas": 4,
+            "Braz": 2.5
+        },
+        "comments": {}
+    },
+    "The Covenant": {
+        "year": 2023,
+        "link": "https://letterboxd.com/film/the-covenant-2023/",
+        "date": "15/10/2023",
+        "chosen by": [
+            "Xadas"
+        ],
+        "genres": [
+            "Thriller",
+            "War",
+            "Action"
+        ],
+        "minutes": 123,
+        "reviews": {
+            "Geremias": 3,
+            "Cludos": 3,
+            "Wisdow": 3.5,
+            "Atlas": 4
+        },
+        "comments": {}
+    },
+    "Punch-Drunk Love": {
+        "year": 2002,
+        "link": "https://letterboxd.com/film/punch-drunk-love/",
+        "date": "08/10/2023",
+        "chosen by": [
+            "Geremias"
+        ],
+        "genres": [
+            "Drama",
+            "Comedy",
+            "Romance"
+        ],
+        "minutes": 96,
+        "reviews": {
+            "Geremias": 4.5,
+            "Hfer": 3.5,
+            "Cludos": 3
+        },
+        "comments": {}
+    },
+    "mid90s": {
+        "year": 2018,
+        "link": "https://letterboxd.com/film/mid90s/",
+        "date": "01/10/2023",
+        "chosen by": [
+            "Gelly"
+        ],
+        "genres": [
+            "Drama",
+            "Comedy"
+        ],
+        "minutes": 86,
+        "reviews": {
+            "Gelly": 4.5,
+            "Xadas": 3,
+            "Wisdow": 3.5,
+            "Geremias": 2,
+            "Mestre Gui": 4
+        },
+        "comments": {
+            "Mestre Gui": [
+                "Dred..."
+            ]
+        }
+    },
+    "1917": {
+        "year": 2019,
+        "link": "https://letterboxd.com/film/1917/",
+        "date": "24/09/2023",
+        "chosen by": [
+            "Alcunha"
+        ],
+        "genres": [
+            "Drama",
+            "Action",
+            "War"
+        ],
+        "minutes": 119,
+        "reviews": {
+            "Alcunha": 4.5,
+            "Wisdow": 4.5,
+            "Hfer": 4,
+            "Geremias": 4,
+            "Cludos": 5,
+            "Atlas": 4,
+            "Xiro": 4
+        },
+        "comments": {}
+    },
+    "Inglorious Basterds": {
+        "year": 2009,
+        "link": "https://letterboxd.com/film/inglourious-basterds/",
+        "date": "17/09/2023",
+        "chosen by": [
+            "Atlas"
+        ],
+        "genres": [
+            "Drama",
+            "Thriller",
+            "War"
+        ],
+        "minutes": 153,
+        "reviews": {
+            "Atlas": 5,
+            "Hfer": 5,
+            "Alcunha": 4.5,
+            "Cludos": 5,
+            "Wisdow": 5,
+            "Geremias": 4.5,
+            "Mestre Gui": 5
+        },
+        "comments": {}
+    },
+    "Drive": {
+        "year": 2011,
+        "link": "https://letterboxd.com/film/drive-2011/",
+        "date": "10/09/2023",
+        "chosen by": [
+            "NeNelson"
+        ],
+        "genres": [
+            "Drama",
+            "Thriller",
+            "Crime"
+        ],
+        "minutes": 100,
+        "reviews": {
+            "Geremias": 3.5,
+            "Wisdow": 4,
+            "Hfer": 3.5,
+            "Cludos": 3.5
+        },
+        "comments": {}
+    },
+    "Death Proof": {
+        "year": 2007,
+        "link": "https://letterboxd.com/film/death-proof/",
+        "date": "03/09/2023",
+        "chosen by": [
+            "Cludos"
+        ],
+        "genres": [
+            "Action",
+            "Thriller"
+        ],
+        "minutes": 113,
+        "reviews": {
+            "Cludos": 3.5,
+            "Geremias": 3.5,
+            "Storm": 2.5,
+            "Xadas": 2.5,
+            "Wisdow": 4,
+            "Atlas": 3.5
+        },
+        "comments": {}
+    },
+    "No Country for Old Men": {
+        "year": 2007,
+        "link": "https://letterboxd.com/film/no-country-for-old-men/",
+        "date": "27/08/2023",
+        "chosen by": [
+            "Atlas"
+        ],
+        "genres": [
+            "Drama",
+            "Thriller",
+            "Crime"
+        ],
+        "minutes": 122,
+        "reviews": {
+            "Atlas": 5,
+            "Cludos": 4,
+            "Geremias": 4,
+            "Wisdow": 4
+        },
+        "comments": {}
+    },
+    "Lost in Translation": {
+        "year": 2003,
+        "link": "https://letterboxd.com/film/lost-in-translation/",
+        "date": "20/08/2023",
+        "chosen by": [
+            "Cludos"
+        ],
+        "genres": [
+            "Drama",
+            "Romance"
+        ],
+        "minutes": 102,
+        "reviews": {
+            "Cludos": 3.5,
+            "Geremias": 3,
+            "Hfer": 3.5
+        },
+        "comments": {}
     }
 }
