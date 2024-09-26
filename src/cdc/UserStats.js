@@ -111,7 +111,11 @@ const UserStats = () => {
             if(movie.comments){
                 for(const [user,comments_movie] of Object.entries(movie.comments)){
                     if(username == user){
-                        comments[title] = comments_movie
+                        comments[title] = {
+                            "comments" : comments_movie,
+                            "year" : movie.year,
+                            "rating" : movie.reviews[username]
+                        }
                     }
                 }
             }
@@ -158,6 +162,10 @@ const UserStats = () => {
     comments = Object.keys(comments).map(function(key) {
         return [key, comments[key]];
     });
+
+    const cleanTitle = (str) => {
+        return str.replace(/[^\w\s]/gi, ''); 
+    };
 
 
     return (
@@ -271,18 +279,30 @@ const UserStats = () => {
                     </div>
                     <div className="comments-container">
                         <div className='comments-section'>
-                            {comments.map(([title, comments]) => (
+                            {comments.map(([title, movie]) => (
                                 <>
-                                    <div className="comment-movie">
-                                        <br></br>
-                                        <h3>{title}</h3>
-                                        <br></br>
-                                        {[...Array(comments.length)].map((_, indexComment) => (
-                                            <p>{comments[indexComment]}</p>
-                                        ))}
-                                        <br></br>
-                                        <hr className="comment-seperate"></hr>
+                                <div className="comment-container">  
+                                    <div className="comment-poster">
+                                        <img src={`/clubedecinema/posters/${cleanTitle(title)}.png`} alt={`${title} poster`} style={{ width: '200px', height: '295px' }} />
                                     </div>
+                                    <div className="comment-movie">
+                                        <div className="comment-title">
+                                            <p><b>{title}</b> ({movie.year})</p>
+                                        </div>
+                                        <ul className="rating-score" data-rating={movie.rating}>
+                                            <li className="rating-score-item"></li>
+                                            <li className="rating-score-item"></li>
+                                            <li className="rating-score-item"></li>
+                                            <li className="rating-score-item"></li>
+                                            <li className="rating-score-item"></li>
+                                        </ul>    
+                                        <br></br>
+                                        {[...Array(movie.comments.length)].map((_, indexComment) => (
+                                            <p>{movie.comments[indexComment]}</p>
+                                        ))}
+                                    </div>
+                                </div>
+                                <hr className="comment-seperate"></hr>
                                 </>
                             ))}
                         </div>
