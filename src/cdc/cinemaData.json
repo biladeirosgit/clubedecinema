@@ -846,7 +846,15 @@
             "Wisdow": 3,
             "Geremias": 1.5
         },
-        "comments": {}
+        "comments": {
+            "Geremias" : ["Muito bom filme!"],
+            "Mestre Gui" : ["Vale pelo cast e pela porrada"],
+            "Wisdow" : [
+                "Imaginem, o filme é super engraçado.",
+                "Gostei bué do filme mas depois a parte da lógica é complicada, porque isto tem umas 5 cenas completamente desalinhadas com qualquer lógica que existe. Nem vou falar de raptarem uma pessoa num caralho de um tribunal durante o dia Nem vou falar de o gajo atacar 6 pessoas armadas até aos dentes com UMA FACA e com um velhote cego",
+                "Este filme é um atentado. Fujam. Tirando o que disse em cima, foi muito bom o filme, sólido 4/5"
+                ]
+        }
     },
     "Anyone But You": {
         "year": 2023,
@@ -869,7 +877,18 @@
             "Geremias": 2.5,
             "Mestre Gui": 3.5
         },
-        "comments": {}
+        "comments": {
+            "Geremias" : [
+                "A coisa mais natural deste filme são as mamas da Sydney Sweeney"
+            ],
+            "Wisdow" : [
+                "Banger, obrigado Cunha.",
+                "youtu.be/b7k0a5hYnSI"
+            ],
+            "Mestre Gui" : [
+                "Exatamente tudo o que estás à espera"
+            ]
+        }
     },
     "Saltburn": {
         "year": 2023,
