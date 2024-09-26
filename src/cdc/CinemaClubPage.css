@@ -21,6 +21,16 @@ a {
     margin-top: 20px;
 }
 
+.catalog-withratings {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
 .button {
     display: flex; /* Usa o modelo de layout flexbox */
     align-items: center; /* Centraliza verticalmente */

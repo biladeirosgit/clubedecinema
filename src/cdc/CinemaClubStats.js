@@ -285,6 +285,7 @@ const CinemaClubStats = () => {
                                     genres={cinemaData[movie.title].genres}
                                     minutes={cinemaData[movie.title].minutes}
                                     reviews={cinemaData[movie.title].reviews}
+                                    comments={cinemaData[movie.title].comments}
                                 />
                                 <div className='stats'>
                                     <p>{movie.average}/5</p>
@@ -312,6 +313,7 @@ const CinemaClubStats = () => {
                                     genres={cinemaData[movie.title].genres}
                                     minutes={cinemaData[movie.title].minutes}
                                     reviews={cinemaData[movie.title].reviews}
+                                    comments={cinemaData[movie.title].comments}
                                 />
                                 <div className='stats'>
                                     <p>{movie.average}/5</p>
@@ -394,6 +396,7 @@ const CinemaClubStats = () => {
                             reviews={cinemaData[movie.title].reviews}
                             nreviews={movie.reviews}
                             average={movie.average}
+                            comments={cinemaData[movie.title].comments}
                         />
                         ))}
                     </tbody>

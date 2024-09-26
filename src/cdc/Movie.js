@@ -5,7 +5,7 @@ import './ratings.scss';
 import 'https://kit.fontawesome.com/f0b16c50bd.js'
 import MovieCard from './MovieCard';
 
-const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) => {
+const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews, comments }) => {
     const [showReviews, setShowReviews] = useState(false);
 
     const cleanTitle = (str) => {
@@ -70,6 +70,7 @@ const Movie = ({ title, year, link, date, chosenBy, genres, minutes, reviews }) 
                                 minutes={minutes}
                                 reviews={reviews}
                                 average={calculateAverage()}
+                                comments={comments}
                             />
                         </div>
                     </div>

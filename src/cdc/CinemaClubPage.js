@@ -48,6 +48,7 @@ const CinemaClubPage = () => {
                             genres={movie.genres}
                             minutes={movie.minutes}
                             reviews={movie.reviews}
+                            comments={movie.comments}
                         />
                     </div>
                 ))}

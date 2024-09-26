@@ -13,6 +13,12 @@
             "Geremias" : 2.5,
             "Wisdow" : 2,
             "Storm" : 2.5
+        },
+        "comments" : {
+            "Geremias" : ["4Taste >>> Lemonade Mouth"],
+            "Wisdow" : ["quando musica fixe","quando nao musica nao fixe","","tou a brincar só vi 30 minutos mas é um filme da disney"],
+            "Squnha" : ["cena mais normal de um musical da disney (só nao dou 3,5 pq gosto bue da musica)"],
+            "Mestre Gui" : ["Quando eu era puto achava que quem rappava era o Eminem em playback"]
         }
     },
     "Her" : {
@@ -28,6 +34,12 @@
             "Wisdow" : 5,
             "Hfer" : 4.5,
             "Squnha" : 4
+        },
+        "comments" : {
+            "Geremias" : ["eu e o chat gpt"],
+            "Squnha" : ["tudo muito bonito e tal mas o gajo foi traído por um sistema operativo"],
+            "Mestre Gui" : ["Bizarríssimo"],
+            "Wisdow" : ["Obrigado Gui por carregares o clube do cinema mais uma vez.","Epá os pequenos frames da relação que ele tinha com a Catherine, e a maneira como ele claramente não ultrapassou a relação quando dá os papeís é tão triste crl. Uns frames falam tanto mais que dialógos extensivos, dropparem assim do nada uma sequência de frames em que eles os dois eram felizes na cabeça dele enquanto ela dita o fim oficial da sua ligação.", "E depois toda o seu apaixonar por uma AI porque ele está completamente perdido no mundo e sente que ninguém o entende, para acabar inevitavelmente também por ser abandonado por ela com uma quota tão linda como “It's like I'm reading a book, and it's a book I deeply love, but I'm reading it slowly now so the words are really far apart and the spaces between the words are almost infinite. I can still feel you and the words of our story, but it's in this endless space between the words that I'm finding myself now. It’s a place that’s not of the physical world - it's where everything else is that I didn't even know existed. I love you so much, but this is where I am now. This is who I am now. And I need you to let me go. As much as I want to I can't live in your book anymore.”"]
         }
     },
     "John Wick" : {
@@ -44,7 +56,11 @@
             "Wisdow" : 4,
             "Mestre Gui" : 4,
             "Squnha" : 4
+        },
+        "comments" : {
+            "Mestre Gui" : ["John Wick matou foi pouco"]
         }
+        
     },
     "Ghost in the Shell 2: Innocence" : {
         "year" : 2004,
@@ -55,6 +71,9 @@
         "minutes" : 100,
         "reviews" : {
             "Geremias" : 4
+        },
+        "comments" : {
+            "Geremias" : ["melhor que o primeiro"]
         }
     },
     "Time Lapse" : {
@@ -69,6 +88,11 @@
             "Geremias" : 2,
             "Mestre Gui" : 2.5,
             "Cludos" : 2
+        },
+        "comments" : {
+            "Geremias" : ["dica de amigo nº 1: quando tiverem uma ideia, não precisam de ir a correr fazer um filme, ajuda pensar um pouco melhor sobre ela (é que nem todas as ideias são boas ideias).","dica de amigo nº 2: sejam mais criativos no nome dos filmes para chamar à atenção, por exemplo, este podia-se chamar \"o corno manso que vê o futuro\" :)"],
+            "Mestre Gui" : ["Pá ya"],
+            "Squnha" : ["gui geremias claudio, nao percebi o odio.","Gostei."]
         }
     },
     "Ghost in the Shell" : {
@@ -85,6 +109,12 @@
             "Xadas" : 3,
             "Geremias" : 3.5,
             "Squnha" : 2.5
+        },
+        "comments" : {
+            "Geremias" : ["A Scarlett Johansson está bué diferente neste filme."],
+            "Mestre Gui" : ["juro mano nada confuso juro mano"],
+            "Cludos" : ["Singular"],
+            "Squnha" : ["questa merda"]
         }
     },
     "A Quiet Place" : {
@@ -104,6 +134,10 @@
             "Geremias" : 3,
             "Xiro" : 4,
             "Squnha" : 4
+        },
+        "comments" : {
+            "Geremias" : ["a:","John Krasinski: 🤫"],
+            "Mestre Gui" : ["Hasbulla burro da merda"]
         }
     },
     "The Usual Suspects" : {
@@ -119,6 +153,11 @@
             "Geremias" : 4,
             "Wisdow" : 4.5,
             "Squnha" : 4.5
+        },
+        "comments" : {
+            "Geremias" : ["Não sabia que o Garry Kasparov fazia filmes."],
+            "Mestre Gui" : ["After that"],
+            "Wisdow" : ["The greatest trick the Devil ever pulled was to convince the world he didn't exist"]
         }
     },
     "The Others" : {
@@ -134,6 +173,12 @@
             "Mestre Gui" : 4,
             "Cludos" : 4.5,
             "Geremias" : 3.5
+        },
+        "comments" : {
+            "Geremias" : ["https://www.youtube.com/watch?v=-72P24RlIY4"],
+            "Mestre Gui" : ["E se eu for assim"],
+            "Xiro" : ["biktor :3"],
+            "Squnha" : ["não estava a espera de ser tão bom"]
         }
     },
     "The Machinist" : {
@@ -151,7 +196,14 @@
             "Squnha" : 4,
             "Mestre Gui" : 4.5,
             "Cludos" : 3
-        } 
+        },
+        "comments" : {
+            "Geremias" : ["Apenas o Batman com insónias."],
+            "Squnha" : ["mais um maluquinho da cabeça"],
+            "Mestre Gui" : ["Dá me 6 meses e tou igual"],
+            "Xiro" : ["So.. where did the bald dude come from?"],
+            "Wisdow" : ["Puta de filme genial.","Obrigado Wisdow pela sugestão"]
+        }
     },
     "Memento" : {
         "year" : 2000,
@@ -168,7 +220,14 @@
             "Hfer" : 5,
             "Mestre Gui" : 5,
             "Squnha" : 5
-        } 
+        },
+        "comments" : {
+            "Squnha" : ["\"Memories can be distorted, they`re an interpretation not a record\" -> Esta frase é daquelas que me muda a percepção de tudo o resto"],
+            "Mestre Gui" : ["O que é que é real mesmo"],
+            "Geremias" : ["fds.. esqueci-me do que ia escrever. acho que tinha apontado em algum lado."],
+            "Xiro" : ["My brain just locked in"],
+            "Wisdow" : ["o xiro percebe de filmes","obrigado pela pérola"]
+        }
     },
     "The Ballad of Buster Scruggs" : {
         "year" : 2018,
@@ -184,7 +243,24 @@
             "Mestre Gui" : 3,
             "Squnha" : 3,
             "Atlas" : 3.5
-        } 
+        },
+        "comments" : {
+            "Geremias" : ["★★★★ para o criminoso com mais pinta do velho oeste.","★★½ para o ladrão que foi counterado por um tacho.","★ para o manny sem mãozinhas que foi trocado por uma galinha.","★★ para o mineiro das slots da natureza.","★★½ para o cão que sobreviveu às custas da morte da burrinha.","★★½ aos caçadores de recompensas saídos de clue."],
+            "Squnha" : ["fiquei com pena do permaneta"],
+            "Mestre Gui" : ["A primeira foi fixe o resto foi muita confuso, yee haw?"],
+            "Cludos" : ["É como dar pérolas a porcos"],
+            "Wisdow" : [
+                "\"The Ballad of Buster Scruggs\" é um filme dos irmãos Coen que apresenta uma antologia de seis histórias distintas ambientadas no Velho Oeste. Embora o conceito de uma coletânea de contos possa ser interessante, a execução deixa muito a desejar em alguns segmentos.",
+                "A primeira história, que dá nome ao filme, parece uma caricatura exagerada de um western. A narrativa é praticamente inexistente, consistindo apenas em trocas de tiros entre criminosos, humor pouco eficaz e uma cena de \"suicídio\" absurda causada pelo Buster Scruggs dar pontapés nas tábuas da mesa, seguida de uma canção cantada a uníssono por todos presentes no estabelecimento.",
+                "Na segunda história, temos um assalto a um banco no meio do deserto que corre mal.",
+                "O banqueiro, com habilidades de furtividade e uma espécie de armadura improvisada com tachos, escapa da morte. A captura do protagonista e a sua condenação à forca ocorrem duas vezes, a segunda por um crime que não cometeu. É uma narrativa cheia de absurdos.",
+                "A terceira história apresenta um homem sem braços e pernas que é forçado a participar numa estranha parceria com um cuidador. A interação é grotesca e perturbadora. Entramos num ciclo de repetições desnecessárias da história a ser contada e contada vezes sem conta.... No fim tudo culmina na compra de uma galinha e no homicídio do deficiente, um desfecho que parece mais cruel do que necessário.",
+                "A quarta história muda completamente de tom e torna-se um filme de agricultura. Acompanhamos um alcoólico a trabalhar a terra, pescar e encontrar ouro. No entanto, um estranho dispara-lhe pelas costas, mas acaba por perder num confronto direto com o idoso que acabou de levar com um tiro e esteve 4 minutos a perder sangue, enquanto o jovem enrolava o seu cigarro e o fumava. ",
+                "Na quinta história, acompanhamos uma jovem, \"a burra\", que após a morte súbita do irmão, esquece-se de verificar os seus pertences antes de enterrá-lo. O cão do irmão torna-se um problema, ladrando incessantemente, e há tentativas falhadas de o abater. A história segue com um romance forçado entre a jovem e um cowboy, e culmina com um confronto com índios a uma distância consideravel de onde estava o grupo de caravanas porque a \"burra\" ouviu o seu cão. Nisto temos um confronto com um grupo de indígenas que resulta no suicídio precipitado da protagonista pois ela pensa que o velho que foi a sua procura (enquanto a pessoa que queria casar com ela estava completamente desaparecida), perdeu a batalha. Batalha essa que consiste em investidas dos índios, até 3/4 deles levarem tiros, e em vez de darem o final push, recuavam. E tentavam outra vez, e recuavam. Certamente não sabem que ao avançarem e recuarem só estavam a prejudicar o seu grupo, não entendem o conceito de reload.. De qualquer maneira, isto acaba com a pobre coitada da burra a matar-se.",
+                "Por fim, a última história é uma reflexão aparentemente sobre o caminho entre a vida e a morte. É uma conversa monótona e pouco interessante, encerrando o filme de forma anticlimática.",
+                "\"The Ballad of Buster Scruggs\" é uma mistura de contos que falha em criar uma coesão ou interesse contínuo. Embora alguns segmentos tenham momentos divertidos ou reflexivos, a maioria parece desprovida de propósito ou emoção genuína, resultando numa experiência irregular e muitas vezes frustrante."
+            ]
+        }
     },
     "The Handmaiden" : {
         "year" : 2016,
@@ -199,7 +275,14 @@
             "Mestre Gui" : 4.5,
             "Squnha" : 3,
             "Cludos" : 2
-        } 
+        },
+        "comments" : {
+            "Geremias" : ["\"Pelo menos vou morrer com a minha pila intacta\""],
+            "Wisdow" : ["banger movie, vi até ao fim e curti muito.","Cinematograficamente falando isto é genial, adorei a direção de todo o filme.","Tem frases lindas, tem uma história engraçada e nada previsivel","Obrigado pela sugestão Geremias"],
+            "Mestre Gui" : ["Bué fixe e tal mas algumas cenas de sexo eram muita desconfortáveis n vou mentir, mas ganda final porrazzzzzzz","P.S. \"Quem me dera que as minhas mamas tivessem leite para te poder alimentar\" é capaz de ser das frases mais loucas que já ouvi na vida"],
+            "Cludos" : ["Tentei ver isto com mais 4 gajos, não foi agradável"],
+            "Squnha" : ["sempre no pornhub agora..."]
+        }
     },
     "Knock Knock" : {
         "year" : 2015,
@@ -214,7 +297,13 @@
             "Squnha" : 0.5,
             "Cludos" : 2,
             "Mestre Gui" : 0.5
-        } 
+        },
+        "comments" : {
+            "Geremias" : ["Death?☠Death? ⚰You're gonna kill🔫 me? You're gonna fucking kill🔫 me? Why? ❓WHY? ⁉Because I fucked 👉🏻👌🏻you? You fucked me! You fucked ME🙇🏻! You came to MY house🏡! You came 😪to ME! I got you a car🚙, I brought you your clothes👙👗👠, you took a fuckin' BUBBLE 💦BATH🛀🏻! You wanted it! You wanted it! You came 😍😩on to me! What was I supposed to do🤔🙄? You sucked my cock🍆👅, you both fucking sucked my cock👅🍆👅! It was FREE🆓 PIZZA🍕! Free 🆓fuckin' pizza🍕! It just shows up at my fuckin' door✨✨! What am I supposed to do? \"We're flight attendants✈️🛩🙎🏻. Come on, fuck us👅💦! No one will know. Come on, fuck us😖😁😍💦😘😁😩!\" Oh, twosomes💏, threesomes 👨‍👩‍👧. It doesn't matter! Starfish🌟🐠! Husbands 👨‍❤️‍👨! You don't give a fuck, you'll just fuck anything💦👅🍆🙏🏻, you'll just fuck anything!👉🏻👌🏻👍🏻 Well, you lied to me😨, I tried to help you😔😔! I let you in, I 👏🏻was 👏🏻a 👏🏻good 👏🏻guy👏🏻, I'm 👏🏻a 👏🏻good 👏🏻father! And you just fucking fucked🖖🏻👅👉🏻👌🏻 me! What? Now, you're gonna kill💀 me😰😵? You're gonna kill me💀😓? Why🤔? Why😣? 'Cause you fucked me😳? What the fuck-FUCK-FUCK, this is fucking insane👹🔇!"],
+            "Wisdow" : ["Death?☠Death? ⚰You're gonna kill🔫 me? You're gonna fucking kill🔫 me? Why? ❓WHY? ⁉Because I fucked 👉🏻👌🏻you? You fucked me! You fucked ME🙇🏻! You came to MY house🏡! You came 😪to ME! I got you a car🚙, I brought you your clothes👙👗👠, you took a fuckin' BUBBLE 💦BATH🛀🏻! You wanted it! You wanted it! You came 😍😩on to me! What was I supposed to do🤔🙄? You sucked my cock🍆👅, you both fucking sucked my cock👅🍆👅! It was FREE🆓 PIZZA🍕! Free 🆓fuckin' pizza🍕! It just shows up at my fuckin' door✨✨! What am I supposed to do? \"We're flight attendants✈️🛩🙎🏻. Come on, fuck us👅💦! No one will know. Come on, fuck us😖😁😍💦😘😁😩!\" Oh, twosomes💏, threesomes 👨‍👩‍👧. It doesn't matter! Starfish🌟🐠! Husbands 👨‍❤️‍👨! You don't give a fuck, you'll just fuck anything💦👅🍆🙏🏻, you'll just fuck anything!👉🏻👌🏻👍🏻 Well, you lied to me😨, I tried to help you😔😔! I let you in, I 👏🏻was 👏🏻a 👏🏻good 👏🏻guy👏🏻, I'm 👏🏻a 👏🏻good 👏🏻father! And you just fucking fucked🖖🏻👅👉🏻👌🏻 me! What? Now, you're gonna kill💀 me😰😵? You're gonna kill me💀😓? Why🤔? Why😣? 'Cause you fucked me😳? What the fuck-FUCK-FUCK, this is fucking insane👹🔇!"],
+            "Mestre Gui" : ["Pedro Ribeiro estás na minha lista negra"],
+            "Squnha" : ["a musica final salvou"]
+        }
     },
     "Fear of Rain" : {
         "year" : 2021,
@@ -229,7 +318,12 @@
             "Cludos" : 3.5,
             "Mestre Gui" : 2,
             "Wisdow" : 3
-        } 
+        },
+        "comments" : {
+            "Geremias" : ["expectativa: pior que lixo, absurdamente mau","realidade: mau, decente"],
+            "Wisdow" : ["Filme de merda."],
+            "Mestre Gui" : ["Não vou comentar"]
+        }
     },
     "The Wind Rises" : {
         "year" : 2013,
@@ -245,7 +339,13 @@
             "Mestre Gui" : 4.5,
             "Wisdow" : 3.5,
             "Atlas" : 4
-        } 
+        },
+        "comments" : {
+            "Geremias" : ["Perfeição"],
+            "Mestre Gui" : ["Que filme bonito"],
+            "Cludos" : ["Seria um 5 se a neve estivesse melhor desenhada"],
+            "Wisdow" : ["ainda vou no inicio mas ja sei que é 3.5"]
+        }
     },
     "Shoplifters" : {
         "year" : 2018,

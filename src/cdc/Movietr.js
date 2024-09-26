@@ -5,7 +5,7 @@ import './ratings.scss';
 import 'https://kit.fontawesome.com/f0b16c50bd.js'
 import MovieCard from './MovieCard';
 
-const Movietr = ({ title, index, year, link, date, chosenBy, genres, minutes, reviews, nreviews, average }) => {
+const Movietr = ({ title, index, year, link, date, chosenBy, genres, minutes, reviews, nreviews, average ,comments}) => {
     const [showReviews, setShowReviews] = useState(false);
 
     const cleanTitle = (str) => {
@@ -53,6 +53,7 @@ const Movietr = ({ title, index, year, link, date, chosenBy, genres, minutes, re
                                 minutes={minutes}
                                 reviews={reviews}
                                 average={average}
+                                comments={comments}
                             />
                         </div>
                     </div>

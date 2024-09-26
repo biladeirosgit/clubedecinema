@@ -104,6 +104,21 @@ const UserStats = () => {
         return recommendations;
     }
 
+    const getComments = () => {
+        const comments = {}
+
+        for (const [title,movie] of Object.entries(cinemaData)) {
+            if(movie.comments){
+                for(const [user,comments_movie] of Object.entries(movie.comments)){
+                    if(username == user){
+                        comments[title] = comments_movie
+                    }
+                }
+            }
+        }
+        return comments
+    }
+
 
     const calculateMoviesRatedByUser = () => {
         var movies = {}
@@ -139,8 +154,14 @@ const UserStats = () => {
         return [key, recommendations[key]];
     });
 
+    var comments = getComments()
+    comments = Object.keys(comments).map(function(key) {
+        return [key, comments[key]];
+    });
+
+
     return (
-        <div>
+        <>
             <div className='title-site'>
                 <h1>Stats of {username}</h1>
             </div>
@@ -160,10 +181,10 @@ const UserStats = () => {
                 <div className='stats'>
                     <p>Best Rated Movies</p>
                 </div>
-                <div className='catalog'>
+                <div className='catalog-withratings'>
                     {top5.map(([title, rating]) => (
                         <>
-                            <div className='movie' key={title}>
+                            <div className='movie withratings' key={title}>
                                 <Movie
                                     key={title}
                                     title={title}
@@ -174,6 +195,7 @@ const UserStats = () => {
                                     genres={cinemaData[title].genres}
                                     minutes={cinemaData[title].minutes}
                                     reviews={cinemaData[title].reviews}
+                                    comments={cinemaData[title].comments}
                                 />
                                 <div className='stats'>
                                     <p>{rating}/5</p>
@@ -187,7 +209,7 @@ const UserStats = () => {
                 <div className='stats'>
                     <p>Worst Rated Movies</p>
                 </div>
-                <div className='catalog'>
+                <div className='catalog-withratings'>
                     {worst5.map(([title, rating]) => (
                         <>
                             <div className='movie' key={title}>
@@ -201,6 +223,7 @@ const UserStats = () => {
                                     genres={cinemaData[title].genres}
                                     minutes={cinemaData[title].minutes}
                                     reviews={cinemaData[title].reviews}
+                                    comments={cinemaData[title].comments}
                                 />
                                 <div className='stats'>
                                     <p>{rating}/5</p>
@@ -215,10 +238,10 @@ const UserStats = () => {
                     <div className='stats'>
                         <p>Recommendations</p>
                     </div>
-                    <div className='catalog'>
+                    <div className='catalog-withratings'>
                         {recommendations.map(([title, rating]) => (
                             <>
-                                <div className='movie' key={title}>
+                                <div className='movie withratings' key={title}>
                                     <Movie
                                         key={title}
                                         title={title}
@@ -229,6 +252,7 @@ const UserStats = () => {
                                         genres={cinemaData[title].genres}
                                         minutes={cinemaData[title].minutes}
                                         reviews={cinemaData[title].reviews}
+                                        comments={cinemaData[title].comments}
                                     />
                                     <div className='stats'>
                                         <p>{rating}/5</p>
@@ -239,9 +263,34 @@ const UserStats = () => {
                         ))}
                     </div>
                 </>
-            )}
+                )}
+                {Object.keys(comments).length !== 0 && (
+                <>
+                    <div className='stats'>
+                        <p>Comments</p>
+                    </div>
+                    <div className="comments-container">
+                        <div className='comments-section'>
+                            {comments.map(([title, comments]) => (
+                                <>
+                                    <div className="comment-movie">
+                                        <br></br>
+                                        <h3>{title}</h3>
+                                        <br></br>
+                                        {[...Array(comments.length)].map((_, indexComment) => (
+                                            <p>{comments[indexComment]}</p>
+                                        ))}
+                                        <br></br>
+                                        <hr className="comment-seperate"></hr>
+                                    </div>
+                                </>
+                            ))}
+                        </div>
+                    </div>
+                </>
+                )}
             </div>
-        </div>
+        </>
     );
 }
 

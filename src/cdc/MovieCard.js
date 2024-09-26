@@ -4,7 +4,7 @@ import './Movie.css';
 import './ratings.scss';
 import 'https://kit.fontawesome.com/f0b16c50bd.js'
 
-const MovieCard = ({ title, index, year, link, date, chosenBy, genres, minutes, reviews, nreviews, average}) => {
+const MovieCard = ({ title, index, year, link, date, chosenBy, genres, minutes, reviews, nreviews, average, comments}) => {
     const cleanTitle = (str) => {
         return str.replace(/[^\w\s]/gi, ''); 
     };
@@ -97,12 +97,28 @@ const MovieCard = ({ title, index, year, link, date, chosenBy, genres, minutes, 
                                     {Object.keys(reviews)[index] && (
                                         <>
                                             <div className='rating-user'>
-                                                <div className='rating-top'>
-                                                    <Link to={`/users/${Object.keys(reviews)[index]}`}>
-                                                        <img src={`/clubedecinema/pfp/${Object.keys(reviews)[index]}.png`} alt={`${Object.keys(reviews)[index]}`} style={{ width: '50px', height: '50px', borderRadius: '25px'}} />
-                                                    </Link>
+                                                <div className='rating-top-user'>
+                                                  <Link to={`/users/${Object.keys(reviews)[index]}`}>
+                                                    <img
+                                                      src={`/clubedecinema/pfp/${Object.keys(reviews)[index]}.png`}
+                                                      alt={`${Object.keys(reviews)[index]}`}
+                                                      className="reviewer-image"
+                                                    />
+                                                  </Link>
+                                                  {comments && comments[Object.keys(reviews)[index]] && (
+                                                    <>
+                                                        <div className="comment-icon">
+                                                            💬
+                                                        </div>
+                                                        <div className="comment">
+                                                            {[...Array(comments[Object.keys(reviews)[index]].length)].map((_, indexComment) => (
+                                                                <p>{comments[Object.keys(reviews)[index]][indexComment]}</p>
+                                                            ))}
+                                                        </div>
+                                                    </>
+                                                    )}
                                                 </div>
-                                                <div className='rating-bottom'>
+                                                <div className='rating-bottom-user'>
                                                     {Object.keys(reviews)[index]}
                                                 </div>
                                             </div>
@@ -129,12 +145,28 @@ const MovieCard = ({ title, index, year, link, date, chosenBy, genres, minutes, 
                                     {Object.keys(reviews)[index+4] && (
                                         <>
                                             <div className='rating-user'>
-                                            <div className='rating-top'>
-                                                <Link to={`/users/${Object.keys(reviews)[index+4]}`}>
-                                                    <img src={`/clubedecinema/pfp/${Object.keys(reviews)[index+4]}.png`} alt={`${Object.keys(reviews)[index+4]}`} style={{ width: '50px', height: '50px', borderRadius: '25px'}} />
-                                                </Link>
+                                                <div className='rating-top-user'>
+                                                  <Link to={`/users/${Object.keys(reviews)[index+4]}`}>
+                                                    <img
+                                                      src={`/clubedecinema/pfp/${Object.keys(reviews)[index+4]}.png`}
+                                                      alt={`${Object.keys(reviews)[index+4]}`}
+                                                      className="reviewer-image"
+                                                    />
+                                                  </Link>
+                                                  {comments && comments[Object.keys(reviews)[index+4]] && (
+                                                    <>
+                                                        <div className="comment-icon">
+                                                            💬
+                                                        </div>
+                                                        <div className="comment">
+                                                            {[...Array(comments[Object.keys(reviews)[index+4]].length)].map((_, indexComment) => (
+                                                                <p>{comments[Object.keys(reviews)[index+4]][indexComment]}</p>
+                                                            ))}
+                                                        </div>
+                                                    </>
+                                                    )}
                                                 </div>
-                                                <div className='rating-bottom'>
+                                                <div className='rating-bottom-user'>
                                                     {Object.keys(reviews)[index+4]}
                                                 </div>
                                             </div>
@@ -160,12 +192,28 @@ const MovieCard = ({ title, index, year, link, date, chosenBy, genres, minutes, 
                                     {Object.keys(reviews)[index+8] && (
                                         <>
                                             <div className='rating-user'>
-                                            <div className='rating-top'>
-                                                <Link to={`/users/${Object.keys(reviews)[index+8]}`}>
-                                                <img src={`/clubedecinema/pfp/${Object.keys(reviews)[index+8]}.png`} alt={`${Object.keys(reviews)[index+8]}`} style={{ width: '50px', height: '50px', borderRadius: '25px'}} />
-                                                </Link>
+                                                <div className='rating-top-user'>
+                                                  <Link to={`/users/${Object.keys(reviews)[index+8]}`}>
+                                                    <img
+                                                      src={`/clubedecinema/pfp/${Object.keys(reviews)[index+8]}.png`}
+                                                      alt={`${Object.keys(reviews)[index+8]}`}
+                                                      className="reviewer-image"
+                                                    />
+                                                  </Link>
+                                                  {comments && comments[Object.keys(reviews)[index+8]] && (
+                                                    <>
+                                                        <div className="comment-icon">
+                                                            💬
+                                                        </div>
+                                                        <div className="comment">
+                                                            {[...Array(comments[Object.keys(reviews)[index+8]].length)].map((_, indexComment) => (
+                                                                <p>{comments[Object.keys(reviews)[index+8]][indexComment]}</p>
+                                                            ))}
+                                                        </div>
+                                                    </>
+                                                    )}
                                                 </div>
-                                                <div className='rating-bottom'>
+                                                <div className='rating-bottom-user'>
                                                     {Object.keys(reviews)[index+8]}
                                                 </div>
                                             </div>

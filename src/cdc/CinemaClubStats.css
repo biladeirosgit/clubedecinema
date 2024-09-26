@@ -77,3 +77,22 @@
 .table-info p{
     font-size: 20px!important;
 }
+
+.comments-section{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 1000px;
+    margin: auto;
+}
+
+.comment-movie p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.comment-seperate{
+    border-top: 1px dashed #14181C;
+    border-bottom: none;
+}

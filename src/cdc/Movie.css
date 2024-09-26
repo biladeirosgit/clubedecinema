@@ -97,6 +97,10 @@ img {
     margin-right: 20px;
 }
 
+.withratings {
+    margin-bottom: 25px;
+}
+
 .poster {
     width: 100%;
     height: 295px;
@@ -259,4 +263,83 @@ img {
     width: 159px;
     height: 100%;
     margin-right: 20px;
+  }
+
+  .rating-top-user {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 100%;
+  }
+  
+  .rating-bottom-user {
+    top: -5px;
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: center; /* Alinha horizontalmente */
+    font-size: 10px;
+  }
+  
+  .reviewer-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .movie-tr .comment p {
+    font-size: 12px;
+  }
+  
+  .comment {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    z-index: 5;
+    width: 200px;
+    max-height: 54px;
+    color: black;
+    background-color: #99AABB;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    font-size: 12px!important;
+    overflow: hidden;                /* Esconde o conteúdo extra */
+    -webkit-box-orient: vertical;    /* Define orientação como vertical */
+    -webkit-line-clamp: 4;           /* Limita a 8 linhas */
+    text-overflow: ellipsis;         /* Adiciona reticências ao final */
+    
+    white-space: normal;             /* Permite quebra de linha normal */
+    word-break: break-word;          /* Quebra palavras apenas se necessário */
+
+    font-family: Arial, Helvetica, sans-serif!important;
+    text-align: center;
+    line-height: 1!important;
+  }
+  
+  .comment-icon {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background: #14181C;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    border: #99AABB 1px solid;
+    font-size: 15px;
+  }
+  
+  .rating-top-user:hover .comment {
+    display: -webkit-box;  /* Mostra o comentário ao passar o mouse */
+  }
+  
+  .rating-top-user:hover .comment-icon {
+    background: #99AABB;
   }
