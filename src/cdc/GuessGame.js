@@ -20,37 +20,56 @@ const GuessGame = () => {
     const cleanTitle = (str) => {
         return str.replace(/[^\w\s]/gi, ''); 
     };
-    
-    useEffect(() => {
-        //const now = new Date();
-        var now = new Date();
-        now.setHours(now.getHours() + 1);
-        console.log(now);
-        
-        // Cria um objeto Date para o início do ano
-        const start = new Date(now.getFullYear(), 0, 1);
-        // Calcula a diferença em milissegundos entre a data fornecida e o início do ano
-        const diff = now - start;
-        // Converte a diferença de milissegundos para dias
-        const oneDay = 1000 * 60 * 60 * 24;
-        setDayOfYear(Math.floor(diff / oneDay) + 1);
 
-        // Atualiza o cronômetro a cada segundo
+    useEffect(() => {
+        const now = new Date();
+        now.setHours(now.getHours() + 1);
+    
+        const start = new Date(now.getFullYear(), 0, 1);
+        const diff = now - start;
+        const oneDay = 1000 * 60 * 60 * 24;
+        const todayDayOfYear = Math.floor(diff / oneDay) + 1;
+    
+        setDayOfYear(todayDayOfYear);
+    
+        const savedState = JSON.parse(localStorage.getItem('guessGameState'));
+        if (savedState && savedState.dayOfYear === todayDayOfYear) {
+            setGuesses(savedState.guesses || []);
+            setGameOver(savedState.gameOver || false);
+        }
+    
         const timer = setInterval(() => {
             setTimeLeft(getTimeUntilMidnight());
         }, 1000);
-
+    
         return () => clearInterval(timer);
     }, []);
 
     useEffect(() => {
-        // Seleciona o valor aleatório baseado no dia do ano
+        const gameState = {
+            guesses,
+            gameOver,
+            dayOfYear,
+        };
+        localStorage.setItem('guessGameState', JSON.stringify(gameState));
+    }, [guesses, gameOver, dayOfYear]);
+
+    useEffect(() => {
+        const savedState = JSON.parse(localStorage.getItem('guessGameState'));
+        if (savedState && savedState.dayOfYear !== dayOfYear) {
+            setGuesses([]);
+            setGameOver(false);
+            localStorage.removeItem('guessGameState');
+        }
+    
+        // Seleciona o filme aleatório baseado no dia do ano
         const randomValue = randomValues[dayOfYear % randomValues.length];
         const movieKeys = Object.keys(cinemaData);
         const movieIndex = Math.floor(randomValue * movieKeys.length);
         const selectedMovieKey = movieKeys[movieIndex];
         setSelectedMovie({ title: selectedMovieKey, ...cinemaData[selectedMovieKey] });
-    }, [dayOfYear])
+    }, [dayOfYear]);
+
 
     const getTimeUntilMidnight = () => {
         const now = new Date();
