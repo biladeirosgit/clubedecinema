@@ -1,4 +1,38 @@
 {
+    "John Wick: Chapter 2" : {
+        "year": 2017,
+        "link": "https://letterboxd.com/film/john-wick-chapter-2/",
+        "date": "29/09/2024",
+        "chosen by": [
+            "Geremias"
+        ],
+        "genres": [
+            "Crime",
+            "Action",
+            "Thriller"
+        ],
+        "minutes": 122,
+        "reviews": {
+            "Geremias": 4,
+            "Cludos": 4,
+            "Wisdow": 2,
+            "Hfer" : 3
+        },
+        "comments": {
+            "Wisdow": [
+                "Eu sei que é um filme de ação mas meu deus.",
+                "Os Teleports entre Roma e NY como se fosse tudo no mesmo sitio, a incapacidade de 80 gajos utilizarem armas, o John Wick dar reload a uma SHOTGUN PARADO durante 30 segundos sem sequer se esconder atras de uma parede quando está literalmente com 4123 gajos a perseguir o homem",
+                "Uma troca de tiros com silenciador no meio de uma estação de comboios as \"escondidas\"",
+                "Se isto tivesse outro nome eu bem sei o rating que levava este filme por parte dos estimados membros do clube do cinema.."
+            ],
+            "Geremias": [
+                "Mortinho para que apareça a Ana de Armas a partir tudo."
+            ],
+            "Cludos": [
+                "Andrew Tate da wish a dançar breakdance com o Keanu Reeves, poliglotismo, mendigos como o maior sindicato de crime organizado, e no final o cão não morre, melhor que o primeiro"
+            ]
+        }
+    },
     "Lemonade Mouth": {
         "year": 2011,
         "link": "https://letterboxd.com/film/lemonade-mouth/",
@@ -1587,7 +1621,7 @@
         ],
         "minutes": 100,
         "reviews": {
-            "Geremias": 3.5,
+            "Geremias": 4,
             "Wisdow": 4,
             "Hfer": 3.5,
             "Cludos": 3.5
