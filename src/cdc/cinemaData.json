@@ -1530,9 +1530,12 @@
         "reviews": {
             "Geremias": 4.5,
             "Hfer": 3.5,
-            "Cludos": 3
+            "Cludos": 3,
+            "Wisdow": 3
         },
-        "comments": {}
+        "comments": {
+            "Wisdow" : ["confuso demais para o meu cerebro"]
+        }
     },
     "mid90s": {
         "year": 2018,
