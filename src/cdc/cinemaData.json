@@ -1,4 +1,27 @@
 {
+    "John Wick: Chapter 3" : {
+         "year": 2019,
+        "link": "https://letterboxd.com/film/john-wick-chapter-3-parabellum/",
+        "date": "06/10/2024",
+        "chosen by": [
+            "Cludos"
+        ],
+        "genres": [
+            "Crime",
+            "Action",
+            "Thriller"
+        ],
+        "minutes": 131,
+        "reviews": {
+            "Cludos": 3.5,
+            "Geremias": 3.5,
+            "Hfer" : 3
+        },
+        "comments" : {
+            "Cludos" : ["Não vai poder comer mais de pauzinhos o coitado..."],
+            "Geremias" : ["1000 ways to die by john wick (but he always survives)"]
+        }   
+    },
     "John Wick: Chapter 2" : {
         "year": 2017,
         "link": "https://letterboxd.com/film/john-wick-chapter-2/",
