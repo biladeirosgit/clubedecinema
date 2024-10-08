@@ -15,11 +15,17 @@
         "reviews": {
             "Cludos": 3.5,
             "Geremias": 3.5,
-            "Hfer" : 3
+            "Hfer" : 3,
+            "Wisdow" : 1
         },
         "comments" : {
             "Cludos" : ["Não vai poder comer mais de pauzinhos o coitado..."],
-            "Geremias" : ["1000 ways to die by john wick (but he always survives)"]
+            "Geremias" : ["1000 ways to die by john wick (but he always survives)"],
+            "Wisdow" : [
+                "Este filme devia estar categorizado como comédia, se assim fosse era um banger de filme.",
+                "Desde erros de continuidade, a um plot armor a volta do John Wick maior do que aquele que o Porto tem com as arbitragens, chega a um ponto que a formula cansa",
+                "Única coisa boa deste filme é que acabaram os filmes de John Wick para o resto do mês de Outubro."
+            ]
         }   
     },
     "John Wick: Chapter 2" : {
