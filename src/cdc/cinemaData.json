@@ -46,7 +46,8 @@
             "Cludos": 4,
             "Wisdow": 2,
             "Hfer" : 3,
-            "Mestre Gui" : 3
+            "Mestre Gui" : 3,
+            "Squnha" : 4
         },
         "comments": {
             "Wisdow": [
@@ -63,6 +64,9 @@
             ],
             "Mestre Gui" : [
                 "Luta nos túneis do Diddy é crazy"
+            ],
+            "Squnha" : [
+                "fodeu"
             ]
         }
     },
