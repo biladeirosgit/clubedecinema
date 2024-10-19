@@ -1,6 +1,36 @@
-{
+{   "The Departed" : {
+        "year": 2006,
+        "link": "https://letterboxd.com/film/the-departed",
+        "date": "13/10/2024",
+        "chosen by": [
+            "Wisdow"
+        ],
+        "genres": [
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "minutes": 151,
+        "reviews": {
+            "Wisdow": 5,
+            "Mestre Gui": 5,
+            "Geremias" : 4.5,
+            "Cludos" : 4.5,
+            "Hfer" : 4.5
+        },
+        "comments" : {
+            "Wisdow" : [
+                "O Gui é literalmente o clube do cinema, não falha uma puta que pariu.",
+                "Lindo.",
+                "Banger, masterpiece, adorei o cast, adorei a storyline, adorei o quão sentido fez o filme, já tinha saudades de um filme bom, obrigado Mestre Gui <3",
+                "Ending perfeito"
+            ],
+            "Mestre Gui" : ["Drena"],
+            "Geremias" : ["Um dia a IA vai chegar a um ponto em que eu possa ver este filme com o Gui e o Wisdow em vez do DiCaprio e o Damon."]
+        }
+    },
     "John Wick: Chapter 3" : {
-         "year": 2019,
+        "year": 2019,
         "link": "https://letterboxd.com/film/john-wick-chapter-3-parabellum/",
         "date": "06/10/2024",
         "chosen by": [
@@ -16,7 +46,8 @@
             "Cludos": 3.5,
             "Geremias": 3.5,
             "Hfer" : 3,
-            "Wisdow" : 1
+            "Wisdow" : 1,
+            "Squnha" : 3.5
         },
         "comments" : {
             "Cludos" : ["Não vai poder comer mais de pauzinhos o coitado..."],
@@ -25,7 +56,8 @@
                 "Este filme devia estar categorizado como comédia, se assim fosse era um banger de filme.",
                 "Desde erros de continuidade, a um plot armor a volta do John Wick maior do que aquele que o Porto tem com as arbitragens, chega a um ponto que a formula cansa",
                 "Única coisa boa deste filme é que acabaram os filmes de John Wick para o resto do mês de Outubro."
-            ]
+            ],
+            "Squnha" : ["os chinocas parecem um ginásio Pokémon"]
         }   
     },
     "John Wick: Chapter 2" : {
