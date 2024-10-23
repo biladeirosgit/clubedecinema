@@ -16,7 +16,8 @@
             "Mestre Gui": 5,
             "Geremias" : 4.5,
             "Cludos" : 4.5,
-            "Hfer" : 4.5
+            "Hfer" : 4.5,
+            "Squnha" : 4.5
         },
         "comments" : {
             "Wisdow" : [
@@ -237,11 +238,16 @@
         ],
         "minutes": 100,
         "reviews": {
-            "Geremias": 4
+            "Geremias": 4,
+            "Squnha" : 3
         },
         "comments": {
             "Geremias": [
                 "melhor que o primeiro"
+            ],
+            "Squnha" : [
+                "este filme é mais velho que eu.",
+                "gostei da \"no one's easier to trick than a trickster\""
             ]
         }
     },
