@@ -1,4 +1,30 @@
-{   "The Departed" : {
+{   
+    "Sinister" : {
+        "year": 2012,
+        "link": "https://letterboxd.com/film/sinister",
+        "date": "20/10/2024",
+        "chosen by": [
+            "Squnha"
+        ],
+        "genres": [
+            "Mystery",
+            "Horror",
+            "Thriller"
+        ],
+        "minutes": 110,
+        "reviews": {
+            "Squnha" : 4.5,
+            "Mestre Gui" : 4.5,
+            "Geremias" : 3,
+            "NeNelson" : 3
+        },
+        "comments" : {
+            "Squnha" : ["mr goofy give me an autograph please"],
+            "Mestre Gui" : ["FALA BAIXO NENGUE"],
+            "Geremias" : ["Espero que para o Sinister 2 o Mr. Boogie arranje uma câmara 4k."]
+        }
+    },
+    "The Departed" : {
         "year": 2006,
         "link": "https://letterboxd.com/film/the-departed",
         "date": "13/10/2024",
