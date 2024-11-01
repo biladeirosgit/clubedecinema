@@ -1,4 +1,29 @@
 {   
+    "The Silence of the Lambs" : {
+        "year": 1991,
+        "link": "https://letterboxd.com/film/the-silence-of-the-lambs/",
+        "date": "27/10/2024",
+        "chosen by": [
+            "Mestre Gui"
+        ],
+        "genres": [
+            "Crime",
+            "Horror",
+            "Thriller",
+            "Drama"
+        ],
+        "minutes": 119,
+        "reviews": {
+            "Mestre Gui" : 4.5,
+            "Geremias" : 4,
+            "Wisdow" : 4
+        },
+        "comments" : {
+            "Mestre Gui" : ["\"I'm having an old friend for dinner\" era uma frase mt mais cold que \"Nobody cares until I put on the mask\" oh Gyokeres"],
+            "Geremias" : ["\"Espero que o cão morra\" - Wisdow","en.wikipedia.org/wiki/Darla_(dog)"],
+            "Wisdow" : ["adorei a parte em que os cantos são mesma a fraqueza dela"]
+        }
+    },
     "Sinister" : {
         "year": 2012,
         "link": "https://letterboxd.com/film/sinister",
@@ -1792,8 +1817,11 @@
         "reviews": {
             "Cludos": 3.5,
             "Geremias": 3,
-            "Hfer": 3.5
+            "Hfer": 3.5,
+            "Wisdow" : 2.5
         },
-        "comments": {}
+        "comments": {
+            "Wisdow" : ["foi 1 filme"]
+        }
     }
 }
