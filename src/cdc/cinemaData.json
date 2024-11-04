@@ -1,4 +1,33 @@
 {   
+    "Interstellar" : {
+        "year": 2014,
+        "link": "https://letterboxd.com/film/interstellar/",
+        "date": "03/11/2024",
+        "chosen by": [
+            "Mestre Gui", "Wisdow"
+        ],
+        "genres": [
+            "Science Fiction",
+            "Adventure",
+            "Drama"
+        ],
+        "minutes": 169,
+        "reviews": {
+            "Mestre Gui" : 5,
+            "Wisdow" : 5,
+            "Geremias" : 4,
+            "Cludos" : 4,
+            "Squnha" : 5,
+            "Esquilo" : 4.5,
+            "João Nuno" : 5,
+            "Areias" : 5
+        },
+        "comments" : {
+            "Wisdow" : ["Depois de ver isto com a boa companhia do Gui e com a companhia do outro..individuo, cheguei a conclusão que é um 5", "Obrigado"],
+            "Mestre Gui" : ["There's nolan like you"],
+            "Geremias" : ["se tivesse visto em IMAX dava 4.5"]
+        }
+    },
     "The Silence of the Lambs" : {
         "year": 1991,
         "link": "https://letterboxd.com/film/the-silence-of-the-lambs/",
@@ -323,7 +352,7 @@
             "Squnha": 3.5,
             "Geremias": 2,
             "Mestre Gui": 2.5,
-            "Cludos": 2
+            "Cludos": 2.5
         },
         "comments": {
             "Geremias": [
@@ -665,7 +694,7 @@
             "Wisdow": 4.5,
             "Geremias": 0.5,
             "Squnha": 0.5,
-            "Cludos": 2,
+            "Cludos": 0.5,
             "Mestre Gui": 0.5
         },
         "comments": {
@@ -699,7 +728,7 @@
         "reviews": {
             "Squnha": 4,
             "Geremias": 2.5,
-            "Cludos": 3.5,
+            "Cludos": 2,
             "Mestre Gui": 2,
             "Wisdow": 3
         },
