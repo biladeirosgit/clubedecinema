@@ -16,12 +16,14 @@
         "reviews": {
             "Mestre Gui" : 4.5,
             "Geremias" : 4,
-            "Wisdow" : 4
+            "Wisdow" : 4,
+            "Squnha" : 4
         },
         "comments" : {
             "Mestre Gui" : ["\"I'm having an old friend for dinner\" era uma frase mt mais cold que \"Nobody cares until I put on the mask\" oh Gyokeres"],
             "Geremias" : ["\"Espero que o cão morra\" - Wisdow","en.wikipedia.org/wiki/Darla_(dog)"],
-            "Wisdow" : ["adorei a parte em que os cantos são mesma a fraqueza dela"]
+            "Wisdow" : ["adorei a parte em que os cantos são mesma a fraqueza dela"],
+            "Squnha" : ["dr. lecter kinda carried"]
         }
     },
     "Sinister" : {
