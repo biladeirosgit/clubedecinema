@@ -20,7 +20,8 @@
             "Squnha" : 5,
             "Esquilo" : 4.5,
             "NeNelson" : 5,
-            "Areias" : 5
+            "Areias" : 5,
+            "Atlas" : 5 
         },
         "comments" : {
             "Wisdow" : ["Depois de ver isto com a boa companhia do Gui e com a companhia do outro..individuo, cheguei a conclusão que é um 5", "Obrigado"],
@@ -46,7 +47,8 @@
             "Mestre Gui" : 4.5,
             "Geremias" : 4,
             "Wisdow" : 4,
-            "Squnha" : 4
+            "Squnha" : 4,
+            "Atlas" : 4.5
         },
         "comments" : {
             "Mestre Gui" : ["\"I'm having an old friend for dinner\" era uma frase mt mais cold que \"Nobody cares until I put on the mask\" oh Gyokeres"],
@@ -242,7 +244,8 @@
             "Geremias": 4.5,
             "Wisdow": 5,
             "Hfer": 4.5,
-            "Squnha": 3.5
+            "Squnha": 3.5,
+            "Atlas" : 4.5
         },
         "comments": {
             "Wisdow": [
@@ -387,7 +390,8 @@
             "Mestre Gui": 3.5,
             "Xadas": 3,
             "Geremias": 3.5,
-            "Squnha": 2.5
+            "Squnha": 2.5,
+            "Atlas" : 4
         },
         "comments": {
             "Geremias": [
