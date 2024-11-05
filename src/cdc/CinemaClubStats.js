@@ -125,9 +125,12 @@ const CinemaClubStats = () => {
 
         for (const [title, movie] of movies) {
             number_movies+=1;
+            let total_movie_rating = 0;
+            let total_movie_reviews = 0;
             for (const [user, rating] of Object.entries(movie.reviews)) {
-                 
-
+                total_movie_rating += rating;
+                total_movie_reviews += 1;
+                
 
                 if (user in watchers){
                     watchers[user]["total_movies"] += 1
@@ -147,6 +150,7 @@ const CinemaClubStats = () => {
                         "total_movies" : 1,
                         "total_ratings" : rating,
                         "choices" : 0,
+                        "recommendations_ratings" : 0
                     }
                     if(number_movies === 1){
                         watchers[user]["streak"] = 1;
@@ -162,9 +166,13 @@ const CinemaClubStats = () => {
                     }
                 }
             }
+
+            let average_movie_rating = total_movie_rating/total_movie_reviews
+
             for(let i in movie['chosen by']){
                 if (movie['chosen by'][i] in watchers){
                     watchers[movie['chosen by'][i]]["choices"]+=1
+                    watchers[movie['chosen by'][i]]["recommendations_ratings"]+=average_movie_rating
                 }
                 else{
                     watchers[movie['chosen by'][i]] = {
@@ -172,7 +180,8 @@ const CinemaClubStats = () => {
                         "total_ratings" : 0,
                         "choices" : 1,
                         "streak" : 0,
-                        "active" : 0
+                        "active" : 0,
+                        "recommendations_ratings" : average_movie_rating
                     }
                 }
             }
@@ -222,7 +231,8 @@ const CinemaClubStats = () => {
                 streak: info.streak,
                 active: member_active,
                 active_count: info.active,
-                average_ratings: (info.total_ratings / info.total_movies).toFixed(2)
+                average_ratings: (info.total_ratings / info.total_movies).toFixed(2),
+                average_recommendations_ratings : (info.recommendations_ratings / info.choices).toFixed(2)
             };
         });
     
@@ -334,6 +344,7 @@ const CinemaClubStats = () => {
                             <th>Movies Watched</th>
                             <th>Average Rating</th>
                             <th>Recommendations</th>
+                            <th>Average Recommendation Rating</th>
                             <th>Streak</th>
                             <th>Active Member*</th>
                         </tr>
@@ -357,6 +368,8 @@ const CinemaClubStats = () => {
                                     <td>{viewer.total_movies}</td>
                                     <td>{viewer.average_ratings}</td>
                                     <td>{viewer.choices}</td>
+                                    {viewer.choices > 0 && <td>{viewer.average_recommendations_ratings}</td>}
+                                    {viewer.choices == 0 && <td>-</td>}
                                     {viewer.streak > 0 && <td>{viewer.streak} 🔥</td>}
                                     {viewer.streak < 0 && <td>{-viewer.streak} ❄️</td>}
                                     {viewer.active === "Yes" && <td>✔️ ({viewer.active_count}/12)</td>}
