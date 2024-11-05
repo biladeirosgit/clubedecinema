@@ -96,7 +96,7 @@ const CinemaClubPage = () => {
                     </select>
                 </label>
                 <label>
-                    Choosen by:
+                    Recommendation by:
                     <select value={selectedChosenBy} onChange={(e) => setSelectedChosenBy(e.target.value)}>
                         <option value="">All</option>
                         {chosenByPeople.map((person, index) => (
