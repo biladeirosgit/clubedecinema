@@ -14,6 +14,15 @@ a {
 
 .catalog {
     display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+.catalog-page {
+    display: flex;
     height: 100vh;
     width: 100vw;
     flex-wrap: wrap;

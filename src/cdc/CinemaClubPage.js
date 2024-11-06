@@ -136,7 +136,7 @@ const CinemaClubPage = () => {
             </div>
 
             {/* Catálogo de filmes */}
-            <div className='catalog'>
+            <div className='catalog-page' style={{width:"100vw",height: "100vh!important"}}>
                 {filteredMovies.map(([title, movie]) => (
                     <div className='movie' key={title}>
                         <Movie
