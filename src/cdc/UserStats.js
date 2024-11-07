@@ -298,7 +298,7 @@ const UserStats = () => {
                                         </ul>    
                                         <br></br>
                                         {[...Array(movie.comments.length)].map((_, indexComment) => (
-                                            <p>{movie.comments[indexComment]}</p>
+                                          <p dangerouslySetInnerHTML={{ __html: movie.comments[indexComment] }}></p>
                                         ))}
                                     </div>
                                 </div>

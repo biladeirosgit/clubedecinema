@@ -112,7 +112,11 @@ const MovieCard = ({ title, index, year, link, date, chosenBy, genres, minutes, 
                                                         </div>
                                                         <div className="comment">
                                                             {[...Array(comments[Object.keys(reviews)[index]].length)].map((_, indexComment) => (
-                                                                <p>{comments[Object.keys(reviews)[index]][indexComment]}</p>
+                                                              <p
+                                                                dangerouslySetInnerHTML={{
+                                                                  __html: comments[Object.keys(reviews)[index]][indexComment]
+                                                                }}
+                                                              ></p>
                                                             ))}
                                                         </div>
                                                     </>
@@ -159,8 +163,12 @@ const MovieCard = ({ title, index, year, link, date, chosenBy, genres, minutes, 
                                                             💬
                                                         </div>
                                                         <div className="comment">
-                                                            {[...Array(comments[Object.keys(reviews)[index+4]].length)].map((_, indexComment) => (
-                                                                <p>{comments[Object.keys(reviews)[index+4]][indexComment]}</p>
+                                                            {[...Array(comments[Object.keys(reviews)[index + 4]].length)].map((_, indexComment) => (
+                                                              <p
+                                                                dangerouslySetInnerHTML={{
+                                                                  __html: comments[Object.keys(reviews)[index + 4]][indexComment]
+                                                                }}
+                                                              ></p>
                                                             ))}
                                                         </div>
                                                     </>
@@ -206,8 +214,12 @@ const MovieCard = ({ title, index, year, link, date, chosenBy, genres, minutes, 
                                                             💬
                                                         </div>
                                                         <div className="comment">
-                                                            {[...Array(comments[Object.keys(reviews)[index+8]].length)].map((_, indexComment) => (
-                                                                <p>{comments[Object.keys(reviews)[index+8]][indexComment]}</p>
+                                                            {[...Array(comments[Object.keys(reviews)[index + 8]].length)].map((_, indexComment) => (
+                                                              <p
+                                                                dangerouslySetInnerHTML={{
+                                                                  __html: comments[Object.keys(reviews)[index + 8]][indexComment]
+                                                                }}
+                                                              ></p>
                                                             ))}
                                                         </div>
                                                     </>
