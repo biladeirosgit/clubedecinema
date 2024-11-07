@@ -17,7 +17,7 @@
             "Wisdow" : 5,
             "Geremias" : 4,
             "Cludos" : 4,
-            "Squnha" : 5,
+            "Squnha" : 4.5,
             "Esquilo" : 4.5,
             "NeNelson" : 5,
             "Areias" : 5,
@@ -865,8 +865,8 @@
         ],
         "minutes": 101,
         "reviews": {
-            "Geremias": 4,
-            "Squnha": 2.5,
+            "Geremias": 3.5,
+            "Squnha": 1.5,
             "Cludos": 2
         },
         "comments": {
@@ -946,7 +946,7 @@
             "NeNelson": 4,
             "Atlas": 4.5,
             "Cludos": 3.5,
-            "Squnha": 2,
+            "Squnha": 1.5,
             "Hfer": 3.5,
             "Wisdow": 4,
             "Mestre Gui": 4,
@@ -961,6 +961,9 @@
             ],
             "Mestre Gui": [
                 "Timóteo ola"
+            ],
+            "Squnha" : [
+                "ya dormi"
             ]
         }
     },
@@ -1046,7 +1049,7 @@
         "minutes": 94,
         "reviews": {
             "Mestre Gui": 5,
-            "Geremias": 5,
+            "Geremias": 4.5,
             "Wisdow": 5,
             "Squnha": 4.5,
             "Cludos": 3.5
@@ -1057,7 +1060,7 @@
                 "Obrigado Gui."
             ],
             "Geremias": [
-                "Completamente à nora até ao fim. Devia se chamar No Clue."
+                "https://imgur.com/gallery/no-clue-ZSetQV6"
             ],
             "Mestre Gui": [
                 "Que filme incrível, verdadeira Chicanery, não me divertia assim tanto a ver um filme há muito tempo"
@@ -1745,7 +1748,8 @@
             "Geremias": 4,
             "Cludos": 5,
             "Atlas": 4,
-            "Xiro": 4
+            "Xiro": 4,
+            "Squnha" : 4
         },
         "comments": {}
     },
@@ -1833,9 +1837,12 @@
             "Atlas": 5,
             "Cludos": 4,
             "Geremias": 4,
-            "Wisdow": 4
+            "Wisdow": 4,
+            "Squnha" : 2
         },
-        "comments": {}
+        "comments": {
+            "Squnha" : ["dormi também"]
+        }
     },
     "Lost in Translation": {
         "year": 2003,
