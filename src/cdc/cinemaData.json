@@ -52,7 +52,7 @@
         },
         "comments" : {
             "Mestre Gui" : ["\"I'm having an old friend for dinner\" era uma frase mt mais cold que \"Nobody cares until I put on the mask\" oh Gyokeres"],
-            "Geremias" : ["\"Espero que o cão morra\" - Wisdow","en.wikipedia.org/wiki/Darla_(dog)"],
+            "Geremias" : ["\"Espero que o cão morra\" - Wisdow","<a href=\"en.wikipedia.org/wiki/Darla_(dog)\"><b>o cão.</b></a>"],
             "Wisdow" : ["adorei a parte em que os cantos são mesma a fraqueza dela"],
             "Squnha" : ["dr. lecter kinda carried"]
         }
@@ -434,7 +434,7 @@
         },
         "comments": {
             "Geremias": [
-                "a:John Krasinski: 🤫"
+                "a:","John Krasinski: 🤫"
             ],
             "Mestre Gui": [
                 "Hasbulla burro da merda"
@@ -495,7 +495,7 @@
         },
         "comments": {
             "Geremias": [
-                "www.youtube.com/watch?v=-72P24RlIY4"
+                "<a href=\"https://www.youtube.com/watch?v=-72P24RlIY4\"><b>Omae wa mou shindeiru</b></a>"
             ],
             "Xiro": [
                 "biktor :3"
@@ -1060,7 +1060,7 @@
                 "Obrigado Gui."
             ],
             "Geremias": [
-                "https://imgur.com/gallery/no-clue-ZSetQV6"
+                "<a href=\"https://imgur.com/gallery/no-clue-ZSetQV6\"><b>No Clue</b></a>"
             ],
             "Mestre Gui": [
                 "Que filme incrível, verdadeira Chicanery, não me divertia assim tanto a ver um filme há muito tempo"
