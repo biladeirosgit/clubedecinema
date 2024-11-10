@@ -355,7 +355,8 @@
             "Squnha": 3.5,
             "Geremias": 2,
             "Mestre Gui": 2.5,
-            "Cludos": 2.5
+            "Cludos": 2.5,
+            "Wisdow" : 1
         },
         "comments": {
             "Geremias": [
@@ -368,6 +369,9 @@
             "Squnha": [
                 "gui geremias claudio, nao percebi o odio.",
                 "Gostei."
+            ],
+            "Wisdow" : [
+                "este filme fez me querer que hoje fosse segunda para não ter a ver um filme de manhã"
             ]
         }
     },
