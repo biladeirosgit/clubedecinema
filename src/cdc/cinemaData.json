@@ -75,13 +75,15 @@
             "Mestre Gui" : 4.5,
             "Geremias" : 3,
             "NeNelson" : 3,
-            "Cludos" : 3
+            "Cludos" : 3,
+            "Wisdow" : 3.5
         },
         "comments" : {
             "Squnha" : ["mr goofy give me an autograph please"],
             "Mestre Gui" : ["FALA BAIXO NENGUE"],
             "Geremias" : ["Espero que para o Sinister 2 o Mr. Boogie arranje uma câmara 4k."],
-            "Cludos" : ["Não sei qual é a novidade, o Michael Jackson sempre foi creepy."]
+            "Cludos" : ["Não sei qual é a novidade, o Michael Jackson sempre foi creepy."],
+            "Wisdow" : ["Alegadamente \"vi\" este filme por razões de Clube de Bilacinema stats, obrigado."]
         }
     },
     "The Departed" : {
@@ -834,7 +836,7 @@
         ],
         "minutes": 166,
         "reviews": {
-            "Wisdow": 5,
+            "Wisdow": 4.5,
             "Squnha": 3.5,
             "Geremias": 4,
             "Mestre Gui": 4.5
@@ -1054,7 +1056,7 @@
         "reviews": {
             "Mestre Gui": 5,
             "Geremias": 4.5,
-            "Wisdow": 5,
+            "Wisdow": 4.5,
             "Squnha": 4.5,
             "Cludos": 3.5
         },
@@ -1185,7 +1187,7 @@
         "reviews": {
             "NeNelson": 5,
             "Geremias": 5,
-            "Wisdow": 5,
+            "Wisdow": 4.5,
             "Xadas": 4.5,
             "Mestre Gui": 4,
             "Esquilo": 4.5,
