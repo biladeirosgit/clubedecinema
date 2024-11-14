@@ -110,28 +110,32 @@ const CinemaClubPage = () => {
                         <span>{yearRange[1]}</span>
                     </div>
                     Year:
+                    {/* Slider inferior - controla o valor mínimo */}
                     <input
                         type="range"
                         min={minYear}
                         max={maxYear}
                         value={yearRange[0]}
-                        onChange={(e) => setYearRange([Number(e.target.value), yearRange[1]])}
+                        onChange={(e) => {
+                            const newMin = Number(e.target.value);
+                            if (newMin <= yearRange[1]) {
+                                setYearRange([newMin, yearRange[1]]);
+                            }
+                        }}
                     />
+                    {/* Slider superior - controla o valor máximo */}
                     <input
                         type="range"
                         min={minYear}
                         max={maxYear}
                         value={yearRange[1]}
-                        onChange={(e) => setYearRange([yearRange[0], Number(e.target.value)])}
+                        onChange={(e) => {
+                            const newMax = Number(e.target.value);
+                            if (newMax >= yearRange[0]) {
+                                setYearRange([yearRange[0], newMax]);
+                            }
+                        }}
                     />
-                </label>
-                <label>
-                    Sort by:
-                    <select value={sortCriteria} onChange={(e) => setSortCriteria(e.target.value)}>
-                        <option value="date">Date</option>
-                        <option value="rating">Average Rating</option>
-                        <option value="year">Year</option>
-                    </select>
                 </label>
             </div>
 
