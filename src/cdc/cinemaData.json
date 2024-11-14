@@ -701,7 +701,7 @@
         ],
         "minutes": 99,
         "reviews": {
-            "Wisdow": 4.5,
+            "Wisdow": 2.5,
             "Geremias": 0.5,
             "Squnha": 0.5,
             "Cludos": 0.5,
@@ -897,7 +897,7 @@
             "Cludos": 4.5,
             "Geremias": 2.5,
             "Squnha": 3.5,
-            "Wisdow": 4.5
+            "Wisdow": 4
         },
         "comments": {
             "Geremias": [
@@ -1658,7 +1658,7 @@
         ],
         "minutes": 131,
         "reviews": {
-            "Wisdow": 4.5,
+            "Wisdow": 4,
             "Geremias": 3,
             "Atlas": 4,
             "Braz": 2.5
