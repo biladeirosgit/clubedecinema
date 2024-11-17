@@ -1,4 +1,38 @@
 {   
+    "John Wick: Chapter 4" : {
+        "year": 2023,
+        "link": "https://letterboxd.com/film/john-wick-chapter-4/",
+        "date": "10/11/2024",
+        "chosen by": [
+            "Cludos"
+        ],
+        "genres": [
+            "Crime",
+            "Action",
+            "Thriller"
+        ],
+        "minutes": 170,
+        "reviews": {
+            "Cludos": 4,
+            "Geremias": 4.5,
+            "Wisdow": 0.5,
+            "Squnha" : 4.5
+        },
+        "comments": {
+            "Wisdow": [
+                "tenho tanta coisa má a dizer sobre este filme que só posso celebrar ser o último que aparece no clube do cinema , meu deus."
+            ],
+            "Geremias": [
+                "\"Mais perdido que cego em tiroteio\" deixou de ser uma expressão válida."
+            ],
+            "Cludos": [
+                "O Daredevil dá-lhe bué"
+            ],
+            "Squnha" : [
+                "aviso já que tem cenas de pós créditos"
+            ]
+        }
+    },
     "Interstellar" : {
         "year": 2014,
         "link": "https://letterboxd.com/film/interstellar/",
@@ -397,7 +431,8 @@
             "Xadas": 3,
             "Geremias": 3.5,
             "Squnha": 2.5,
-            "Atlas" : 4
+            "Atlas" : 4,
+            "Wisdow" : 2
         },
         "comments": {
             "Geremias": [
@@ -411,6 +446,9 @@
             ],
             "Squnha": [
                 "questa merda"
+            ],
+            "Wisdow" : [
+                "(???????)"
             ]
         }
     },
