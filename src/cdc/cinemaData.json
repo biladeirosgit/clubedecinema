@@ -1,4 +1,44 @@
 {   
+    "Hannibal" : {
+        "year": 2001,
+        "link": "https://letterboxd.com/film/hannibal/",
+        "date": "24/11/2024",
+        "chosen by": [
+            "Squnha"
+        ],
+        "genres": [
+            "Drama",
+            "Thriller",
+            "Crime",
+            "Horror"
+        ],
+        "minutes": 131,
+        "reviews": {
+            "Squnha": 4,
+            "Cludos": 4,
+            "Wisdow": 4,
+            "Geremias" : 3,
+            "Mestre Gui" : 2.5
+        },
+        "comments": {
+            "Geremias": [
+                "que sono bom"
+            ],
+            "Cludos": [
+                "giving brain"
+            ],
+            "Mestre Gui" : [
+                "Ganda soninho, nem tudo precisa de ter continuação"
+            ],
+            "Wisdow" : [
+                "O grande Paul Krendler no fim deste filme parece um membro honorário do Biladeiros, conseguia ser top 10 de pessoais mais inteligentes e coerentes do servidor.",
+                "Força Paul."
+            ],
+            "Squnha" : [
+                "muita classe"
+            ]
+        }
+    },
     "Good Will Hunting" : {
         "year": 1997,
         "link": "https://letterboxd.com/film/good-will-hunting/",
