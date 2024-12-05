@@ -1,4 +1,36 @@
 {   
+    "Serendipity" : {
+        "year": 2001,
+        "link": "https://letterboxd.com/film/serendipity/",
+        "date": "01/12/2024",
+        "chosen by": [
+            "Squnha"
+        ],
+        "genres": [
+            "Drama",
+            "Romance",
+            "Comedy"
+        ],
+        "minutes": 90,
+        "reviews": {
+            "Squnha": 3.5,
+            "Geremias": 1.5,
+            "Wisdow": 0.5
+        },
+        "comments": {
+            "Geremias": [
+                "Era só terem feito um wheel of names e o filme menos romântico de sempre teria apenas 10 minutos de duração.",
+                "P.S. Aposto que o cunha escolheu este filme depois de ver a cena do ringue de gelo no tiktok (se isolada do resto filme nem é má)."
+            ],
+            "Wisdow" : [
+                "Mais um filme para a coleção de podiamos tar a ver filmes bons mas vamos ver lixo"
+            ],
+            "Squnha" : [
+                "irrealista mas ainda assim foi fofo",
+                "ps: votaram nota baixa porque não são românticos 💔"
+            ]
+        }
+    },
     "Hannibal" : {
         "year": 2001,
         "link": "https://letterboxd.com/film/hannibal/",
@@ -433,7 +465,8 @@
         "minutes": 100,
         "reviews": {
             "Geremias": 4,
-            "Squnha" : 3
+            "Squnha" : 3,
+            "Wisdow" : 1.5
         },
         "comments": {
             "Geremias": [
@@ -442,6 +475,11 @@
             "Squnha" : [
                 "este filme é mais velho que eu.",
                 "gostei da \"no one's easier to trick than a trickster\""
+            ],
+            "Wisdow" : [
+                "percebi tudo",
+                "tentei em inglês e japonês",
+                "uma pérola tão boa que as pessoas que o recomendaram nem o viram"
             ]
         }
     },
