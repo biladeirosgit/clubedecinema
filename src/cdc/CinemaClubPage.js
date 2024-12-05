@@ -137,6 +137,14 @@ const CinemaClubPage = () => {
                         }}
                     />
                 </label>
+                <label>
+                    Sort by:
+                    <select value={sortCriteria} onChange={(e) => setSortCriteria(e.target.value)}>
+                        <option value="date">Date</option>
+                        <option value="rating">Average Rating</option>
+                        <option value="year">Year</option>
+                    </select>
+                </label>
             </div>
 
             {/* Catálogo de filmes */}

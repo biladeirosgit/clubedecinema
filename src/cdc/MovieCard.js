@@ -41,9 +41,6 @@ const MovieCard = ({ title, index, year, link, date, chosenBy, genres, minutes, 
         if(number < 10){
             number = "0" + number;
         }
-        if(number == "00"){
-            number = "12";
-        }
         return number;
     }
 
@@ -52,15 +49,17 @@ const MovieCard = ({ title, index, year, link, date, chosenBy, genres, minutes, 
     let dateMonth = date[1];
     let dateDay = date[0];
 
-    let dateStart = new Date(dateYear,dateMonth,dateDay);
-    let dateFinish = new Date(dateYear,dateMonth,dateDay);
+    let dateStart = new Date(dateYear,dateMonth-1,dateDay);
+
+
+    let dateFinish = new Date(dateYear,dateMonth-1,dateDay);
     dateFinish = dateFinish.addDays(6);
 
 
     let dateStartDay = addZero(dateStart.getDate())
-    let dateStartMonth = addZero(dateStart.getMonth())
+    let dateStartMonth = addZero(dateStart.getMonth()+1)
     let dateFinishDay = addZero(dateFinish.getDate())
-    let dateFinishMonth = addZero(dateFinish.getMonth())
+    let dateFinishMonth = addZero(dateFinish.getMonth()+1)
 
 
     let dateStartString = dateStartDay + "/" + dateStartMonth + "/" + dateStart.getFullYear()
