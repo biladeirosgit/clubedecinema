@@ -15,7 +15,8 @@
         "reviews": {
             "Squnha": 3.5,
             "Geremias": 1.5,
-            "Wisdow": 0.5
+            "Wisdow": 0.5,
+            "Mestre Gui" : 3
         },
         "comments": {
             "Geremias": [
@@ -28,6 +29,9 @@
             "Squnha" : [
                 "irrealista mas ainda assim foi fofo",
                 "ps: votaram nota baixa porque não são românticos 💔"
+            ],
+            "Mestre Gui" : [
+                "Eu acho que os meus amigos Tiago e Pedro são muito duros e pouco românticos."
             ]
         }
     },
