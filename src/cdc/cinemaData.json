@@ -1,4 +1,243 @@
 {   
+    
+    "The Notebook" : {
+        "year": 2004,
+        "link": "https://letterboxd.com/film/the-notebook/",
+        "date": "26/01/2025",
+        "chosen by": [
+            "Squnha"
+        ],
+        "genres": [
+            "Drama",
+            "Romance"
+        ],
+        "minutes": 123,
+        "reviews": {
+            "Squnha" : 4,
+            "Wisdow" : 4,
+            "Geremias" : 4,
+            "Cludos" : 4
+        },
+        "comments": {
+            "Geremias": [
+                "Ryan Gosling, o último romântico."
+            ],
+            "Wisdow" : [
+                ":*( mãe menos malvada fds"
+            ]
+        }
+    },
+    "The Holdovers" : {
+        "year": 2023,
+        "link": "https://letterboxd.com/film/the-holdovers/",
+        "date": "19/01/2025",
+        "chosen by": [
+            "Mestre Gui"
+        ],
+        "genres": [
+            "Drama",
+            "Comedy"
+        ],
+        "minutes": 116,
+        "reviews": {
+            "Mestre Gui" : 4.5,
+            "Wisdow" : 4,
+            "Geremias" : 4
+        },
+        "comments": {
+            "Geremias": [
+                "se há coisa que o passado me ensinou é que o gui não falha nas recomendações."
+            ],
+            "Mestre Gui" : [
+                "O Barton agora tá na China"
+            ],
+            "Wisdow" : [
+                "history is not just a study of the past it is an explanation of the present, ganda dica"
+            ]
+        }
+    },
+    "How to Lose a Guy in 10 Days" : {
+        "year": 2003,
+        "link": "https://letterboxd.com/film/how-to-lose-a-guy-in-10-days/",
+        "date": "12/01/2025",
+        "chosen by": [
+            "Squnha"
+        ],
+        "genres": [
+            "Romance",
+            "Comedy"
+        ],
+        "minutes": 116,
+        "reviews": {
+            "Geremias" : 3.5,
+            "Wisdow" : 4,
+            "Mestre Gui" : 4
+        },
+        "comments": {
+            "Geremias": [
+                "Bullshit."
+            ],
+            "Mestre Gui" : [
+                "A cena do ferrero rocher banger"
+            ],
+            "Wisdow" : [
+                "filme que apostava 10€ em ter sido escolhido no tiktok na cena do bullshit",
+                "(mas foi bom)"
+            ]
+        }
+    },
+    "The First Slam Dunk" : {
+        "year": 2022,
+        "link": "https://letterboxd.com/film/the-first-slam-dunk/",
+        "date": "05/01/2025",
+        "chosen by": [
+            "Geremias"
+        ],
+        "genres": [
+            "Drama",
+            "Animation",
+            "Comedy"
+        ],
+        "minutes": 125,
+        "reviews": {
+            "Geremias" : 4.5,
+            "Wisdow" : 4.5,
+            "Mestre Gui" : 4,
+            "Squnha" : 3.5
+        },
+        "comments": {
+            "Geremias": [
+                "É tipo Haikyuu só que de basket."
+            ],
+            "Mestre Gui" : [
+                "Tanto cameo"
+            ],
+            "Wisdow" : [
+                "É PRÁ LUTAR É PRA VENCER GDAS GDAS GDAS",
+                "O nº 7 é o meu primo a jogar basket"
+            ],
+            "Squnha" : [
+                "sim geremias, sou hater dos teus filmes de anime"
+            ]
+        }
+    },
+    "La Haine" : {
+        "year": 1995,
+        "link": "https://letterboxd.com/surumkata/film/la-haine/",
+        "date": "29/12/2024",
+        "chosen by": [
+            "Wisdow"
+        ],
+        "genres": [
+            "Drama"
+        ],
+        "minutes": 98,
+        "reviews": {
+            "Wisdow" : 4,
+            "Geremias" : 2
+        },
+        "comments": {
+            "Geremias": [
+                "Eu ia dizer que isto pelo menos cura as insónias mas foi o pior sono de sempre."
+            ],
+            "Wisdow" : [
+                "le monde est a nous",
+                "grande final dar 2 a isto é de quem não gosta de cinema tenho dito"
+            ]
+        }
+    },
+    "Scarface" : {
+        "year": 1983,
+        "link": "https://letterboxd.com/film/scarface-1983/",
+        "date": "22/12/2024",
+        "chosen by": [
+            "Cludos"
+        ],
+        "genres": [
+            "Drama",
+            "Crime",
+            "Action"
+        ],
+        "minutes": 169,
+        "reviews": {
+            "Cludos" : 5,
+            "Wisdow": 4,
+            "Mestre Gui": 5,
+            "Geremias" : 4.5,
+            "Squnha" : 4.5
+        },
+        "comments": {
+            "Geremias": [
+                "3 horas de Al Pacino tem muito mais efeito que cocaína."
+            ],
+            "Mestre Gui" : [
+                "Spoiler: O Amigo NÃO é pequeno"
+            ],
+            "Wisdow" : [
+                "o tony montana só chegou onde chegou pq tinha um bolinha na vida"
+            ]
+        }
+    },
+    "Parasite" : {
+        "year": 2019,
+        "link": "https://letterboxd.com/film/parasite-2019/",
+        "date": "15/12/2024",
+        "chosen by": [
+            "Wisdow"
+        ],
+        "genres": [
+            "Drama",
+            "Comedy",
+            "Thriller"
+        ],
+        "minutes": 133,
+        "reviews": {
+            "Wisdow": 5,
+            "Mestre Gui": 5,
+            "Geremias" : 4.5,
+            "Cludos" : 3.5,
+            "Hfer" : 4,
+            "Esquilo" : 4.5
+        },
+        "comments": {
+            "Geremias": [
+                "Como é que se diz \"do caralho\" em coreano?"
+            ],
+            "Mestre Gui" : [
+                "하드 드레인"
+            ]
+        }
+    },
+    "Still Walking" : {
+        "year": 2008,
+        "link": "https://letterboxd.com/film/still-walking/",
+        "date": "08/12/2024",
+        "chosen by": [
+            "Geremias"
+        ],
+        "genres": [
+            "Drama",
+            "Family"
+        ],
+        "minutes": 114,
+        "reviews": {
+            "Geremias": 4,
+            "Wisdow": 3,
+            "Squnha" : 3
+        },
+        "comments": {
+            "Geremias": [
+                "os caríssimos membros do clube de cinema que me desculpem, mas eu adoro filmes destes."
+            ],
+            "Wisdow" : [
+                "Mais um filme para a coleção de podiamos tar a ver filmes bons mas vamos ver lixo"
+            ],
+            "Squnha": [
+                "ja estou farto destes filmes",
+                "por outro lado geremias, não adormeci a ver isto de madrugada, big props"
+            ]
+        }
+    },
     "Serendipity" : {
         "year": 2001,
         "link": "https://letterboxd.com/film/serendipity/",
@@ -16,7 +255,8 @@
             "Squnha": 3.5,
             "Geremias": 1.5,
             "Wisdow": 0.5,
-            "Mestre Gui" : 3
+            "Mestre Gui" : 3,
+            "Cludos" : 3.5
         },
         "comments": {
             "Geremias": [
@@ -648,7 +888,8 @@
             "Xiro": 4,
             "Mestre Gui": 4,
             "Cludos": 4.5,
-            "Geremias": 3.5
+            "Geremias": 3.5,
+            "Wisdow" : 2
         },
         "comments": {
             "Geremias": [
@@ -662,6 +903,9 @@
             ],
             "Squnha": [
                 "não estava a espera de ser tão bom"
+            ],
+            "Wisdow" : [
+                "quase lá"
             ]
         }
     },
@@ -1024,11 +1268,18 @@
         "reviews": {
             "Geremias": 3.5,
             "Squnha": 1.5,
-            "Cludos": 2
+            "Cludos": 2,
+            "Wisdow" : 4
         },
         "comments": {
             "Geremias": [
                 "Tree of Life português"
+            ],
+            "Wisdow" : [
+                "Pá a primeira parte muito tree of life",
+                "a segunda muito bonita",
+                "uma valorização a todas as mães das mães das mães das mães das mães",
+                "667..668..669, a imagem deste filme/documentário é linda"
             ]
         }
     },
@@ -1643,9 +1894,12 @@
         "minutes": 139,
         "reviews": {
             "Geremias": 4,
-            "Cludos": 2.5
+            "Cludos": 2.5,
+            "Wisdow" : 3.5
         },
-        "comments": {}
+        "comments": {
+            "Wisdow" : ["quase tivemos a origem do joker aqui, mas ele não ouviu as vozes"]
+        }
     },
     "Morbius": {
         "year": 2022,
@@ -1663,9 +1917,14 @@
         "reviews": {
             "Xadas": 3.5,
             "Cludos": 0.5,
-            "Geremias": 1.5
+            "Geremias": 1.5,
+            "Wisdow" : 1
         },
-        "comments": {}
+        "comments": {
+            "Wisdow" : [
+                "obrigado Xadas por fazeres haver regras para sugestões no clube"
+            ]
+        }
     },
     "Howl's Moving Castle": {
         "year": 2004,
@@ -1703,9 +1962,14 @@
         "minutes": 81,
         "reviews": {
             "Cludos": 5,
-            "Geremias": 2
+            "Geremias": 2,
+            "Wisdow" : 0.5
         },
-        "comments": {}
+        "comments": {
+            "Wisdow" : [
+                "entendo verem este filme em x2, peço desculpa por qualquer julgamento que tenha feito..mais uma pérola"
+            ]
+        }
     },
     "WALL-E": {
         "year": 2008,

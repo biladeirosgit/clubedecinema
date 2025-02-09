@@ -225,6 +225,7 @@ const CinemaClubStats = () => {
             }
             return {
                 name,
+                name: name,
                 total_movies: info.total_movies,
                 total_ratings: info.total_ratings,
                 choices: info.choices,
@@ -237,7 +238,12 @@ const CinemaClubStats = () => {
         });
     
         // Ordena o array pelo total de filmes, do maior para o menor
-        entries.sort((a, b) => b.total_movies - a.total_movies);
+        entries.sort((a, b) => {
+            if (b.total_movies === a.total_movies) {
+              return a.name.localeCompare(b.name); // Ordena alfabeticamente pelo nome
+            }
+            return b.total_movies - a.total_movies; // Ordena por total de filmes
+          });
         return entries;
     }
 
