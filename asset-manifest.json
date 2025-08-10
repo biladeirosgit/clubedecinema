@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/clubedecinema/static/css/main.9802e421.css",
-    "main.js": "/clubedecinema/static/js/main.549dd2de.js",
+    "main.js": "/clubedecinema/static/js/main.aa5056c4.js",
     "static/js/453.560422a9.chunk.js": "/clubedecinema/static/js/453.560422a9.chunk.js",
     "static/media/Bebas-Regular.ttf": "/clubedecinema/static/media/Bebas-Regular.90dabffdfc7cafc45f81.ttf",
     "index.html": "/clubedecinema/index.html",
     "main.9802e421.css.map": "/clubedecinema/static/css/main.9802e421.css.map",
-    "main.549dd2de.js.map": "/clubedecinema/static/js/main.549dd2de.js.map",
+    "main.aa5056c4.js.map": "/clubedecinema/static/js/main.aa5056c4.js.map",
     "453.560422a9.chunk.js.map": "/clubedecinema/static/js/453.560422a9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9802e421.css",
-    "static/js/main.549dd2de.js"
+    "static/js/main.aa5056c4.js"
   ]
 }
