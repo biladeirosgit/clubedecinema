@@ -1,6 +1,6 @@
 {
-  "short_name": "Clube de Bilacinema",
-  "name": "Clube de Cinema do Biladeiros",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
