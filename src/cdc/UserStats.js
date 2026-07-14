@@ -1,316 +1,113 @@
-
-import { useParams } from 'react-router-dom';
+import React from 'react';
+import { useParams, Link } from 'react-router-dom';
 import cinemaData from './cinemaData.json';
-import RatingChart from './RatingChart';
-import GenreChart from './GenreChart';
 import './CinemaClubStats.css';
-import Movie from './Movie';
-import { Link } from 'react-router-dom';
+import MovieRow from '../components/MovieRow';
+import { mostSimilarTo, unratedByUser } from '../utils/stats';
 
 const UserStats = () => {
     const { username } = useParams();
-    
-    // Inicializa as variáveis para calcular as estatísticas
+
     let totalMoviesWatched = 0;
     let totalRatings = 0;
     let totalMinutesWatched = 0;
-    const ratingsCount = {};
-    const ratingsSum = {};
-    // Itera sobre os filmes no JSON e coleta as revisões do usuário
-    for (const movie in cinemaData) {
-        if (cinemaData.hasOwnProperty(movie)) {
-            const reviews = cinemaData[movie].reviews;
-            // Verifica se o usuário fez uma revisão neste filme
+    for (const slug in cinemaData) {
+        if (cinemaData.hasOwnProperty(slug)) {
+            const reviews = cinemaData[slug].reviews;
             if (reviews.hasOwnProperty(username)) {
-                const rating = reviews[username];
-                // Atualiza as estatísticas com base na revisão do usuário
                 totalMoviesWatched++;
-                totalRatings += rating;
-                totalMinutesWatched += cinemaData[movie].minutes;
-                // Conta as classificações individuais para calcular a média
-                if (!ratingsCount[rating]) {
-                    ratingsCount[rating] = 0;
-                    ratingsSum[rating] = 0;
-                }
-                ratingsCount[rating]++;
-                ratingsSum[rating] += rating;
+                totalRatings += reviews[username];
+                totalMinutesWatched += cinemaData[slug].minutes;
             }
         }
     }
-    // Calcula a média de classificação
     const averageRating = totalRatings / totalMoviesWatched;
-    // Calcula a média de minutos assistidos
-    const averageMinutesWatched = totalMinutesWatched / totalMoviesWatched;
 
+    // Filmes vistos por este membro, ordenados pela nota que ele deu (desc).
+    const watched = Object.entries(cinemaData)
+        .filter(([, movie]) => username in (movie.reviews || {}))
+        .map(([slug, movie]) => ({ slug, movie, rating: movie.reviews[username] }))
+        .sort((a, b) => b.rating - a.rating);
 
-    // Função para calcular as estatísticas de notas
-    const calculateRatingStats = () => {
-        const ratings = {1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0};
+    // Filmes que ele escolheu.
+    const recommendations = Object.entries(cinemaData)
+        .filter(([, movie]) => (movie.chosenBy || []).includes(username))
+        .map(([slug, movie]) => ({ slug, movie, rating: movie.reviews?.[username] }));
 
-        for (const [, movie] of Object.entries(cinemaData)) {
-            for (const reviewer in movie.reviews) {
-                if (reviewer == username) {
-                    const rating = movie.reviews[reviewer];
-                    if (ratings[rating*2]) {
-                        ratings[rating*2]++;
-                    } else {
-                        ratings[rating*2] = 1;
-                    }
-                }
-            }
-        }
-
-        return ratings
-    };
-
-    // Função para calcular as estatísticas de gêneros
-    const calculateGenreStats = () => {
-        const genres = {};
-
-        for (const [, movie] of Object.entries(cinemaData)) {
-            //verificar se o username viu o filme
-            if (username in movie.reviews) {
-                for (const genre of movie.genres) {
-                    if (genres[genre]) {
-                        genres[genre]++;
-                    } else {
-                        genres[genre] = 1;
-                    }
-                }
-            }
-        }
-
-        return genres;
-    };
-
-    const calculateRecommendations = () => {
-        const recommendations = {}
-
-        for (const [title, movie] of Object.entries(cinemaData)) {
-            for(let i in movie['chosen by']){
-                if (username == movie['chosen by'][i]){
-                    let totalRating = 0;
-                    let nReviews = 0;
-                    for (const [_, rating] of Object.entries(movie.reviews)){
-                        totalRating += rating;
-                        nReviews += 1;
-                    }
-                    recommendations[title] = (totalRating/nReviews).toFixed(2);
-                }
-            }
-            
-        }
-
-        return recommendations;
-    }
-
-    const getComments = () => {
-        const comments = {}
-
-        for (const [title,movie] of Object.entries(cinemaData)) {
-            if(movie.comments){
-                for(const [user,comments_movie] of Object.entries(movie.comments)){
-                    if(username == user){
-                        comments[title] = {
-                            "comments" : comments_movie,
-                            "year" : movie.year,
-                            "rating" : movie.reviews[username]
-                        }
-                    }
-                }
-            }
-        }
-        return comments
-    }
-
-
-    const calculateMoviesRatedByUser = () => {
-        var movies = {}
-
-        for (const [title, movie] of Object.entries(cinemaData)) {
-            if (username in movie.reviews){
-                movies[title] = movie.reviews[username]
-            }
-        }
-        return movies;
-    }
-
-    const movies = calculateMoviesRatedByUser()
-    
-    // Create items array
-    var items = Object.keys(movies).map(function(key) {
-        return [key, movies[key]];
-    });
-
-    // Sort the array based on the second element
-    items.sort(function(first, second) {
-        return second[1] - first[1];
-      });
-
-    // Primeiros cinco elementos
-    const top5 = items.slice(0, 5);
-
-    // Últimos cinco elementos (ou menos)
-    const worst5 = items.reverse().slice(0, 5);
-
-    var recommendations = calculateRecommendations()
-    recommendations = Object.keys(recommendations).map(function(key) {
-        return [key, recommendations[key]];
-    });
-
-    var comments = getComments()
-    comments = Object.keys(comments).map(function(key) {
-        return [key, comments[key]];
-    });
-
-    const cleanTitle = (str) => {
-        return str.replace(/[^\w\s]/gi, ''); 
-    };
-
+    const similar = mostSimilarTo(cinemaData, username).slice(0, 6);
+    const unrated = unratedByUser(cinemaData, username);
 
     return (
-        <>
+        <div className="stats-page">
             <div className='title-site'>
-                <h1>Stats of {username}</h1>
+                <h1>Perfil de {username}</h1>
             </div>
-            <div className="button">
-                <Link to="/"><button>Back</button></Link>
-            </div>
-            <div className="stats">
-                <p>Total films watched: <b>{totalMoviesWatched}</b></p>
-                <p>Rating average: <b>{averageRating.toFixed(2)}</b></p>
-                <p>Total minutes watched: <b>{totalMinutesWatched}</b></p>
-                <p>Average minutes watched: <b>{averageMinutesWatched.toFixed(2)}</b></p>
+            <div className="kpi-grid">
+                <div className="kpi-tile">
+                    <span className="kpi-value">{totalMoviesWatched}</span>
+                    <span className="kpi-label">Filmes vistos</span>
+                </div>
+                <div className="kpi-tile">
+                    <span className="kpi-value">{isNaN(averageRating) ? '-' : averageRating.toFixed(2)}</span>
+                    <span className="kpi-label">Média que dá</span>
+                </div>
+                <div className="kpi-tile">
+                    <span className="kpi-value">{Math.round(totalMinutesWatched / 60).toLocaleString()}</span>
+                    <span className="kpi-label">Horas vistas</span>
+                </div>
+                <div className="kpi-tile">
+                    <span className="kpi-value">{recommendations.length}</span>
+                    <span className="kpi-label">Escolhas dele</span>
+                </div>
             </div>
 
-            <RatingChart data={calculateRatingStats()} />
-            <GenreChart data={calculateGenreStats()} />
+            <div className="insight-grid">
+                <div className="insight-card">
+                    <h2>Gostos mais parecidos</h2>
+                    <p className="insight-note">% de filmes vistos por ambos em que dão nota a menos de meia estrela de distância.</p>
+                    {similar.length ? (
+                        <ol className="ranking">
+                            {similar.map((s) => (
+                                <li key={s.name}>
+                                    <span><Link to={`/users/${s.name}`}>{s.name}</Link><small>concordam em {s.agree} de {s.shared} filmes</small></span>
+                                    <strong>{Math.round(s.score * 100)}%</strong>
+                                </li>
+                            ))}
+                        </ol>
+                    ) : <p className="highlight-sub">Ainda poucos filmes em comum para comparar.</p>}
+                </div>
+                <div className="insight-card">
+                    <h2>Ainda por avaliar ({unrated.length})</h2>
+                    {unrated.length ? (
+                        <ol className="ranking">
+                            {unrated.slice(0, 8).map((slug) => (
+                                <li key={slug}><span>{cinemaData[slug].title}</span></li>
+                            ))}
+                        </ol>
+                    ) : <p className="highlight-sub">Já avaliou tudo. Lenda. 🏆</p>}
+                </div>
+            </div>
+
             <div className="top-bottom-movies">
-                <div className='stats'>
-                    <p>Best Rated Movies</p>
-                </div>
-                <div className='catalog-withratings'>
-                    {top5.map(([title, rating]) => (
-                        <>
-                            <div className='movie withratings' key={title}>
-                                <Movie
-                                    key={title}
-                                    title={title}
-                                    year={cinemaData[title].year}
-                                    link={cinemaData[title].link}
-                                    date={cinemaData[title].date}
-                                    chosenBy={cinemaData[title]["chosen by"]}
-                                    genres={cinemaData[title].genres}
-                                    minutes={cinemaData[title].minutes}
-                                    reviews={cinemaData[title].reviews}
-                                    comments={cinemaData[title].comments}
-                                />
-                                <div className='stats'>
-                                    <p>{rating}/5</p>
-                                </div>
-                                
-                            </div>
-                        </>
-                    ))}
-                </div>
-
-                <div className='stats'>
-                    <p>Worst Rated Movies</p>
-                </div>
-                <div className='catalog-withratings'>
-                    {worst5.map(([title, rating]) => (
-                        <>
-                            <div className='movie' key={title}>
-                                <Movie
-                                    key={title}
-                                    title={title}
-                                    year={cinemaData[title].year}
-                                    link={cinemaData[title].link}
-                                    date={cinemaData[title].date}
-                                    chosenBy={cinemaData[title]["chosen by"]}
-                                    genres={cinemaData[title].genres}
-                                    minutes={cinemaData[title].minutes}
-                                    reviews={cinemaData[title].reviews}
-                                    comments={cinemaData[title].comments}
-                                />
-                                <div className='stats'>
-                                    <p>{rating}/5</p>
-                                </div>
-                                
-                            </div>
-                        </>
-                    ))}
-                </div>
-                {Object.keys(recommendations).length !== 0 && (
-                <>
-                    <div className='stats'>
-                        <p>Recommendations</p>
-                    </div>
-                    <div className='catalog-withratings'>
-                        {recommendations.map(([title, rating]) => (
-                            <>
-                                <div className='movie withratings' key={title}>
-                                    <Movie
-                                        key={title}
-                                        title={title}
-                                        year={cinemaData[title].year}
-                                        link={cinemaData[title].link}
-                                        date={cinemaData[title].date}
-                                        chosenBy={cinemaData[title]["chosen by"]}
-                                        genres={cinemaData[title].genres}
-                                        minutes={cinemaData[title].minutes}
-                                        reviews={cinemaData[title].reviews}
-                                        comments={cinemaData[title].comments}
-                                    />
-                                    <div className='stats'>
-                                        <p>{rating}/5</p>
-                                    </div>
-
-                                </div>
-                            </>
-                        ))}
-                    </div>
-                </>
-                )}
-                {Object.keys(comments).length !== 0 && (
-                <>
-                    <div className='stats'>
-                        <p>Comments</p>
-                    </div>
-                    <div className="comments-container">
-                        <div className='comments-section'>
-                            {comments.map(([title, movie]) => (
-                                <>
-                                <div className="comment-container">  
-                                    <div className="comment-poster">
-                                        <img src={`/clubedecinema/posters/${cleanTitle(title)}.png`} alt={`${title} poster`} style={{ width: '200px', height: '295px' }} />
-                                    </div>
-                                    <div className="comment-movie">
-                                        <div className="comment-title">
-                                            <p><b>{title}</b> ({movie.year})</p>
-                                        </div>
-                                        <ul className="rating-score" data-rating={movie.rating}>
-                                            <li className="rating-score-item"></li>
-                                            <li className="rating-score-item"></li>
-                                            <li className="rating-score-item"></li>
-                                            <li className="rating-score-item"></li>
-                                            <li className="rating-score-item"></li>
-                                        </ul>    
-                                        <br></br>
-                                        {[...Array(movie.comments.length)].map((_, indexComment) => (
-                                          <p dangerouslySetInnerHTML={{ __html: movie.comments[indexComment] }}></p>
-                                        ))}
-                                    </div>
-                                </div>
-                                <hr className="comment-seperate"></hr>
-                                </>
+                {recommendations.length > 0 && (
+                    <>
+                        <h2 className='section-title'>Escolhas dele</h2>
+                        <div className="movie-row-grid">
+                            {recommendations.map((r) => (
+                                <MovieRow key={r.slug} slug={r.slug} movie={r.movie} userRating={r.rating} userLabel={username} />
                             ))}
                         </div>
-                    </div>
-                </>
+                    </>
                 )}
+
+                <h2 className='section-title'>Filmes vistos</h2>
+                <div className="movie-row-grid">
+                    {watched.map((m) => (
+                        <MovieRow key={m.slug} slug={m.slug} movie={m.movie} userRating={m.rating} userLabel={username} />
+                    ))}
+                </div>
             </div>
-        </>
+        </div>
     );
 }
 

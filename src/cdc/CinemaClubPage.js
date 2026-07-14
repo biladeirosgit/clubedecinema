@@ -1,8 +1,13 @@
 import React, { useState, useMemo } from 'react';
 import Movie from './Movie';
+import MovieCard from './MovieCard';
+import Modal from '../components/Modal';
 import cinemaData from './cinemaData.json';
-import { Link } from 'react-router-dom';
 import './CinemaClubPage.css';
+import { average } from '../utils/ratings';
+import { compareDatesDesc } from '../utils/dates';
+import { backdropSrc, posterSrc } from '../utils/images';
+import { joinWithAmpersand } from '../utils/format';
 
 // Helper functions
 const getUniqueValues = (data, key) => {
@@ -26,138 +31,156 @@ const CinemaClubPage = () => {
     const [selectedGenre, setSelectedGenre] = useState('');
     const [selectedChosenBy, setSelectedChosenBy] = useState('');
     const [sortCriteria, setSortCriteria] = useState('date');
+    const [search, setSearch] = useState('');
+    const [heroExpanded, setHeroExpanded] = useState(false);
 
     // Calcular ano mínimo e máximo dos filmes
     const [minYear, maxYear] = useMemo(() => getYearRange(cinemaData), []);
     const [yearRange, setYearRange] = useState([minYear, maxYear]);
 
     const genres = useMemo(() => getUniqueValues(cinemaData, 'genres'), []);
-    const chosenByPeople = useMemo(() => getUniqueValues(cinemaData, 'chosen by'), []);
+    const chosenByPeople = useMemo(() => getUniqueValues(cinemaData, 'chosenBy'), []);
 
-    const compareDates = (movie1, movie2) => {
-        const date1 = new Date(movie1.date.split('/').reverse().join('-'));
-        const date2 = new Date(movie2.date.split('/').reverse().join('-'));
-        return date2 - date1;
-    };
+    const [heroSlug, heroMovie] = useMemo(() => {
+        const entries = Object.entries(cinemaData).sort(([, a], [, b]) => compareDatesDesc(a.date, b.date));
+        return entries[0] || [null, null];
+    }, []);
+    const heroAverage = useMemo(() => (heroMovie ? average(heroMovie.reviews) : null), [heroMovie]);
 
     const compareRatings = (movie1, movie2) => {
-        const getAverageRating = (movie) => {
-            if (movie.reviews && typeof movie.reviews === 'object') {
-                const ratings = Object.values(movie.reviews);
-                if (ratings.length > 0) {
-                    const totalRating = ratings.reduce((sum, rating) => sum + rating, 0);
-                    return totalRating / ratings.length;
-                }
-            }
-            return 0;
-        };
-
-        const avgRating1 = getAverageRating(movie1);
-        const avgRating2 = getAverageRating(movie2);
-
-        return avgRating2 - avgRating1;
+        const avg1 = average(movie1.reviews) || 0;
+        const avg2 = average(movie2.reviews) || 0;
+        return avg2 - avg1;
     };
 
     const filteredMovies = useMemo(() => {
+        const query = search.trim().toLowerCase();
         return Object.entries(cinemaData)
-            .filter(([title, movie]) => {
+            .filter(([slug, movie]) => {
+                if (slug === heroSlug) return false; // ja aparece em destaque no hero
+                const matchesSearch = query ? movie.title.toLowerCase().includes(query) : true;
                 const matchesGenre = selectedGenre ? movie.genres.includes(selectedGenre) : true;
-                const matchesChosenBy = selectedChosenBy ? movie["chosen by"].includes(selectedChosenBy) : true;
+                const matchesChosenBy = selectedChosenBy ? movie.chosenBy.includes(selectedChosenBy) : true;
                 const matchesYear = movie.year >= yearRange[0] && movie.year <= yearRange[1];
-                return matchesGenre && matchesChosenBy && matchesYear;
+                return matchesSearch && matchesGenre && matchesChosenBy && matchesYear;
             })
             .sort(([, movie1], [, movie2]) => {
-                if (sortCriteria === 'date') return compareDates(movie1, movie2);
+                if (sortCriteria === 'date') return compareDatesDesc(movie1.date, movie2.date);
                 if (sortCriteria === 'rating') return compareRatings(movie1, movie2);
                 if (sortCriteria === 'year') return movie2.year - movie1.year;
                 return 0;
             });
-    }, [selectedGenre, selectedChosenBy, yearRange, sortCriteria]);
+    }, [search, selectedGenre, selectedChosenBy, yearRange, sortCriteria, heroSlug]);
 
     return (
-        <div>
-            <div className="title-site">
-                <h1>Clube de BilaCinema</h1>
-            </div>
-            <div className="button">
-                <Link to="/stats"><button>Stats</button></Link>
-                <Link to="/guess"><button>Guess Daily Game</button></Link>
-            </div>
+        <div className="catalog-root">
+            {heroMovie && (
+                <div
+                    className="hero-movie"
+                    style={{ backgroundImage: `url("${backdropSrc(heroSlug)}")` }}
+                    onClick={() => setHeroExpanded(true)}
+                >
+                    <div className="hero-movie-content">
+                        <div className="hero-movie-poster">
+                            <img src={posterSrc(heroSlug)} alt={`${heroMovie.title} poster`} />
+                        </div>
+                        <div className="hero-movie-info">
+                            <div className="hero-movie-eyebrow">Filme mais recente</div>
+                            <h2 className="hero-movie-title">{heroMovie.title} ({heroMovie.year})</h2>
+                            <div className="hero-movie-meta">
+                                Escolhido por <b>{joinWithAmpersand(heroMovie.chosenBy)}</b>
+                                {heroAverage !== null && <> · média <b>{heroAverage.toFixed(2)}</b>/5</>}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )}
+            {heroExpanded && (
+                <Modal onClose={() => setHeroExpanded(false)}>
+                    <MovieCard
+                        slug={heroSlug}
+                        title={heroMovie.title}
+                        year={heroMovie.year}
+                        link={heroMovie.link}
+                        date={heroMovie.date}
+                        chosenBy={heroMovie.chosenBy}
+                        genres={heroMovie.genres}
+                        minutes={heroMovie.minutes}
+                        reviews={heroMovie.reviews}
+                        average={heroAverage === null ? '-' : heroAverage.toFixed(2)}
+                        comments={heroMovie.comments}
+                    />
+                </Modal>
+            )}
 
             {/* Filtros */}
             <div className="filters">
-                <label>
-                    Genre:
-                    <select value={selectedGenre} onChange={(e) => setSelectedGenre(e.target.value)}>
-                        <option value="">All</option>
-                        {genres.map((genre, index) => (
-                            <option key={index} value={genre}>{genre}</option>
-                        ))}
-                    </select>
-                </label>
-                <label>
-                    Recommendation by:
-                    <select value={selectedChosenBy} onChange={(e) => setSelectedChosenBy(e.target.value)}>
-                        <option value="">All</option>
-                        {chosenByPeople.map((person, index) => (
-                            <option key={index} value={person}>{person}</option>
-                        ))}
-                    </select>
-                </label>
-                <label>
-                    <div className="year-display">
-                        <span>{yearRange[0]}</span>
-                        <span>{yearRange[1]}</span>
+                <input
+                    type="text"
+                    className="filter-search"
+                    placeholder="Procurar filme…"
+                    value={search}
+                    onChange={(e) => setSearch(e.target.value)}
+                />
+                <select value={selectedGenre} onChange={(e) => setSelectedGenre(e.target.value)}>
+                    <option value="">Todos os géneros</option>
+                    {genres.map((genre, index) => (
+                        <option key={index} value={genre}>{genre}</option>
+                    ))}
+                </select>
+                <select value={selectedChosenBy} onChange={(e) => setSelectedChosenBy(e.target.value)}>
+                    <option value="">Todas as escolhas</option>
+                    {chosenByPeople.map((person, index) => (
+                        <option key={index} value={person}>{person}</option>
+                    ))}
+                </select>
+                <select value={sortCriteria} onChange={(e) => setSortCriteria(e.target.value)}>
+                    <option value="date">Mais recentes</option>
+                    <option value="rating">Melhor rating</option>
+                    <option value="year">Ano</option>
+                </select>
+                <div className="filter-year">
+                    <span className="filter-year-label">Ano {yearRange[0]}–{yearRange[1]}</span>
+                    <div className="filter-year-sliders">
+                        <input
+                            type="range"
+                            min={minYear}
+                            max={maxYear}
+                            value={yearRange[0]}
+                            onChange={(e) => {
+                                const newMin = Number(e.target.value);
+                                if (newMin <= yearRange[1]) setYearRange([newMin, yearRange[1]]);
+                            }}
+                        />
+                        <input
+                            type="range"
+                            min={minYear}
+                            max={maxYear}
+                            value={yearRange[1]}
+                            onChange={(e) => {
+                                const newMax = Number(e.target.value);
+                                if (newMax >= yearRange[0]) setYearRange([yearRange[0], newMax]);
+                            }}
+                        />
                     </div>
-                    Year:
-                    {/* Slider inferior - controla o valor mínimo */}
-                    <input
-                        type="range"
-                        min={minYear}
-                        max={maxYear}
-                        value={yearRange[0]}
-                        onChange={(e) => {
-                            const newMin = Number(e.target.value);
-                            if (newMin <= yearRange[1]) {
-                                setYearRange([newMin, yearRange[1]]);
-                            }
-                        }}
-                    />
-                    {/* Slider superior - controla o valor máximo */}
-                    <input
-                        type="range"
-                        min={minYear}
-                        max={maxYear}
-                        value={yearRange[1]}
-                        onChange={(e) => {
-                            const newMax = Number(e.target.value);
-                            if (newMax >= yearRange[0]) {
-                                setYearRange([yearRange[0], newMax]);
-                            }
-                        }}
-                    />
-                </label>
-                <label>
-                    Sort by:
-                    <select value={sortCriteria} onChange={(e) => setSortCriteria(e.target.value)}>
-                        <option value="date">Date</option>
-                        <option value="rating">Average Rating</option>
-                        <option value="year">Year</option>
-                    </select>
-                </label>
+                </div>
             </div>
 
+            {filteredMovies.length === 0 && (
+                <p className="no-results">Nenhum filme encontrado.</p>
+            )}
+
             {/* Catálogo de filmes */}
-            <div className='catalog-page' style={{width:"100vw",height: "100vh!important"}}>
-                {filteredMovies.map(([title, movie]) => (
-                    <div className='movie' key={title}>
+            <div className='catalog-page'>
+                {filteredMovies.map(([slug, movie], index) => (
+                    <div className='movie' key={slug} style={{ animationDelay: `${Math.min(index, 20) * 0.03}s` }}>
                         <Movie
-                            key={title}
-                            title={title}
+                            slug={slug}
+                            title={movie.title}
                             year={movie.year}
                             link={movie.link}
                             date={movie.date}
-                            chosenBy={movie["chosen by"]}
+                            chosenBy={movie.chosenBy}
                             genres={movie.genres}
                             minutes={movie.minutes}
                             reviews={movie.reviews}

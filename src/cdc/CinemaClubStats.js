@@ -1,19 +1,15 @@
 // src/CinemaClubStats.js
 
 import cinemaData from './cinemaData.json'; // Importando os dados dos filmes
-import RatingChart from './RatingChart';
-import GenreChart from './GenreChart';
 import React from 'react';
 import './CinemaClubStats.css';
-import Movie from './Movie';
-import Movietr from './Movietr';
+import MovieRow from '../components/MovieRow';
 import { Link } from 'react-router-dom';
+import { compareDatesDesc } from '../utils/dates';
+import Avatar from '../components/Avatar';
+import { affinityPairs, missingCountByMember } from '../utils/stats';
 
 const CinemaClubStats = () => {
-
-    const cleanTitle = (str) => {
-        return str.replace(/[^\w\s]/gi, ''); 
-    };
 
     // Função para calcular o total de minutos assistidos
     const calculateTotalMinutes = () => {
@@ -92,45 +88,20 @@ const CinemaClubStats = () => {
         return Object.entries(cinemaData).length
     }
 
-    const calculateAvaregeMovies = () => {
-        var averages = {}
-
-        for (const [title, movie] of Object.entries(cinemaData)) {
-            var total_rating = 0
-            var number_of_ratings = 0
-            for (const reviewer in movie.reviews) {
-                total_rating += movie.reviews[reviewer];
-                number_of_ratings += 1;
-            }
-            var average = total_rating / number_of_ratings;
-            averages[title] = average.toFixed(2);
-        }
-        return averages;
-    }
-    
     const calculateTopWatchers = () => {
         var watchers = {}
         var number_movies = 0;
 
-        var movies = Object.entries(cinemaData).sort((a, b) => {
+        var movies = Object.entries(cinemaData).sort((a, b) => compareDatesDesc(a[1].date, b[1].date));
 
-            var date1Parts = a[1].date.split("/");
-            var date1Object = new Date(+date1Parts[2], date1Parts[1] - 1, +date1Parts[0]);
-
-            var date2Parts = b[1].date.split("/");
-            var date2Object = new Date(+date2Parts[2], date2Parts[1] - 1, +date2Parts[0]); 
-
-            return date2Object - date1Object;
-        });
-
-        for (const [title, movie] of movies) {
+        for (const [, movie] of movies) {
             number_movies+=1;
             let total_movie_rating = 0;
             let total_movie_reviews = 0;
             for (const [user, rating] of Object.entries(movie.reviews)) {
                 total_movie_rating += rating;
                 total_movie_reviews += 1;
-                
+
 
                 if (user in watchers){
                     watchers[user]["total_movies"] += 1
@@ -169,13 +140,13 @@ const CinemaClubStats = () => {
 
             let average_movie_rating = total_movie_rating/total_movie_reviews
 
-            for(let i in movie['chosen by']){
-                if (movie['chosen by'][i] in watchers){
-                    watchers[movie['chosen by'][i]]["choices"]+=1
-                    watchers[movie['chosen by'][i]]["recommendations_ratings"]+=average_movie_rating
+            for(let i in movie.chosenBy){
+                if (movie.chosenBy[i] in watchers){
+                    watchers[movie.chosenBy[i]]["choices"]+=1
+                    watchers[movie.chosenBy[i]]["recommendations_ratings"]+=average_movie_rating
                 }
                 else{
-                    watchers[movie['chosen by'][i]] = {
+                    watchers[movie.chosenBy[i]] = {
                         "total_movies" : 0,
                         "total_ratings" : 0,
                         "choices" : 1,
@@ -185,24 +156,24 @@ const CinemaClubStats = () => {
                     }
                 }
             }
-            
-            
+
+
         }
         return watchers
     }
 
     const calculateTopMovies = () => {
-        let movies = Object.entries(cinemaData).map(([title,movie]) => {
+        let movies = Object.entries(cinemaData).map(([slug,movie]) => {
             var reviews = 0;
             var total_rating = 0;
-            
-            for (const [_, rating] of Object.entries(movie.reviews)) {
+
+            for (const [, rating] of Object.entries(movie.reviews)) {
                 reviews += 1;
                 total_rating += rating;
             }
-            
+
             return {
-                title,
+                slug,
                 reviews : reviews,
                 average : (total_rating/reviews).toFixed(2)
             }
@@ -225,7 +196,6 @@ const CinemaClubStats = () => {
             }
             return {
                 name,
-                name: name,
                 total_movies: info.total_movies,
                 total_ratings: info.total_ratings,
                 choices: info.choices,
@@ -236,7 +206,7 @@ const CinemaClubStats = () => {
                 average_recommendations_ratings : (info.recommendations_ratings / info.choices).toFixed(2)
             };
         });
-    
+
         // Ordena o array pelo total de filmes, do maior para o menor
         entries.sort((a, b) => {
             if (b.total_movies === a.total_movies) {
@@ -259,100 +229,156 @@ const CinemaClubStats = () => {
 
     const topMovies = calculateTopMovies()
 
-    const top5 = topMovies.slice(0, 5)
-    const worst5 = topMovies.reverse().slice(0,5)
+    const top10 = topMovies.slice(0, 10)
+    const worst10 = topMovies.slice().reverse().slice(0, 10)
 
-    topMovies.reverse()
+    const topRanked = topMovies.slice(0, 10);
+    const genreStats = calculateGenreStats();
+    const topGenres = Object.entries(genreStats).sort((a, b) => b[1] - a[1]).slice(0, 8);
+    const ratingStats = calculateRatingStats();
+    const maxRatingCount = Math.max(1, ...Object.values(ratingStats));
+    const topPairs = affinityPairs(cinemaData).slice(0, 8);
+    const missing = missingCountByMember(cinemaData).filter((m) => m.missing > 0).slice(0, 10);
 
     return (
-        <div>
+        <div className="stats-page">
             <div className='title-site'>
-                <h1>Stats of Clube de BilaCinema</h1>
+                <h1>Estatísticas do Clube</h1>
             </div>
-            <div className="button">
-                <Link to="/"><button>Back</button></Link>
-            </div>
-            <div className="stats">
-                <p>Total movies: <b>{calculateTotalMovies()}</b></p>
-                <p>Total minutes of films: <b>{calculateTotalMinutes()}</b></p>
-                <p>Average minutes per film: <b>{calculateAverageMinutes().toFixed(2)}</b></p>
-                <p>Members: <b>{findUniqueViewers()}</b></p>
-                <p>Active Members: <b>{active_members}</b></p>
-                <p>Total times the films were watched: <b>{calculateTotalViewers()}</b></p>
+            <div className="kpi-grid">
+                <div className="kpi-tile">
+                    <span className="kpi-value">{calculateTotalMovies()}</span>
+                    <span className="kpi-label">Filmes vistos</span>
+                </div>
+                <div className="kpi-tile">
+                    <span className="kpi-value">{calculateTotalViewers()}</span>
+                    <span className="kpi-label">Ratings dados</span>
+                </div>
+                <div className="kpi-tile">
+                    <span className="kpi-value">{Math.round(calculateTotalMinutes() / 60).toLocaleString()}</span>
+                    <span className="kpi-label">Horas de cinema</span>
+                </div>
+                <div className="kpi-tile">
+                    <span className="kpi-value">{findUniqueViewers()}</span>
+                    <span className="kpi-label">Membros</span>
+                </div>
+                <div className="kpi-tile">
+                    <span className="kpi-value">{active_members}</span>
+                    <span className="kpi-label">Membros ativos</span>
+                </div>
+                <div className="kpi-tile">
+                    <span className="kpi-value">{calculateAverageMinutes().toFixed(0)}</span>
+                    <span className="kpi-label">Min / filme</span>
+                </div>
             </div>
 
-            <RatingChart data={calculateRatingStats()} />
-            <GenreChart data={calculateGenreStats()} />
+            <div className="insight-grid">
+                <div className="insight-card">
+                    <h2>Top do clube</h2>
+                    <ol className="ranking">
+                        {topRanked.map((movie) => (
+                            <li key={movie.slug}>
+                                <span>
+                                    {cinemaData[movie.slug].title}
+                                    <small>{movie.reviews} ratings</small>
+                                </span>
+                                <strong>{movie.average} ★</strong>
+                            </li>
+                        ))}
+                    </ol>
+                </div>
+
+                <div className="insight-card">
+                    <h2>Géneros favoritos</h2>
+                    <ol className="ranking">
+                        {topGenres.map(([genre, count]) => (
+                            <li key={genre}>
+                                <span>{genre}</span>
+                                <strong>{count}</strong>
+                            </li>
+                        ))}
+                    </ol>
+                </div>
+
+                <div className="insight-card">
+                    <h2>Distribuição de ratings</h2>
+                    <div className="rating-bars">
+                        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((key) => {
+                            const count = ratingStats[key] || 0;
+                            return (
+                                <div className="rating-bar-row" key={key}>
+                                    <span className="rating-bar-label">{(key / 2).toFixed(1)}★</span>
+                                    <div className="rating-bar-track">
+                                        <div className="rating-bar-fill" style={{ width: `${(count / maxRatingCount) * 100}%` }} />
+                                    </div>
+                                    <span className="rating-bar-count">{count}</span>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+
+                <div className="insight-card">
+                    <h2>Gostos mais parecidos</h2>
+                    <p className="insight-note">Concordam quando dão notas a menos de meia estrela de distância.</p>
+                    <ol className="ranking">
+                        {topPairs.map((pair) => (
+                            <li key={`${pair.a}-${pair.b}`}>
+                                <span>
+                                    {pair.a} &amp; {pair.b}
+                                    <small>concordam em {pair.agree} de {pair.shared} filmes vistos por ambos</small>
+                                </span>
+                                <strong>{Math.round(pair.score * 100)}%</strong>
+                            </li>
+                        ))}
+                    </ol>
+                </div>
+
+                <div className="insight-card">
+                    <h2>Quem falta avaliar</h2>
+                    <ol className="ranking">
+                        {missing.map((m) => (
+                            <li key={m.name}>
+                                <span><Link to={`/users/${m.name}`}>{m.name}</Link></span>
+                                <strong>{m.missing} por ver</strong>
+                            </li>
+                        ))}
+                    </ol>
+                </div>
+            </div>
+
             <div className="top-bottom-movies">
-                <div className='stats'>
-                    <p>Best Rated Movies</p>
-                </div>
-                <div className='catalog'>
-                    {top5.map((movie) => (
-                        <>
-                            <div className='movie' key={movie.title}>
-                                <Movie
-                                    key={movie.title}
-                                    title={movie.title}
-                                    year={cinemaData[movie.title].year}
-                                    link={cinemaData[movie.title].link}
-                                    date={cinemaData[movie.title].date}
-                                    chosenBy={cinemaData[movie.title]["chosen by"]}
-                                    genres={cinemaData[movie.title].genres}
-                                    minutes={cinemaData[movie.title].minutes}
-                                    reviews={cinemaData[movie.title].reviews}
-                                    comments={cinemaData[movie.title].comments}
-                                />
-                                <div className='stats'>
-                                    <p>{movie.average}/5</p>
-                                </div>
-                                
-                            </div>
-                        </>
-                    ))}
+                <div className="best-worst">
+                    <div className="best-worst-col">
+                        <h2 className='section-title'>Melhores avaliados</h2>
+                        <div className='movie-row-grid movie-row-grid--pair'>
+                            {top10.map((movie, i) => (
+                                <MovieRow key={movie.slug} slug={movie.slug} movie={cinemaData[movie.slug]} rank={i + 1} />
+                            ))}
+                        </div>
+                    </div>
+                    <div className="best-worst-col">
+                        <h2 className='section-title'>Piores avaliados</h2>
+                        <div className='movie-row-grid movie-row-grid--pair'>
+                            {worst10.map((movie, i) => (
+                                <MovieRow key={movie.slug} slug={movie.slug} movie={cinemaData[movie.slug]} rank={i + 1} />
+                            ))}
+                        </div>
+                    </div>
                 </div>
 
-                <div className='stats'>
-                    <p>Worst Rated Movies</p>
-                </div>
-                <div className='catalog'>
-                    {worst5.map((movie) => (
-                        <>
-                            <div className='movie' key={movie.title}>
-                                <Movie
-                                    key={movie.title}
-                                    title={movie.title}
-                                    year={cinemaData[movie.title].year}
-                                    link={cinemaData[movie.title].link}
-                                    date={cinemaData[movie.title].date}
-                                    chosenBy={cinemaData[movie.title]["chosen by"]}
-                                    genres={cinemaData[movie.title].genres}
-                                    minutes={cinemaData[movie.title].minutes}
-                                    reviews={cinemaData[movie.title].reviews}
-                                    comments={cinemaData[movie.title].comments}
-                                />
-                                <div className='stats'>
-                                    <p>{movie.average}/5</p>
-                                </div>
-                                
-                            </div>
-                        </>
-                    ))}
-                </div>
-
-                <div className='stats'>
-                <p>Top Watchers</p>
-                <table className='pretty-table'>
+                <h2 className='section-title'>Ranking de membros</h2>
+                <div className="table-scroll">
+                <table className='pretty-table compact-table'>
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>User</th>
-                            <th>Movies Watched</th>
-                            <th>Average Rating</th>
-                            <th>Recommendations</th>
-                            <th>Average Recommendation Rating</th>
+                            <th>Membro</th>
+                            <th>Vistos</th>
+                            <th>Média</th>
+                            <th>Escolhas</th>
                             <th>Streak</th>
-                            <th>Active Member*</th>
+                            <th>Ativo*</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -363,7 +389,7 @@ const CinemaClubStats = () => {
                                         <Link to={`/users/${viewer.name}`}>
                                             <div className='user'>
                                                 <div className='top'>
-                                                        <img src={`/clubedecinema/pfp/${viewer.name}.png`} alt={`${viewer.name}`} />
+                                                        <Avatar name={viewer.name} linkToUser={false} />
                                                 </div>
                                                 <div className='bottom'>
                                                     {viewer.name}
@@ -374,57 +400,30 @@ const CinemaClubStats = () => {
                                     <td>{viewer.total_movies}</td>
                                     <td>{viewer.average_ratings}</td>
                                     <td>{viewer.choices}</td>
-                                    {viewer.choices > 0 && <td>{viewer.average_recommendations_ratings}</td>}
-                                    {viewer.choices == 0 && <td>-</td>}
                                     {viewer.streak > 0 && <td>{viewer.streak} 🔥</td>}
                                     {viewer.streak < 0 && <td>{-viewer.streak} ❄️</td>}
+                                    {viewer.streak === 0 && <td>-</td>}
                                     {viewer.active === "Yes" && <td>✔️ ({viewer.active_count}/12)</td>}
                                     {viewer.active === "No" && <td>❌ ({viewer.active_count}/12)</td>}
                             </tr>
                         ))}
                     </tbody>
                 </table>
+                </div>
                     <div className='table-info'>
-                        <p><b>*Active Member</b> - Member who has seen at least 4 movies out of the last 12 movies.</p>
+                        <p><b>*Membro ativo</b> — viu pelo menos 4 dos últimos 12 filmes.</p>
                     </div>
 
-                <table className='pretty-table'>
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Poster</th>
-                            <th>Title</th>
-                            <th>Year</th>
-                            <th>Recommendation</th>
-                            <th>Watchers</th>
-                            <th>Average Rating</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {topMovies.map((movie,index) => (
-                            <Movietr
-                            key={movie.title}
-                            index={index}
-                            title={movie.title}
-                            year={cinemaData[movie.title].year}
-                            link={cinemaData[movie.title].link}
-                            date={cinemaData[movie.title].date}
-                            chosenBy={cinemaData[movie.title]["chosen by"]}
-                            genres={cinemaData[movie.title].genres}
-                            minutes={cinemaData[movie.title].minutes}
-                            reviews={cinemaData[movie.title].reviews}
-                            nreviews={movie.reviews}
-                            average={movie.average}
-                            comments={cinemaData[movie.title].comments}
-                        />
-                        ))}
-                    </tbody>
-                </table>
-            </div>
+                <h2 className='section-title'>Todos os filmes</h2>
+                <div className='movie-row-grid movie-row-grid--list'>
+                    {topMovies.map((movie, index) => (
+                        <MovieRow key={movie.slug} slug={movie.slug} movie={cinemaData[movie.slug]} rank={index + 1} variant="list" />
+                    ))}
+                </div>
             </div>
         </div>
 
-        
+
     );
 }
 

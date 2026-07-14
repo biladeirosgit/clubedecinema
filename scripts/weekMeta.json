@@ -1,0 +1,652 @@
+{
+    "the-notebook": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "26/01/2025"
+    },
+    "the-holdovers": {
+        "chosenBy": [
+            "Mestre Gui"
+        ],
+        "date": "19/01/2025"
+    },
+    "how-to-lose-a-guy-in-10-days": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "12/01/2025"
+    },
+    "the-first-slam-dunk": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "05/01/2025"
+    },
+    "la-haine": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "29/12/2024"
+    },
+    "scarface-1983": {
+        "chosenBy": [
+            "Cludos"
+        ],
+        "date": "22/12/2024"
+    },
+    "parasite-2019": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "15/12/2024"
+    },
+    "still-walking": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "08/12/2024"
+    },
+    "serendipity": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "01/12/2024"
+    },
+    "hannibal": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "24/11/2024"
+    },
+    "good-will-hunting": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "17/11/2024"
+    },
+    "john-wick-chapter-4": {
+        "chosenBy": [
+            "Cludos"
+        ],
+        "date": "10/11/2024"
+    },
+    "interstellar": {
+        "chosenBy": [
+            "Mestre Gui",
+            "Wisdow"
+        ],
+        "date": "03/11/2024"
+    },
+    "the-silence-of-the-lambs": {
+        "chosenBy": [
+            "Mestre Gui"
+        ],
+        "date": "27/10/2024"
+    },
+    "sinister": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "20/10/2024"
+    },
+    "the-departed": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "13/10/2024"
+    },
+    "john-wick-chapter-3-parabellum": {
+        "chosenBy": [
+            "Cludos"
+        ],
+        "date": "06/10/2024"
+    },
+    "john-wick-chapter-2": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "29/09/2024"
+    },
+    "lemonade-mouth": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "22/09/2024"
+    },
+    "her": {
+        "chosenBy": [
+            "Mestre Gui"
+        ],
+        "date": "15/09/2024"
+    },
+    "john-wick": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "08/09/2024"
+    },
+    "ghost-in-the-shell-2-innocence": {
+        "chosenBy": [
+            "Xiro",
+            "Cludos"
+        ],
+        "date": "01/09/2024"
+    },
+    "time-lapse-2014": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "25/08/2024"
+    },
+    "ghost-in-the-shell": {
+        "chosenBy": [
+            "Xiro"
+        ],
+        "date": "18/08/2024"
+    },
+    "a-quiet-place-2018": {
+        "chosenBy": [
+            "Cludos"
+        ],
+        "date": "11/08/2024"
+    },
+    "the-usual-suspects": {
+        "chosenBy": [
+            "Mestre Gui"
+        ],
+        "date": "04/08/2024"
+    },
+    "the-others": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "28/07/2024"
+    },
+    "the-machinist": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "21/07/2024"
+    },
+    "memento": {
+        "chosenBy": [
+            "Xiro"
+        ],
+        "date": "14/07/2024"
+    },
+    "the-ballad-of-buster-scruggs": {
+        "chosenBy": [
+            "Cludos"
+        ],
+        "date": "07/07/2024"
+    },
+    "the-handmaiden": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "30/06/2024"
+    },
+    "knock-knock-2015": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "23/06/2024"
+    },
+    "fear-of-rain": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "16/06/2024"
+    },
+    "the-wind-rises": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "09/06/2024"
+    },
+    "shoplifters": {
+        "chosenBy": [
+            "Cludos"
+        ],
+        "date": "02/06/2024"
+    },
+    "boyhood": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "26/05/2024"
+    },
+    "the-metamorphosis-of-birds": {
+        "chosenBy": [
+            "Esquilo"
+        ],
+        "date": "19/05/2024"
+    },
+    "lock-stock-and-two-smoking-barrels": {
+        "chosenBy": [
+            "Frazens"
+        ],
+        "date": "12/05/2024"
+    },
+    "before-sunrise": {
+        "chosenBy": [
+            "Mestre Gui"
+        ],
+        "date": "05/05/2024"
+    },
+    "dune-2021": {
+        "chosenBy": [
+            "NeNelson"
+        ],
+        "date": "28/04/2024"
+    },
+    "deja-vu": {
+        "chosenBy": [
+            "Frazens"
+        ],
+        "date": "21/04/2024"
+    },
+    "monty-python-and-the-holy-grail": {
+        "chosenBy": [
+            "Cludos"
+        ],
+        "date": "14/04/2024"
+    },
+    "clue": {
+        "chosenBy": [
+            "Mestre Gui"
+        ],
+        "date": "07/04/2024"
+    },
+    "jack-reacher": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "31/03/2024"
+    },
+    "anyone-but-you": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "24/03/2024"
+    },
+    "saltburn": {
+        "chosenBy": [
+            "Mestre Gui"
+        ],
+        "date": "17/03/2024"
+    },
+    "i-want-to-eat-your-pancreas": {
+        "chosenBy": [
+            "NeNelson"
+        ],
+        "date": "10/03/2024"
+    },
+    "the-equalizer": {
+        "chosenBy": [
+            "Xadas"
+        ],
+        "date": "03/03/2024"
+    },
+    "pans-labyrinth": {
+        "chosenBy": [
+            "Atlas"
+        ],
+        "date": "25/02/2024"
+    },
+    "perfect-blue": {
+        "chosenBy": [
+            "Esquilo"
+        ],
+        "date": "18/02/2024"
+    },
+    "eternal-sunshine-of-the-spotless-mind": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "11/02/2024"
+    },
+    "blue-giant": {
+        "chosenBy": [
+            "NeNelson"
+        ],
+        "date": "04/02/2024"
+    },
+    "snatch": {
+        "chosenBy": [
+            "Cludos"
+        ],
+        "date": "28/01/2024"
+    },
+    "the-triplets-of-belleville": {
+        "chosenBy": [
+            "Atlas"
+        ],
+        "date": "21/01/2024"
+    },
+    "34-2018": {
+        "chosenBy": [
+            "NeNelson"
+        ],
+        "date": "14/01/2024"
+    },
+    "prisoners": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "07/01/2024"
+    },
+    "wrath-of-man": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "31/12/2023"
+    },
+    "blade-runner-2049": {
+        "chosenBy": [
+            "NeNelson"
+        ],
+        "date": "24/12/2023"
+    },
+    "the-tree-of-life-2011": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "17/12/2023"
+    },
+    "morbius": {
+        "chosenBy": [
+            "Xadas"
+        ],
+        "date": "10/12/2023"
+    },
+    "howls-moving-castle": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "03/12/2023"
+    },
+    "kung-pow-enter-the-fist": {
+        "chosenBy": [
+            "Cludos"
+        ],
+        "date": "26/11/2023"
+    },
+    "walle": {
+        "chosenBy": [
+            "Areias"
+        ],
+        "date": "19/11/2023"
+    },
+    "the-death-of-stalin": {
+        "chosenBy": [
+            "Atlas"
+        ],
+        "date": "12/11/2023"
+    },
+    "birdman-or-the-unexpected-virtue-of-ignorance": {
+        "chosenBy": [
+            "Alcunha"
+        ],
+        "date": "05/11/2023"
+    },
+    "the-phantom-of-the-opera-2004": {
+        "chosenBy": [
+            "NeNelson"
+        ],
+        "date": "29/10/2023"
+    },
+    "the-count-of-monte-cristo-2002": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "22/10/2023"
+    },
+    "punch-drunk-love": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "08/10/2023"
+    },
+    "mid90s": {
+        "chosenBy": [
+            "Gelly"
+        ],
+        "date": "01/10/2023"
+    },
+    "1917": {
+        "chosenBy": [
+            "Alcunha"
+        ],
+        "date": "24/09/2023"
+    },
+    "inglourious-basterds": {
+        "chosenBy": [
+            "Atlas"
+        ],
+        "date": "17/09/2023"
+    },
+    "drive-2011": {
+        "chosenBy": [
+            "NeNelson"
+        ],
+        "date": "10/09/2023"
+    },
+    "death-proof": {
+        "chosenBy": [
+            "Cludos"
+        ],
+        "date": "03/09/2023"
+    },
+    "no-country-for-old-men": {
+        "chosenBy": [
+            "Atlas"
+        ],
+        "date": "27/08/2023"
+    },
+    "lost-in-translation": {
+        "chosenBy": [
+            "Cludos"
+        ],
+        "date": "20/08/2023"
+    },
+    "guy-ritchies-the-covenant": {
+        "chosenBy": [
+            "Xadas"
+        ],
+        "date": "15/10/2023"
+    },
+    "training-day": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "02/02/2025"
+    },
+    "the-substance": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "09/02/2025"
+    },
+    "the-elephant-man": {
+        "chosenBy": [
+            "Mestre Gui"
+        ],
+        "date": "16/02/2025"
+    },
+    "hell-house-llc": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "23/02/2025"
+    },
+    "die-hard": {
+        "chosenBy": [
+            "Mestre Gui"
+        ],
+        "date": "02/03/2025"
+    },
+    "tucker-and-dale-vs-evil": {
+        "chosenBy": [
+            "mWXYZ"
+        ],
+        "date": "09/03/2025"
+    },
+    "eyes-wide-shut": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "16/03/2025"
+    },
+    "gone-baby-gone": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "23/03/2025"
+    },
+    "the-last-10-years": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "30/03/2025"
+    },
+    "memories-of-murder": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "06/04/2025"
+    },
+    "seven-pounds": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "13/04/2025"
+    },
+    "coco-2017": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "20/04/2025"
+    },
+    "nightcrawler": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "27/04/2025"
+    },
+    "mickey-17": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "04/05/2025"
+    },
+    "zodiac": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "11/05/2025"
+    },
+    "how-to-make-millions-before-grandma-dies": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "18/05/2025"
+    },
+    "the-darjeeling-limited": {
+        "chosenBy": [
+            "Qwerty"
+        ],
+        "date": "25/05/2025"
+    },
+    "inception": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "01/06/2025"
+    },
+    "mulholland-drive": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "08/06/2025"
+    },
+    "manchester-by-the-sea": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "15/06/2025"
+    },
+    "primal-fear": {
+        "chosenBy": [
+            "Qwerty"
+        ],
+        "date": "22/06/2025"
+    },
+    "after-hours": {
+        "chosenBy": [
+            "Qwerty"
+        ],
+        "date": "29/06/2025"
+    },
+    "blink-twice": {
+        "chosenBy": [
+            "Squnha"
+        ],
+        "date": "06/07/2025"
+    },
+    "one-piece-the-movie": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "13/07/2025"
+    },
+    "ballerina-2025": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "20/07/2025"
+    },
+    "kpop-demon-hunters": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "27/07/2025"
+    },
+    "blue-velvet": {
+        "chosenBy": [
+            "Qwerty"
+        ],
+        "date": "03/08/2025"
+    },
+    "sinners-2025": {
+        "chosenBy": [
+            "Geremias"
+        ],
+        "date": "10/08/2025"
+    },
+    "the-naked-gun-from-the-files-of-police-squad": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "17/08/2025"
+    },
+    "meet-the-robinsons": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "24/08/2025"
+    },
+    "american-beauty": {
+        "chosenBy": [
+            "Wisdow"
+        ],
+        "date": "31/08/2025"
+    },
+    "autumn-sonata": {
+        "chosenBy": [
+            "Qwerty"
+        ],
+        "date": "12/07/2026"
+    }
+}

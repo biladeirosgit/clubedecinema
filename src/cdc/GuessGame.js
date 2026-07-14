@@ -4,7 +4,13 @@ import randomValues from './randomValues.json'; // Importe os valores aleatório
 import MovieCard from './MovieCard';
 import './GuessGame.css';
 import './Movie.css';
-import { Link } from 'react-router-dom';
+import { posterSrc } from '../utils/images';
+import { average } from '../utils/ratings';
+
+const findByTitle = (title) => {
+    const entry = Object.entries(cinemaData).find(([, movie]) => movie.title === title);
+    return entry ? { slug: entry[0], ...entry[1] } : null;
+};
 
 const GuessGame = () => {
     const [selectedMovie, setSelectedMovie] = useState(null);
@@ -17,31 +23,27 @@ const GuessGame = () => {
     const [dayOfYear, setDayOfYear] = useState(null);
     const maxGuesses = 20;
 
-    const cleanTitle = (str) => {
-        return str.replace(/[^\w\s]/gi, ''); 
-    };
-
     useEffect(() => {
         const now = new Date();
         now.setHours(now.getHours() + 1);
-    
+
         const start = new Date(now.getFullYear(), 0, 1);
         const diff = now - start;
         const oneDay = 1000 * 60 * 60 * 24;
         const todayDayOfYear = Math.floor(diff / oneDay) + 1;
-    
+
         setDayOfYear(todayDayOfYear);
-    
+
         const savedState = JSON.parse(localStorage.getItem('guessGameState'));
         if (savedState && savedState.dayOfYear === todayDayOfYear) {
             setGuesses(savedState.guesses || []);
             setGameOver(savedState.gameOver || false);
         }
-    
+
         const timer = setInterval(() => {
             setTimeLeft(getTimeUntilMidnight());
         }, 1000);
-    
+
         return () => clearInterval(timer);
     }, []);
 
@@ -61,13 +63,13 @@ const GuessGame = () => {
             setGameOver(false);
             localStorage.removeItem('guessGameState');
         }
-    
+
         // Seleciona o filme aleatório baseado no dia do ano
         const randomValue = randomValues[dayOfYear % randomValues.length];
-        const movieKeys = Object.keys(cinemaData);
-        const movieIndex = Math.floor(randomValue * movieKeys.length);
-        const selectedMovieKey = movieKeys[movieIndex];
-        setSelectedMovie({ title: selectedMovieKey, ...cinemaData[selectedMovieKey] });
+        const movieSlugs = Object.keys(cinemaData);
+        const movieIndex = Math.floor(randomValue * movieSlugs.length);
+        const selectedSlug = movieSlugs[movieIndex];
+        setSelectedMovie({ slug: selectedSlug, ...cinemaData[selectedSlug] });
     }, [dayOfYear]);
 
 
@@ -89,8 +91,8 @@ const GuessGame = () => {
             setGuesses([...guesses, { guess: input, feedback }]);
             setGameOver(true);
         } else {
-            if (input === "") {return;}
-            if (cinemaData[input] == null){return;}
+            if (input === "") { return; }
+            if (findByTitle(input) == null) { return; }
             const feedback = getFeedback(input);
             setGuesses([...guesses, { guess: input, feedback }]);
             setInput('');
@@ -98,18 +100,8 @@ const GuessGame = () => {
         }
     };
 
-    const calculateAverage = (reviews) => {
-        var totalRating = 0;
-        var nReviews = 0;
-        for (const [_, rating] of Object.entries(reviews)){
-            totalRating += rating;
-            nReviews += 1;
-        }
-        return (totalRating / nReviews).toFixed(2);
-    }
-
-    const getFeedback = (guess) => {
-        const guessedMovie = cinemaData[guess];
+    const getFeedback = (guessTitle) => {
+        const guessedMovie = findByTitle(guessTitle);
         if (!guessedMovie) return null;
 
         const feedback = {};
@@ -138,8 +130,8 @@ const GuessGame = () => {
             actualValue: Object.keys(selectedMovie.reviews).length,
             direction: Object.keys(guessedMovie.reviews).length < Object.keys(selectedMovie.reviews).length ? ' (cima)' : ' (baixo)'
         };
-        let guessedAverage = calculateAverage(guessedMovie.reviews)
-        let actualAverage = calculateAverage(selectedMovie.reviews)
+        let guessedAverage = average(guessedMovie.reviews).toFixed(2)
+        let actualAverage = average(selectedMovie.reviews).toFixed(2)
 
         feedback.average = {
             color: getAverageFeedback(guessedAverage,actualAverage),
@@ -148,9 +140,9 @@ const GuessGame = () => {
             direction: guessedAverage < actualAverage ? ' (cima)' : ' (baixo)'
         };
         feedback.chosenBy = {
-            color: getChoosenByFeedback(guessedMovie['chosen by'],selectedMovie['chosen by']),
-            value: getValueChoosenBy(guessedMovie['chosen by']),
-            actualValue: selectedMovie['chosen by']
+            color: getChoosenByFeedback(guessedMovie.chosenBy,selectedMovie.chosenBy),
+            value: getValueChoosenBy(guessedMovie.chosenBy),
+            actualValue: selectedMovie.chosenBy
         };
 
         return feedback;
@@ -169,10 +161,10 @@ const GuessGame = () => {
     }
 
     const getValueChoosenBy = (guessValue) => {
-        //actual Value can be a list and guessValue can be a list
+        //actual Value can be a list e guessValue pode ser uma lista
         let value = guessValue[0]
         for (let i in guessValue){
-            if (i==0){
+            if (i==="0"){
                 continue
             }
             else{
@@ -225,10 +217,12 @@ const GuessGame = () => {
         const value = e.target.value;
         setInput(value);
         if (value) {
-            const filtered = Object.keys(cinemaData).filter(movie => 
-                movie.toLowerCase().includes(value.toLowerCase()) && 
-                !guesses.some(guessObj => guessObj.guess === movie)
-            );
+            const filtered = Object.values(cinemaData)
+                .map(movie => movie.title)
+                .filter(title =>
+                    title.toLowerCase().includes(value.toLowerCase()) &&
+                    !guesses.some(guessObj => guessObj.guess === title)
+                );
             setFilteredMovies(filtered);
             setShowSuggestions(true);
         } else {
@@ -237,111 +231,115 @@ const GuessGame = () => {
         }
     };
 
-    const handleSuggestionClick = (movie) => {
-        setInput(movie);
+    const handleSuggestionClick = (movieTitle) => {
+        setInput(movieTitle);
         setFilteredMovies([]);
         setShowSuggestions(false);
     };
 
     return (
         <div className="container-guessgame">
-            <h1>Guess the Movie of the Day ({dayOfYear})</h1>
+            <p className="guess-kicker">Jogo diário</p>
+            <h1>Adivinha o filme do dia</h1>
+            <p className="guess-sub">Dia {dayOfYear} · {maxGuesses - guesses.length} tentativas restantes</p>
             <div className="input-container">
-                <input 
-                    type="text" 
-                    value={input} 
-                    onChange={handleChange} 
-                    placeholder="Enter your guess..." 
+                <input
+                    type="text"
+                    value={input}
+                    onChange={handleChange}
+                    placeholder="Escreve um palpite…"
                     disabled={gameOver}
                 />
                 {showSuggestions && (
                     <div className="suggestions">
-                        {filteredMovies.map((movie, index) => (
-                            <div key={index} className="suggestion-item" onClick={() => handleSuggestionClick(movie)}>
-                                <img src={`/clubedecinema/posters/${cleanTitle(movie)}.png`} alt={`${movie} poster`} style={{ width: '50px', height: '73.75px' }} />
-                                <span>{movie}</span>
-                            </div>
-                        ))}
+                        {filteredMovies.map((movieTitle, index) => {
+                            const movie = findByTitle(movieTitle);
+                            return (
+                                <div key={index} className="suggestion-item" onClick={() => handleSuggestionClick(movieTitle)}>
+                                    <img src={posterSrc(movie.slug)} alt={`${movieTitle} poster`} style={{ width: '36px', height: '54px' }} />
+                                    <span>{movieTitle}</span>
+                                </div>
+                            );
+                        })}
                     </div>
                 )}
             </div>
             <div className="button">
-                <button onClick={handleGuess} disabled={gameOver}>Guess</button>
-                <Link to="/"><button>Back</button></Link>
+                <button onClick={handleGuess} disabled={gameOver}>Adivinhar</button>
             </div>
 
-            <div>
+            <div className="guess-table-wrap">
                 <table className='pretty-table guess-game'>
                     <thead>
                         <tr>
-                            <th>Movie</th>
-                            <th>Year</th>
-                            <th>Minutes</th>
-                            <th>Genres</th>
-                            <th>Number of Reviews</th>
-                            <th>Average</th>
-                            <th>Recommendation</th>
+                            <th>Filme</th>
+                            <th>Ano</th>
+                            <th>Min</th>
+                            <th>Géneros</th>
+                            <th>Nº reviews</th>
+                            <th>Média</th>
+                            <th>Escolha</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {guesses.map((guessObj, index) => (
-                            <tr key={index}>
-                                <td>
-                                    <div className="firstCol">
-                                        {guessObj.guess}
-                                        <img src={`/clubedecinema/posters/${cleanTitle(guessObj.guess)}.png`} alt={`${guessObj.guess} poster`} style={{ width: '100px', height: '147.5px' }} />
-                                    </div>
-                                </td>
-                                <td className={`feedback ${guessObj.feedback.year.color}`}>
-                                    {guessObj.feedback.year.value} {guessObj.feedback.year.color !== 'green' ? guessObj.feedback.year.direction : ''}
-                                </td>
-                                <td className={`feedback ${guessObj.feedback.minutes.color}`}>
-                                    {guessObj.feedback.minutes.value} {guessObj.feedback.minutes.color !== 'green' ? guessObj.feedback.minutes.direction : ''}
-                                </td>
-                                <td className={`feedback ${guessObj.feedback.genres.color}`}>
-                                    {guessObj.feedback.genres.value}
-                                </td>
-                                <td className={`feedback ${guessObj.feedback.reviews.color}`}>
-                                    {guessObj.feedback.reviews.value} {guessObj.feedback.reviews.color !== 'green' ? guessObj.feedback.reviews.direction : ''}
-                                </td>
-                                <td className={`feedback ${guessObj.feedback.average.color}`}>
-                                    {guessObj.feedback.average.value} {guessObj.feedback.average.color !== 'green' ? guessObj.feedback.average.direction : ''}
-                                </td>
-                                <td className={`feedback ${guessObj.feedback.chosenBy.color}`}>
-                                    {guessObj.feedback.chosenBy.value}
-                                </td>
-                            </tr>
-                        ))}
+                        {guesses.map((guessObj, index) => {
+                            const guessedMovie = findByTitle(guessObj.guess);
+                            return (
+                                <tr key={index}>
+                                    <td>
+                                        <div className="firstCol">
+                                            <img src={posterSrc(guessedMovie.slug)} alt={`${guessObj.guess} poster`} style={{ width: '46px', height: '69px' }} />
+                                            <span>{guessObj.guess}</span>
+                                        </div>
+                                    </td>
+                                    <td className={`feedback ${guessObj.feedback.year.color}`}>
+                                        {guessObj.feedback.year.value} {guessObj.feedback.year.color !== 'green' ? guessObj.feedback.year.direction : ''}
+                                    </td>
+                                    <td className={`feedback ${guessObj.feedback.minutes.color}`}>
+                                        {guessObj.feedback.minutes.value} {guessObj.feedback.minutes.color !== 'green' ? guessObj.feedback.minutes.direction : ''}
+                                    </td>
+                                    <td className={`feedback ${guessObj.feedback.genres.color}`}>
+                                        {guessObj.feedback.genres.value}
+                                    </td>
+                                    <td className={`feedback ${guessObj.feedback.reviews.color}`}>
+                                        {guessObj.feedback.reviews.value} {guessObj.feedback.reviews.color !== 'green' ? guessObj.feedback.reviews.direction : ''}
+                                    </td>
+                                    <td className={`feedback ${guessObj.feedback.average.color}`}>
+                                        {guessObj.feedback.average.value} {guessObj.feedback.average.color !== 'green' ? guessObj.feedback.average.direction : ''}
+                                    </td>
+                                    <td className={`feedback ${guessObj.feedback.chosenBy.color}`}>
+                                        {guessObj.feedback.chosenBy.value}
+                                    </td>
+                                </tr>
+                            );
+                        })}
                     </tbody>
                 </table>
             </div>
 
             {gameOver && (
-                <div>
-                    <h2>Congratulations! You got the movie "{selectedMovie.title}" right with {guesses.length} guesses!</h2>
-                    <h1>Next movie in: {timeLeft}</h1>
-                    <br></br>
+                <div className="guess-win">
+                    <h2>Acertaste em <b>"{selectedMovie.title}"</b> com {guesses.length} tentativas!</h2>
+                    <p className="guess-next">Próximo filme em {timeLeft}</p>
                     <div className="movie-card">
-                        <MovieCard
-                            title={selectedMovie.title}
-                            year={selectedMovie.year}
-                            link={selectedMovie.link}
-                            date={selectedMovie.date}
-                            chosenBy={selectedMovie["chosen by"]}
-                            genres={selectedMovie.genres}
-                            minutes={selectedMovie.minutes}
-                            reviews={selectedMovie.reviews}
-                            average={calculateAverage(selectedMovie.reviews)}
-                        />
-                    </div>                    
+                        <div className="modal-content">
+                            <MovieCard
+                                slug={selectedMovie.slug}
+                                title={selectedMovie.title}
+                                year={selectedMovie.year}
+                                link={selectedMovie.link}
+                                date={selectedMovie.date}
+                                chosenBy={selectedMovie.chosenBy}
+                                genres={selectedMovie.genres}
+                                minutes={selectedMovie.minutes}
+                                reviews={selectedMovie.reviews}
+                                average={average(selectedMovie.reviews).toFixed(2)}
+                                comments={selectedMovie.comments}
+                            />
+                        </div>
+                    </div>
                 </div>
             )}
-            <div style={{marginTop:"400px"}}>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-                    <br></br>
-            </div>
         </div>
     );
 }

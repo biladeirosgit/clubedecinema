@@ -1,0 +1,4112 @@
+{
+    "Areias": {
+        "_note": "Nota de 0.5 a 5 nos filmes que o Areias viu; deixa null nos que nao viu.",
+        "lost-in-translation": {
+            "rating": null,
+            "title": "Lost in Translation (2003)"
+        },
+        "no-country-for-old-men": {
+            "rating": null,
+            "title": "No Country for Old Men (2007)"
+        },
+        "death-proof": {
+            "rating": null,
+            "title": "Death Proof (2007)"
+        },
+        "drive-2011": {
+            "rating": null,
+            "title": "Drive (2011)"
+        },
+        "inglourious-basterds": {
+            "rating": null,
+            "title": "Inglorious Basterds (2009)"
+        },
+        "1917": {
+            "rating": null,
+            "title": "1917 (2019)"
+        },
+        "mid90s": {
+            "rating": null,
+            "title": "mid90s (2018)"
+        },
+        "punch-drunk-love": {
+            "rating": null,
+            "title": "Punch-Drunk Love (2002)"
+        },
+        "guy-ritchies-the-covenant": {
+            "rating": null,
+            "title": "Guy Ritchie's The Covenant (2023)"
+        },
+        "the-count-of-monte-cristo-2002": {
+            "rating": null,
+            "title": "The Count of Monte Cristo (2002)"
+        },
+        "the-phantom-of-the-opera-2004": {
+            "rating": null,
+            "title": "The Phantom of The Opera (2004)"
+        },
+        "birdman-or-the-unexpected-virtue-of-ignorance": {
+            "rating": null,
+            "title": "Birdman (2014)"
+        },
+        "the-death-of-stalin": {
+            "rating": null,
+            "title": "The Death of Stalin (2017)"
+        },
+        "kung-pow-enter-the-fist": {
+            "rating": null,
+            "title": "Kung Pow: Enter the Fist (2002)"
+        },
+        "howls-moving-castle": {
+            "rating": null,
+            "title": "Howl's Moving Castle (2004)"
+        },
+        "morbius": {
+            "rating": null,
+            "title": "Morbius (2022)"
+        },
+        "the-tree-of-life-2011": {
+            "rating": null,
+            "title": "The Tree of Life (2011)"
+        },
+        "blade-runner-2049": {
+            "rating": null,
+            "title": "Blade Runner 2049 (2017)"
+        },
+        "wrath-of-man": {
+            "rating": null,
+            "title": "Wrath of Man (2021)"
+        },
+        "prisoners": {
+            "rating": null,
+            "title": "Prisoners (2013)"
+        },
+        "34-2018": {
+            "rating": null,
+            "title": "T-34 (2018)"
+        },
+        "the-triplets-of-belleville": {
+            "rating": null,
+            "title": "The Triplets of Belleville (2003)"
+        },
+        "snatch": {
+            "rating": null,
+            "title": "Snatch (2000)"
+        },
+        "blue-giant": {
+            "rating": null,
+            "title": "Blue Giant (2023)"
+        },
+        "eternal-sunshine-of-the-spotless-mind": {
+            "rating": null,
+            "title": "Eternal Sunshine of the Spotless Mind (2004)"
+        },
+        "perfect-blue": {
+            "rating": null,
+            "title": "Perfect Blue (1997)"
+        },
+        "pans-labyrinth": {
+            "rating": null,
+            "title": "Pan's Labyrinth (2006)"
+        },
+        "the-equalizer": {
+            "rating": null,
+            "title": "The Equalizer (2014)"
+        },
+        "i-want-to-eat-your-pancreas": {
+            "rating": null,
+            "title": "I Want to Eat Your Pancreas (2018)"
+        },
+        "saltburn": {
+            "rating": null,
+            "title": "Saltburn (2023)"
+        },
+        "anyone-but-you": {
+            "rating": null,
+            "title": "Anyone But You (2023)"
+        },
+        "jack-reacher": {
+            "rating": null,
+            "title": "Jack Reacher (2012)"
+        },
+        "clue": {
+            "rating": null,
+            "title": "Clue (1985)"
+        },
+        "monty-python-and-the-holy-grail": {
+            "rating": null,
+            "title": "Monty Python and the Holy Grail (1975)"
+        },
+        "deja-vu": {
+            "rating": null,
+            "title": "Deja Vu (2006)"
+        },
+        "dune-2021": {
+            "rating": null,
+            "title": "Dune (2021)"
+        },
+        "before-sunrise": {
+            "rating": null,
+            "title": "Before Sunrise (1995)"
+        },
+        "lock-stock-and-two-smoking-barrels": {
+            "rating": null,
+            "title": "Lock, Stock and Two Smoking Barrels (1998)"
+        },
+        "the-metamorphosis-of-birds": {
+            "rating": null,
+            "title": "The Metamorphosis of Birds (2020)"
+        },
+        "boyhood": {
+            "rating": null,
+            "title": "Boyhood (2014)"
+        },
+        "shoplifters": {
+            "rating": null,
+            "title": "Shoplifters (2018)"
+        },
+        "the-wind-rises": {
+            "rating": null,
+            "title": "The Wind Rises (2013)"
+        },
+        "fear-of-rain": {
+            "rating": null,
+            "title": "Fear of Rain (2021)"
+        },
+        "knock-knock-2015": {
+            "rating": null,
+            "title": "Knock Knock (2015)"
+        },
+        "the-handmaiden": {
+            "rating": null,
+            "title": "The Handmaiden (2016)"
+        },
+        "the-ballad-of-buster-scruggs": {
+            "rating": null,
+            "title": "The Ballad of Buster Scruggs (2018)"
+        },
+        "memento": {
+            "rating": null,
+            "title": "Memento (2000)"
+        },
+        "the-machinist": {
+            "rating": null,
+            "title": "The Machinist (2004)"
+        },
+        "the-others": {
+            "rating": null,
+            "title": "The Others (2001)"
+        },
+        "the-usual-suspects": {
+            "rating": null,
+            "title": "The Usual Suspects (1995)"
+        },
+        "a-quiet-place-2018": {
+            "rating": null,
+            "title": "A Quiet Place (2018)"
+        },
+        "ghost-in-the-shell": {
+            "rating": null,
+            "title": "Ghost in the Shell (1995)"
+        },
+        "time-lapse-2014": {
+            "rating": null,
+            "title": "Time Lapse (2014)"
+        },
+        "ghost-in-the-shell-2-innocence": {
+            "rating": null,
+            "title": "Ghost in the Shell 2: Innocence (2004)"
+        },
+        "john-wick": {
+            "rating": null,
+            "title": "John Wick (2004)"
+        },
+        "her": {
+            "rating": null,
+            "title": "Her (2013)"
+        },
+        "lemonade-mouth": {
+            "rating": null,
+            "title": "Lemonade Mouth (2011)"
+        },
+        "john-wick-chapter-2": {
+            "rating": null,
+            "title": "John Wick: Chapter 2 (2017)"
+        },
+        "john-wick-chapter-3-parabellum": {
+            "rating": null,
+            "title": "John Wick: Chapter 3 (2019)"
+        },
+        "the-departed": {
+            "rating": null,
+            "title": "The Departed (2006)"
+        },
+        "sinister": {
+            "rating": null,
+            "title": "Sinister (2012)"
+        },
+        "the-silence-of-the-lambs": {
+            "rating": null,
+            "title": "The Silence of the Lambs (1991)"
+        },
+        "john-wick-chapter-4": {
+            "rating": null,
+            "title": "John Wick: Chapter 4 (2023)"
+        },
+        "good-will-hunting": {
+            "rating": null,
+            "title": "Good Will Hunting (1997)"
+        },
+        "hannibal": {
+            "rating": null,
+            "title": "Hannibal (2001)"
+        },
+        "serendipity": {
+            "rating": null,
+            "title": "Serendipity (2001)"
+        },
+        "still-walking": {
+            "rating": null,
+            "title": "Still Walking (2008)"
+        },
+        "parasite-2019": {
+            "rating": null,
+            "title": "Parasite (2019)"
+        },
+        "scarface-1983": {
+            "rating": null,
+            "title": "Scarface (1983)"
+        },
+        "la-haine": {
+            "rating": null,
+            "title": "La Haine (1995)"
+        },
+        "the-first-slam-dunk": {
+            "rating": null,
+            "title": "The First Slam Dunk (2022)"
+        },
+        "how-to-lose-a-guy-in-10-days": {
+            "rating": null,
+            "title": "How to Lose a Guy in 10 Days (2003)"
+        },
+        "the-holdovers": {
+            "rating": null,
+            "title": "The Holdovers (2023)"
+        },
+        "the-notebook": {
+            "rating": null,
+            "title": "The Notebook (2004)"
+        },
+        "training-day": {
+            "rating": null,
+            "title": "Training Day (2001)"
+        },
+        "the-substance": {
+            "rating": null,
+            "title": "The Substance (2024)"
+        },
+        "the-elephant-man": {
+            "rating": null,
+            "title": "The Elephant Man (1980)"
+        },
+        "hell-house-llc": {
+            "rating": null,
+            "title": "Hell House LLC (2015)"
+        },
+        "die-hard": {
+            "rating": null,
+            "title": "Die Hard (1988)"
+        },
+        "tucker-and-dale-vs-evil": {
+            "rating": null,
+            "title": "Tucker and Dale vs. Evil (2010)"
+        },
+        "eyes-wide-shut": {
+            "rating": null,
+            "title": "Eyes Wide Shut (1999)"
+        },
+        "gone-baby-gone": {
+            "rating": null,
+            "title": "Gone Baby Gone (2007)"
+        },
+        "the-last-10-years": {
+            "rating": null,
+            "title": "The Last 10 Years (2022)"
+        },
+        "memories-of-murder": {
+            "rating": null,
+            "title": "Memories of Murder (2003)"
+        },
+        "seven-pounds": {
+            "rating": null,
+            "title": "Seven Pounds (2008)"
+        },
+        "coco-2017": {
+            "rating": null,
+            "title": "Coco (2017)"
+        },
+        "nightcrawler": {
+            "rating": null,
+            "title": "Nightcrawler (2014)"
+        },
+        "mickey-17": {
+            "rating": null,
+            "title": "Mickey 17 (2025)"
+        },
+        "zodiac": {
+            "rating": null,
+            "title": "Zodiac (2007)"
+        },
+        "how-to-make-millions-before-grandma-dies": {
+            "rating": null,
+            "title": "How to Make Millions Before Grandma Dies (2024)"
+        },
+        "the-darjeeling-limited": {
+            "rating": null,
+            "title": "The Darjeeling Limited (2007)"
+        },
+        "inception": {
+            "rating": null,
+            "title": "Inception (2010)"
+        },
+        "mulholland-drive": {
+            "rating": null,
+            "title": "Mulholland Drive (2001)"
+        },
+        "manchester-by-the-sea": {
+            "rating": null,
+            "title": "Manchester by the Sea (2016)"
+        },
+        "primal-fear": {
+            "rating": null,
+            "title": "Primal Fear (1996)"
+        },
+        "after-hours": {
+            "rating": null,
+            "title": "After Hours (1985)"
+        },
+        "blink-twice": {
+            "rating": null,
+            "title": "Blink Twice (2024)"
+        },
+        "one-piece-the-movie": {
+            "rating": null,
+            "title": "One Piece: The Movie (2000)"
+        },
+        "ballerina-2025": {
+            "rating": null,
+            "title": "Ballerina (2025)"
+        },
+        "kpop-demon-hunters": {
+            "rating": null,
+            "title": "KPop Demon Hunters (2025)"
+        },
+        "blue-velvet": {
+            "rating": null,
+            "title": "Blue Velvet (1986)"
+        },
+        "sinners-2025": {
+            "rating": null,
+            "title": "Sinners (2025)"
+        },
+        "the-naked-gun-from-the-files-of-police-squad": {
+            "rating": null,
+            "title": "The Naked Gun: From the Files of Police Squad! (1988)"
+        },
+        "meet-the-robinsons": {
+            "rating": null,
+            "title": "Meet the Robinsons (2007)"
+        },
+        "american-beauty": {
+            "rating": null,
+            "title": "American Beauty (1999)"
+        },
+        "autumn-sonata": {
+            "rating": null,
+            "title": "Autumn Sonata (1978)"
+        }
+    },
+    "Atlas": {
+        "_note": "Nota de 0.5 a 5 nos filmes que o Atlas viu; deixa null nos que nao viu.",
+        "lost-in-translation": {
+            "rating": null,
+            "title": "Lost in Translation (2003)"
+        },
+        "drive-2011": {
+            "rating": null,
+            "title": "Drive (2011)"
+        },
+        "mid90s": {
+            "rating": null,
+            "title": "mid90s (2018)"
+        },
+        "punch-drunk-love": {
+            "rating": null,
+            "title": "Punch-Drunk Love (2002)"
+        },
+        "birdman-or-the-unexpected-virtue-of-ignorance": {
+            "rating": null,
+            "title": "Birdman (2014)"
+        },
+        "kung-pow-enter-the-fist": {
+            "rating": null,
+            "title": "Kung Pow: Enter the Fist (2002)"
+        },
+        "morbius": {
+            "rating": null,
+            "title": "Morbius (2022)"
+        },
+        "the-tree-of-life-2011": {
+            "rating": null,
+            "title": "The Tree of Life (2011)"
+        },
+        "wrath-of-man": {
+            "rating": null,
+            "title": "Wrath of Man (2021)"
+        },
+        "prisoners": {
+            "rating": null,
+            "title": "Prisoners (2013)"
+        },
+        "snatch": {
+            "rating": null,
+            "title": "Snatch (2000)"
+        },
+        "blue-giant": {
+            "rating": null,
+            "title": "Blue Giant (2023)"
+        },
+        "eternal-sunshine-of-the-spotless-mind": {
+            "rating": null,
+            "title": "Eternal Sunshine of the Spotless Mind (2004)"
+        },
+        "perfect-blue": {
+            "rating": null,
+            "title": "Perfect Blue (1997)"
+        },
+        "the-equalizer": {
+            "rating": null,
+            "title": "The Equalizer (2014)"
+        },
+        "i-want-to-eat-your-pancreas": {
+            "rating": null,
+            "title": "I Want to Eat Your Pancreas (2018)"
+        },
+        "saltburn": {
+            "rating": null,
+            "title": "Saltburn (2023)"
+        },
+        "anyone-but-you": {
+            "rating": null,
+            "title": "Anyone But You (2023)"
+        },
+        "jack-reacher": {
+            "rating": null,
+            "title": "Jack Reacher (2012)"
+        },
+        "clue": {
+            "rating": null,
+            "title": "Clue (1985)"
+        },
+        "before-sunrise": {
+            "rating": null,
+            "title": "Before Sunrise (1995)"
+        },
+        "lock-stock-and-two-smoking-barrels": {
+            "rating": null,
+            "title": "Lock, Stock and Two Smoking Barrels (1998)"
+        },
+        "the-metamorphosis-of-birds": {
+            "rating": null,
+            "title": "The Metamorphosis of Birds (2020)"
+        },
+        "boyhood": {
+            "rating": null,
+            "title": "Boyhood (2014)"
+        },
+        "shoplifters": {
+            "rating": null,
+            "title": "Shoplifters (2018)"
+        },
+        "fear-of-rain": {
+            "rating": null,
+            "title": "Fear of Rain (2021)"
+        },
+        "knock-knock-2015": {
+            "rating": null,
+            "title": "Knock Knock (2015)"
+        },
+        "the-handmaiden": {
+            "rating": null,
+            "title": "The Handmaiden (2016)"
+        },
+        "memento": {
+            "rating": null,
+            "title": "Memento (2000)"
+        },
+        "the-machinist": {
+            "rating": null,
+            "title": "The Machinist (2004)"
+        },
+        "the-others": {
+            "rating": null,
+            "title": "The Others (2001)"
+        },
+        "the-usual-suspects": {
+            "rating": null,
+            "title": "The Usual Suspects (1995)"
+        },
+        "a-quiet-place-2018": {
+            "rating": null,
+            "title": "A Quiet Place (2018)"
+        },
+        "time-lapse-2014": {
+            "rating": null,
+            "title": "Time Lapse (2014)"
+        },
+        "ghost-in-the-shell-2-innocence": {
+            "rating": null,
+            "title": "Ghost in the Shell 2: Innocence (2004)"
+        },
+        "john-wick": {
+            "rating": null,
+            "title": "John Wick (2004)"
+        },
+        "lemonade-mouth": {
+            "rating": null,
+            "title": "Lemonade Mouth (2011)"
+        },
+        "john-wick-chapter-2": {
+            "rating": null,
+            "title": "John Wick: Chapter 2 (2017)"
+        },
+        "john-wick-chapter-3-parabellum": {
+            "rating": null,
+            "title": "John Wick: Chapter 3 (2019)"
+        },
+        "the-departed": {
+            "rating": null,
+            "title": "The Departed (2006)"
+        },
+        "sinister": {
+            "rating": null,
+            "title": "Sinister (2012)"
+        },
+        "john-wick-chapter-4": {
+            "rating": null,
+            "title": "John Wick: Chapter 4 (2023)"
+        },
+        "good-will-hunting": {
+            "rating": null,
+            "title": "Good Will Hunting (1997)"
+        },
+        "hannibal": {
+            "rating": null,
+            "title": "Hannibal (2001)"
+        },
+        "serendipity": {
+            "rating": null,
+            "title": "Serendipity (2001)"
+        },
+        "still-walking": {
+            "rating": null,
+            "title": "Still Walking (2008)"
+        },
+        "parasite-2019": {
+            "rating": null,
+            "title": "Parasite (2019)"
+        },
+        "scarface-1983": {
+            "rating": null,
+            "title": "Scarface (1983)"
+        },
+        "la-haine": {
+            "rating": null,
+            "title": "La Haine (1995)"
+        },
+        "the-first-slam-dunk": {
+            "rating": null,
+            "title": "The First Slam Dunk (2022)"
+        },
+        "how-to-lose-a-guy-in-10-days": {
+            "rating": null,
+            "title": "How to Lose a Guy in 10 Days (2003)"
+        },
+        "the-holdovers": {
+            "rating": null,
+            "title": "The Holdovers (2023)"
+        },
+        "the-notebook": {
+            "rating": null,
+            "title": "The Notebook (2004)"
+        },
+        "training-day": {
+            "rating": null,
+            "title": "Training Day (2001)"
+        },
+        "the-substance": {
+            "rating": null,
+            "title": "The Substance (2024)"
+        },
+        "the-elephant-man": {
+            "rating": null,
+            "title": "The Elephant Man (1980)"
+        },
+        "hell-house-llc": {
+            "rating": null,
+            "title": "Hell House LLC (2015)"
+        },
+        "die-hard": {
+            "rating": null,
+            "title": "Die Hard (1988)"
+        },
+        "tucker-and-dale-vs-evil": {
+            "rating": null,
+            "title": "Tucker and Dale vs. Evil (2010)"
+        },
+        "eyes-wide-shut": {
+            "rating": null,
+            "title": "Eyes Wide Shut (1999)"
+        },
+        "gone-baby-gone": {
+            "rating": null,
+            "title": "Gone Baby Gone (2007)"
+        },
+        "the-last-10-years": {
+            "rating": null,
+            "title": "The Last 10 Years (2022)"
+        },
+        "memories-of-murder": {
+            "rating": null,
+            "title": "Memories of Murder (2003)"
+        },
+        "seven-pounds": {
+            "rating": null,
+            "title": "Seven Pounds (2008)"
+        },
+        "coco-2017": {
+            "rating": null,
+            "title": "Coco (2017)"
+        },
+        "nightcrawler": {
+            "rating": null,
+            "title": "Nightcrawler (2014)"
+        },
+        "mickey-17": {
+            "rating": null,
+            "title": "Mickey 17 (2025)"
+        },
+        "zodiac": {
+            "rating": null,
+            "title": "Zodiac (2007)"
+        },
+        "how-to-make-millions-before-grandma-dies": {
+            "rating": null,
+            "title": "How to Make Millions Before Grandma Dies (2024)"
+        },
+        "the-darjeeling-limited": {
+            "rating": null,
+            "title": "The Darjeeling Limited (2007)"
+        },
+        "inception": {
+            "rating": null,
+            "title": "Inception (2010)"
+        },
+        "mulholland-drive": {
+            "rating": null,
+            "title": "Mulholland Drive (2001)"
+        },
+        "manchester-by-the-sea": {
+            "rating": null,
+            "title": "Manchester by the Sea (2016)"
+        },
+        "primal-fear": {
+            "rating": null,
+            "title": "Primal Fear (1996)"
+        },
+        "after-hours": {
+            "rating": null,
+            "title": "After Hours (1985)"
+        },
+        "blink-twice": {
+            "rating": null,
+            "title": "Blink Twice (2024)"
+        },
+        "one-piece-the-movie": {
+            "rating": null,
+            "title": "One Piece: The Movie (2000)"
+        },
+        "ballerina-2025": {
+            "rating": null,
+            "title": "Ballerina (2025)"
+        },
+        "kpop-demon-hunters": {
+            "rating": null,
+            "title": "KPop Demon Hunters (2025)"
+        },
+        "blue-velvet": {
+            "rating": null,
+            "title": "Blue Velvet (1986)"
+        },
+        "sinners-2025": {
+            "rating": null,
+            "title": "Sinners (2025)"
+        },
+        "the-naked-gun-from-the-files-of-police-squad": {
+            "rating": null,
+            "title": "The Naked Gun: From the Files of Police Squad! (1988)"
+        },
+        "meet-the-robinsons": {
+            "rating": null,
+            "title": "Meet the Robinsons (2007)"
+        },
+        "american-beauty": {
+            "rating": null,
+            "title": "American Beauty (1999)"
+        },
+        "autumn-sonata": {
+            "rating": null,
+            "title": "Autumn Sonata (1978)"
+        }
+    },
+    "Braz": {
+        "_note": "Nota de 0.5 a 5 nos filmes que o Braz viu; deixa null nos que nao viu.",
+        "lost-in-translation": {
+            "rating": null,
+            "title": "Lost in Translation (2003)"
+        },
+        "no-country-for-old-men": {
+            "rating": null,
+            "title": "No Country for Old Men (2007)"
+        },
+        "death-proof": {
+            "rating": null,
+            "title": "Death Proof (2007)"
+        },
+        "drive-2011": {
+            "rating": null,
+            "title": "Drive (2011)"
+        },
+        "inglourious-basterds": {
+            "rating": null,
+            "title": "Inglorious Basterds (2009)"
+        },
+        "1917": {
+            "rating": null,
+            "title": "1917 (2019)"
+        },
+        "mid90s": {
+            "rating": null,
+            "title": "mid90s (2018)"
+        },
+        "punch-drunk-love": {
+            "rating": null,
+            "title": "Punch-Drunk Love (2002)"
+        },
+        "guy-ritchies-the-covenant": {
+            "rating": null,
+            "title": "Guy Ritchie's The Covenant (2023)"
+        },
+        "the-phantom-of-the-opera-2004": {
+            "rating": null,
+            "title": "The Phantom of The Opera (2004)"
+        },
+        "birdman-or-the-unexpected-virtue-of-ignorance": {
+            "rating": null,
+            "title": "Birdman (2014)"
+        },
+        "the-death-of-stalin": {
+            "rating": null,
+            "title": "The Death of Stalin (2017)"
+        },
+        "kung-pow-enter-the-fist": {
+            "rating": null,
+            "title": "Kung Pow: Enter the Fist (2002)"
+        },
+        "howls-moving-castle": {
+            "rating": null,
+            "title": "Howl's Moving Castle (2004)"
+        },
+        "morbius": {
+            "rating": null,
+            "title": "Morbius (2022)"
+        },
+        "the-tree-of-life-2011": {
+            "rating": null,
+            "title": "The Tree of Life (2011)"
+        },
+        "blade-runner-2049": {
+            "rating": null,
+            "title": "Blade Runner 2049 (2017)"
+        },
+        "wrath-of-man": {
+            "rating": null,
+            "title": "Wrath of Man (2021)"
+        },
+        "prisoners": {
+            "rating": null,
+            "title": "Prisoners (2013)"
+        },
+        "34-2018": {
+            "rating": null,
+            "title": "T-34 (2018)"
+        },
+        "the-triplets-of-belleville": {
+            "rating": null,
+            "title": "The Triplets of Belleville (2003)"
+        },
+        "snatch": {
+            "rating": null,
+            "title": "Snatch (2000)"
+        },
+        "blue-giant": {
+            "rating": null,
+            "title": "Blue Giant (2023)"
+        },
+        "eternal-sunshine-of-the-spotless-mind": {
+            "rating": null,
+            "title": "Eternal Sunshine of the Spotless Mind (2004)"
+        },
+        "perfect-blue": {
+            "rating": null,
+            "title": "Perfect Blue (1997)"
+        },
+        "pans-labyrinth": {
+            "rating": null,
+            "title": "Pan's Labyrinth (2006)"
+        },
+        "the-equalizer": {
+            "rating": null,
+            "title": "The Equalizer (2014)"
+        },
+        "saltburn": {
+            "rating": null,
+            "title": "Saltburn (2023)"
+        },
+        "anyone-but-you": {
+            "rating": null,
+            "title": "Anyone But You (2023)"
+        },
+        "jack-reacher": {
+            "rating": null,
+            "title": "Jack Reacher (2012)"
+        },
+        "clue": {
+            "rating": null,
+            "title": "Clue (1985)"
+        },
+        "deja-vu": {
+            "rating": null,
+            "title": "Deja Vu (2006)"
+        },
+        "before-sunrise": {
+            "rating": null,
+            "title": "Before Sunrise (1995)"
+        },
+        "lock-stock-and-two-smoking-barrels": {
+            "rating": null,
+            "title": "Lock, Stock and Two Smoking Barrels (1998)"
+        },
+        "the-metamorphosis-of-birds": {
+            "rating": null,
+            "title": "The Metamorphosis of Birds (2020)"
+        },
+        "boyhood": {
+            "rating": null,
+            "title": "Boyhood (2014)"
+        },
+        "shoplifters": {
+            "rating": null,
+            "title": "Shoplifters (2018)"
+        },
+        "the-wind-rises": {
+            "rating": null,
+            "title": "The Wind Rises (2013)"
+        },
+        "fear-of-rain": {
+            "rating": null,
+            "title": "Fear of Rain (2021)"
+        },
+        "knock-knock-2015": {
+            "rating": null,
+            "title": "Knock Knock (2015)"
+        },
+        "the-handmaiden": {
+            "rating": null,
+            "title": "The Handmaiden (2016)"
+        },
+        "the-ballad-of-buster-scruggs": {
+            "rating": null,
+            "title": "The Ballad of Buster Scruggs (2018)"
+        },
+        "memento": {
+            "rating": null,
+            "title": "Memento (2000)"
+        },
+        "the-machinist": {
+            "rating": null,
+            "title": "The Machinist (2004)"
+        },
+        "the-others": {
+            "rating": null,
+            "title": "The Others (2001)"
+        },
+        "the-usual-suspects": {
+            "rating": null,
+            "title": "The Usual Suspects (1995)"
+        },
+        "a-quiet-place-2018": {
+            "rating": null,
+            "title": "A Quiet Place (2018)"
+        },
+        "ghost-in-the-shell": {
+            "rating": null,
+            "title": "Ghost in the Shell (1995)"
+        },
+        "time-lapse-2014": {
+            "rating": null,
+            "title": "Time Lapse (2014)"
+        },
+        "ghost-in-the-shell-2-innocence": {
+            "rating": null,
+            "title": "Ghost in the Shell 2: Innocence (2004)"
+        },
+        "john-wick": {
+            "rating": null,
+            "title": "John Wick (2004)"
+        },
+        "her": {
+            "rating": null,
+            "title": "Her (2013)"
+        },
+        "lemonade-mouth": {
+            "rating": null,
+            "title": "Lemonade Mouth (2011)"
+        },
+        "john-wick-chapter-2": {
+            "rating": null,
+            "title": "John Wick: Chapter 2 (2017)"
+        },
+        "john-wick-chapter-3-parabellum": {
+            "rating": null,
+            "title": "John Wick: Chapter 3 (2019)"
+        },
+        "the-departed": {
+            "rating": null,
+            "title": "The Departed (2006)"
+        },
+        "sinister": {
+            "rating": null,
+            "title": "Sinister (2012)"
+        },
+        "the-silence-of-the-lambs": {
+            "rating": null,
+            "title": "The Silence of the Lambs (1991)"
+        },
+        "interstellar": {
+            "rating": null,
+            "title": "Interstellar (2014)"
+        },
+        "john-wick-chapter-4": {
+            "rating": null,
+            "title": "John Wick: Chapter 4 (2023)"
+        },
+        "good-will-hunting": {
+            "rating": null,
+            "title": "Good Will Hunting (1997)"
+        },
+        "hannibal": {
+            "rating": null,
+            "title": "Hannibal (2001)"
+        },
+        "serendipity": {
+            "rating": null,
+            "title": "Serendipity (2001)"
+        },
+        "still-walking": {
+            "rating": null,
+            "title": "Still Walking (2008)"
+        },
+        "parasite-2019": {
+            "rating": null,
+            "title": "Parasite (2019)"
+        },
+        "scarface-1983": {
+            "rating": null,
+            "title": "Scarface (1983)"
+        },
+        "la-haine": {
+            "rating": null,
+            "title": "La Haine (1995)"
+        },
+        "the-first-slam-dunk": {
+            "rating": null,
+            "title": "The First Slam Dunk (2022)"
+        },
+        "how-to-lose-a-guy-in-10-days": {
+            "rating": null,
+            "title": "How to Lose a Guy in 10 Days (2003)"
+        },
+        "the-holdovers": {
+            "rating": null,
+            "title": "The Holdovers (2023)"
+        },
+        "the-notebook": {
+            "rating": null,
+            "title": "The Notebook (2004)"
+        },
+        "training-day": {
+            "rating": null,
+            "title": "Training Day (2001)"
+        },
+        "the-substance": {
+            "rating": null,
+            "title": "The Substance (2024)"
+        },
+        "the-elephant-man": {
+            "rating": null,
+            "title": "The Elephant Man (1980)"
+        },
+        "hell-house-llc": {
+            "rating": null,
+            "title": "Hell House LLC (2015)"
+        },
+        "die-hard": {
+            "rating": null,
+            "title": "Die Hard (1988)"
+        },
+        "tucker-and-dale-vs-evil": {
+            "rating": null,
+            "title": "Tucker and Dale vs. Evil (2010)"
+        },
+        "eyes-wide-shut": {
+            "rating": null,
+            "title": "Eyes Wide Shut (1999)"
+        },
+        "gone-baby-gone": {
+            "rating": null,
+            "title": "Gone Baby Gone (2007)"
+        },
+        "the-last-10-years": {
+            "rating": null,
+            "title": "The Last 10 Years (2022)"
+        },
+        "memories-of-murder": {
+            "rating": null,
+            "title": "Memories of Murder (2003)"
+        },
+        "seven-pounds": {
+            "rating": null,
+            "title": "Seven Pounds (2008)"
+        },
+        "coco-2017": {
+            "rating": null,
+            "title": "Coco (2017)"
+        },
+        "nightcrawler": {
+            "rating": null,
+            "title": "Nightcrawler (2014)"
+        },
+        "mickey-17": {
+            "rating": null,
+            "title": "Mickey 17 (2025)"
+        },
+        "zodiac": {
+            "rating": null,
+            "title": "Zodiac (2007)"
+        },
+        "how-to-make-millions-before-grandma-dies": {
+            "rating": null,
+            "title": "How to Make Millions Before Grandma Dies (2024)"
+        },
+        "the-darjeeling-limited": {
+            "rating": null,
+            "title": "The Darjeeling Limited (2007)"
+        },
+        "inception": {
+            "rating": null,
+            "title": "Inception (2010)"
+        },
+        "mulholland-drive": {
+            "rating": null,
+            "title": "Mulholland Drive (2001)"
+        },
+        "manchester-by-the-sea": {
+            "rating": null,
+            "title": "Manchester by the Sea (2016)"
+        },
+        "primal-fear": {
+            "rating": null,
+            "title": "Primal Fear (1996)"
+        },
+        "after-hours": {
+            "rating": null,
+            "title": "After Hours (1985)"
+        },
+        "blink-twice": {
+            "rating": null,
+            "title": "Blink Twice (2024)"
+        },
+        "one-piece-the-movie": {
+            "rating": null,
+            "title": "One Piece: The Movie (2000)"
+        },
+        "ballerina-2025": {
+            "rating": null,
+            "title": "Ballerina (2025)"
+        },
+        "kpop-demon-hunters": {
+            "rating": null,
+            "title": "KPop Demon Hunters (2025)"
+        },
+        "blue-velvet": {
+            "rating": null,
+            "title": "Blue Velvet (1986)"
+        },
+        "sinners-2025": {
+            "rating": null,
+            "title": "Sinners (2025)"
+        },
+        "the-naked-gun-from-the-files-of-police-squad": {
+            "rating": null,
+            "title": "The Naked Gun: From the Files of Police Squad! (1988)"
+        },
+        "meet-the-robinsons": {
+            "rating": null,
+            "title": "Meet the Robinsons (2007)"
+        },
+        "american-beauty": {
+            "rating": null,
+            "title": "American Beauty (1999)"
+        },
+        "autumn-sonata": {
+            "rating": null,
+            "title": "Autumn Sonata (1978)"
+        }
+    },
+    "Frazens": {
+        "_note": "Nota de 0.5 a 5 nos filmes que o Frazens viu; deixa null nos que nao viu.",
+        "lost-in-translation": {
+            "rating": null,
+            "title": "Lost in Translation (2003)"
+        },
+        "no-country-for-old-men": {
+            "rating": null,
+            "title": "No Country for Old Men (2007)"
+        },
+        "death-proof": {
+            "rating": null,
+            "title": "Death Proof (2007)"
+        },
+        "drive-2011": {
+            "rating": null,
+            "title": "Drive (2011)"
+        },
+        "inglourious-basterds": {
+            "rating": null,
+            "title": "Inglorious Basterds (2009)"
+        },
+        "1917": {
+            "rating": null,
+            "title": "1917 (2019)"
+        },
+        "mid90s": {
+            "rating": null,
+            "title": "mid90s (2018)"
+        },
+        "punch-drunk-love": {
+            "rating": null,
+            "title": "Punch-Drunk Love (2002)"
+        },
+        "guy-ritchies-the-covenant": {
+            "rating": null,
+            "title": "Guy Ritchie's The Covenant (2023)"
+        },
+        "the-count-of-monte-cristo-2002": {
+            "rating": null,
+            "title": "The Count of Monte Cristo (2002)"
+        },
+        "the-phantom-of-the-opera-2004": {
+            "rating": null,
+            "title": "The Phantom of The Opera (2004)"
+        },
+        "birdman-or-the-unexpected-virtue-of-ignorance": {
+            "rating": null,
+            "title": "Birdman (2014)"
+        },
+        "the-death-of-stalin": {
+            "rating": null,
+            "title": "The Death of Stalin (2017)"
+        },
+        "walle": {
+            "rating": null,
+            "title": "WALL-E (2008)"
+        },
+        "kung-pow-enter-the-fist": {
+            "rating": null,
+            "title": "Kung Pow: Enter the Fist (2002)"
+        },
+        "howls-moving-castle": {
+            "rating": null,
+            "title": "Howl's Moving Castle (2004)"
+        },
+        "morbius": {
+            "rating": null,
+            "title": "Morbius (2022)"
+        },
+        "the-tree-of-life-2011": {
+            "rating": null,
+            "title": "The Tree of Life (2011)"
+        },
+        "blade-runner-2049": {
+            "rating": null,
+            "title": "Blade Runner 2049 (2017)"
+        },
+        "wrath-of-man": {
+            "rating": null,
+            "title": "Wrath of Man (2021)"
+        },
+        "prisoners": {
+            "rating": null,
+            "title": "Prisoners (2013)"
+        },
+        "34-2018": {
+            "rating": null,
+            "title": "T-34 (2018)"
+        },
+        "the-triplets-of-belleville": {
+            "rating": null,
+            "title": "The Triplets of Belleville (2003)"
+        },
+        "snatch": {
+            "rating": null,
+            "title": "Snatch (2000)"
+        },
+        "blue-giant": {
+            "rating": null,
+            "title": "Blue Giant (2023)"
+        },
+        "eternal-sunshine-of-the-spotless-mind": {
+            "rating": null,
+            "title": "Eternal Sunshine of the Spotless Mind (2004)"
+        },
+        "perfect-blue": {
+            "rating": null,
+            "title": "Perfect Blue (1997)"
+        },
+        "pans-labyrinth": {
+            "rating": null,
+            "title": "Pan's Labyrinth (2006)"
+        },
+        "the-equalizer": {
+            "rating": null,
+            "title": "The Equalizer (2014)"
+        },
+        "i-want-to-eat-your-pancreas": {
+            "rating": null,
+            "title": "I Want to Eat Your Pancreas (2018)"
+        },
+        "saltburn": {
+            "rating": null,
+            "title": "Saltburn (2023)"
+        },
+        "anyone-but-you": {
+            "rating": null,
+            "title": "Anyone But You (2023)"
+        },
+        "clue": {
+            "rating": null,
+            "title": "Clue (1985)"
+        },
+        "dune-2021": {
+            "rating": null,
+            "title": "Dune (2021)"
+        },
+        "before-sunrise": {
+            "rating": null,
+            "title": "Before Sunrise (1995)"
+        },
+        "lock-stock-and-two-smoking-barrels": {
+            "rating": null,
+            "title": "Lock, Stock and Two Smoking Barrels (1998)"
+        },
+        "the-metamorphosis-of-birds": {
+            "rating": null,
+            "title": "The Metamorphosis of Birds (2020)"
+        },
+        "boyhood": {
+            "rating": null,
+            "title": "Boyhood (2014)"
+        },
+        "shoplifters": {
+            "rating": null,
+            "title": "Shoplifters (2018)"
+        },
+        "the-wind-rises": {
+            "rating": null,
+            "title": "The Wind Rises (2013)"
+        },
+        "fear-of-rain": {
+            "rating": null,
+            "title": "Fear of Rain (2021)"
+        },
+        "knock-knock-2015": {
+            "rating": null,
+            "title": "Knock Knock (2015)"
+        },
+        "the-handmaiden": {
+            "rating": null,
+            "title": "The Handmaiden (2016)"
+        },
+        "the-ballad-of-buster-scruggs": {
+            "rating": null,
+            "title": "The Ballad of Buster Scruggs (2018)"
+        },
+        "memento": {
+            "rating": null,
+            "title": "Memento (2000)"
+        },
+        "the-others": {
+            "rating": null,
+            "title": "The Others (2001)"
+        },
+        "the-usual-suspects": {
+            "rating": null,
+            "title": "The Usual Suspects (1995)"
+        },
+        "a-quiet-place-2018": {
+            "rating": null,
+            "title": "A Quiet Place (2018)"
+        },
+        "ghost-in-the-shell": {
+            "rating": null,
+            "title": "Ghost in the Shell (1995)"
+        },
+        "time-lapse-2014": {
+            "rating": null,
+            "title": "Time Lapse (2014)"
+        },
+        "ghost-in-the-shell-2-innocence": {
+            "rating": null,
+            "title": "Ghost in the Shell 2: Innocence (2004)"
+        },
+        "john-wick": {
+            "rating": null,
+            "title": "John Wick (2004)"
+        },
+        "her": {
+            "rating": null,
+            "title": "Her (2013)"
+        },
+        "lemonade-mouth": {
+            "rating": null,
+            "title": "Lemonade Mouth (2011)"
+        },
+        "john-wick-chapter-2": {
+            "rating": null,
+            "title": "John Wick: Chapter 2 (2017)"
+        },
+        "john-wick-chapter-3-parabellum": {
+            "rating": null,
+            "title": "John Wick: Chapter 3 (2019)"
+        },
+        "the-departed": {
+            "rating": null,
+            "title": "The Departed (2006)"
+        },
+        "sinister": {
+            "rating": null,
+            "title": "Sinister (2012)"
+        },
+        "the-silence-of-the-lambs": {
+            "rating": null,
+            "title": "The Silence of the Lambs (1991)"
+        },
+        "interstellar": {
+            "rating": null,
+            "title": "Interstellar (2014)"
+        },
+        "john-wick-chapter-4": {
+            "rating": null,
+            "title": "John Wick: Chapter 4 (2023)"
+        },
+        "good-will-hunting": {
+            "rating": null,
+            "title": "Good Will Hunting (1997)"
+        },
+        "hannibal": {
+            "rating": null,
+            "title": "Hannibal (2001)"
+        },
+        "serendipity": {
+            "rating": null,
+            "title": "Serendipity (2001)"
+        },
+        "still-walking": {
+            "rating": null,
+            "title": "Still Walking (2008)"
+        },
+        "parasite-2019": {
+            "rating": null,
+            "title": "Parasite (2019)"
+        },
+        "scarface-1983": {
+            "rating": null,
+            "title": "Scarface (1983)"
+        },
+        "la-haine": {
+            "rating": null,
+            "title": "La Haine (1995)"
+        },
+        "the-first-slam-dunk": {
+            "rating": null,
+            "title": "The First Slam Dunk (2022)"
+        },
+        "how-to-lose-a-guy-in-10-days": {
+            "rating": null,
+            "title": "How to Lose a Guy in 10 Days (2003)"
+        },
+        "the-holdovers": {
+            "rating": null,
+            "title": "The Holdovers (2023)"
+        },
+        "the-notebook": {
+            "rating": null,
+            "title": "The Notebook (2004)"
+        },
+        "training-day": {
+            "rating": null,
+            "title": "Training Day (2001)"
+        },
+        "the-substance": {
+            "rating": null,
+            "title": "The Substance (2024)"
+        },
+        "the-elephant-man": {
+            "rating": null,
+            "title": "The Elephant Man (1980)"
+        },
+        "hell-house-llc": {
+            "rating": null,
+            "title": "Hell House LLC (2015)"
+        },
+        "die-hard": {
+            "rating": null,
+            "title": "Die Hard (1988)"
+        },
+        "tucker-and-dale-vs-evil": {
+            "rating": null,
+            "title": "Tucker and Dale vs. Evil (2010)"
+        },
+        "eyes-wide-shut": {
+            "rating": null,
+            "title": "Eyes Wide Shut (1999)"
+        },
+        "gone-baby-gone": {
+            "rating": null,
+            "title": "Gone Baby Gone (2007)"
+        },
+        "the-last-10-years": {
+            "rating": null,
+            "title": "The Last 10 Years (2022)"
+        },
+        "memories-of-murder": {
+            "rating": null,
+            "title": "Memories of Murder (2003)"
+        },
+        "seven-pounds": {
+            "rating": null,
+            "title": "Seven Pounds (2008)"
+        },
+        "coco-2017": {
+            "rating": null,
+            "title": "Coco (2017)"
+        },
+        "nightcrawler": {
+            "rating": null,
+            "title": "Nightcrawler (2014)"
+        },
+        "mickey-17": {
+            "rating": null,
+            "title": "Mickey 17 (2025)"
+        },
+        "zodiac": {
+            "rating": null,
+            "title": "Zodiac (2007)"
+        },
+        "how-to-make-millions-before-grandma-dies": {
+            "rating": null,
+            "title": "How to Make Millions Before Grandma Dies (2024)"
+        },
+        "the-darjeeling-limited": {
+            "rating": null,
+            "title": "The Darjeeling Limited (2007)"
+        },
+        "inception": {
+            "rating": null,
+            "title": "Inception (2010)"
+        },
+        "mulholland-drive": {
+            "rating": null,
+            "title": "Mulholland Drive (2001)"
+        },
+        "manchester-by-the-sea": {
+            "rating": null,
+            "title": "Manchester by the Sea (2016)"
+        },
+        "primal-fear": {
+            "rating": null,
+            "title": "Primal Fear (1996)"
+        },
+        "after-hours": {
+            "rating": null,
+            "title": "After Hours (1985)"
+        },
+        "blink-twice": {
+            "rating": null,
+            "title": "Blink Twice (2024)"
+        },
+        "one-piece-the-movie": {
+            "rating": null,
+            "title": "One Piece: The Movie (2000)"
+        },
+        "ballerina-2025": {
+            "rating": null,
+            "title": "Ballerina (2025)"
+        },
+        "kpop-demon-hunters": {
+            "rating": null,
+            "title": "KPop Demon Hunters (2025)"
+        },
+        "blue-velvet": {
+            "rating": null,
+            "title": "Blue Velvet (1986)"
+        },
+        "sinners-2025": {
+            "rating": null,
+            "title": "Sinners (2025)"
+        },
+        "the-naked-gun-from-the-files-of-police-squad": {
+            "rating": null,
+            "title": "The Naked Gun: From the Files of Police Squad! (1988)"
+        },
+        "meet-the-robinsons": {
+            "rating": null,
+            "title": "Meet the Robinsons (2007)"
+        },
+        "american-beauty": {
+            "rating": null,
+            "title": "American Beauty (1999)"
+        },
+        "autumn-sonata": {
+            "rating": null,
+            "title": "Autumn Sonata (1978)"
+        }
+    },
+    "Gelly": {
+        "_note": "Nota de 0.5 a 5 nos filmes que o Gelly viu; deixa null nos que nao viu.",
+        "lost-in-translation": {
+            "rating": null,
+            "title": "Lost in Translation (2003)"
+        },
+        "no-country-for-old-men": {
+            "rating": null,
+            "title": "No Country for Old Men (2007)"
+        },
+        "death-proof": {
+            "rating": null,
+            "title": "Death Proof (2007)"
+        },
+        "drive-2011": {
+            "rating": null,
+            "title": "Drive (2011)"
+        },
+        "inglourious-basterds": {
+            "rating": null,
+            "title": "Inglorious Basterds (2009)"
+        },
+        "1917": {
+            "rating": null,
+            "title": "1917 (2019)"
+        },
+        "punch-drunk-love": {
+            "rating": null,
+            "title": "Punch-Drunk Love (2002)"
+        },
+        "guy-ritchies-the-covenant": {
+            "rating": null,
+            "title": "Guy Ritchie's The Covenant (2023)"
+        },
+        "the-count-of-monte-cristo-2002": {
+            "rating": null,
+            "title": "The Count of Monte Cristo (2002)"
+        },
+        "the-phantom-of-the-opera-2004": {
+            "rating": null,
+            "title": "The Phantom of The Opera (2004)"
+        },
+        "birdman-or-the-unexpected-virtue-of-ignorance": {
+            "rating": null,
+            "title": "Birdman (2014)"
+        },
+        "the-death-of-stalin": {
+            "rating": null,
+            "title": "The Death of Stalin (2017)"
+        },
+        "walle": {
+            "rating": null,
+            "title": "WALL-E (2008)"
+        },
+        "kung-pow-enter-the-fist": {
+            "rating": null,
+            "title": "Kung Pow: Enter the Fist (2002)"
+        },
+        "howls-moving-castle": {
+            "rating": null,
+            "title": "Howl's Moving Castle (2004)"
+        },
+        "morbius": {
+            "rating": null,
+            "title": "Morbius (2022)"
+        },
+        "the-tree-of-life-2011": {
+            "rating": null,
+            "title": "The Tree of Life (2011)"
+        },
+        "blade-runner-2049": {
+            "rating": null,
+            "title": "Blade Runner 2049 (2017)"
+        },
+        "wrath-of-man": {
+            "rating": null,
+            "title": "Wrath of Man (2021)"
+        },
+        "prisoners": {
+            "rating": null,
+            "title": "Prisoners (2013)"
+        },
+        "34-2018": {
+            "rating": null,
+            "title": "T-34 (2018)"
+        },
+        "the-triplets-of-belleville": {
+            "rating": null,
+            "title": "The Triplets of Belleville (2003)"
+        },
+        "snatch": {
+            "rating": null,
+            "title": "Snatch (2000)"
+        },
+        "blue-giant": {
+            "rating": null,
+            "title": "Blue Giant (2023)"
+        },
+        "eternal-sunshine-of-the-spotless-mind": {
+            "rating": null,
+            "title": "Eternal Sunshine of the Spotless Mind (2004)"
+        },
+        "perfect-blue": {
+            "rating": null,
+            "title": "Perfect Blue (1997)"
+        },
+        "pans-labyrinth": {
+            "rating": null,
+            "title": "Pan's Labyrinth (2006)"
+        },
+        "the-equalizer": {
+            "rating": null,
+            "title": "The Equalizer (2014)"
+        },
+        "i-want-to-eat-your-pancreas": {
+            "rating": null,
+            "title": "I Want to Eat Your Pancreas (2018)"
+        },
+        "saltburn": {
+            "rating": null,
+            "title": "Saltburn (2023)"
+        },
+        "anyone-but-you": {
+            "rating": null,
+            "title": "Anyone But You (2023)"
+        },
+        "jack-reacher": {
+            "rating": null,
+            "title": "Jack Reacher (2012)"
+        },
+        "clue": {
+            "rating": null,
+            "title": "Clue (1985)"
+        },
+        "monty-python-and-the-holy-grail": {
+            "rating": null,
+            "title": "Monty Python and the Holy Grail (1975)"
+        },
+        "deja-vu": {
+            "rating": null,
+            "title": "Deja Vu (2006)"
+        },
+        "dune-2021": {
+            "rating": null,
+            "title": "Dune (2021)"
+        },
+        "before-sunrise": {
+            "rating": null,
+            "title": "Before Sunrise (1995)"
+        },
+        "lock-stock-and-two-smoking-barrels": {
+            "rating": null,
+            "title": "Lock, Stock and Two Smoking Barrels (1998)"
+        },
+        "the-metamorphosis-of-birds": {
+            "rating": null,
+            "title": "The Metamorphosis of Birds (2020)"
+        },
+        "boyhood": {
+            "rating": null,
+            "title": "Boyhood (2014)"
+        },
+        "shoplifters": {
+            "rating": null,
+            "title": "Shoplifters (2018)"
+        },
+        "the-wind-rises": {
+            "rating": null,
+            "title": "The Wind Rises (2013)"
+        },
+        "fear-of-rain": {
+            "rating": null,
+            "title": "Fear of Rain (2021)"
+        },
+        "knock-knock-2015": {
+            "rating": null,
+            "title": "Knock Knock (2015)"
+        },
+        "the-handmaiden": {
+            "rating": null,
+            "title": "The Handmaiden (2016)"
+        },
+        "the-ballad-of-buster-scruggs": {
+            "rating": null,
+            "title": "The Ballad of Buster Scruggs (2018)"
+        },
+        "memento": {
+            "rating": null,
+            "title": "Memento (2000)"
+        },
+        "the-machinist": {
+            "rating": null,
+            "title": "The Machinist (2004)"
+        },
+        "the-others": {
+            "rating": null,
+            "title": "The Others (2001)"
+        },
+        "the-usual-suspects": {
+            "rating": null,
+            "title": "The Usual Suspects (1995)"
+        },
+        "a-quiet-place-2018": {
+            "rating": null,
+            "title": "A Quiet Place (2018)"
+        },
+        "ghost-in-the-shell": {
+            "rating": null,
+            "title": "Ghost in the Shell (1995)"
+        },
+        "time-lapse-2014": {
+            "rating": null,
+            "title": "Time Lapse (2014)"
+        },
+        "ghost-in-the-shell-2-innocence": {
+            "rating": null,
+            "title": "Ghost in the Shell 2: Innocence (2004)"
+        },
+        "john-wick": {
+            "rating": null,
+            "title": "John Wick (2004)"
+        },
+        "her": {
+            "rating": null,
+            "title": "Her (2013)"
+        },
+        "lemonade-mouth": {
+            "rating": null,
+            "title": "Lemonade Mouth (2011)"
+        },
+        "john-wick-chapter-2": {
+            "rating": null,
+            "title": "John Wick: Chapter 2 (2017)"
+        },
+        "john-wick-chapter-3-parabellum": {
+            "rating": null,
+            "title": "John Wick: Chapter 3 (2019)"
+        },
+        "the-departed": {
+            "rating": null,
+            "title": "The Departed (2006)"
+        },
+        "sinister": {
+            "rating": null,
+            "title": "Sinister (2012)"
+        },
+        "the-silence-of-the-lambs": {
+            "rating": null,
+            "title": "The Silence of the Lambs (1991)"
+        },
+        "interstellar": {
+            "rating": null,
+            "title": "Interstellar (2014)"
+        },
+        "john-wick-chapter-4": {
+            "rating": null,
+            "title": "John Wick: Chapter 4 (2023)"
+        },
+        "good-will-hunting": {
+            "rating": null,
+            "title": "Good Will Hunting (1997)"
+        },
+        "hannibal": {
+            "rating": null,
+            "title": "Hannibal (2001)"
+        },
+        "serendipity": {
+            "rating": null,
+            "title": "Serendipity (2001)"
+        },
+        "still-walking": {
+            "rating": null,
+            "title": "Still Walking (2008)"
+        },
+        "parasite-2019": {
+            "rating": null,
+            "title": "Parasite (2019)"
+        },
+        "scarface-1983": {
+            "rating": null,
+            "title": "Scarface (1983)"
+        },
+        "la-haine": {
+            "rating": null,
+            "title": "La Haine (1995)"
+        },
+        "the-first-slam-dunk": {
+            "rating": null,
+            "title": "The First Slam Dunk (2022)"
+        },
+        "how-to-lose-a-guy-in-10-days": {
+            "rating": null,
+            "title": "How to Lose a Guy in 10 Days (2003)"
+        },
+        "the-holdovers": {
+            "rating": null,
+            "title": "The Holdovers (2023)"
+        },
+        "the-notebook": {
+            "rating": null,
+            "title": "The Notebook (2004)"
+        },
+        "training-day": {
+            "rating": null,
+            "title": "Training Day (2001)"
+        },
+        "the-substance": {
+            "rating": null,
+            "title": "The Substance (2024)"
+        },
+        "the-elephant-man": {
+            "rating": null,
+            "title": "The Elephant Man (1980)"
+        },
+        "hell-house-llc": {
+            "rating": null,
+            "title": "Hell House LLC (2015)"
+        },
+        "die-hard": {
+            "rating": null,
+            "title": "Die Hard (1988)"
+        },
+        "tucker-and-dale-vs-evil": {
+            "rating": null,
+            "title": "Tucker and Dale vs. Evil (2010)"
+        },
+        "eyes-wide-shut": {
+            "rating": null,
+            "title": "Eyes Wide Shut (1999)"
+        },
+        "gone-baby-gone": {
+            "rating": null,
+            "title": "Gone Baby Gone (2007)"
+        },
+        "the-last-10-years": {
+            "rating": null,
+            "title": "The Last 10 Years (2022)"
+        },
+        "memories-of-murder": {
+            "rating": null,
+            "title": "Memories of Murder (2003)"
+        },
+        "seven-pounds": {
+            "rating": null,
+            "title": "Seven Pounds (2008)"
+        },
+        "coco-2017": {
+            "rating": null,
+            "title": "Coco (2017)"
+        },
+        "nightcrawler": {
+            "rating": null,
+            "title": "Nightcrawler (2014)"
+        },
+        "mickey-17": {
+            "rating": null,
+            "title": "Mickey 17 (2025)"
+        },
+        "zodiac": {
+            "rating": null,
+            "title": "Zodiac (2007)"
+        },
+        "how-to-make-millions-before-grandma-dies": {
+            "rating": null,
+            "title": "How to Make Millions Before Grandma Dies (2024)"
+        },
+        "the-darjeeling-limited": {
+            "rating": null,
+            "title": "The Darjeeling Limited (2007)"
+        },
+        "inception": {
+            "rating": null,
+            "title": "Inception (2010)"
+        },
+        "mulholland-drive": {
+            "rating": null,
+            "title": "Mulholland Drive (2001)"
+        },
+        "manchester-by-the-sea": {
+            "rating": null,
+            "title": "Manchester by the Sea (2016)"
+        },
+        "primal-fear": {
+            "rating": null,
+            "title": "Primal Fear (1996)"
+        },
+        "after-hours": {
+            "rating": null,
+            "title": "After Hours (1985)"
+        },
+        "blink-twice": {
+            "rating": null,
+            "title": "Blink Twice (2024)"
+        },
+        "one-piece-the-movie": {
+            "rating": null,
+            "title": "One Piece: The Movie (2000)"
+        },
+        "ballerina-2025": {
+            "rating": null,
+            "title": "Ballerina (2025)"
+        },
+        "kpop-demon-hunters": {
+            "rating": null,
+            "title": "KPop Demon Hunters (2025)"
+        },
+        "blue-velvet": {
+            "rating": null,
+            "title": "Blue Velvet (1986)"
+        },
+        "sinners-2025": {
+            "rating": null,
+            "title": "Sinners (2025)"
+        },
+        "the-naked-gun-from-the-files-of-police-squad": {
+            "rating": null,
+            "title": "The Naked Gun: From the Files of Police Squad! (1988)"
+        },
+        "meet-the-robinsons": {
+            "rating": null,
+            "title": "Meet the Robinsons (2007)"
+        },
+        "american-beauty": {
+            "rating": null,
+            "title": "American Beauty (1999)"
+        },
+        "autumn-sonata": {
+            "rating": null,
+            "title": "Autumn Sonata (1978)"
+        }
+    },
+    "NeNelson": {
+        "_note": "Nota de 0.5 a 5 nos filmes que o NeNelson viu; deixa null nos que nao viu.",
+        "lost-in-translation": {
+            "rating": null,
+            "title": "Lost in Translation (2003)"
+        },
+        "no-country-for-old-men": {
+            "rating": null,
+            "title": "No Country for Old Men (2007)"
+        },
+        "death-proof": {
+            "rating": null,
+            "title": "Death Proof (2007)"
+        },
+        "drive-2011": {
+            "rating": null,
+            "title": "Drive (2011)"
+        },
+        "inglourious-basterds": {
+            "rating": null,
+            "title": "Inglorious Basterds (2009)"
+        },
+        "1917": {
+            "rating": null,
+            "title": "1917 (2019)"
+        },
+        "mid90s": {
+            "rating": null,
+            "title": "mid90s (2018)"
+        },
+        "punch-drunk-love": {
+            "rating": null,
+            "title": "Punch-Drunk Love (2002)"
+        },
+        "guy-ritchies-the-covenant": {
+            "rating": null,
+            "title": "Guy Ritchie's The Covenant (2023)"
+        },
+        "the-count-of-monte-cristo-2002": {
+            "rating": null,
+            "title": "The Count of Monte Cristo (2002)"
+        },
+        "birdman-or-the-unexpected-virtue-of-ignorance": {
+            "rating": null,
+            "title": "Birdman (2014)"
+        },
+        "the-death-of-stalin": {
+            "rating": null,
+            "title": "The Death of Stalin (2017)"
+        },
+        "walle": {
+            "rating": null,
+            "title": "WALL-E (2008)"
+        },
+        "kung-pow-enter-the-fist": {
+            "rating": null,
+            "title": "Kung Pow: Enter the Fist (2002)"
+        },
+        "howls-moving-castle": {
+            "rating": null,
+            "title": "Howl's Moving Castle (2004)"
+        },
+        "morbius": {
+            "rating": null,
+            "title": "Morbius (2022)"
+        },
+        "the-tree-of-life-2011": {
+            "rating": null,
+            "title": "The Tree of Life (2011)"
+        },
+        "wrath-of-man": {
+            "rating": null,
+            "title": "Wrath of Man (2021)"
+        },
+        "prisoners": {
+            "rating": null,
+            "title": "Prisoners (2013)"
+        },
+        "the-triplets-of-belleville": {
+            "rating": null,
+            "title": "The Triplets of Belleville (2003)"
+        },
+        "snatch": {
+            "rating": null,
+            "title": "Snatch (2000)"
+        },
+        "eternal-sunshine-of-the-spotless-mind": {
+            "rating": null,
+            "title": "Eternal Sunshine of the Spotless Mind (2004)"
+        },
+        "pans-labyrinth": {
+            "rating": null,
+            "title": "Pan's Labyrinth (2006)"
+        },
+        "the-equalizer": {
+            "rating": null,
+            "title": "The Equalizer (2014)"
+        },
+        "saltburn": {
+            "rating": null,
+            "title": "Saltburn (2023)"
+        },
+        "anyone-but-you": {
+            "rating": null,
+            "title": "Anyone But You (2023)"
+        },
+        "jack-reacher": {
+            "rating": null,
+            "title": "Jack Reacher (2012)"
+        },
+        "clue": {
+            "rating": null,
+            "title": "Clue (1985)"
+        },
+        "deja-vu": {
+            "rating": null,
+            "title": "Deja Vu (2006)"
+        },
+        "before-sunrise": {
+            "rating": null,
+            "title": "Before Sunrise (1995)"
+        },
+        "lock-stock-and-two-smoking-barrels": {
+            "rating": null,
+            "title": "Lock, Stock and Two Smoking Barrels (1998)"
+        },
+        "the-metamorphosis-of-birds": {
+            "rating": null,
+            "title": "The Metamorphosis of Birds (2020)"
+        },
+        "boyhood": {
+            "rating": null,
+            "title": "Boyhood (2014)"
+        },
+        "shoplifters": {
+            "rating": null,
+            "title": "Shoplifters (2018)"
+        },
+        "the-wind-rises": {
+            "rating": null,
+            "title": "The Wind Rises (2013)"
+        },
+        "fear-of-rain": {
+            "rating": null,
+            "title": "Fear of Rain (2021)"
+        },
+        "knock-knock-2015": {
+            "rating": null,
+            "title": "Knock Knock (2015)"
+        },
+        "the-handmaiden": {
+            "rating": null,
+            "title": "The Handmaiden (2016)"
+        },
+        "the-ballad-of-buster-scruggs": {
+            "rating": null,
+            "title": "The Ballad of Buster Scruggs (2018)"
+        },
+        "memento": {
+            "rating": null,
+            "title": "Memento (2000)"
+        },
+        "the-machinist": {
+            "rating": null,
+            "title": "The Machinist (2004)"
+        },
+        "the-others": {
+            "rating": null,
+            "title": "The Others (2001)"
+        },
+        "the-usual-suspects": {
+            "rating": null,
+            "title": "The Usual Suspects (1995)"
+        },
+        "a-quiet-place-2018": {
+            "rating": null,
+            "title": "A Quiet Place (2018)"
+        },
+        "ghost-in-the-shell": {
+            "rating": null,
+            "title": "Ghost in the Shell (1995)"
+        },
+        "time-lapse-2014": {
+            "rating": null,
+            "title": "Time Lapse (2014)"
+        },
+        "ghost-in-the-shell-2-innocence": {
+            "rating": null,
+            "title": "Ghost in the Shell 2: Innocence (2004)"
+        },
+        "john-wick": {
+            "rating": null,
+            "title": "John Wick (2004)"
+        },
+        "her": {
+            "rating": null,
+            "title": "Her (2013)"
+        },
+        "lemonade-mouth": {
+            "rating": null,
+            "title": "Lemonade Mouth (2011)"
+        },
+        "john-wick-chapter-2": {
+            "rating": null,
+            "title": "John Wick: Chapter 2 (2017)"
+        },
+        "john-wick-chapter-3-parabellum": {
+            "rating": null,
+            "title": "John Wick: Chapter 3 (2019)"
+        },
+        "the-departed": {
+            "rating": null,
+            "title": "The Departed (2006)"
+        },
+        "the-silence-of-the-lambs": {
+            "rating": null,
+            "title": "The Silence of the Lambs (1991)"
+        },
+        "john-wick-chapter-4": {
+            "rating": null,
+            "title": "John Wick: Chapter 4 (2023)"
+        },
+        "good-will-hunting": {
+            "rating": null,
+            "title": "Good Will Hunting (1997)"
+        },
+        "hannibal": {
+            "rating": null,
+            "title": "Hannibal (2001)"
+        },
+        "serendipity": {
+            "rating": null,
+            "title": "Serendipity (2001)"
+        },
+        "still-walking": {
+            "rating": null,
+            "title": "Still Walking (2008)"
+        },
+        "parasite-2019": {
+            "rating": null,
+            "title": "Parasite (2019)"
+        },
+        "scarface-1983": {
+            "rating": null,
+            "title": "Scarface (1983)"
+        },
+        "la-haine": {
+            "rating": null,
+            "title": "La Haine (1995)"
+        },
+        "the-first-slam-dunk": {
+            "rating": null,
+            "title": "The First Slam Dunk (2022)"
+        },
+        "how-to-lose-a-guy-in-10-days": {
+            "rating": null,
+            "title": "How to Lose a Guy in 10 Days (2003)"
+        },
+        "the-holdovers": {
+            "rating": null,
+            "title": "The Holdovers (2023)"
+        },
+        "the-notebook": {
+            "rating": null,
+            "title": "The Notebook (2004)"
+        },
+        "training-day": {
+            "rating": null,
+            "title": "Training Day (2001)"
+        },
+        "the-substance": {
+            "rating": null,
+            "title": "The Substance (2024)"
+        },
+        "the-elephant-man": {
+            "rating": null,
+            "title": "The Elephant Man (1980)"
+        },
+        "hell-house-llc": {
+            "rating": null,
+            "title": "Hell House LLC (2015)"
+        },
+        "die-hard": {
+            "rating": null,
+            "title": "Die Hard (1988)"
+        },
+        "tucker-and-dale-vs-evil": {
+            "rating": null,
+            "title": "Tucker and Dale vs. Evil (2010)"
+        },
+        "eyes-wide-shut": {
+            "rating": null,
+            "title": "Eyes Wide Shut (1999)"
+        },
+        "gone-baby-gone": {
+            "rating": null,
+            "title": "Gone Baby Gone (2007)"
+        },
+        "the-last-10-years": {
+            "rating": null,
+            "title": "The Last 10 Years (2022)"
+        },
+        "memories-of-murder": {
+            "rating": null,
+            "title": "Memories of Murder (2003)"
+        },
+        "seven-pounds": {
+            "rating": null,
+            "title": "Seven Pounds (2008)"
+        },
+        "coco-2017": {
+            "rating": null,
+            "title": "Coco (2017)"
+        },
+        "nightcrawler": {
+            "rating": null,
+            "title": "Nightcrawler (2014)"
+        },
+        "mickey-17": {
+            "rating": null,
+            "title": "Mickey 17 (2025)"
+        },
+        "zodiac": {
+            "rating": null,
+            "title": "Zodiac (2007)"
+        },
+        "how-to-make-millions-before-grandma-dies": {
+            "rating": null,
+            "title": "How to Make Millions Before Grandma Dies (2024)"
+        },
+        "the-darjeeling-limited": {
+            "rating": null,
+            "title": "The Darjeeling Limited (2007)"
+        },
+        "inception": {
+            "rating": null,
+            "title": "Inception (2010)"
+        },
+        "mulholland-drive": {
+            "rating": null,
+            "title": "Mulholland Drive (2001)"
+        },
+        "manchester-by-the-sea": {
+            "rating": null,
+            "title": "Manchester by the Sea (2016)"
+        },
+        "primal-fear": {
+            "rating": null,
+            "title": "Primal Fear (1996)"
+        },
+        "after-hours": {
+            "rating": null,
+            "title": "After Hours (1985)"
+        },
+        "blink-twice": {
+            "rating": null,
+            "title": "Blink Twice (2024)"
+        },
+        "one-piece-the-movie": {
+            "rating": null,
+            "title": "One Piece: The Movie (2000)"
+        },
+        "ballerina-2025": {
+            "rating": null,
+            "title": "Ballerina (2025)"
+        },
+        "kpop-demon-hunters": {
+            "rating": null,
+            "title": "KPop Demon Hunters (2025)"
+        },
+        "blue-velvet": {
+            "rating": null,
+            "title": "Blue Velvet (1986)"
+        },
+        "sinners-2025": {
+            "rating": null,
+            "title": "Sinners (2025)"
+        },
+        "the-naked-gun-from-the-files-of-police-squad": {
+            "rating": null,
+            "title": "The Naked Gun: From the Files of Police Squad! (1988)"
+        },
+        "meet-the-robinsons": {
+            "rating": null,
+            "title": "Meet the Robinsons (2007)"
+        },
+        "american-beauty": {
+            "rating": null,
+            "title": "American Beauty (1999)"
+        },
+        "autumn-sonata": {
+            "rating": null,
+            "title": "Autumn Sonata (1978)"
+        }
+    },
+    "Storm": {
+        "_note": "Nota de 0.5 a 5 nos filmes que o Storm viu; deixa null nos que nao viu.",
+        "lost-in-translation": {
+            "rating": null,
+            "title": "Lost in Translation (2003)"
+        },
+        "no-country-for-old-men": {
+            "rating": null,
+            "title": "No Country for Old Men (2007)"
+        },
+        "drive-2011": {
+            "rating": null,
+            "title": "Drive (2011)"
+        },
+        "inglourious-basterds": {
+            "rating": null,
+            "title": "Inglorious Basterds (2009)"
+        },
+        "1917": {
+            "rating": null,
+            "title": "1917 (2019)"
+        },
+        "mid90s": {
+            "rating": null,
+            "title": "mid90s (2018)"
+        },
+        "punch-drunk-love": {
+            "rating": null,
+            "title": "Punch-Drunk Love (2002)"
+        },
+        "guy-ritchies-the-covenant": {
+            "rating": null,
+            "title": "Guy Ritchie's The Covenant (2023)"
+        },
+        "the-count-of-monte-cristo-2002": {
+            "rating": null,
+            "title": "The Count of Monte Cristo (2002)"
+        },
+        "the-phantom-of-the-opera-2004": {
+            "rating": null,
+            "title": "The Phantom of The Opera (2004)"
+        },
+        "birdman-or-the-unexpected-virtue-of-ignorance": {
+            "rating": null,
+            "title": "Birdman (2014)"
+        },
+        "the-death-of-stalin": {
+            "rating": null,
+            "title": "The Death of Stalin (2017)"
+        },
+        "walle": {
+            "rating": null,
+            "title": "WALL-E (2008)"
+        },
+        "kung-pow-enter-the-fist": {
+            "rating": null,
+            "title": "Kung Pow: Enter the Fist (2002)"
+        },
+        "howls-moving-castle": {
+            "rating": null,
+            "title": "Howl's Moving Castle (2004)"
+        },
+        "morbius": {
+            "rating": null,
+            "title": "Morbius (2022)"
+        },
+        "the-tree-of-life-2011": {
+            "rating": null,
+            "title": "The Tree of Life (2011)"
+        },
+        "blade-runner-2049": {
+            "rating": null,
+            "title": "Blade Runner 2049 (2017)"
+        },
+        "wrath-of-man": {
+            "rating": null,
+            "title": "Wrath of Man (2021)"
+        },
+        "34-2018": {
+            "rating": null,
+            "title": "T-34 (2018)"
+        },
+        "the-triplets-of-belleville": {
+            "rating": null,
+            "title": "The Triplets of Belleville (2003)"
+        },
+        "snatch": {
+            "rating": null,
+            "title": "Snatch (2000)"
+        },
+        "blue-giant": {
+            "rating": null,
+            "title": "Blue Giant (2023)"
+        },
+        "eternal-sunshine-of-the-spotless-mind": {
+            "rating": null,
+            "title": "Eternal Sunshine of the Spotless Mind (2004)"
+        },
+        "perfect-blue": {
+            "rating": null,
+            "title": "Perfect Blue (1997)"
+        },
+        "pans-labyrinth": {
+            "rating": null,
+            "title": "Pan's Labyrinth (2006)"
+        },
+        "the-equalizer": {
+            "rating": null,
+            "title": "The Equalizer (2014)"
+        },
+        "i-want-to-eat-your-pancreas": {
+            "rating": null,
+            "title": "I Want to Eat Your Pancreas (2018)"
+        },
+        "saltburn": {
+            "rating": null,
+            "title": "Saltburn (2023)"
+        },
+        "jack-reacher": {
+            "rating": null,
+            "title": "Jack Reacher (2012)"
+        },
+        "clue": {
+            "rating": null,
+            "title": "Clue (1985)"
+        },
+        "monty-python-and-the-holy-grail": {
+            "rating": null,
+            "title": "Monty Python and the Holy Grail (1975)"
+        },
+        "deja-vu": {
+            "rating": null,
+            "title": "Deja Vu (2006)"
+        },
+        "dune-2021": {
+            "rating": null,
+            "title": "Dune (2021)"
+        },
+        "before-sunrise": {
+            "rating": null,
+            "title": "Before Sunrise (1995)"
+        },
+        "lock-stock-and-two-smoking-barrels": {
+            "rating": null,
+            "title": "Lock, Stock and Two Smoking Barrels (1998)"
+        },
+        "the-metamorphosis-of-birds": {
+            "rating": null,
+            "title": "The Metamorphosis of Birds (2020)"
+        },
+        "boyhood": {
+            "rating": null,
+            "title": "Boyhood (2014)"
+        },
+        "shoplifters": {
+            "rating": null,
+            "title": "Shoplifters (2018)"
+        },
+        "the-wind-rises": {
+            "rating": null,
+            "title": "The Wind Rises (2013)"
+        },
+        "fear-of-rain": {
+            "rating": null,
+            "title": "Fear of Rain (2021)"
+        },
+        "knock-knock-2015": {
+            "rating": null,
+            "title": "Knock Knock (2015)"
+        },
+        "the-handmaiden": {
+            "rating": null,
+            "title": "The Handmaiden (2016)"
+        },
+        "the-ballad-of-buster-scruggs": {
+            "rating": null,
+            "title": "The Ballad of Buster Scruggs (2018)"
+        },
+        "memento": {
+            "rating": null,
+            "title": "Memento (2000)"
+        },
+        "the-machinist": {
+            "rating": null,
+            "title": "The Machinist (2004)"
+        },
+        "the-others": {
+            "rating": null,
+            "title": "The Others (2001)"
+        },
+        "the-usual-suspects": {
+            "rating": null,
+            "title": "The Usual Suspects (1995)"
+        },
+        "ghost-in-the-shell": {
+            "rating": null,
+            "title": "Ghost in the Shell (1995)"
+        },
+        "time-lapse-2014": {
+            "rating": null,
+            "title": "Time Lapse (2014)"
+        },
+        "ghost-in-the-shell-2-innocence": {
+            "rating": null,
+            "title": "Ghost in the Shell 2: Innocence (2004)"
+        },
+        "john-wick": {
+            "rating": null,
+            "title": "John Wick (2004)"
+        },
+        "her": {
+            "rating": null,
+            "title": "Her (2013)"
+        },
+        "john-wick-chapter-2": {
+            "rating": null,
+            "title": "John Wick: Chapter 2 (2017)"
+        },
+        "john-wick-chapter-3-parabellum": {
+            "rating": null,
+            "title": "John Wick: Chapter 3 (2019)"
+        },
+        "the-departed": {
+            "rating": null,
+            "title": "The Departed (2006)"
+        },
+        "sinister": {
+            "rating": null,
+            "title": "Sinister (2012)"
+        },
+        "the-silence-of-the-lambs": {
+            "rating": null,
+            "title": "The Silence of the Lambs (1991)"
+        },
+        "interstellar": {
+            "rating": null,
+            "title": "Interstellar (2014)"
+        },
+        "john-wick-chapter-4": {
+            "rating": null,
+            "title": "John Wick: Chapter 4 (2023)"
+        },
+        "good-will-hunting": {
+            "rating": null,
+            "title": "Good Will Hunting (1997)"
+        },
+        "hannibal": {
+            "rating": null,
+            "title": "Hannibal (2001)"
+        },
+        "serendipity": {
+            "rating": null,
+            "title": "Serendipity (2001)"
+        },
+        "still-walking": {
+            "rating": null,
+            "title": "Still Walking (2008)"
+        },
+        "parasite-2019": {
+            "rating": null,
+            "title": "Parasite (2019)"
+        },
+        "scarface-1983": {
+            "rating": null,
+            "title": "Scarface (1983)"
+        },
+        "la-haine": {
+            "rating": null,
+            "title": "La Haine (1995)"
+        },
+        "the-first-slam-dunk": {
+            "rating": null,
+            "title": "The First Slam Dunk (2022)"
+        },
+        "how-to-lose-a-guy-in-10-days": {
+            "rating": null,
+            "title": "How to Lose a Guy in 10 Days (2003)"
+        },
+        "the-holdovers": {
+            "rating": null,
+            "title": "The Holdovers (2023)"
+        },
+        "the-notebook": {
+            "rating": null,
+            "title": "The Notebook (2004)"
+        },
+        "training-day": {
+            "rating": null,
+            "title": "Training Day (2001)"
+        },
+        "the-substance": {
+            "rating": null,
+            "title": "The Substance (2024)"
+        },
+        "the-elephant-man": {
+            "rating": null,
+            "title": "The Elephant Man (1980)"
+        },
+        "hell-house-llc": {
+            "rating": null,
+            "title": "Hell House LLC (2015)"
+        },
+        "die-hard": {
+            "rating": null,
+            "title": "Die Hard (1988)"
+        },
+        "tucker-and-dale-vs-evil": {
+            "rating": null,
+            "title": "Tucker and Dale vs. Evil (2010)"
+        },
+        "eyes-wide-shut": {
+            "rating": null,
+            "title": "Eyes Wide Shut (1999)"
+        },
+        "gone-baby-gone": {
+            "rating": null,
+            "title": "Gone Baby Gone (2007)"
+        },
+        "the-last-10-years": {
+            "rating": null,
+            "title": "The Last 10 Years (2022)"
+        },
+        "memories-of-murder": {
+            "rating": null,
+            "title": "Memories of Murder (2003)"
+        },
+        "seven-pounds": {
+            "rating": null,
+            "title": "Seven Pounds (2008)"
+        },
+        "coco-2017": {
+            "rating": null,
+            "title": "Coco (2017)"
+        },
+        "nightcrawler": {
+            "rating": null,
+            "title": "Nightcrawler (2014)"
+        },
+        "mickey-17": {
+            "rating": null,
+            "title": "Mickey 17 (2025)"
+        },
+        "zodiac": {
+            "rating": null,
+            "title": "Zodiac (2007)"
+        },
+        "how-to-make-millions-before-grandma-dies": {
+            "rating": null,
+            "title": "How to Make Millions Before Grandma Dies (2024)"
+        },
+        "the-darjeeling-limited": {
+            "rating": null,
+            "title": "The Darjeeling Limited (2007)"
+        },
+        "inception": {
+            "rating": null,
+            "title": "Inception (2010)"
+        },
+        "mulholland-drive": {
+            "rating": null,
+            "title": "Mulholland Drive (2001)"
+        },
+        "manchester-by-the-sea": {
+            "rating": null,
+            "title": "Manchester by the Sea (2016)"
+        },
+        "primal-fear": {
+            "rating": null,
+            "title": "Primal Fear (1996)"
+        },
+        "after-hours": {
+            "rating": null,
+            "title": "After Hours (1985)"
+        },
+        "blink-twice": {
+            "rating": null,
+            "title": "Blink Twice (2024)"
+        },
+        "one-piece-the-movie": {
+            "rating": null,
+            "title": "One Piece: The Movie (2000)"
+        },
+        "ballerina-2025": {
+            "rating": null,
+            "title": "Ballerina (2025)"
+        },
+        "kpop-demon-hunters": {
+            "rating": null,
+            "title": "KPop Demon Hunters (2025)"
+        },
+        "blue-velvet": {
+            "rating": null,
+            "title": "Blue Velvet (1986)"
+        },
+        "sinners-2025": {
+            "rating": null,
+            "title": "Sinners (2025)"
+        },
+        "the-naked-gun-from-the-files-of-police-squad": {
+            "rating": null,
+            "title": "The Naked Gun: From the Files of Police Squad! (1988)"
+        },
+        "meet-the-robinsons": {
+            "rating": null,
+            "title": "Meet the Robinsons (2007)"
+        },
+        "american-beauty": {
+            "rating": null,
+            "title": "American Beauty (1999)"
+        },
+        "autumn-sonata": {
+            "rating": null,
+            "title": "Autumn Sonata (1978)"
+        }
+    },
+    "Tone": {
+        "_note": "Nota de 0.5 a 5 nos filmes que o Tone viu; deixa null nos que nao viu.",
+        "lost-in-translation": {
+            "rating": null,
+            "title": "Lost in Translation (2003)"
+        },
+        "no-country-for-old-men": {
+            "rating": null,
+            "title": "No Country for Old Men (2007)"
+        },
+        "death-proof": {
+            "rating": null,
+            "title": "Death Proof (2007)"
+        },
+        "drive-2011": {
+            "rating": null,
+            "title": "Drive (2011)"
+        },
+        "inglourious-basterds": {
+            "rating": null,
+            "title": "Inglorious Basterds (2009)"
+        },
+        "1917": {
+            "rating": null,
+            "title": "1917 (2019)"
+        },
+        "mid90s": {
+            "rating": null,
+            "title": "mid90s (2018)"
+        },
+        "punch-drunk-love": {
+            "rating": null,
+            "title": "Punch-Drunk Love (2002)"
+        },
+        "guy-ritchies-the-covenant": {
+            "rating": null,
+            "title": "Guy Ritchie's The Covenant (2023)"
+        },
+        "the-count-of-monte-cristo-2002": {
+            "rating": null,
+            "title": "The Count of Monte Cristo (2002)"
+        },
+        "the-phantom-of-the-opera-2004": {
+            "rating": null,
+            "title": "The Phantom of The Opera (2004)"
+        },
+        "birdman-or-the-unexpected-virtue-of-ignorance": {
+            "rating": null,
+            "title": "Birdman (2014)"
+        },
+        "the-death-of-stalin": {
+            "rating": null,
+            "title": "The Death of Stalin (2017)"
+        },
+        "walle": {
+            "rating": null,
+            "title": "WALL-E (2008)"
+        },
+        "kung-pow-enter-the-fist": {
+            "rating": null,
+            "title": "Kung Pow: Enter the Fist (2002)"
+        },
+        "howls-moving-castle": {
+            "rating": null,
+            "title": "Howl's Moving Castle (2004)"
+        },
+        "morbius": {
+            "rating": null,
+            "title": "Morbius (2022)"
+        },
+        "the-tree-of-life-2011": {
+            "rating": null,
+            "title": "The Tree of Life (2011)"
+        },
+        "blade-runner-2049": {
+            "rating": null,
+            "title": "Blade Runner 2049 (2017)"
+        },
+        "wrath-of-man": {
+            "rating": null,
+            "title": "Wrath of Man (2021)"
+        },
+        "prisoners": {
+            "rating": null,
+            "title": "Prisoners (2013)"
+        },
+        "34-2018": {
+            "rating": null,
+            "title": "T-34 (2018)"
+        },
+        "the-triplets-of-belleville": {
+            "rating": null,
+            "title": "The Triplets of Belleville (2003)"
+        },
+        "snatch": {
+            "rating": null,
+            "title": "Snatch (2000)"
+        },
+        "blue-giant": {
+            "rating": null,
+            "title": "Blue Giant (2023)"
+        },
+        "eternal-sunshine-of-the-spotless-mind": {
+            "rating": null,
+            "title": "Eternal Sunshine of the Spotless Mind (2004)"
+        },
+        "perfect-blue": {
+            "rating": null,
+            "title": "Perfect Blue (1997)"
+        },
+        "pans-labyrinth": {
+            "rating": null,
+            "title": "Pan's Labyrinth (2006)"
+        },
+        "the-equalizer": {
+            "rating": null,
+            "title": "The Equalizer (2014)"
+        },
+        "i-want-to-eat-your-pancreas": {
+            "rating": null,
+            "title": "I Want to Eat Your Pancreas (2018)"
+        },
+        "saltburn": {
+            "rating": null,
+            "title": "Saltburn (2023)"
+        },
+        "anyone-but-you": {
+            "rating": null,
+            "title": "Anyone But You (2023)"
+        },
+        "jack-reacher": {
+            "rating": null,
+            "title": "Jack Reacher (2012)"
+        },
+        "clue": {
+            "rating": null,
+            "title": "Clue (1985)"
+        },
+        "monty-python-and-the-holy-grail": {
+            "rating": null,
+            "title": "Monty Python and the Holy Grail (1975)"
+        },
+        "deja-vu": {
+            "rating": null,
+            "title": "Deja Vu (2006)"
+        },
+        "dune-2021": {
+            "rating": null,
+            "title": "Dune (2021)"
+        },
+        "lock-stock-and-two-smoking-barrels": {
+            "rating": null,
+            "title": "Lock, Stock and Two Smoking Barrels (1998)"
+        },
+        "the-metamorphosis-of-birds": {
+            "rating": null,
+            "title": "The Metamorphosis of Birds (2020)"
+        },
+        "boyhood": {
+            "rating": null,
+            "title": "Boyhood (2014)"
+        },
+        "shoplifters": {
+            "rating": null,
+            "title": "Shoplifters (2018)"
+        },
+        "the-wind-rises": {
+            "rating": null,
+            "title": "The Wind Rises (2013)"
+        },
+        "fear-of-rain": {
+            "rating": null,
+            "title": "Fear of Rain (2021)"
+        },
+        "knock-knock-2015": {
+            "rating": null,
+            "title": "Knock Knock (2015)"
+        },
+        "the-handmaiden": {
+            "rating": null,
+            "title": "The Handmaiden (2016)"
+        },
+        "the-ballad-of-buster-scruggs": {
+            "rating": null,
+            "title": "The Ballad of Buster Scruggs (2018)"
+        },
+        "memento": {
+            "rating": null,
+            "title": "Memento (2000)"
+        },
+        "the-machinist": {
+            "rating": null,
+            "title": "The Machinist (2004)"
+        },
+        "the-others": {
+            "rating": null,
+            "title": "The Others (2001)"
+        },
+        "the-usual-suspects": {
+            "rating": null,
+            "title": "The Usual Suspects (1995)"
+        },
+        "a-quiet-place-2018": {
+            "rating": null,
+            "title": "A Quiet Place (2018)"
+        },
+        "ghost-in-the-shell": {
+            "rating": null,
+            "title": "Ghost in the Shell (1995)"
+        },
+        "time-lapse-2014": {
+            "rating": null,
+            "title": "Time Lapse (2014)"
+        },
+        "ghost-in-the-shell-2-innocence": {
+            "rating": null,
+            "title": "Ghost in the Shell 2: Innocence (2004)"
+        },
+        "john-wick": {
+            "rating": null,
+            "title": "John Wick (2004)"
+        },
+        "her": {
+            "rating": null,
+            "title": "Her (2013)"
+        },
+        "lemonade-mouth": {
+            "rating": null,
+            "title": "Lemonade Mouth (2011)"
+        },
+        "john-wick-chapter-2": {
+            "rating": null,
+            "title": "John Wick: Chapter 2 (2017)"
+        },
+        "john-wick-chapter-3-parabellum": {
+            "rating": null,
+            "title": "John Wick: Chapter 3 (2019)"
+        },
+        "the-departed": {
+            "rating": null,
+            "title": "The Departed (2006)"
+        },
+        "sinister": {
+            "rating": null,
+            "title": "Sinister (2012)"
+        },
+        "the-silence-of-the-lambs": {
+            "rating": null,
+            "title": "The Silence of the Lambs (1991)"
+        },
+        "interstellar": {
+            "rating": null,
+            "title": "Interstellar (2014)"
+        },
+        "john-wick-chapter-4": {
+            "rating": null,
+            "title": "John Wick: Chapter 4 (2023)"
+        },
+        "good-will-hunting": {
+            "rating": null,
+            "title": "Good Will Hunting (1997)"
+        },
+        "hannibal": {
+            "rating": null,
+            "title": "Hannibal (2001)"
+        },
+        "serendipity": {
+            "rating": null,
+            "title": "Serendipity (2001)"
+        },
+        "still-walking": {
+            "rating": null,
+            "title": "Still Walking (2008)"
+        },
+        "parasite-2019": {
+            "rating": null,
+            "title": "Parasite (2019)"
+        },
+        "scarface-1983": {
+            "rating": null,
+            "title": "Scarface (1983)"
+        },
+        "la-haine": {
+            "rating": null,
+            "title": "La Haine (1995)"
+        },
+        "the-first-slam-dunk": {
+            "rating": null,
+            "title": "The First Slam Dunk (2022)"
+        },
+        "how-to-lose-a-guy-in-10-days": {
+            "rating": null,
+            "title": "How to Lose a Guy in 10 Days (2003)"
+        },
+        "the-holdovers": {
+            "rating": null,
+            "title": "The Holdovers (2023)"
+        },
+        "the-notebook": {
+            "rating": null,
+            "title": "The Notebook (2004)"
+        },
+        "training-day": {
+            "rating": null,
+            "title": "Training Day (2001)"
+        },
+        "the-substance": {
+            "rating": null,
+            "title": "The Substance (2024)"
+        },
+        "the-elephant-man": {
+            "rating": null,
+            "title": "The Elephant Man (1980)"
+        },
+        "hell-house-llc": {
+            "rating": null,
+            "title": "Hell House LLC (2015)"
+        },
+        "die-hard": {
+            "rating": null,
+            "title": "Die Hard (1988)"
+        },
+        "tucker-and-dale-vs-evil": {
+            "rating": null,
+            "title": "Tucker and Dale vs. Evil (2010)"
+        },
+        "eyes-wide-shut": {
+            "rating": null,
+            "title": "Eyes Wide Shut (1999)"
+        },
+        "gone-baby-gone": {
+            "rating": null,
+            "title": "Gone Baby Gone (2007)"
+        },
+        "the-last-10-years": {
+            "rating": null,
+            "title": "The Last 10 Years (2022)"
+        },
+        "memories-of-murder": {
+            "rating": null,
+            "title": "Memories of Murder (2003)"
+        },
+        "seven-pounds": {
+            "rating": null,
+            "title": "Seven Pounds (2008)"
+        },
+        "coco-2017": {
+            "rating": null,
+            "title": "Coco (2017)"
+        },
+        "nightcrawler": {
+            "rating": null,
+            "title": "Nightcrawler (2014)"
+        },
+        "mickey-17": {
+            "rating": null,
+            "title": "Mickey 17 (2025)"
+        },
+        "zodiac": {
+            "rating": null,
+            "title": "Zodiac (2007)"
+        },
+        "how-to-make-millions-before-grandma-dies": {
+            "rating": null,
+            "title": "How to Make Millions Before Grandma Dies (2024)"
+        },
+        "the-darjeeling-limited": {
+            "rating": null,
+            "title": "The Darjeeling Limited (2007)"
+        },
+        "inception": {
+            "rating": null,
+            "title": "Inception (2010)"
+        },
+        "mulholland-drive": {
+            "rating": null,
+            "title": "Mulholland Drive (2001)"
+        },
+        "manchester-by-the-sea": {
+            "rating": null,
+            "title": "Manchester by the Sea (2016)"
+        },
+        "primal-fear": {
+            "rating": null,
+            "title": "Primal Fear (1996)"
+        },
+        "after-hours": {
+            "rating": null,
+            "title": "After Hours (1985)"
+        },
+        "blink-twice": {
+            "rating": null,
+            "title": "Blink Twice (2024)"
+        },
+        "one-piece-the-movie": {
+            "rating": null,
+            "title": "One Piece: The Movie (2000)"
+        },
+        "ballerina-2025": {
+            "rating": null,
+            "title": "Ballerina (2025)"
+        },
+        "kpop-demon-hunters": {
+            "rating": null,
+            "title": "KPop Demon Hunters (2025)"
+        },
+        "blue-velvet": {
+            "rating": null,
+            "title": "Blue Velvet (1986)"
+        },
+        "sinners-2025": {
+            "rating": null,
+            "title": "Sinners (2025)"
+        },
+        "the-naked-gun-from-the-files-of-police-squad": {
+            "rating": null,
+            "title": "The Naked Gun: From the Files of Police Squad! (1988)"
+        },
+        "meet-the-robinsons": {
+            "rating": null,
+            "title": "Meet the Robinsons (2007)"
+        },
+        "american-beauty": {
+            "rating": null,
+            "title": "American Beauty (1999)"
+        },
+        "autumn-sonata": {
+            "rating": null,
+            "title": "Autumn Sonata (1978)"
+        }
+    },
+    "Xadas": {
+        "_note": "Nota de 0.5 a 5 nos filmes que o Xadas viu; deixa null nos que nao viu.",
+        "lost-in-translation": {
+            "rating": null,
+            "title": "Lost in Translation (2003)"
+        },
+        "no-country-for-old-men": {
+            "rating": null,
+            "title": "No Country for Old Men (2007)"
+        },
+        "drive-2011": {
+            "rating": null,
+            "title": "Drive (2011)"
+        },
+        "inglourious-basterds": {
+            "rating": null,
+            "title": "Inglorious Basterds (2009)"
+        },
+        "1917": {
+            "rating": null,
+            "title": "1917 (2019)"
+        },
+        "punch-drunk-love": {
+            "rating": null,
+            "title": "Punch-Drunk Love (2002)"
+        },
+        "guy-ritchies-the-covenant": {
+            "rating": null,
+            "title": "Guy Ritchie's The Covenant (2023)"
+        },
+        "the-count-of-monte-cristo-2002": {
+            "rating": null,
+            "title": "The Count of Monte Cristo (2002)"
+        },
+        "the-phantom-of-the-opera-2004": {
+            "rating": null,
+            "title": "The Phantom of The Opera (2004)"
+        },
+        "birdman-or-the-unexpected-virtue-of-ignorance": {
+            "rating": null,
+            "title": "Birdman (2014)"
+        },
+        "the-death-of-stalin": {
+            "rating": null,
+            "title": "The Death of Stalin (2017)"
+        },
+        "walle": {
+            "rating": null,
+            "title": "WALL-E (2008)"
+        },
+        "kung-pow-enter-the-fist": {
+            "rating": null,
+            "title": "Kung Pow: Enter the Fist (2002)"
+        },
+        "howls-moving-castle": {
+            "rating": null,
+            "title": "Howl's Moving Castle (2004)"
+        },
+        "the-tree-of-life-2011": {
+            "rating": null,
+            "title": "The Tree of Life (2011)"
+        },
+        "blade-runner-2049": {
+            "rating": null,
+            "title": "Blade Runner 2049 (2017)"
+        },
+        "wrath-of-man": {
+            "rating": null,
+            "title": "Wrath of Man (2021)"
+        },
+        "34-2018": {
+            "rating": null,
+            "title": "T-34 (2018)"
+        },
+        "the-triplets-of-belleville": {
+            "rating": null,
+            "title": "The Triplets of Belleville (2003)"
+        },
+        "snatch": {
+            "rating": null,
+            "title": "Snatch (2000)"
+        },
+        "blue-giant": {
+            "rating": null,
+            "title": "Blue Giant (2023)"
+        },
+        "eternal-sunshine-of-the-spotless-mind": {
+            "rating": null,
+            "title": "Eternal Sunshine of the Spotless Mind (2004)"
+        },
+        "perfect-blue": {
+            "rating": null,
+            "title": "Perfect Blue (1997)"
+        },
+        "pans-labyrinth": {
+            "rating": null,
+            "title": "Pan's Labyrinth (2006)"
+        },
+        "the-equalizer": {
+            "rating": null,
+            "title": "The Equalizer (2014)"
+        },
+        "saltburn": {
+            "rating": null,
+            "title": "Saltburn (2023)"
+        },
+        "jack-reacher": {
+            "rating": null,
+            "title": "Jack Reacher (2012)"
+        },
+        "clue": {
+            "rating": null,
+            "title": "Clue (1985)"
+        },
+        "monty-python-and-the-holy-grail": {
+            "rating": null,
+            "title": "Monty Python and the Holy Grail (1975)"
+        },
+        "deja-vu": {
+            "rating": null,
+            "title": "Deja Vu (2006)"
+        },
+        "before-sunrise": {
+            "rating": null,
+            "title": "Before Sunrise (1995)"
+        },
+        "lock-stock-and-two-smoking-barrels": {
+            "rating": null,
+            "title": "Lock, Stock and Two Smoking Barrels (1998)"
+        },
+        "the-metamorphosis-of-birds": {
+            "rating": null,
+            "title": "The Metamorphosis of Birds (2020)"
+        },
+        "boyhood": {
+            "rating": null,
+            "title": "Boyhood (2014)"
+        },
+        "shoplifters": {
+            "rating": null,
+            "title": "Shoplifters (2018)"
+        },
+        "the-wind-rises": {
+            "rating": null,
+            "title": "The Wind Rises (2013)"
+        },
+        "fear-of-rain": {
+            "rating": null,
+            "title": "Fear of Rain (2021)"
+        },
+        "knock-knock-2015": {
+            "rating": null,
+            "title": "Knock Knock (2015)"
+        },
+        "the-handmaiden": {
+            "rating": null,
+            "title": "The Handmaiden (2016)"
+        },
+        "the-ballad-of-buster-scruggs": {
+            "rating": null,
+            "title": "The Ballad of Buster Scruggs (2018)"
+        },
+        "memento": {
+            "rating": null,
+            "title": "Memento (2000)"
+        },
+        "the-machinist": {
+            "rating": null,
+            "title": "The Machinist (2004)"
+        },
+        "the-others": {
+            "rating": null,
+            "title": "The Others (2001)"
+        },
+        "the-usual-suspects": {
+            "rating": null,
+            "title": "The Usual Suspects (1995)"
+        },
+        "time-lapse-2014": {
+            "rating": null,
+            "title": "Time Lapse (2014)"
+        },
+        "ghost-in-the-shell-2-innocence": {
+            "rating": null,
+            "title": "Ghost in the Shell 2: Innocence (2004)"
+        },
+        "john-wick": {
+            "rating": null,
+            "title": "John Wick (2004)"
+        },
+        "her": {
+            "rating": null,
+            "title": "Her (2013)"
+        },
+        "lemonade-mouth": {
+            "rating": null,
+            "title": "Lemonade Mouth (2011)"
+        },
+        "john-wick-chapter-2": {
+            "rating": null,
+            "title": "John Wick: Chapter 2 (2017)"
+        },
+        "john-wick-chapter-3-parabellum": {
+            "rating": null,
+            "title": "John Wick: Chapter 3 (2019)"
+        },
+        "the-departed": {
+            "rating": null,
+            "title": "The Departed (2006)"
+        },
+        "sinister": {
+            "rating": null,
+            "title": "Sinister (2012)"
+        },
+        "the-silence-of-the-lambs": {
+            "rating": null,
+            "title": "The Silence of the Lambs (1991)"
+        },
+        "interstellar": {
+            "rating": null,
+            "title": "Interstellar (2014)"
+        },
+        "john-wick-chapter-4": {
+            "rating": null,
+            "title": "John Wick: Chapter 4 (2023)"
+        },
+        "good-will-hunting": {
+            "rating": null,
+            "title": "Good Will Hunting (1997)"
+        },
+        "hannibal": {
+            "rating": null,
+            "title": "Hannibal (2001)"
+        },
+        "serendipity": {
+            "rating": null,
+            "title": "Serendipity (2001)"
+        },
+        "still-walking": {
+            "rating": null,
+            "title": "Still Walking (2008)"
+        },
+        "parasite-2019": {
+            "rating": null,
+            "title": "Parasite (2019)"
+        },
+        "scarface-1983": {
+            "rating": null,
+            "title": "Scarface (1983)"
+        },
+        "la-haine": {
+            "rating": null,
+            "title": "La Haine (1995)"
+        },
+        "the-first-slam-dunk": {
+            "rating": null,
+            "title": "The First Slam Dunk (2022)"
+        },
+        "how-to-lose-a-guy-in-10-days": {
+            "rating": null,
+            "title": "How to Lose a Guy in 10 Days (2003)"
+        },
+        "the-holdovers": {
+            "rating": null,
+            "title": "The Holdovers (2023)"
+        },
+        "the-notebook": {
+            "rating": null,
+            "title": "The Notebook (2004)"
+        },
+        "training-day": {
+            "rating": null,
+            "title": "Training Day (2001)"
+        },
+        "the-substance": {
+            "rating": null,
+            "title": "The Substance (2024)"
+        },
+        "the-elephant-man": {
+            "rating": null,
+            "title": "The Elephant Man (1980)"
+        },
+        "hell-house-llc": {
+            "rating": null,
+            "title": "Hell House LLC (2015)"
+        },
+        "die-hard": {
+            "rating": null,
+            "title": "Die Hard (1988)"
+        },
+        "tucker-and-dale-vs-evil": {
+            "rating": null,
+            "title": "Tucker and Dale vs. Evil (2010)"
+        },
+        "eyes-wide-shut": {
+            "rating": null,
+            "title": "Eyes Wide Shut (1999)"
+        },
+        "gone-baby-gone": {
+            "rating": null,
+            "title": "Gone Baby Gone (2007)"
+        },
+        "the-last-10-years": {
+            "rating": null,
+            "title": "The Last 10 Years (2022)"
+        },
+        "memories-of-murder": {
+            "rating": null,
+            "title": "Memories of Murder (2003)"
+        },
+        "seven-pounds": {
+            "rating": null,
+            "title": "Seven Pounds (2008)"
+        },
+        "coco-2017": {
+            "rating": null,
+            "title": "Coco (2017)"
+        },
+        "nightcrawler": {
+            "rating": null,
+            "title": "Nightcrawler (2014)"
+        },
+        "mickey-17": {
+            "rating": null,
+            "title": "Mickey 17 (2025)"
+        },
+        "zodiac": {
+            "rating": null,
+            "title": "Zodiac (2007)"
+        },
+        "how-to-make-millions-before-grandma-dies": {
+            "rating": null,
+            "title": "How to Make Millions Before Grandma Dies (2024)"
+        },
+        "the-darjeeling-limited": {
+            "rating": null,
+            "title": "The Darjeeling Limited (2007)"
+        },
+        "inception": {
+            "rating": null,
+            "title": "Inception (2010)"
+        },
+        "mulholland-drive": {
+            "rating": null,
+            "title": "Mulholland Drive (2001)"
+        },
+        "manchester-by-the-sea": {
+            "rating": null,
+            "title": "Manchester by the Sea (2016)"
+        },
+        "primal-fear": {
+            "rating": null,
+            "title": "Primal Fear (1996)"
+        },
+        "after-hours": {
+            "rating": null,
+            "title": "After Hours (1985)"
+        },
+        "blink-twice": {
+            "rating": null,
+            "title": "Blink Twice (2024)"
+        },
+        "one-piece-the-movie": {
+            "rating": null,
+            "title": "One Piece: The Movie (2000)"
+        },
+        "ballerina-2025": {
+            "rating": null,
+            "title": "Ballerina (2025)"
+        },
+        "kpop-demon-hunters": {
+            "rating": null,
+            "title": "KPop Demon Hunters (2025)"
+        },
+        "blue-velvet": {
+            "rating": null,
+            "title": "Blue Velvet (1986)"
+        },
+        "sinners-2025": {
+            "rating": null,
+            "title": "Sinners (2025)"
+        },
+        "the-naked-gun-from-the-files-of-police-squad": {
+            "rating": null,
+            "title": "The Naked Gun: From the Files of Police Squad! (1988)"
+        },
+        "meet-the-robinsons": {
+            "rating": null,
+            "title": "Meet the Robinsons (2007)"
+        },
+        "american-beauty": {
+            "rating": null,
+            "title": "American Beauty (1999)"
+        },
+        "autumn-sonata": {
+            "rating": null,
+            "title": "Autumn Sonata (1978)"
+        }
+    },
+    "mWXYZ": {
+        "_note": "Nota de 0.5 a 5 nos filmes que o mWXYZ viu; deixa null nos que nao viu.",
+        "lost-in-translation": {
+            "rating": null,
+            "title": "Lost in Translation (2003)"
+        },
+        "no-country-for-old-men": {
+            "rating": null,
+            "title": "No Country for Old Men (2007)"
+        },
+        "death-proof": {
+            "rating": null,
+            "title": "Death Proof (2007)"
+        },
+        "drive-2011": {
+            "rating": null,
+            "title": "Drive (2011)"
+        },
+        "inglourious-basterds": {
+            "rating": null,
+            "title": "Inglorious Basterds (2009)"
+        },
+        "1917": {
+            "rating": null,
+            "title": "1917 (2019)"
+        },
+        "mid90s": {
+            "rating": null,
+            "title": "mid90s (2018)"
+        },
+        "punch-drunk-love": {
+            "rating": null,
+            "title": "Punch-Drunk Love (2002)"
+        },
+        "guy-ritchies-the-covenant": {
+            "rating": null,
+            "title": "Guy Ritchie's The Covenant (2023)"
+        },
+        "the-count-of-monte-cristo-2002": {
+            "rating": null,
+            "title": "The Count of Monte Cristo (2002)"
+        },
+        "the-phantom-of-the-opera-2004": {
+            "rating": null,
+            "title": "The Phantom of The Opera (2004)"
+        },
+        "birdman-or-the-unexpected-virtue-of-ignorance": {
+            "rating": null,
+            "title": "Birdman (2014)"
+        },
+        "the-death-of-stalin": {
+            "rating": null,
+            "title": "The Death of Stalin (2017)"
+        },
+        "walle": {
+            "rating": null,
+            "title": "WALL-E (2008)"
+        },
+        "kung-pow-enter-the-fist": {
+            "rating": null,
+            "title": "Kung Pow: Enter the Fist (2002)"
+        },
+        "howls-moving-castle": {
+            "rating": null,
+            "title": "Howl's Moving Castle (2004)"
+        },
+        "morbius": {
+            "rating": null,
+            "title": "Morbius (2022)"
+        },
+        "the-tree-of-life-2011": {
+            "rating": null,
+            "title": "The Tree of Life (2011)"
+        },
+        "blade-runner-2049": {
+            "rating": null,
+            "title": "Blade Runner 2049 (2017)"
+        },
+        "wrath-of-man": {
+            "rating": null,
+            "title": "Wrath of Man (2021)"
+        },
+        "prisoners": {
+            "rating": null,
+            "title": "Prisoners (2013)"
+        },
+        "34-2018": {
+            "rating": null,
+            "title": "T-34 (2018)"
+        },
+        "the-triplets-of-belleville": {
+            "rating": null,
+            "title": "The Triplets of Belleville (2003)"
+        },
+        "snatch": {
+            "rating": null,
+            "title": "Snatch (2000)"
+        },
+        "blue-giant": {
+            "rating": null,
+            "title": "Blue Giant (2023)"
+        },
+        "eternal-sunshine-of-the-spotless-mind": {
+            "rating": null,
+            "title": "Eternal Sunshine of the Spotless Mind (2004)"
+        },
+        "perfect-blue": {
+            "rating": null,
+            "title": "Perfect Blue (1997)"
+        },
+        "pans-labyrinth": {
+            "rating": null,
+            "title": "Pan's Labyrinth (2006)"
+        },
+        "the-equalizer": {
+            "rating": null,
+            "title": "The Equalizer (2014)"
+        },
+        "i-want-to-eat-your-pancreas": {
+            "rating": null,
+            "title": "I Want to Eat Your Pancreas (2018)"
+        },
+        "saltburn": {
+            "rating": null,
+            "title": "Saltburn (2023)"
+        },
+        "anyone-but-you": {
+            "rating": null,
+            "title": "Anyone But You (2023)"
+        },
+        "jack-reacher": {
+            "rating": null,
+            "title": "Jack Reacher (2012)"
+        },
+        "clue": {
+            "rating": null,
+            "title": "Clue (1985)"
+        },
+        "monty-python-and-the-holy-grail": {
+            "rating": null,
+            "title": "Monty Python and the Holy Grail (1975)"
+        },
+        "deja-vu": {
+            "rating": null,
+            "title": "Deja Vu (2006)"
+        },
+        "dune-2021": {
+            "rating": null,
+            "title": "Dune (2021)"
+        },
+        "before-sunrise": {
+            "rating": null,
+            "title": "Before Sunrise (1995)"
+        },
+        "lock-stock-and-two-smoking-barrels": {
+            "rating": null,
+            "title": "Lock, Stock and Two Smoking Barrels (1998)"
+        },
+        "the-metamorphosis-of-birds": {
+            "rating": null,
+            "title": "The Metamorphosis of Birds (2020)"
+        },
+        "boyhood": {
+            "rating": null,
+            "title": "Boyhood (2014)"
+        },
+        "shoplifters": {
+            "rating": null,
+            "title": "Shoplifters (2018)"
+        },
+        "the-wind-rises": {
+            "rating": null,
+            "title": "The Wind Rises (2013)"
+        },
+        "fear-of-rain": {
+            "rating": null,
+            "title": "Fear of Rain (2021)"
+        },
+        "knock-knock-2015": {
+            "rating": null,
+            "title": "Knock Knock (2015)"
+        },
+        "the-handmaiden": {
+            "rating": null,
+            "title": "The Handmaiden (2016)"
+        },
+        "the-ballad-of-buster-scruggs": {
+            "rating": null,
+            "title": "The Ballad of Buster Scruggs (2018)"
+        },
+        "memento": {
+            "rating": null,
+            "title": "Memento (2000)"
+        },
+        "the-machinist": {
+            "rating": null,
+            "title": "The Machinist (2004)"
+        },
+        "the-others": {
+            "rating": null,
+            "title": "The Others (2001)"
+        },
+        "the-usual-suspects": {
+            "rating": null,
+            "title": "The Usual Suspects (1995)"
+        },
+        "a-quiet-place-2018": {
+            "rating": null,
+            "title": "A Quiet Place (2018)"
+        },
+        "ghost-in-the-shell": {
+            "rating": null,
+            "title": "Ghost in the Shell (1995)"
+        },
+        "time-lapse-2014": {
+            "rating": null,
+            "title": "Time Lapse (2014)"
+        },
+        "ghost-in-the-shell-2-innocence": {
+            "rating": null,
+            "title": "Ghost in the Shell 2: Innocence (2004)"
+        },
+        "john-wick": {
+            "rating": null,
+            "title": "John Wick (2004)"
+        },
+        "her": {
+            "rating": null,
+            "title": "Her (2013)"
+        },
+        "lemonade-mouth": {
+            "rating": null,
+            "title": "Lemonade Mouth (2011)"
+        },
+        "john-wick-chapter-2": {
+            "rating": null,
+            "title": "John Wick: Chapter 2 (2017)"
+        },
+        "john-wick-chapter-3-parabellum": {
+            "rating": null,
+            "title": "John Wick: Chapter 3 (2019)"
+        },
+        "the-departed": {
+            "rating": null,
+            "title": "The Departed (2006)"
+        },
+        "sinister": {
+            "rating": null,
+            "title": "Sinister (2012)"
+        },
+        "the-silence-of-the-lambs": {
+            "rating": null,
+            "title": "The Silence of the Lambs (1991)"
+        },
+        "interstellar": {
+            "rating": null,
+            "title": "Interstellar (2014)"
+        },
+        "john-wick-chapter-4": {
+            "rating": null,
+            "title": "John Wick: Chapter 4 (2023)"
+        },
+        "good-will-hunting": {
+            "rating": null,
+            "title": "Good Will Hunting (1997)"
+        },
+        "hannibal": {
+            "rating": null,
+            "title": "Hannibal (2001)"
+        },
+        "serendipity": {
+            "rating": null,
+            "title": "Serendipity (2001)"
+        },
+        "still-walking": {
+            "rating": null,
+            "title": "Still Walking (2008)"
+        },
+        "parasite-2019": {
+            "rating": null,
+            "title": "Parasite (2019)"
+        },
+        "scarface-1983": {
+            "rating": null,
+            "title": "Scarface (1983)"
+        },
+        "la-haine": {
+            "rating": null,
+            "title": "La Haine (1995)"
+        },
+        "the-first-slam-dunk": {
+            "rating": null,
+            "title": "The First Slam Dunk (2022)"
+        },
+        "how-to-lose-a-guy-in-10-days": {
+            "rating": null,
+            "title": "How to Lose a Guy in 10 Days (2003)"
+        },
+        "the-holdovers": {
+            "rating": null,
+            "title": "The Holdovers (2023)"
+        },
+        "the-notebook": {
+            "rating": null,
+            "title": "The Notebook (2004)"
+        },
+        "training-day": {
+            "rating": null,
+            "title": "Training Day (2001)"
+        },
+        "the-substance": {
+            "rating": null,
+            "title": "The Substance (2024)"
+        },
+        "the-elephant-man": {
+            "rating": null,
+            "title": "The Elephant Man (1980)"
+        },
+        "hell-house-llc": {
+            "rating": null,
+            "title": "Hell House LLC (2015)"
+        },
+        "die-hard": {
+            "rating": null,
+            "title": "Die Hard (1988)"
+        },
+        "tucker-and-dale-vs-evil": {
+            "rating": null,
+            "title": "Tucker and Dale vs. Evil (2010)"
+        },
+        "eyes-wide-shut": {
+            "rating": null,
+            "title": "Eyes Wide Shut (1999)"
+        },
+        "gone-baby-gone": {
+            "rating": null,
+            "title": "Gone Baby Gone (2007)"
+        },
+        "the-last-10-years": {
+            "rating": null,
+            "title": "The Last 10 Years (2022)"
+        },
+        "memories-of-murder": {
+            "rating": null,
+            "title": "Memories of Murder (2003)"
+        },
+        "seven-pounds": {
+            "rating": null,
+            "title": "Seven Pounds (2008)"
+        },
+        "coco-2017": {
+            "rating": null,
+            "title": "Coco (2017)"
+        },
+        "nightcrawler": {
+            "rating": null,
+            "title": "Nightcrawler (2014)"
+        },
+        "mickey-17": {
+            "rating": null,
+            "title": "Mickey 17 (2025)"
+        },
+        "zodiac": {
+            "rating": null,
+            "title": "Zodiac (2007)"
+        },
+        "how-to-make-millions-before-grandma-dies": {
+            "rating": null,
+            "title": "How to Make Millions Before Grandma Dies (2024)"
+        },
+        "the-darjeeling-limited": {
+            "rating": null,
+            "title": "The Darjeeling Limited (2007)"
+        },
+        "inception": {
+            "rating": null,
+            "title": "Inception (2010)"
+        },
+        "mulholland-drive": {
+            "rating": null,
+            "title": "Mulholland Drive (2001)"
+        },
+        "manchester-by-the-sea": {
+            "rating": null,
+            "title": "Manchester by the Sea (2016)"
+        },
+        "primal-fear": {
+            "rating": null,
+            "title": "Primal Fear (1996)"
+        },
+        "after-hours": {
+            "rating": null,
+            "title": "After Hours (1985)"
+        },
+        "blink-twice": {
+            "rating": null,
+            "title": "Blink Twice (2024)"
+        },
+        "one-piece-the-movie": {
+            "rating": null,
+            "title": "One Piece: The Movie (2000)"
+        },
+        "ballerina-2025": {
+            "rating": null,
+            "title": "Ballerina (2025)"
+        },
+        "kpop-demon-hunters": {
+            "rating": null,
+            "title": "KPop Demon Hunters (2025)"
+        },
+        "blue-velvet": {
+            "rating": null,
+            "title": "Blue Velvet (1986)"
+        },
+        "sinners-2025": {
+            "rating": null,
+            "title": "Sinners (2025)"
+        },
+        "the-naked-gun-from-the-files-of-police-squad": {
+            "rating": null,
+            "title": "The Naked Gun: From the Files of Police Squad! (1988)"
+        },
+        "meet-the-robinsons": {
+            "rating": null,
+            "title": "Meet the Robinsons (2007)"
+        },
+        "american-beauty": {
+            "rating": null,
+            "title": "American Beauty (1999)"
+        },
+        "autumn-sonata": {
+            "rating": null,
+            "title": "Autumn Sonata (1978)"
+        }
+    }
+}

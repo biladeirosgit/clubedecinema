@@ -1,0 +1,24 @@
+[
+    {
+        "slug": "nostalgia-1983",
+        "title": "Nostalgia",
+        "year": 1983,
+        "tmdbId": 1394,
+        "genres": [
+            "Drama",
+            "Romance"
+        ],
+        "minutes": 124,
+        "chosenBy": [
+            "Cludos"
+        ]
+    },
+    {
+        "slug": "the-girlfriend-2025",
+        "title": "The Girlfriend",
+        "year": 2025,
+        "chosenBy": [
+            "Squnha"
+        ]
+    }
+]
