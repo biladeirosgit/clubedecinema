@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/clubedecinema/static/css/main.148c8862.css",
-    "main.js": "/clubedecinema/static/js/main.5c4c6c00.js",
+    "main.css": "/clubedecinema/static/css/main.6e529452.css",
+    "main.js": "/clubedecinema/static/js/main.4a88193a.js",
     "static/js/453.560422a9.chunk.js": "/clubedecinema/static/js/453.560422a9.chunk.js",
     "static/media/inter-latin-ext-600-normal.woff": "/clubedecinema/static/media/inter-latin-ext-600-normal.4d0d5017d71ea1750fc1.woff",
     "static/media/inter-latin-ext-700-normal.woff": "/clubedecinema/static/media/inter-latin-ext-700-normal.d4a91814dd3f1e022ab1.woff",
@@ -65,12 +65,12 @@
     "static/media/bricolage-grotesque-vietnamese-800-normal.woff2": "/clubedecinema/static/media/bricolage-grotesque-vietnamese-800-normal.f641604bfdb002404b01.woff2",
     "static/media/inter-vietnamese-400-normal.woff2": "/clubedecinema/static/media/inter-vietnamese-400-normal.44c9df135eec470b0ab6.woff2",
     "index.html": "/clubedecinema/index.html",
-    "main.148c8862.css.map": "/clubedecinema/static/css/main.148c8862.css.map",
-    "main.5c4c6c00.js.map": "/clubedecinema/static/js/main.5c4c6c00.js.map",
+    "main.6e529452.css.map": "/clubedecinema/static/css/main.6e529452.css.map",
+    "main.4a88193a.js.map": "/clubedecinema/static/js/main.4a88193a.js.map",
     "453.560422a9.chunk.js.map": "/clubedecinema/static/js/453.560422a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.148c8862.css",
-    "static/js/main.5c4c6c00.js"
+    "static/css/main.6e529452.css",
+    "static/js/main.4a88193a.js"
   ]
 }
