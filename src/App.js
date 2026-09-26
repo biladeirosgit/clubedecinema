@@ -6,7 +6,6 @@ import CinemaClubPage from './cdc/CinemaClubPage';
 import CinemaClubStats from './cdc/CinemaClubStats'; // Importe o novo componente de estatísticas
 import UserStats from './cdc/UserStats'; // Importe o novo componente de estatísticas de usuário
 import GuessGame from './cdc/GuessGame';
-import WheelPage from './cdc/WheelPage';
 import NavBar from './components/NavBar';
 
 
@@ -20,7 +19,6 @@ const App = () => {
                 <Route path="/stats" element={<CinemaClubStats/>} />
                 <Route path="/users/:username" element={<UserStats/>} />
                 <Route path="/guess" element={<GuessGame/>} />
-                <Route path="/roda" element={<WheelPage/>} />
                 {/* Adicione outras rotas aqui */}
             </Routes>
         </HashRouter>

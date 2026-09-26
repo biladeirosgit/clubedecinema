@@ -63,6 +63,7 @@
 .movie-row-ratings {
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline;
     gap: 6px 16px;
 }
 
@@ -78,4 +79,23 @@
     color: var(--color-text-secondary);
     font-weight: 400;
     font-size: 0.72rem;
+}
+
+/* Filme de fora do clube (perfil com o Letterboxd ligado): borda tracejada
+   para se distinguir dos do clube. */
+.movie-row--external {
+    border-style: dashed;
+}
+
+.movie-row-noposter {
+    width: 52px;
+    height: 78px;
+    border-radius: var(--radius-sm);
+    background: var(--color-surface-alt);
+    flex-shrink: 0;
+}
+
+.movie-row--list .movie-row-noposter {
+    width: 40px;
+    height: 60px;
 }

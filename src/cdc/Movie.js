@@ -8,14 +8,15 @@ import { joinWithAmpersand } from '../utils/format';
 import { average } from '../utils/ratings';
 
 const Movie = ({ slug, title, year, link, date, chosenBy, genres, minutes, reviews, comments }) => {
-    const [showReviews, setShowReviews] = useState(false);
+    // Slug aberto em vez de booleano: deixa o card saltar para a prequela/sequela.
+    const [openSlug, setOpenSlug] = useState(null);
 
     const titleYear = `${title} (${year})`;
     const avg = average(reviews);
     const avgLabel = avg === null ? '-' : avg.toFixed(1);
 
     return (
-        <div className='MovieCard' onClick={() => setShowReviews(!showReviews)}>
+        <div className='MovieCard' onClick={() => setOpenSlug(slug)}>
             <div className='simple-poster'>
                 <div className='title'>
                     <p>{titleYear}</p>
@@ -30,21 +31,9 @@ const Movie = ({ slug, title, year, link, date, chosenBy, genres, minutes, revie
                     </div>
                 </div>
             </div>
-            {showReviews && (
-                <Modal onClose={() => setShowReviews(false)}>
-                    <MovieCard
-                        slug={slug}
-                        title={title}
-                        year={year}
-                        link={link}
-                        date={date}
-                        chosenBy={chosenBy}
-                        genres={genres}
-                        minutes={minutes}
-                        reviews={reviews}
-                        average={avg === null ? '-' : avg.toFixed(2)}
-                        comments={comments}
-                    />
+            {openSlug && (
+                <Modal onClose={() => setOpenSlug(null)}>
+                    <MovieCard slug={openSlug} onNavigate={setOpenSlug} />
                 </Modal>
             )}
         </div>

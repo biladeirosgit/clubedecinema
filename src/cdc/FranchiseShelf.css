@@ -1,0 +1,129 @@
+.franchise-shelf {
+    display: grid;
+    gap: 12px;
+    margin-bottom: var(--space-4);
+}
+
+/* Nome a esquerda, capas a direita. Em ecra estreito passam a duas linhas. */
+.franchise-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 12px 18px;
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-md);
+}
+
+.franchise-head {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex: 0 0 280px;
+    font-family: var(--font-body);
+}
+
+.franchise-rank {
+    width: 18px;
+    flex-shrink: 0;
+    color: var(--color-text-secondary);
+    font-weight: 800;
+    font-size: 0.82rem;
+}
+
+.franchise-name {
+    flex: 1;
+    color: var(--color-text-primary);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.franchise-score {
+    color: var(--color-gold);
+    font-weight: 800;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.franchise-posters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.franchise-poster {
+    position: relative;
+    padding: 0;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-sm);
+    background: none;
+    overflow: hidden;
+    line-height: 0;
+    cursor: pointer;
+    transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.franchise-poster img {
+    display: block;
+    width: 120px;
+    height: 177px;
+    object-fit: cover;
+}
+
+.franchise-poster:hover,
+.franchise-poster:focus-visible {
+    transform: translateY(-3px);
+    border-color: var(--color-accent);
+}
+
+/* Faixa no fundo da capa: quem trouxe o filme a esquerda, a nota do clube a
+   direita. A saga tem uma media, mas ver de onde ela vem e metade da graca. */
+.franchise-poster-meta {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 5px 6px;
+    background: rgba(0, 0, 0, 0.72);
+    line-height: 1;
+}
+
+/* Escolha a meias: as caras ficam uma por cima da outra, como nos avatares
+   de grupo, em vez de espremerem a faixa. */
+.franchise-poster-faces {
+    display: flex;
+    align-items: center;
+}
+
+.franchise-poster-face {
+    box-shadow: 0 0 0 1.5px rgba(0, 0, 0, 0.75);
+}
+
+.franchise-poster-face + .franchise-poster-face {
+    margin-left: -8px;
+}
+
+.franchise-poster-score {
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+@media (max-width: 760px) {
+    .franchise-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .franchise-head {
+        flex: none;
+    }
+}

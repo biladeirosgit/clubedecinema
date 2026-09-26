@@ -24,9 +24,8 @@ describe('navbar', () => {
             expect(a.getAttribute('href')).toMatch(/^https:\/\//);
         });
 
-        // Abaixo de 640px o .hub-link-text e escondido por CSS (esta navbar nao
-        // tem burger e os 4 links ocupam a barra toda). Sem o aria-label, o
-        // link ficaria com nome acessivel vazio -- a img e alt="".
+        // Abaixo de 640px o .hub-link-text e escondido por CSS. Sem o
+        // aria-label, o link ficaria com nome acessivel vazio -- a img e alt="".
         test('tem nome acessivel que sobrevive ao mobile', () => {
             const { container } = renderNav();
             const a = container.querySelector('.hub-link');
@@ -38,7 +37,7 @@ describe('navbar', () => {
     test('as tabs estao em ingles', () => {
         const { container } = renderNav();
         const tabs = [...container.querySelectorAll('.navbar-link')].map((n) => n.textContent);
-        expect(tabs).toEqual(['Catalog', 'Stats', 'Guess', 'Wheel']);
+        expect(tabs).toEqual(['Catalog', 'Stats', 'Guess']);
     });
 
     test('a marca fica: Bilacinema e um nome proprio', () => {
@@ -47,7 +46,7 @@ describe('navbar', () => {
     });
 });
 
-// O utilizador queixou-se de a barra ficar estranha em ecras pequenos: os 4
+// O utilizador queixou-se de a barra ficar estranha em ecras pequenos: os
 // links nao cabiam ao lado da marca. Passou a burger + drawer, como nas
 // olimpiadas.
 describe('burger em ecras pequenos', () => {

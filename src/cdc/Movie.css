@@ -256,6 +256,33 @@ img {
     color: var(--color-text-primary);
 }
 
+.mc-saga {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.mc-saga-link {
+    background: var(--color-panel2);
+    border: 1px solid var(--color-line);
+    padding: 9px 14px;
+    border-radius: var(--radius-sm);
+    font: inherit;
+    font-size: 0.85rem;
+    color: var(--color-text-primary);
+    text-align: left;
+}
+
+button.mc-saga-link {
+    cursor: pointer;
+    transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+button.mc-saga-link:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
 .mc-reviews {
     display: flex;
     flex-direction: column;

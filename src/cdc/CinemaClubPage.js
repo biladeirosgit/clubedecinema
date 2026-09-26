@@ -2,7 +2,8 @@ import React, { useState, useMemo } from 'react';
 import Movie from './Movie';
 import MovieCard from './MovieCard';
 import Modal from '../components/Modal';
-import cinemaData from './cinemaData.json';
+import UpcomingMovies from './UpcomingMovies';
+import { cinemaData, upcomingMovies } from './movies';
 import './CinemaClubPage.css';
 import { average } from '../utils/ratings';
 import { compareDatesDesc } from '../utils/dates';
@@ -32,7 +33,8 @@ const CinemaClubPage = () => {
     const [selectedChosenBy, setSelectedChosenBy] = useState('');
     const [sortCriteria, setSortCriteria] = useState('date');
     const [search, setSearch] = useState('');
-    const [heroExpanded, setHeroExpanded] = useState(false);
+    // Slug aberto em vez de booleano: deixa o card saltar para a prequela/sequela.
+    const [openSlug, setOpenSlug] = useState(null);
 
     // Calcular ano mínimo e máximo dos filmes
     const [minYear, maxYear] = useMemo(() => getYearRange(cinemaData), []);
@@ -78,7 +80,7 @@ const CinemaClubPage = () => {
                 <div
                     className="hero-movie"
                     style={{ backgroundImage: `url("${backdropSrc(heroSlug)}")` }}
-                    onClick={() => setHeroExpanded(true)}
+                    onClick={() => setOpenSlug(heroSlug)}
                 >
                     <div className="hero-movie-content">
                         <div className="hero-movie-poster">
@@ -95,21 +97,11 @@ const CinemaClubPage = () => {
                     </div>
                 </div>
             )}
-            {heroExpanded && (
-                <Modal onClose={() => setHeroExpanded(false)}>
-                    <MovieCard
-                        slug={heroSlug}
-                        title={heroMovie.title}
-                        year={heroMovie.year}
-                        link={heroMovie.link}
-                        date={heroMovie.date}
-                        chosenBy={heroMovie.chosenBy}
-                        genres={heroMovie.genres}
-                        minutes={heroMovie.minutes}
-                        reviews={heroMovie.reviews}
-                        average={heroAverage === null ? '-' : heroAverage.toFixed(2)}
-                        comments={heroMovie.comments}
-                    />
+            <UpcomingMovies movies={upcomingMovies} />
+
+            {openSlug && (
+                <Modal onClose={() => setOpenSlug(null)}>
+                    <MovieCard slug={openSlug} onNavigate={setOpenSlug} />
                 </Modal>
             )}
 

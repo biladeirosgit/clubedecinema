@@ -3,15 +3,45 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
+
+def _load_env_file():
+    """Le o .env da raiz (KEY=valor por linha) para o ambiente.
+
+    Nao sobrepoe variaveis ja definidas no ambiente, para dar para fazer
+    override pontual na linha de comandos.
+    """
+    env_path = ROOT / ".env"
+    if not env_path.exists():
+        return
+
+    for line in env_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+_load_env_file()
+
 MAIN_LIST_URL = "https://letterboxd.com/surumkata/list/clube-de-cinema/"
-WHEEL_LIST_URL = "https://letterboxd.com/surumkata/list/wheel-clube-de-cinema/"
 
 CINEMA_DATA_PATH = ROOT / "src" / "cdc" / "cinemaData.json"
-WHEEL_DATA_PATH = ROOT / "src" / "cdc" / "wheelData.json"
 MEMBERS_PATH = ROOT / "scripts" / "members.json"
 WEEK_META_PATH = ROOT / "scripts" / "weekMeta.json"
-WHEEL_SELECTIONS_PATH = ROOT / "scripts" / "wheelSelections.json"
 MANUAL_RATINGS_PATH = ROOT / "scripts" / "manualRatings.json"
+FRANCHISES_PATH = ROOT / "scripts" / "franchises.json"
+
+# Filmes de fora do clube, so para o perfil (build_letterboxd_films.py).
+LETTERBOXD_FILMS_PATH = ROOT / "src" / "cdc" / "letterboxdFilms.json"
+# Exports de dados do Letterboxd de cada membro. Nunca versionada: trazem o
+# email e o resto do perfil.
+LETTERBOXD_EXPORTS_DIR = ROOT / "scripts" / "letterboxd_exports"
+# (titulo|ano) do export -> ID do TMDB, para nao repetir pesquisas.
+LETTERBOXD_SEARCH_CACHE_PATH = ROOT / "scripts" / "letterboxdSearchCache.json"
 
 POSTERS_DIR = ROOT / "public" / "posters"
 BACKGROUNDS_DIR = ROOT / "public" / "backgrounds"

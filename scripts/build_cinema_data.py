@@ -1,6 +1,6 @@
 """
-Pipeline principal: atualiza cinemaData.json e wheelData.json a partir das duas
-listas publicas do Letterboxd + TMDB, preenchendo so o que falta.
+Pipeline principal: atualiza cinemaData.json a partir da lista publica do
+Letterboxd + TMDB, preenchendo so o que falta.
 
 cinemaData.json e tratado como estado vivo: nunca sobrescreve um rating/comentario
 ja presente (seja de scraping anterior ou escrito a mao), so preenche o que falta.
@@ -8,20 +8,22 @@ Membros sem conta Letterboxd (letterboxdUsername=None em members.json) nunca sao
 scraped - as suas avaliacoes sao sempre manuais.
 
 Corre-se via `python scripts/build_cinema_data.py`, tipicamente a partir do
-workflow do GitHub Actions (workflow_dispatch manual).
+workflow do GitHub Actions (workflow_dispatch manual). `--last N` limita o
+scraping aos N filmes mais recentes e `--user NOME` a um membro so; as duas
+flags combinam-se.
 """
+import argparse
 import json
 import sys
+from datetime import datetime
 
 from config import (
     MAIN_LIST_URL,
-    WHEEL_LIST_URL,
     CINEMA_DATA_PATH,
-    WHEEL_DATA_PATH,
     MEMBERS_PATH,
     WEEK_META_PATH,
-    WHEEL_SELECTIONS_PATH,
     MANUAL_RATINGS_PATH,
+    FRANCHISES_PATH,
 )
 from lib import letterboxd, tmdb, images
 from lib.http import BlockedError
@@ -43,22 +45,90 @@ def film_link(slug):
     return f"https://letterboxd.com/film/{slug}/"
 
 
-def update_movie_media(slug, movie, stats):
-    """Preenche genres/minutes/poster/backdrop via TMDB, so se faltar algo."""
+def parse_week_date(value):
+    """Converte 'DD/MM/YYYY' num datetime. Devolve None se faltar/for invalido."""
+    if not value:
+        return None
+    try:
+        return datetime.strptime(value, "%d/%m/%Y")
+    except ValueError:
+        return None
+
+
+def week_has_started(value, today=None):
+    """True se a semana do filme ja comecou (ou se a data falta/e invalida, para
+    manter o comportamento de sempre). Como o clube escolhe os filmes de um mes
+    todos de uma vez, o weekMeta tem filmes com data no futuro: esses ainda nao
+    foram vistos por ninguem, portanto nao se lhes vai buscar ratings."""
+    parsed = parse_week_date(value)
+    if parsed is None:
+        return True
+    return parsed.date() <= (today or datetime.now().date())
+
+
+def recent_slugs(week_meta, limit):
+    """Devolve o conjunto dos `limit` slugs mais recentes segundo a data em
+    weekMeta.json. Filmes com data em falta/invalida ficam no fim da ordenacao,
+    para nunca roubarem o lugar a um filme com data valida. Filmes ainda por
+    chegar ficam de fora — senao um `--last 5` gastava-se todo em filmes futuros
+    e nem chegava ao filme desta semana."""
+    if limit is None:
+        return None  # sem limite: todos os filmes sao elegiveis
+
+    dated = []
+    undated = []
+    for slug, meta in week_meta.items():
+        date_value = meta.get("date")
+        if not week_has_started(date_value):
+            continue
+        parsed = parse_week_date(date_value)
+        if parsed is None:
+            undated.append(slug)
+        else:
+            dated.append((parsed, slug))
+
+    dated.sort(key=lambda pair: pair[0], reverse=True)
+    ordered = [slug for _, slug in dated] + undated
+    return set(ordered[:limit])
+
+
+def update_movie_details(slug, movie, stats):
+    """Preenche realizadores/elenco/temas (pagina do Letterboxd) e
+    genres/minutes/poster/backdrop/saga (TMDB), so o que faltar.
+
+    A pagina do filme no Letterboxd e descarregada no maximo uma vez por filme:
+    serve tanto para os creditos como para resolver o TMDB id."""
     needs_metadata = not movie.get("genres") or movie.get("minutes") is None
     poster_missing = not (images.POSTERS_DIR / f"{slug}.png").exists()
     backdrop_missing = not (images.BACKGROUNDS_DIR / f"{slug}.png").exists()
-
-    if not (needs_metadata or poster_missing or backdrop_missing):
-        return
+    # A chave presente (mesmo a null) e que marca "ja verificado" — a maioria dos
+    # filmes nao pertence a saga nenhuma e nao pode ser pedida em todos os runs.
+    needs_franchise = "franchise" not in movie
+    needs_tmdb = needs_metadata or poster_missing or backdrop_missing or needs_franchise
+    needs_credits = not movie.get("directors")
 
     tmdb_id = movie.get("tmdbId")
+    if needs_credits or (needs_tmdb and tmdb_id is None):
+        film = letterboxd.fetch_film(slug)
+        if needs_credits:
+            if film["directors"]:
+                movie["directors"] = film["directors"]
+                movie["cast"] = film["cast"]
+                movie["themes"] = film["themes"]
+                stats["credits_added"] += 1
+            else:
+                # Sem realizador nao gravamos nada, para tentar de novo no proximo run.
+                print(f"  AVISO: sem realizador para '{slug}' — creditos nao preenchidos")
+        if tmdb_id is None and film["tmdbId"] is not None:
+            tmdb_id = film["tmdbId"]
+            movie["tmdbId"] = tmdb_id
+
+    if not needs_tmdb:
+        return
+
     if tmdb_id is None:
-        tmdb_id = letterboxd.fetch_tmdb_id(slug)
-        if tmdb_id is None:
-            print(f"  AVISO: sem match TMDB para '{slug}' — genres/minutes/imagens nao preenchidos")
-            return
-        movie["tmdbId"] = tmdb_id
+        print(f"  AVISO: sem match TMDB para '{slug}' — genres/minutes/imagens nao preenchidos")
+        return
 
     tmdb_data = tmdb.fetch_movie(tmdb_id)
     if tmdb_data is None:
@@ -68,6 +138,11 @@ def update_movie_media(slug, movie, stats):
     if needs_metadata:
         movie["genres"] = tmdb_data["genres"] or movie.get("genres", [])
         movie["minutes"] = tmdb_data["minutes"] if tmdb_data["minutes"] is not None else movie.get("minutes")
+
+    if needs_franchise:
+        movie["franchise"] = tmdb_data["collection"]
+        if tmdb_data["collection"]:
+            stats["franchises_found"] += 1
 
     if poster_missing and images.ensure_poster(slug, tmdb_data["poster_path"]):
         stats["posters_downloaded"] += 1
@@ -95,18 +170,21 @@ def update_movie_reviews(slug, movie, members, stats):
         if result["rating"] is not None:
             reviews[display_name] = result["rating"]
             stats["reviews_added"] += 1
-        if result["comments"]:
-            comments[display_name] = result["comments"]
+        if result["comment"]:
+            comments[display_name] = result["comment"]
             stats["comments_added"] += 1
 
 
-def apply_manual_ratings(cinema_data, stats):
+def apply_manual_ratings(cinema_data, stats, only_members=None):
     """Aplica as notas manuais de manualRatings.json (membros sem Letterboxd, ou
     lacunas de scraping). So preenche o que falta — nunca sobrescreve. O ficheiro
-    e organizado por membro: {"Atlas": {"the-notebook": {"rating": 4}, ...}}."""
+    e organizado por membro: {"Atlas": {"the-notebook": {"rating": 4}, ...}}.
+    Com `only_members` (--user) so os membros desse conjunto sao aplicados."""
     manual = load_json(MANUAL_RATINGS_PATH, {})
     for member, movies in manual.items():
         if member.startswith("_"):
+            continue
+        if only_members is not None and member not in only_members:
             continue
         for slug, entry in movies.items():
             if slug.startswith("_"):
@@ -124,10 +202,34 @@ def apply_manual_ratings(cinema_data, stats):
             stats["reviews_added"] += 1
 
 
-def build_main_cinema_data(members, week_meta, stats):
+def apply_franchise_overrides(cinema_data, stats):
+    """Aplica o franchises.json por cima do que veio do TMDB. O ficheiro e
+    {"Nome da saga": ["slug-1", "slug-2", ...]}, com a lista ja pela ordem certa
+    da historia. Serve para tres coisas: renomear uma saga do TMDB, forcar uma
+    ordem diferente da data de estreia, e criar sagas que o TMDB nao modela."""
+    overrides = load_json(FRANCHISES_PATH, {})
+    for name, slugs in overrides.items():
+        if name.startswith("_"):
+            continue
+        for order, slug in enumerate(slugs):
+            movie = cinema_data.get(slug)
+            if movie is None:
+                print(f"  AVISO: franchises.json tem '{slug}' (saga '{name}') mas esse filme nao existe")
+                continue
+            if movie.get("franchise") != name or movie.get("franchiseOrder") != order:
+                stats["franchises_overridden"] += 1
+            movie["franchise"] = name
+            movie["franchiseOrder"] = order
+
+
+def build_main_cinema_data(members, week_meta, stats, review_limit=None, only_members=None):
     cinema_data = load_json(CINEMA_DATA_PATH, {})
     list_items = letterboxd.fetch_list(MAIN_LIST_URL)
     print(f"Lista principal: {len(list_items)} filmes encontrados no Letterboxd.")
+
+    scrape_slugs = recent_slugs(week_meta, review_limit)
+    if scrape_slugs is not None:
+        print(f"Ratings: so os {len(scrape_slugs)} filmes mais recentes (--last {review_limit}).")
 
     pending_week_meta = []
 
@@ -153,10 +255,17 @@ def build_main_cinema_data(members, week_meta, stats):
         movie["date"] = meta.get("date")
         movie["chosenBy"] = meta.get("chosenBy", [])
 
-        update_movie_media(slug, movie, stats)
-        update_movie_reviews(slug, movie, members, stats)
+        # Poster/backdrop/generos/creditos sao tratados na mesma: o site precisa
+        # deles para anunciar os filmes que estao a caminho.
+        update_movie_details(slug, movie, stats)
 
-    apply_manual_ratings(cinema_data, stats)
+        if not week_has_started(movie["date"]):
+            stats["movies_upcoming"] += 1
+        elif scrape_slugs is None or slug in scrape_slugs:
+            update_movie_reviews(slug, movie, members, stats)
+
+    apply_manual_ratings(cinema_data, stats, only_members)
+    apply_franchise_overrides(cinema_data, stats)
 
     save_json(CINEMA_DATA_PATH, cinema_data)
 
@@ -166,33 +275,63 @@ def build_main_cinema_data(members, week_meta, stats):
             print(f"  - {slug}  (adiciona chosenBy/date em scripts/weekMeta.json e corre de novo)")
 
 
-def build_wheel_data(stats):
-    wheel_items = letterboxd.fetch_list(WHEEL_LIST_URL)
-    print(f"Lista da roda: {len(wheel_items)} filmes encontrados no Letterboxd.")
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Atualiza cinemaData.json (Letterboxd + TMDB).",
+    )
+    parser.add_argument(
+        "--last",
+        type=int,
+        default=None,
+        metavar="N",
+        help="So vai buscar ratings/comentarios ao Letterboxd dos N filmes mais "
+             "recentes (por data em weekMeta.json). Sem a flag, tenta todos. "
+             "Imagens e metadados em falta continuam a ser tratados para todos.",
+    )
+    parser.add_argument(
+        "--user",
+        action="append",
+        metavar="NOME",
+        help="So atualiza este membro (nome de exibicao do members.json, ex: "
+             "--user Geremias). Pode repetir-se para varios. Combina com --last. "
+             "Sem a flag, atualiza todos os membros.",
+    )
+    args = parser.parse_args()
+    if args.last is not None and args.last < 1:
+        parser.error("--last tem de ser >= 1")
+    return args
 
-    existing = {m["slug"]: m for m in load_json(WHEEL_DATA_PATH, [])}
-    # quem escolheu cada filme da roda e input manual (bloqueado no Letterboxd)
-    wheel_selections = load_json(WHEEL_SELECTIONS_PATH, {})
-    wheel_data = []
 
-    for item in wheel_items:
-        slug = item["slug"]
-        movie = existing.get(slug, {"slug": slug, "title": item["title"], "year": item["year"]})
-        update_movie_media(slug, movie, stats)
-        # injeta chosenBy do ficheiro manual (sobrepoe), senao mantem o existente
-        if slug in wheel_selections and wheel_selections[slug].get("chosenBy"):
-            movie["chosenBy"] = wheel_selections[slug]["chosenBy"]
-        wheel_data.append(movie)
-
-    save_json(WHEEL_DATA_PATH, wheel_data)
+def select_members(members, names):
+    """Restringe os membros aos nomes pedidos com --user. Os nomes tem de ser os
+    de exibicao do members.json (ex: "Mestre Gui"), com espacos e maiusculas
+    iguais — sao a chave usada em todo o lado, incluindo no cinemaData.json."""
+    if not names:
+        return members
+    unknown = [name for name in names if name not in members]
+    if unknown:
+        print(f"ERRO: membro(s) desconhecido(s): {', '.join(unknown)}", file=sys.stderr)
+        print(f"Nomes validos: {', '.join(sorted(members))}", file=sys.stderr)
+        sys.exit(2)
+    return {name: members[name] for name in names}
 
 
 def main():
+    args = parse_args()
     members = load_json(MEMBERS_PATH, {})
     week_meta = load_json(WEEK_META_PATH, {})
 
+    selected_members = select_members(members, args.user)
+    only_members = set(selected_members) if args.user else None
+    if only_members:
+        print(f"Ratings: so o(s) membro(s) {', '.join(args.user)} (--user).")
+
     stats = {
         "movies_added": 0,
+        "movies_upcoming": 0,
+        "credits_added": 0,
+        "franchises_found": 0,
+        "franchises_overridden": 0,
         "reviews_added": 0,
         "comments_added": 0,
         "posters_downloaded": 0,
@@ -200,8 +339,13 @@ def main():
     }
 
     try:
-        build_main_cinema_data(members, week_meta, stats)
-        build_wheel_data(stats)
+        build_main_cinema_data(
+            selected_members,
+            week_meta,
+            stats,
+            review_limit=args.last,
+            only_members=only_members,
+        )
     except BlockedError as exc:
         print(f"\nERRO FATAL: {exc}", file=sys.stderr)
         print("O Letterboxd bloqueou um pedido a um endpoint que devia estar acessivel.", file=sys.stderr)
@@ -210,6 +354,10 @@ def main():
 
     print("\nResumo:")
     print(f"  Filmes novos: {stats['movies_added']}")
+    print(f"  Filmes por chegar (sem scraping de ratings): {stats['movies_upcoming']}")
+    print(f"  Filmes com creditos novos (realizador/elenco/temas): {stats['credits_added']}")
+    print(f"  Filmes com saga encontrada no TMDB: {stats['franchises_found']}")
+    print(f"  Filmes com saga corrigida a mao: {stats['franchises_overridden']}")
     print(f"  Reviews novas: {stats['reviews_added']}")
     print(f"  Comentarios novos: {stats['comments_added']}")
     print(f"  Posters descarregados: {stats['posters_downloaded']}")

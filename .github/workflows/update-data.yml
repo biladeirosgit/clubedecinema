@@ -28,7 +28,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/cdc/cinemaData.json src/cdc/wheelData.json public/posters public/backgrounds
+          git add src/cdc/cinemaData.json public/posters public/backgrounds
           if git diff --cached --quiet; then
             echo "Nada para commitar."
           else

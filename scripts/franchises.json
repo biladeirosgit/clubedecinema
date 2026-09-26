@@ -1,0 +1,11 @@
+{
+    "_comment": "Correcoes as sagas que vem do TMDB. Nome da saga -> lista de slugs pela ordem da historia (nao necessariamente a de estreia). Aplica-se por cima do TMDB, portanto serve para renomear uma saga, forcar a ordem, ou criar uma saga que o TMDB nao modela. Filmes que nao estejam aqui usam o nome do TMDB e a ordem por ano.",
+    "Hannibal Lecter": [
+        "the-silence-of-the-lambs",
+        "hannibal"
+    ],
+    "Three Flavours Cornetto": [
+        "shaun-of-the-dead",
+        "hot-fuzz"
+    ]
+}

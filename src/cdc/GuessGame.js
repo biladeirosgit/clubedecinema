@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import cinemaData from './cinemaData.json';
+import { cinemaData } from './movies';
 import randomValues from './randomValues.json'; // Importe os valores aleatórios
 import MovieCard from './MovieCard';
 import './GuessGame.css';
@@ -323,19 +323,9 @@ const GuessGame = () => {
                     <p className="guess-next">Próximo filme em {timeLeft}</p>
                     <div className="movie-card">
                         <div className="modal-content">
-                            <MovieCard
-                                slug={selectedMovie.slug}
-                                title={selectedMovie.title}
-                                year={selectedMovie.year}
-                                link={selectedMovie.link}
-                                date={selectedMovie.date}
-                                chosenBy={selectedMovie.chosenBy}
-                                genres={selectedMovie.genres}
-                                minutes={selectedMovie.minutes}
-                                reviews={selectedMovie.reviews}
-                                average={average(selectedMovie.reviews).toFixed(2)}
-                                comments={selectedMovie.comments}
-                            />
+                            {/* Sem onNavigate: aqui o card nao esta num modal, portanto
+                                a saga aparece so como texto. */}
+                            <MovieCard slug={selectedMovie.slug} />
                         </div>
                     </div>
                 </div>

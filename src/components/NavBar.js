@@ -9,7 +9,6 @@ const LINKS = [
     { to: '/', label: 'Catalog' },
     { to: '/stats', label: 'Stats' },
     { to: '/guess', label: 'Guess' },
-    { to: '/roda', label: 'Wheel' },
 ];
 
 const NavBar = () => {
